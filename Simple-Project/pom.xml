@@ -1,0 +1,11 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>D01</groupId>
+  <artifactId>Simple-Project</artifactId>
+  <version>1.0</version>
+  <name>Proyecto simple</name>
+  <description>Produce a project called “Simple-Project” that shows the following piece of text in the welcoming screen: “This is a simple project by A1, A2, …, and An”, where “A1”, “A2”, and “An” refer to your names. For instance: “This a simple project by John Doe, Jane Doe, and Peter Doe”. Please, note that your project must build on the templates that we provide.
+
+
+</description>
+</project>
