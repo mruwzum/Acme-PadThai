@@ -49,6 +49,8 @@ public class ActorService {
     private SponsorService sponsorService;
     @Autowired
     private CookService cookService;
+    @Autowired
+    private CreditCardService creditCardService;
 
     public ActorService() {
         super();
@@ -211,6 +213,9 @@ public class ActorService {
         Assert.notNull(u);
         Authority autoh = new Authority();
         autoh.setAuthority("SPONSOR");
+        CreditCard creditCard = creditCardService.create();
+        creditCard.setHolderName(u.getName());
+        creditCardService.save(creditCard);
         UserAccount res = new UserAccount();
         res.addAuthority(autoh);
         res.setUsername(u.getUserAccount().getUsername());
