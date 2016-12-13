@@ -27,7 +27,7 @@ public class Sponsor extends Actor {
     }
 
     @NotNull
-    @OneToOne(targetEntity = CreditCard.class, fetch = FetchType.LAZY)
+    @OneToOne(targetEntity = CreditCard.class, cascade = CascadeType.ALL)
     public CreditCard getCreditCard() {
         return creditCard;
     }

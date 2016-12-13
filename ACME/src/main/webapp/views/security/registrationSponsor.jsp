@@ -22,6 +22,7 @@
     <form:hidden path="version" />
     <form:hidden path="folders"/>
     <form:hidden path="message"/>
+    <form:hidden path="campaign"/>
 
     <br>
     <form:label path="name">
@@ -59,6 +60,14 @@
     <form:errors cssClass="error" path="postalAddress" />
     <br />
     <br>
+    <form:label path="nameOfCompany">
+        <spring:message code="actor.nameOfCompany"/>:
+    </form:label>
+    <form:input path="nameOfCompany"/>
+    <form:errors cssClass="error" path="nameOfCompany"/>
+    <br/>
+    
+    <br>
     <h1>Social Identity</h1>
     <form:label path="SocialIdentity.nickname">
         <spring:message code="socialIdentity.nickName" />:
@@ -80,6 +89,7 @@
     <form:input path="socialIdentity.link"/>
     <form:errors cssClass="error" path="socialIdentity.socialNet"/>
     <br/>
+
 
     <h1>Credit Card</h1>
     <br>
