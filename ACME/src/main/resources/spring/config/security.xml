@@ -55,6 +55,7 @@
                 username-parameter="username"
                 authentication-failure-url="/security/loginFailure.do"/>
 
+
         <security:logout
                 logout-success-url="/"
                 invalidate-session="true"/>
