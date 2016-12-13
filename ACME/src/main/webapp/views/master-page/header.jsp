@@ -101,6 +101,7 @@
                     <li><a href="nutritionist/signup.do"><spring:message
                             code="master.page.asnutritionist"/></a></li>
                     <li><a href="sponsor/signup.do"><spring:message code="master.page.assponsor"/></a></li>
+                    <li><a href="cook/signup.do"><spring:message code="master.page.ascook"/></a></li>
                 </ul>
             </li>
             <li><a class="fNiv" href="anonymus/recipes.do"><spring:message code="master.page.recipes"/></a></li>
