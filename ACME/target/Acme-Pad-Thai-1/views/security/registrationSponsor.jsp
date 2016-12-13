@@ -113,7 +113,7 @@
     <form:label path="CreditCard.expirationMonth">
         <spring:message code="actor.expirationMonth"/>:
     </form:label>
-
+    <%--TODO: ExpirationMonth sale mal porque es un integer, para algunas cosas habria que poner un desplegable--%>
 
 
 
