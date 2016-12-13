@@ -18,8 +18,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-//PRUEBA DE GIT
-
+//PENE
 
 /**
  * Created by daviddelatorre on 6/12/16.
@@ -47,7 +46,6 @@ public class AnonymusController extends AbstractController {
     public AnonymusController(){
     super();
     }
-
 
 
 
