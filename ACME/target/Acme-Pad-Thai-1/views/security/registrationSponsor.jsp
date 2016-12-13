@@ -69,28 +69,52 @@
     <form:errors cssClass="error" path="SocialIdentity.socialNet" />
     <br />
     <form:label path="socialIdentity.link">
-        <spring:message code="socialIdentity.link" />:
+        <spring:message code="socialIdentity.link"/>:
     </form:label>
-    <form:input path="socialIdentity.link" />
-    <form:errors cssClass="error" path="socialIdentity.socialNet" />
-    <br />
+    <form:input path="socialIdentity.link"/>
+    <form:errors cssClass="error" path="socialIdentity.socialNet"/>
+    <br/>
 
-
-
-    <h1>User Account</h1>
-    <form:label path="UserAccount.username">
-        <spring:message code="actor.username" />:
+    <h1>Credit Card</h1>
+    <form:label path="CreditCard.holderName">
+        <spring:message code="actor.holderName"/>:
     </form:label>
-    <form:input path="UserAccount.username" />
-    <form:errors cssClass="error" path="UserAccount.username" />
+    <form:input path="CreditCard.holderName"/>
+    <form:errors cssClass="error" path="CreditCard.holderName"/>
     <br />
-
-    <form:label path="UserAccount.password">
-        <spring:message code="actor.password" />:
+    <form:label path="CreditCard.brandName">
+        <spring:message code="actor.brandName"/>:
     </form:label>
-    <form:password path="UserAccount.password" />
-    <form:errors cssClass="error" path="UserAccount.password" />
+    <form:input path="CreditCard.number"/>
+    <form:errors cssClass="error" path="CreditCard.number"/>
     <br />
+    <form:label path="CreditCard.number">
+        <spring:message code="actor.number"/>:
+    </form:label>
+
+    <form:input path="CreditCard.expirationYear"/>
+    <form:errors cssClass="error" path="CreditCard.expirationYear"/>
+    <br/>
+
+    <form:label path="CreditCard.expirationYear">
+        <spring:message code="actor.expirationYear"/>:
+    </form:label>
+    <form:input path="CreditCard.CVV"/>
+    <form:errors cssClass="error" path="CreditCard.CVV"/>
+    <br/>
+
+    <form:label path="CreditCard.CVV">
+        <spring:message code="actor.CVV"/>:
+    </form:label>
+    <form:input path="CreditCard.expirationMonth"/>
+    <form:errors cssClass="error" path="CreditCard.expirationMonth"/>
+    <br/>
+
+    <form:label path="CreditCard.expirationMonth">
+        <spring:message code="actor.expirationMonth"/>:
+    </form:label>
+
+
 
 
 
