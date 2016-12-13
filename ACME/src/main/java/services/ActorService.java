@@ -214,7 +214,6 @@ public class ActorService {
         Authority autoh = new Authority();
         autoh.setAuthority("SPONSOR");
         CreditCard creditCard = creditCardService.create();
-        creditCard.setHolderName(u.getName());
         creditCardService.save(creditCard);
         UserAccount res = new UserAccount();
         res.addAuthority(autoh);

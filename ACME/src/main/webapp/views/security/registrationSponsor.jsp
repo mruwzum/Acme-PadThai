@@ -30,31 +30,35 @@
     <form:input path="name" />
     <form:errors cssClass="error" path="name" />
     <br />
+    <br>
     <form:label path="surname">
         <spring:message code="label.user.lastName" />:
     </form:label>
     <form:input path="surname" />
     <form:errors cssClass="error" path="surname" />
     <br />
+    <br>
     <form:label path="emailAddress">
         <spring:message code="label.user.email" />:
     </form:label>
     <form:input path="emailAddress" />
     <form:errors cssClass="error" path="emailAddress" />
     <br />
+    <br>
     <form:label path="phone">
         <spring:message code="label.user.phone" />:
     </form:label>
     <form:input path="phone" />
     <form:errors cssClass="error" path="phone" />
     <br />
-
+    <br>
     <form:label path="postalAddress">
         <spring:message code="label.user.postalAddress" />:
     </form:label>
     <form:input path="postalAddress" />
     <form:errors cssClass="error" path="postalAddress" />
     <br />
+    <br>
     <h1>Social Identity</h1>
     <form:label path="SocialIdentity.nickname">
         <spring:message code="socialIdentity.nickName" />:
@@ -62,12 +66,14 @@
     <form:input path="SocialIdentity.nickname" />
     <form:errors cssClass="error" path="SocialIdentity.nickname" />
     <br />
+    <br>
     <form:label path="SocialIdentity.socialNet">
         <spring:message code="socialIdentity.socialNet" />:
     </form:label>
     <form:input path="SocialIdentity.socialNet" />
     <form:errors cssClass="error" path="SocialIdentity.socialNet" />
     <br />
+    <br>
     <form:label path="socialIdentity.link">
         <spring:message code="socialIdentity.link"/>:
     </form:label>
@@ -76,52 +82,59 @@
     <br/>
 
     <h1>Credit Card</h1>
+    <br>
     <form:label path="CreditCard.holderName">
         <spring:message code="actor.holderName"/>:
     </form:label>
     <form:input path="CreditCard.holderName"/>
     <form:errors cssClass="error" path="CreditCard.holderName"/>
     <br />
+    <br>
     <form:label path="CreditCard.brandName">
         <spring:message code="actor.brandName"/>:
     </form:label>
-    <form:input path="CreditCard.number"/>
-    <form:errors cssClass="error" path="CreditCard.number"/>
+    <form:input path="CreditCard.brandName"/>
+    <form:errors cssClass="error" path="CreditCard.brandName"/>
     <br />
+    <br>
     <form:label path="CreditCard.number">
         <spring:message code="actor.number"/>:
     </form:label>
-
-    <form:input path="CreditCard.expirationYear"/>
-    <form:errors cssClass="error" path="CreditCard.expirationYear"/>
+    <form:input path="CreditCard.number"/>
+    <form:errors cssClass="error" path="CreditCard.number"/>
     <br/>
-
-    <form:label path="CreditCard.expirationYear">
-        <spring:message code="actor.expirationYear"/>:
+    <br>
+    <form:label path="CreditCard.CVV">
+        <spring:message code="actor.CVV"/>:
     </form:label>
     <form:input path="CreditCard.CVV"/>
     <form:errors cssClass="error" path="CreditCard.CVV"/>
     <br/>
-
-    <form:label path="CreditCard.CVV">
-        <spring:message code="actor.CVV"/>:
+    <br>
+    <form:label path="CreditCard.expirationYear">
+        <spring:message code="actor.expirationYear"/>:
+    </form:label>
+    <form:input path="CreditCard.expirationYear"/>
+    <form:errors cssClass="error" path="CreditCard.expirationYear"/>
+    <br/>
+    <br>
+    <form:label path="CreditCard.expirationMonth">
+        <spring:message code="actor.expirationMonth"/>:
     </form:label>
     <form:input path="CreditCard.expirationMonth"/>
     <form:errors cssClass="error" path="CreditCard.expirationMonth"/>
     <br/>
 
-    <form:label path="CreditCard.expirationMonth">
-        <spring:message code="actor.expirationMonth"/>:
-    </form:label>
 
     <h1>User Account</h1>
+    <br>
     <form:label path="UserAccount.username">
         <spring:message code="actor.username"/>:
     </form:label>
     <form:input path="UserAccount.username"/>
     <form:errors cssClass="error" path="UserAccount.username"/>
     <br/>
-
+    <br>
     <form:label path="UserAccount.password">
         <spring:message code="actor.password"/>:
     </form:label>
@@ -149,3 +162,4 @@
 <a href="<c:url value="/security/login.do" />">
     <spring:message code="label.form.loginLink"> </spring:message>
 </a>
+<br>
