@@ -113,6 +113,22 @@
     <form:label path="CreditCard.expirationMonth">
         <spring:message code="actor.expirationMonth"/>:
     </form:label>
+
+    <h1>User Account</h1>
+    <form:label path="UserAccount.username">
+        <spring:message code="actor.username"/>:
+    </form:label>
+    <form:input path="UserAccount.username"/>
+    <form:errors cssClass="error" path="UserAccount.username"/>
+    <br/>
+
+    <form:label path="UserAccount.password">
+        <spring:message code="actor.password"/>:
+    </form:label>
+    <form:password path="UserAccount.password"/>
+    <form:errors cssClass="error" path="UserAccount.password"/>
+    <br/>
+
     <%--TODO: ExpirationMonth sale mal porque es un integer, para algunas cosas habria que poner un desplegable--%>
 
 
