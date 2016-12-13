@@ -49,6 +49,8 @@ public class ActorService {
     private SponsorService sponsorService;
     @Autowired
     private CookService cookService;
+    @Autowired
+    private CreditCardService creditCardService;
 
     public ActorService() {
         super();
@@ -211,6 +213,14 @@ public class ActorService {
         Assert.notNull(u);
         Authority autoh = new Authority();
         autoh.setAuthority("SPONSOR");
+        CreditCard creditCard = creditCardService.create();
+        creditCard.setCVV("000");
+        creditCard.setExpirationYear(0000);
+        creditCard.setExpirationMonth(00);
+        creditCard.setBrandName("VISA/MASTERCARD/AMEX");
+        creditCard.setHolderName("GENERIC");
+        creditCard.setNumber(00000000);
+        creditCardService.save(creditCard);
         UserAccount res = new UserAccount();
         res.addAuthority(autoh);
         res.setUsername(u.getUserAccount().getUsername());

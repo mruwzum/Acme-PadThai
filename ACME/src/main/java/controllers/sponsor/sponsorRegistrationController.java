@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import services.ActorService;
+import services.CreditCardService;
 import services.SponsorService;
 
 import javax.validation.Valid;
@@ -29,6 +30,8 @@ public class sponsorRegistrationController extends AbstractController {
     private SponsorService sponsorService;
     @Autowired
     private ActorService actorService;
+    @Autowired
+    private CreditCardService creditCardService;
 
 
     private sponsorRegistrationController() {
@@ -38,6 +41,7 @@ public class sponsorRegistrationController extends AbstractController {
     @RequestMapping(value = "/registration", method = RequestMethod.POST, params = "save")
     public ModelAndView saveRegistrationForm(@Valid @ModelAttribute Sponsor spon, BindingResult bindingResult) {
         ModelAndView result;
+
         actorService.registerAsSponsor2(spon);
         result = new ModelAndView("sponsor/list");
         result.addObject("sponsor", spon);
