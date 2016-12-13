@@ -47,6 +47,8 @@ public class ActorService {
     private SocialIdentityService socialIdentityService;
     @Autowired
     private SponsorService sponsorService;
+    @Autowired
+    private CookService cookService;
 
     public ActorService() {
         super();
@@ -176,6 +178,22 @@ public class ActorService {
         Sponsor sponsor = sponsorService.create();
         sponsor.setUserAccount(res);
         Sponsor result = sponsorService.save(sponsor);
+        return result;
+    }
+
+    public Actor registerAsCook(String name, String password) {
+        Assert.notNull(name, password);
+        Authority autoh = new Authority();
+        autoh.setAuthority("COOK");
+        Set<Authority> authorities = new HashSet<>();
+        authorities.add(autoh);
+        UserAccount res = new UserAccount();
+        res.setAuthorities(authorities);
+        res.setUsername(name);
+        res.setPassword(password);
+        Cook cook = cookService.create();
+        cook.setUserAccount(res);
+        Cook result = cookService.save(cook);
         return result;
     }
     public Collection<Recipe> findAllRecipeGroupByCategorie() {

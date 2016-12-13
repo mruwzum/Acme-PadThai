@@ -112,6 +112,16 @@ public class ActorServiceTest extends AbstractTest {
         System.out.println("El sponsor creado es " + res.getUserAccount().getUsername());
 
     }
+
+    @Test
+    public void testRegisterAsCook() {
+
+        String name = "Arguiñano";
+        String password = "34243242bbvj234bj24n342j34nj832jb5";
+        Actor res = actorService.registerAsCook(name, password);
+        System.out.println("El cocinero creado es " + res.getUserAccount().getUsername());
+
+    }
     @Test
     public void testFindAllRecipesGroupByCategorie() {
 
