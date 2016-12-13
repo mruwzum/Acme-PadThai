@@ -75,6 +75,12 @@
     <form:input path="SocialIdentity.socialNet"/>
     <form:errors cssClass="error" path="SocialIdentity.socialNet"/>
     <br/>
+    <form:label path="socialIdentity.link">
+        <spring:message code="socialIdentity.link"/>:
+    </form:label>
+    <form:input path="socialIdentity.link"/>
+    <form:errors cssClass="error" path="socialIdentity.socialNet"/>
+    <br/>
 
 
     <h1>User Account</h1>
