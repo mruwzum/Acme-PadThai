@@ -1,15 +1,18 @@
 package controllers.sponsor;
 
 import controllers.AbstractController;
-import domain.*;
+import domain.Folder;
+import domain.Message;
+import domain.SocialIdentity;
+import domain.Sponsor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.Assert;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import services.ActorService;
 import services.SponsorService;
 
 import javax.validation.Valid;
@@ -24,6 +27,8 @@ public class sponsorRegistrationController extends AbstractController {
 
     @Autowired
     private SponsorService sponsorService;
+    @Autowired
+    private ActorService actorService;
 
 
     private sponsorRegistrationController() {
@@ -33,18 +38,11 @@ public class sponsorRegistrationController extends AbstractController {
     @RequestMapping(value = "/registration", method = RequestMethod.POST, params = "save")
     public ModelAndView saveRegistrationForm(@Valid @ModelAttribute Sponsor spon, BindingResult bindingResult) {
         ModelAndView result;
+        actorService.registerAsSponsor2(spon);
+        result = new ModelAndView("sponsor/list");
+        result.addObject("sponsor", spon);
 
-        if (bindingResult.hasErrors()) {
-            result = createEditModelAndView(spon);
-        } else {
-            try {
-                sponsorService.save(spon);
-                result = new ModelAndView("redirect:list.do");
-            } catch (Throwable oops) {
 
-                result = createEditModelAndView(spon, "request.commit.error");
-            }
-        }
         return result;
     }
 

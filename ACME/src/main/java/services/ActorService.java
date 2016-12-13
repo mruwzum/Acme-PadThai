@@ -131,7 +131,7 @@ public class ActorService {
         User resu = userService.save(u);
         return resu;
     }
-    //TODO register as Nutritionist2, as Sponsor2, as Cook 2 y al cook hacerle todo, meter el authority como en registerAsUser2   res.addAuthority(autoh);
+
 
     public Actor registerAsUser(String name, String password) {
         Assert.notNull(name, password);
@@ -165,6 +165,32 @@ public class ActorService {
         return result;
     }
 
+    public Actor registerAsNutritionist2(Nutritionist u) {
+        Assert.notNull(u);
+        Authority autoh = new Authority();
+        autoh.setAuthority("NUTRITIONIST");
+        UserAccount res = new UserAccount();
+        res.addAuthority(autoh);
+        res.setUsername(u.getUserAccount().getUsername());
+        res.setPassword(u.getUserAccount().getPassword());
+        UserAccount userAccount = userAccountService.save(res);
+        SocialIdentity socialIdentity = socialIdentityService.create();
+        socialIdentity.setNickname(u.getSocialIdentity().getNickname());
+        socialIdentity.setSocialNet(u.getSocialIdentity().getSocialNet());
+        socialIdentity.setLink(u.getSocialIdentity().getLink());
+        SocialIdentity socres = socialIdentityService.save(socialIdentity);
+        //TODO esto hay que modificarlo
+        Folder f = createNewFolder();
+        Collection<Folder> aux2 = new HashSet<>();
+        aux2.add(f);
+
+        u.setFolders(aux2);
+        u.setUserAccount(userAccount);
+        u.setSocialIdentity(socres);
+        Nutritionist resu = nutritionistService.save(u);
+        return resu;
+    }
+
     public Actor registerAsSponsor(String name, String password) {
         Assert.notNull(name, password);
         Authority autoh = new Authority();
@@ -181,6 +207,32 @@ public class ActorService {
         return result;
     }
 
+    public Actor registerAsSponsor2(Sponsor u) {
+        Assert.notNull(u);
+        Authority autoh = new Authority();
+        autoh.setAuthority("SPONSOR");
+        UserAccount res = new UserAccount();
+        res.addAuthority(autoh);
+        res.setUsername(u.getUserAccount().getUsername());
+        res.setPassword(u.getUserAccount().getPassword());
+        UserAccount userAccount = userAccountService.save(res);
+        SocialIdentity socialIdentity = socialIdentityService.create();
+        socialIdentity.setNickname(u.getSocialIdentity().getNickname());
+        socialIdentity.setSocialNet(u.getSocialIdentity().getSocialNet());
+        socialIdentity.setLink(u.getSocialIdentity().getLink());
+        SocialIdentity socres = socialIdentityService.save(socialIdentity);
+        //TODO esto hay que modificarlo
+        Folder f = createNewFolder();
+        Collection<Folder> aux2 = new HashSet<>();
+        aux2.add(f);
+
+        u.setFolders(aux2);
+        u.setUserAccount(userAccount);
+        u.setSocialIdentity(socres);
+        Sponsor resu = sponsorService.save(u);
+        return resu;
+    }
+
     public Actor registerAsCook(String name, String password) {
         Assert.notNull(name, password);
         Authority autoh = new Authority();
@@ -195,6 +247,32 @@ public class ActorService {
         cook.setUserAccount(res);
         Cook result = cookService.save(cook);
         return result;
+    }
+
+    public Actor registerAsCook2(Cook u) {
+        Assert.notNull(u);
+        Authority autoh = new Authority();
+        autoh.setAuthority("COOK");
+        UserAccount res = new UserAccount();
+        res.addAuthority(autoh);
+        res.setUsername(u.getUserAccount().getUsername());
+        res.setPassword(u.getUserAccount().getPassword());
+        UserAccount userAccount = userAccountService.save(res);
+        SocialIdentity socialIdentity = socialIdentityService.create();
+        socialIdentity.setNickname(u.getSocialIdentity().getNickname());
+        socialIdentity.setSocialNet(u.getSocialIdentity().getSocialNet());
+        socialIdentity.setLink(u.getSocialIdentity().getLink());
+        SocialIdentity socres = socialIdentityService.save(socialIdentity);
+        //TODO esto hay que modificarlo
+        Folder f = createNewFolder();
+        Collection<Folder> aux2 = new HashSet<>();
+        aux2.add(f);
+
+        u.setFolders(aux2);
+        u.setUserAccount(userAccount);
+        u.setSocialIdentity(socres);
+        Cook resu = cookService.save(u);
+        return resu;
     }
     public Collection<Recipe> findAllRecipeGroupByCategorie() {
         Collection<Recipe> res;
