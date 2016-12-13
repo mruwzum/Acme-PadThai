@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Acme-Pad-Thai:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Acme-Pad-Thai-1.war">
+      <element id="artifact" artifact-name="Acme-Pad-Thai:war exploded" />
+    </root>
+  </artifact>
+</component>
