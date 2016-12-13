@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb138e7f-e0cb-426d-83d9-f715b4cc8726" name="Default" comment="seguimos&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1.war" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/security/Credentials.class" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/security/Credentials.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/security/Credentials.class" afterPath="$PROJECT_DIR$/target/classes/security/Credentials.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/services/ActorServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/services/ActorServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/security/Credentials.java" afterPath="$PROJECT_DIR$/src/main/java/security/Credentials.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml" afterPath="$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/application.properties" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/security/login.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/security/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/PopulateDatabase.xml" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/PopulateDatabase.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/PopulateDatabase.xml" afterPath="$PROJECT_DIR$/target/classes/PopulateDatabase.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
-              <caret line="53" column="76" lean-forward="true" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+              <caret line="53" column="76" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -71,6 +62,9 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$/.." source="RamaDavidLocal" target-remote="origin" target-branch="RamaDavid" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -948,7 +942,7 @@
       <workItem from="1481638811603" duration="680000" />
       <workItem from="1481658728805" duration="4404000" />
       <workItem from="1481665766832" duration="8000" />
-      <workItem from="1481665833785" duration="2557000" />
+      <workItem from="1481665833785" duration="2738000" />
     </task>
     <task id="LOCAL-00001" summary="Commit de prueba con //PRUEBA en anonymus controller">
       <created>1481639371382</created>
@@ -978,7 +972,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481662556467</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="seguimos&#10;">
+      <created>1481668926949</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1481668926949</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -993,7 +994,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7649000" />
+    <option name="totallyTimeSpent" value="7830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1424,7 +1425,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
-          <caret line="53" column="76" lean-forward="true" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+          <caret line="53" column="76" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="76" />
           <folding />
         </state>
       </provider>

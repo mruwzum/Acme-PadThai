@@ -62,12 +62,12 @@
     </bean>
 
     <bean id="userAccount5" class="security.UserAccount">
-        <property name="username" value="user2"/>
-        <property name="password" value="91ec1f9324753048c0096d036a694f86"/>
+        <property name="username" value="customer1" />
+        <property name="password" value="ffbc4675f864e0e9aab8bdf7a0437010" />
         <property name="authorities">
             <list>
                 <bean class="security.Authority">
-                    <property name="authority" value="USER"/>
+                    <property name="authority" value="USER" />
                 </bean>
             </list>
         </property>
