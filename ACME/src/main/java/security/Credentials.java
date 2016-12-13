@@ -30,7 +30,7 @@ public class Credentials {
         return username;
     }
 
-    public void setJ_username(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 

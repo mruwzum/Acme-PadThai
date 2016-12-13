@@ -35,7 +35,7 @@
     <jstl:if test="${showError == true}">
         <div class="error">
             <spring:message code="security.login.failed"/>
-            <jstl:out value="${showError}" > ${showError} </jstl:out>
+            <jstl:out value="${showError}"> ${showError} </jstl:out>
         </div>
     </jstl:if>
 

@@ -341,9 +341,9 @@ public class ActorServiceTest extends AbstractTest {
     @Test
     public void testRandom(){
         List<User> users = new ArrayList<>(userService.findAll());
-        System.out.println(users.get(2).getUserAccount().getUsername());
-        System.out.println(users.get(2).getUserAccount().getPassword());
-        System.out.println(users.get(2).getUserAccount().getAuthorities());
+        System.out.println(users.get(1).getUserAccount().getUsername());
+        System.out.println(users.get(1).getUserAccount().getPassword());
+        System.out.println(users.get(1).getUserAccount().getAuthorities());
 
     }
 
