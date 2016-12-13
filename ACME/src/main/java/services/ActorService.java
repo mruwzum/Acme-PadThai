@@ -45,6 +45,8 @@ public class ActorService {
     private UserAccountService userAccountService;
     @Autowired
     private SocialIdentityService socialIdentityService;
+    @Autowired
+    private SponsorService sponsorService;
 
     public ActorService() {
         super();
@@ -145,34 +147,37 @@ public class ActorService {
         return resu;
     }
 
-    public Actor registerAsNutritionist(Nutritionist u) {
-        Assert.notNull(u);
+    public Actor registerAsNutritionist(String name, String password) {
+        Assert.notNull(name, password);
         Authority autoh = new Authority();
         autoh.setAuthority("NUTRITIONIST");
         Set<Authority> authorities = new HashSet<>();
         authorities.add(autoh);
         UserAccount res = new UserAccount();
         res.setAuthorities(authorities);
-        res.setUsername(u.getUserAccount().getUsername());
-        res.setPassword(u.getUserAccount().getPassword());
-        UserAccount userAccount = userAccountService.save(res);
-        SocialIdentity socialIdentity = socialIdentityService.create();
-        socialIdentity.setNickname(u.getSocialIdentity().getNickname());
-        socialIdentity.setSocialNet(u.getSocialIdentity().getSocialNet());
-        socialIdentity.setLink(u.getSocialIdentity().getLink());
-        SocialIdentity socres = socialIdentityService.save(socialIdentity);
-        //TODO esto hay que modificarlo
-        Folder f = createNewFolder();
-        Collection<Folder> aux2 = new HashSet<>();
-        aux2.add(f);
-
-        u.setFolders(aux2);
-        u.setUserAccount(userAccount);
-        u.setSocialIdentity(socres);
-        Nutritionist resu = nutritionistService.save(u);
-        return resu;
+        res.setUsername(name);
+        res.setPassword(password);
+        Nutritionist nutritionist = nutritionistService.create();
+        nutritionist.setUserAccount(res);
+        Nutritionist result = nutritionistService.save(nutritionist);
+        return result;
     }
 
+    public Actor registerAsSponsor(String name, String password) {
+        Assert.notNull(name, password);
+        Authority autoh = new Authority();
+        autoh.setAuthority("SPONSOR");
+        Set<Authority> authorities = new HashSet<>();
+        authorities.add(autoh);
+        UserAccount res = new UserAccount();
+        res.setAuthorities(authorities);
+        res.setUsername(name);
+        res.setPassword(password);
+        Sponsor sponsor = sponsorService.create();
+        sponsor.setUserAccount(res);
+        Sponsor result = sponsorService.save(sponsor);
+        return result;
+    }
     public Collection<Recipe> findAllRecipeGroupByCategorie() {
         Collection<Recipe> res;
         res = actorRepository.findAllRecipeGroupByCategorie();
@@ -190,7 +195,7 @@ public class ActorService {
     }
 
 
-    public User getUserofRecipe(Recipe recipe) {
+    public User getUserOfRecipe(Recipe recipe) {
         Assert.notNull(recipe, "El parámetro recibido es nulo");
 
         User res = actorRepository.getUserofRecipe(recipe.getId());

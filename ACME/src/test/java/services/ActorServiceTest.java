@@ -9,7 +9,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by daviddelatorre on 6/11/16.
@@ -84,24 +86,32 @@ public class ActorServiceTest extends AbstractTest {
         String name = "Davdedia";
         String password = "34243242bbvj234bj24n342j34njn32jb5";
         Actor res = actorService.registerAsUser(name, password);
-        System.out.println("El user creado es" + res.getUserAccount().getUsername());
-        System.out.println("El user creado es" + res.getUserAccount().getPassword());
-        System.out.println("El user creado es" + res.getUserAccount().getAuthorities().toString());
+        System.out.println("El user creado es " + res.getUserAccount().getUsername());
+        System.out.println("El user creado es " + res.getUserAccount().getPassword());
+        System.out.println("El user creado es " + res.getUserAccount().getAuthorities().toString());
 
 
     }
 
-     //TODO Descomentar esto
-//    @Test
-//    public void testregisterAsNutritionist() {
-//
-//        String name = "Migantber";
-//        String password = "34243242bbvj234bj24n342j34nj832jb5";
-//        Actor res = actorService.registerAsNutritionist(name, password);
-//        System.out.println("El nutricionista creado es" + res.getUserAccount().getUsername());
-//
-//    }
+    @Test
+    public void testRegisterAsNutritionist() {
 
+        String name = "Migantber";
+        String password = "34243242bbvj234bj24n342j34nj832jb5";
+        Actor res = actorService.registerAsNutritionist(name, password);
+        System.out.println("El nutricionista creado es " + res.getUserAccount().getUsername());
+
+    }
+
+    @Test
+    public void testRegisterAsSponsor() {
+
+        String name = "Perri";
+        String password = "34243242bbvj234bj24n342j34nj832jb5";
+        Actor res = actorService.registerAsSponsor(name, password);
+        System.out.println("El sponsor creado es " + res.getUserAccount().getUsername());
+
+    }
     @Test
     public void testFindAllRecipesGroupByCategorie() {
 
@@ -131,7 +141,7 @@ public class ActorServiceTest extends AbstractTest {
 
         User res;
         List<Recipe> aux = new ArrayList<>(actorService.findAllRecipeGroupByCategorie());
-        res = actorService.getUserofRecipe(aux.get(2));
+        res = actorService.getUserOfRecipe(aux.get(2));
         System.out.println("El usuario de la receta " + aux.get(2) + " es " + res);
 
 
