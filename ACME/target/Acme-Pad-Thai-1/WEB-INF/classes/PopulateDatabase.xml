@@ -51,7 +51,7 @@
 
     <bean id="userAccount4" class="security.UserAccount">
         <property name="username" value="user1"/>
-        <property name="password" value="21232f297a57a5a743894a0e4a801fc3"/>
+        <property name="password" value="24c9e15e52afc47c225b757e7bee1f9d"/>
         <property name="authorities">
             <list>
                 <bean class="security.Authority">
@@ -62,12 +62,12 @@
     </bean>
 
     <bean id="userAccount5" class="security.UserAccount">
-        <property name="username" value="customer1" />
-        <property name="password" value="ffbc4675f864e0e9aab8bdf7a0437010" />
+        <property name="username" value="user2"/>
+        <property name="password" value="7e58d63b60197ceb55a1c487989a3720"/>
         <property name="authorities">
             <list>
                 <bean class="security.Authority">
-                    <property name="authority" value="USER" />
+                    <property name="authority" value="USER"/>
                 </bean>
             </list>
         </property>
