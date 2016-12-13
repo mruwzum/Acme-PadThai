@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import services.ActorService;
 import services.NutritionistService;
 
 import javax.validation.Valid;
@@ -27,6 +28,8 @@ public class nutritionistRegistrationController extends AbstractController {
 
     @Autowired
     private NutritionistService nutritionistService;
+    @Autowired
+    private ActorService actorService;
 
 
     public nutritionistRegistrationController() {
@@ -37,18 +40,11 @@ public class nutritionistRegistrationController extends AbstractController {
     @RequestMapping(value = "/registration", method = RequestMethod.POST, params = "save")
     public ModelAndView saveRegistrationForm(@Valid @ModelAttribute Nutritionist nutritionist, BindingResult bindingResult) {
         ModelAndView result;
+        actorService.registerAsNutritionist2(nutritionist);
+        result = new ModelAndView("nutritionist/list");
+        result.addObject("nutritionist", nutritionist);
 
-        if (bindingResult.hasErrors()) {
-            result = createEditModelAndView(nutritionist);
-        } else {
-            try {
-                nutritionistService.save(nutritionist);
-                result = new ModelAndView("redirect:nutritionist.do");
-            } catch (Throwable oops) {
 
-                result = createEditModelAndView(nutritionist, "request.commit.error");
-            }
-        }
         return result;
     }
 
