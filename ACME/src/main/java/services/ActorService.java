@@ -2,6 +2,7 @@ package services;
 
 import domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
@@ -114,8 +115,11 @@ public class ActorService {
         autoh.setAuthority("USER");
         UserAccount res = new UserAccount();
         res.addAuthority(autoh);
+        Md5PasswordEncoder encoder;
+        encoder = new Md5PasswordEncoder();
+        String hash = encoder.encodePassword(u.getUserAccount().getPassword(), null);
         res.setUsername(u.getUserAccount().getUsername());
-        res.setPassword(u.getUserAccount().getPassword());
+        res.setPassword(hash);
         UserAccount userAccount = userAccountService.save(res);
         SocialIdentity socialIdentity = socialIdentityService.create();
         socialIdentity.setNickname(u.getSocialIdentity().getNickname());
@@ -174,7 +178,10 @@ public class ActorService {
         UserAccount res = new UserAccount();
         res.addAuthority(autoh);
         res.setUsername(u.getUserAccount().getUsername());
-        res.setPassword(u.getUserAccount().getPassword());
+        Md5PasswordEncoder encoder;
+        encoder = new Md5PasswordEncoder();
+        String hash = encoder.encodePassword(u.getUserAccount().getPassword(), null);
+        res.setPassword(hash);
         UserAccount userAccount = userAccountService.save(res);
         SocialIdentity socialIdentity = socialIdentityService.create();
         socialIdentity.setNickname(u.getSocialIdentity().getNickname());
@@ -223,8 +230,11 @@ public class ActorService {
         creditCardService.save(creditCard);
         UserAccount res = new UserAccount();
         res.addAuthority(autoh);
+        Md5PasswordEncoder encoder;
+        encoder = new Md5PasswordEncoder();
+        String hash = encoder.encodePassword(u.getUserAccount().getPassword(), null);
         res.setUsername(u.getUserAccount().getUsername());
-        res.setPassword(u.getUserAccount().getPassword());
+        res.setPassword(hash);
         UserAccount userAccount = userAccountService.save(res);
         SocialIdentity socialIdentity = socialIdentityService.create();
         socialIdentity.setNickname(u.getSocialIdentity().getNickname());
@@ -245,6 +255,9 @@ public class ActorService {
 
     public Actor registerAsCook(String name, String password) {
         Assert.notNull(name, password);
+        Md5PasswordEncoder encoder;
+        encoder = new Md5PasswordEncoder();
+        String hash = encoder.encodePassword(password, null);
         Authority autoh = new Authority();
         autoh.setAuthority("COOK");
         Set<Authority> authorities = new HashSet<>();
@@ -252,7 +265,7 @@ public class ActorService {
         UserAccount res = new UserAccount();
         res.setAuthorities(authorities);
         res.setUsername(name);
-        res.setPassword(password);
+        res.setPassword(hash);
         Cook cook = cookService.create();
         cook.setUserAccount(res);
         Cook result = cookService.save(cook);
@@ -264,9 +277,12 @@ public class ActorService {
         Authority autoh = new Authority();
         autoh.setAuthority("COOK");
         UserAccount res = new UserAccount();
+        Md5PasswordEncoder encoder;
+        encoder = new Md5PasswordEncoder();
+        String hash = encoder.encodePassword(u.getUserAccount().getPassword(), null);
         res.addAuthority(autoh);
         res.setUsername(u.getUserAccount().getUsername());
-        res.setPassword(u.getUserAccount().getPassword());
+        res.setPassword(hash);
         UserAccount userAccount = userAccountService.save(res);
         SocialIdentity socialIdentity = socialIdentityService.create();
         socialIdentity.setNickname(u.getSocialIdentity().getNickname());
