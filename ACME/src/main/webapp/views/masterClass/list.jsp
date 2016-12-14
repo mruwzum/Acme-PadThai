@@ -17,7 +17,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<display:table name="mclass" id="row" requestURI="http://localhost:8080/cook/masterClass/list.do" pagesize="5"
+<display:table name="masterClass" id="row" requestURI="http://localhost:8080/cook/masterClass/list.do" pagesize="5"
                class="displaytag">
 
     <spring:message code="mclass.title" var="titleheader"/>
@@ -42,19 +42,19 @@
     <!--Los cocineros solo pueden editar si se trata de clases propias-->
     <security:authorize access="hasRole('COOK')">
         <display:column>
-            <jstl:choose>
-                <jstl:when test="${cookMasterClass.contains(row)}">
+            <%--<jstl:choose>--%>
+            <%--<jstl:when test="${cookMasterClass.contains(row)}">--%>
                     <a href="cook/masterClass/edit.do?id=${row.id}"
                        onclick="return confirm(' <spring:message code="mclass.edit"/>')">
                         <spring:message code="mclass.edit"/>
                     </a>
-                </jstl:when>
-                <jstl:otherwise>
+            <%--</jstl:when>--%>
+            <%--<jstl:otherwise>--%>
                     <a href="/security/login.do">
                         <spring:message code="mclass.login"/>
                     </a>
-                </jstl:otherwise>
-            </jstl:choose>
+            <%--</jstl:otherwise>--%>
+            <%--</jstl:choose>--%>
         </display:column>
     </security:authorize>
 

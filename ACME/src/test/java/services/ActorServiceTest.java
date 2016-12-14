@@ -36,6 +36,8 @@ public class ActorServiceTest extends AbstractTest {
     private SocialIdentityService socialIdentityService;
     @Autowired
     private MasterClassService masterClassService;
+    @Autowired
+    private CookService cookService;
 
 
     //Tests -------------------------------------------------
@@ -340,10 +342,17 @@ public class ActorServiceTest extends AbstractTest {
 
     @Test
     public void testRandom(){
+        authenticate("Cook1");
         List<User> users = new ArrayList<>(userService.findAll());
-        System.out.println(users.get(1).getUserAccount().getUsername());
-        System.out.println(users.get(1).getUserAccount().getPassword());
-        System.out.println(users.get(1).getUserAccount().getAuthorities());
+        List<Cook> cooks = new ArrayList<>(cookService.findAll());
+        System.out.println(cooks.get(0).getUserAccount().getUsername());
+        System.out.println(cooks.get(0).getUserAccount().getPassword());
+        System.out.println(cooks.get(0).getUserAccount().getAuthorities());
+        System.out.println(cookService.getMyMasterClasses());
+        authenticate(null);
+
+
+
 
     }
 

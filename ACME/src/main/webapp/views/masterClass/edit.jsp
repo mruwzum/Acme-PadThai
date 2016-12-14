@@ -17,50 +17,40 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<security:authorize access="hasRole('COOK')">
-    <display:column>
-        <a href="cook/masterClass/edit.do?Id=${row.id}">
-            <spring:message code="mclass.edit"/>
-        </a>
-    </display:column>
-</security:authorize>
-
-<form:form action="cook/masterClass/edit.do" modelAttribute="masterclass">
+<form:form action="cook/masterClass/edit/save.do" modelAttribute="masterClass">
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>
+    <form:hidden path="cook"/>
+    <form:hidden path="material"/>
+    <form:hidden path="registers"/>
+    <form:hidden path="promoters"/>
 
-    <form:label path="Title">
+    <form:label path="title">
         <spring:message code="mclass.title"/>
     </form:label>
     <form:input path="title"/>
-    <form:errors cssClass="error" path="Title"/>
+    <form:errors cssClass="error" path="title"/>
     <br/>
 
-    <form:label path="Description">
+    <form:label path="description">
         <spring:message code="mclass.description"/>
     </form:label>
     <form:input path="description"/>
-    <form:errors cssClass="error" path="Description"/>
+    <form:errors cssClass="error" path="description"/>
     <br/>
 
-    <form:label path="Cook">
-        <spring:message code="mclass.cook"/>
-    </form:label>
-    <form:input path="cook"/>
-    <form:errors cssClass="error" path="Cook"/>
-    <br/>
 
 
     <input type="submit" name="save"
            value="<spring:message code="mclass.save" />"/>&nbsp;
-    <jstl:if test="${masterclass.id != 0}">
+    <jstl:if test="${id} != 0">
         <input type="submit" name="delete"
                value="<spring:message code="mclass.delete" />"
                onclick="return confirm('<spring:message code="mclass.confirm.delete"/>')"/>&nbsp;
     </jstl:if>
     <input type="button" name="cancel"
            value="<spring:message code="mclass.cancel" />"
-           onclick="relativeRedir('sponsor/mclass/list.do');"/>
+           onclick="relativeRedir('sponsor/masterClass/list.do');"/>
     <br/>
 </form:form>

@@ -2,7 +2,6 @@ package controllers.cook;
 
 import controllers.AbstractController;
 import domain.MasterClass;
-import domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -44,7 +43,6 @@ public class managingMasterClassesController extends AbstractController {
     public ModelAndView listMasterClasses() {
         ModelAndView result;
         Collection<MasterClass> masterClasses;
-        User u = userService.findByPrincipal();
         masterClasses = cookService.getMyMasterClasses();
         result = new ModelAndView("masterClass/list");
         result.addObject("masterClass", masterClasses);
@@ -80,7 +78,7 @@ public class managingMasterClassesController extends AbstractController {
 
     //SAVE ----------------------------------
 
-    @RequestMapping(value = "masterClass/edit", method = RequestMethod.POST, params = "save")
+    @RequestMapping(value = "masterClass/edit/save", method = RequestMethod.POST, params = "save")
     public ModelAndView save(@Valid MasterClass masterClass, BindingResult binding) {
         ModelAndView result;
 
@@ -100,7 +98,7 @@ public class managingMasterClassesController extends AbstractController {
 
     //DELETE ----------------------------------
 
-    @RequestMapping(value = "masterClass/edit", method = RequestMethod.POST, params = "delete")
+    @RequestMapping(value = "masterClass/edit/delete", method = RequestMethod.POST, params = "delete")
     public ModelAndView delete(MasterClass masterClass, BindingResult binding) {
         ModelAndView result;
 
@@ -124,9 +122,12 @@ public class managingMasterClassesController extends AbstractController {
 
     protected ModelAndView createEditModelAndView(MasterClass masterClass, String message) {
         ModelAndView result;
-
-        result = new ModelAndView("mclass/edit");
+        String title = masterClass.getTitle();
+        String description = masterClass.getDescription();
+        result = new ModelAndView("masterClass/edit");
         result.addObject("masterClass", masterClass);
+        result.addObject("title", title);
+        result.addObject("description", description);
         result.addObject("message", message);
 
         return result;
