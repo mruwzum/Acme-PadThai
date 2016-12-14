@@ -202,7 +202,7 @@
         <property name="authorities">
             <list>
                 <bean class="security.Authority">
-                    <property name="authority" value="NUTRITIONIST"/>
+                    <property name="authority" value="COOK"/>
                 </bean>
 
             </list>
@@ -215,7 +215,7 @@
         <property name="authorities">
             <list>
                 <bean class="security.Authority">
-                    <property name="authority" value="NUTRITIONIST"/>
+                    <property name="authority" value="COOK"/>
                 </bean>
 
             </list>
@@ -228,7 +228,7 @@
         <property name="authorities">
             <list>
                 <bean class="security.Authority">
-                    <property name="authority" value="NUTRITIONIST"/>
+                    <property name="authority" value="COOK"/>
                 </bean>
 
             </list>
@@ -241,7 +241,7 @@
         <property name="authorities">
             <list>
                 <bean class="security.Authority">
-                    <property name="authority" value="NUTRITIONIST"/>
+                    <property name="authority" value="COOK"/>
                 </bean>
 
             </list>

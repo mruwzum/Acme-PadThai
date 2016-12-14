@@ -43,18 +43,17 @@
         <br/>
         <security:authorize access="hasRole('USER')">
             <display:column>
-                <a href="user/recipes/edit.do?id=${row.id}">
+                <a href="user/recipes/edit/qualify.do?id=${row.id}">
                     <spring:message code="recipe.qualify"/>
+                </a>
+            </display:column>
+            <display:column>
+                <a href="user/recipes/edit.do?id=${row.id}">
+                    <spring:message code="recipe.edit"/>
                 </a>
             </display:column>
         </security:authorize>
     </display:table>
 
-<%--<div>--%>
-<%--<form:select id="recipeSearch" path="recipe">--%>
-<%--<form:option value="0" label="----"/>--%>
-<%--<form:options items="recipe" itemValue="id" itemLabel="recipe"/>--%>
-<%--</form:select>--%>
 
-<%--</div>--%>
 

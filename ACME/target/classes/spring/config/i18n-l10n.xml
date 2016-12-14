@@ -10,8 +10,8 @@
  * http://www.tdg-seville.info/License.html
  -->
 
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util" xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd 
@@ -26,7 +26,7 @@
         <value>/views/recipe/messages</value>
         <value>/views/user/messages</value>
         <value>/views/contest/messages</value>
-        <value>/views/mclass/messages</value>
+        <value>/views/masterClass/messages</value>
         <value>/views/actor/messages</value>
     </util:list>
 

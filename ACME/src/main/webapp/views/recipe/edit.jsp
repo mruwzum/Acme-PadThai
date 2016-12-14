@@ -17,29 +17,17 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<display:column>
-    <jsp:useBean id="recipe" scope="request" type="domain.Recipe"/>
+<%--<jsp:useBean id="recipe" scope="request" type="domain.Recipe"/>--%>
 
     <security:authorize access="hasRole('USER')">
 
 
-        <a href="user/recipes/edit.do?recipe=${recipe.id}">
-            <spring:message code="recipe.edit"/>
-        </a>
-
-
-        <form:form action="recipes/user/edit.do" modelAttribute="recipe">
+        <form:form action="recipes/user/edit/save.do" modelAttribute="recipe">
     <form:hidden path="id"/>
     <form:hidden path="version"/>
     <form:hidden path="user"/>
 
 
-    <form:label path="ticker">
-        <spring:message code="recipe.ticker"/>
-    </form:label>
-    <form:input path="ticker"/>
-    <form:errors cssClass="error" path="ticker"/>
-    <br/>
 
     <form:label path="title">
         <spring:message code="recipe.tittle"/>
@@ -69,6 +57,7 @@
     <form:errors cssClass="error" path="updateDate"/>
     <br/>
 
+            <%--TODO ponerlo como desplegable--%>
     <form:label path="pictures">
         <spring:message code="recipe.pictures"/>
     </form:label>
@@ -78,16 +67,15 @@
 
     <input type="submit" name="save"
            value="<spring:message code="actor.save" />"/>&nbsp;
-    <jstl:if test="${recipe.id != 0}">
+            <jstl:if test="${id}!= 0">
         <input type="submit" name="delete"
                value="<spring:message code="actor.delete" />"
                onclick="return confirm('<spring:message code="actor.confirm.delete"/>')"/>&nbsp;
     </jstl:if>
     <input type="button" name="cancel"
            value="<spring:message code="actor.cancel" />"
-           onclick="relativeRedir('user/recipes/edit.do');"/>
+           onclick="relativeRedir('user/recipes/list.do');"/>
     <br/>
 
 </form:form>
     </security:authorize>
-</display:column>

@@ -26,6 +26,7 @@
     <form:hidden path="registers"/>
     <form:hidden path="promoters"/>
 
+    <%--TODO desplegables--%>
     <form:label path="title">
         <spring:message code="mclass.title"/>
     </form:label>
@@ -51,6 +52,6 @@
     </jstl:if>
     <input type="button" name="cancel"
            value="<spring:message code="mclass.cancel" />"
-           onclick="relativeRedir('sponsor/masterClass/list.do');"/>
+           onclick="relativeRedir('cook/masterClass/list.do');"/>
     <br/>
 </form:form>

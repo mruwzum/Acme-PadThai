@@ -2,7 +2,6 @@ package controllers.user;
 
 import controllers.AbstractController;
 import domain.Recipe;
-import domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -50,13 +49,10 @@ public class managingRecipesController extends AbstractController {
         ModelAndView result;
 
         Collection<Recipe> recipeCollection;
-        User u = userService.findByPrincipal();
-        recipeCollection = actorService.getRecipesofUser(u);
-
-        //Assert.notEmpty(recipeCollection);
-
+        recipeCollection = userService.getAllRecipes();
+        Assert.notEmpty(recipeCollection);
         result = new ModelAndView("recipe/list");
-        result.addObject("recipes", recipeCollection);
+        result.addObject("recipe", recipeCollection);
         result.addObject("requestURI", "user/recipes/list.do");
 
 
@@ -85,14 +81,13 @@ public class managingRecipesController extends AbstractController {
         recipe = recipeService.findOne(id);
         Assert.notNull(recipe);
         result = createEditModelAndView(recipe);
-
         return result;
     }
 
 
     //SAVE ----------------------------------
 
-    @RequestMapping(value = "recipes/edit", method = RequestMethod.POST, params = "save")
+    @RequestMapping(value = "recipes/edit/save", method = RequestMethod.POST, params = "save")
     public ModelAndView save(@Valid Recipe recipe, BindingResult binding) {
         ModelAndView result;
 
@@ -135,9 +130,19 @@ public class managingRecipesController extends AbstractController {
 
     protected ModelAndView createEditModelAndView(Recipe recipe, String message) {
         ModelAndView result;
-
+        String title = recipe.getTitle();
+        String sumary = recipe.getSummary();
+        String creationDate = recipe.getCreationDate().toString();
+        String updateDate = recipe.getUpdateDate().toString();
+        Collection<String> pictures = recipe.getPictures();
         result = new ModelAndView("recipe/edit");
+
         result.addObject("recipe", recipe);
+        result.addObject("title", title);
+        result.addObject("summary", sumary);
+        result.addObject("creationDate", creationDate);
+        result.addObject("updateDate", updateDate);
+        result.addObject("pictures", pictures);
         result.addObject("message", message);
 
         return result;
