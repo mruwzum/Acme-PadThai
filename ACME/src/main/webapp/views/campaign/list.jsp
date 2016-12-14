@@ -17,16 +17,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<security:authorize access="hasRole('SPONSOR')">
-    <display:column>
-        <a href="/campaing/list.do?Id=${row.id}">
-            <spring:message code="campaign.edit"/>
-        </a>
-    </display:column>
-</security:authorize>
-
-
-<display:table name="campaign" id="row" requestURI="http://localhost:8080/sponsor/list_campaign.do" pagesize="5"
+<display:table name="campaign" id="row" requestURI="http://localhost:8080/sponsor/campaing/list.do" pagesize="5"
                class="displaytag">
 
     <spring:message code="campaign.startDate" var="startheader"/>
@@ -48,7 +39,7 @@
     <display:column property="sponsor" title="${sponsorheader}"/>
 
     <display:column>
-        <a href="/campaign/edit.do?id=${row.id}">
+        <a href="sponsor/campaing/edit.do?recipeID=${row.id}">
             <spring:message code="campaign.edit"/>
         </a>
     </display:column>

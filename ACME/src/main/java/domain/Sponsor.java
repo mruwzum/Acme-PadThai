@@ -37,7 +37,7 @@ public class Sponsor extends Actor {
         this.creditCard = creditCard;
     }
 
-    @OneToMany(targetEntity = Campaing.class)
+    @OneToMany(targetEntity = Campaing.class, cascade = CascadeType.ALL)
     public Collection<Campaing> getCampaign() {
         return campaign;
     }

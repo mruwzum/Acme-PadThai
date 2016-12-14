@@ -64,7 +64,7 @@ public class Campaing extends DomainEntity {
         this.maximumDisplayed = maximumDisplayed;
     }
 
-    @ManyToOne(optional = false)
+    @ManyToOne(optional = false, cascade = CascadeType.ALL)
     public Sponsor getSponsor() {
         return sponsor;
     }

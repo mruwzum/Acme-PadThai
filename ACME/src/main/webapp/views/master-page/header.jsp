@@ -79,14 +79,10 @@
             <li><a class="fNiv"><spring:message code="master.page.sponsor"/></a>
                 <ul>
                     <li class="arrow"></li>
-                    <li><a href="actor/edit.do"><spring:message
-                            code="master.page.actor.edit.do"/></a></li>
-                    <li><a href="campaign/list.do"><spring:message
+
+                    <li><a href="sponsor/campaing/list.do"><spring:message
                             code="master.page.campaing.list.do"/></a></li>
-                    <li><a href="monthlybill/browse.do"><spring:message
-                            code="master.page.monthlybill.browse.do"/></a></li>
-                    <li><a href="cook/masterClass/list.do.do"><spring:message
-                            code="master.page.maclass.list.do"/></a></li>
+
                 </ul>
             </li>
         </security:authorize>
