@@ -40,22 +40,22 @@ public class managingMasterClassesController extends AbstractController {
 
     //LISTING  -----------------------------------------------
 
-    @RequestMapping(value = "masterClasses/list", method = RequestMethod.GET)
+    @RequestMapping(value = "masterClass/list", method = RequestMethod.GET)
     public ModelAndView listMasterClasses() {
         ModelAndView result;
         Collection<MasterClass> masterClasses;
         User u = userService.findByPrincipal();
         masterClasses = cookService.getMyMasterClasses();
-        result = new ModelAndView("masterClasses/list");
+        result = new ModelAndView("masterClass/list");
         result.addObject("masterClass", masterClasses);
-        result.addObject("requestURI", "cook/masterClasses/list.do");
+        result.addObject("requestURI", "cook/masterClass/list.do");
 
         return result;
     }
 
     //CREATION --------------------------------------------------
 
-    @RequestMapping(value = "masterClasses/create", method = RequestMethod.GET)
+    @RequestMapping(value = "masterClass/create", method = RequestMethod.GET)
     public ModelAndView create() {
         ModelAndView r;
         MasterClass m;
@@ -66,7 +66,7 @@ public class managingMasterClassesController extends AbstractController {
 
     //EDITION -----------------------------
 
-    @RequestMapping(value = "masterClasses/edit", method = RequestMethod.GET)
+    @RequestMapping(value = "masterClass/edit", method = RequestMethod.GET)
     public ModelAndView edit(@RequestParam int id) {
         ModelAndView result;
         MasterClass masterClass;
@@ -80,7 +80,7 @@ public class managingMasterClassesController extends AbstractController {
 
     //SAVE ----------------------------------
 
-    @RequestMapping(value = "masterClasses/edit", method = RequestMethod.POST, params = "save")
+    @RequestMapping(value = "masterClass/edit", method = RequestMethod.POST, params = "save")
     public ModelAndView save(@Valid MasterClass masterClass, BindingResult binding) {
         ModelAndView result;
 
@@ -100,7 +100,7 @@ public class managingMasterClassesController extends AbstractController {
 
     //DELETE ----------------------------------
 
-    @RequestMapping(value = "masterClasses/edit", method = RequestMethod.POST, params = "delete")
+    @RequestMapping(value = "masterClass/edit", method = RequestMethod.POST, params = "delete")
     public ModelAndView delete(MasterClass masterClass, BindingResult binding) {
         ModelAndView result;
 

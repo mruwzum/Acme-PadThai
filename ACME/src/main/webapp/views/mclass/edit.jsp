@@ -19,13 +19,13 @@
 
 <security:authorize access="hasRole('COOK')">
     <display:column>
-        <a href="/mclass/edit.do?Id=${row.id}">
+        <a href="cook/masterClass/edit.do?Id=${row.id}">
             <spring:message code="mclass.edit"/>
         </a>
     </display:column>
 </security:authorize>
 
-<form:form action="mclass/edit.do" modelAttribute="masterclass">
+<form:form action="cook/masterClass/edit.do" modelAttribute="masterclass">
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>

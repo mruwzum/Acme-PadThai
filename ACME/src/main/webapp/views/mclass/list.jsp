@@ -17,7 +17,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<display:table name="mclass" id="row" requestURI="http://localhost:8080/anonymus/masterclass.do" pagesize="5"
+<display:table name="mclass" id="row" requestURI="http://localhost:8080/cook/masterClass/list.do" pagesize="5"
                class="displaytag">
 
     <spring:message code="mclass.title" var="titleheader"/>
@@ -44,8 +44,8 @@
         <display:column>
             <jstl:choose>
                 <jstl:when test="${cookMasterClass.contains(row)}">
-                    <a href="/mclass/edit.do?id=${row.id}"
-                       onclick="javascript: return confirm(' <spring:message code="mclass.edit"/>')">
+                    <a href="cook/masterClass/edit.do?id=${row.id}"
+                       onclick="return confirm(' <spring:message code="mclass.edit"/>')">
                         <spring:message code="mclass.edit"/>
                     </a>
                 </jstl:when>
@@ -65,7 +65,7 @@
             <jstl:choose>
                 <jstl:when test="${registered}">
                     <a href="mclass/user/unregister.do?mclassId=${row.id}"
-                       onclick="javascript: return confirm('<spring:message code="mclass.confirm.unregister"/>')">
+                       onclick="return confirm('<spring:message code="mclass.confirm.unregister"/>')">
                         <spring:message code="mclass.unregister"/>
                     </a>
                 </jstl:when>
@@ -84,7 +84,7 @@
             <jstl:choose>
                 <jstl:when test="${registered}">
                     <a href="mclass/nutritionist/unregister.do?mclassId=${row.id}"
-                       onclick="javascript: return confirm('<spring:message code="mclass.confirm.unregister"/>')">
+                       onclick="return confirm('<spring:message code="mclass.confirm.unregister"/>')">
                         <spring:message code="mclass.unregister"/>
                     </a>
                 </jstl:when>
@@ -103,7 +103,7 @@
             <jstl:choose>
                 <jstl:when test="${registered}">
                     <a href="mclass/sponsor/unregister.do?mclassId=${row.id}"
-                       onclick="javascript: return confirm('<spring:message code="mclass.confirm.unregister"/>')">
+                       onclick="return confirm('<spring:message code="mclass.confirm.unregister"/>')">
                         <spring:message code="mclass.unregister"/>
                     </a>
                 </jstl:when>
