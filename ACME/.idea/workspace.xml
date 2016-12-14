@@ -2,17 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e80f030-3ee0-4e75-8335-5623348a14b2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/sponsor/MonthlyBillController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1.war" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/sponsor/campaignManageController.class" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/sponsor/campaignManageController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/SponsorService.class" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/SponsorService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/sponsor/campaignManageController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/sponsor/campaignManageController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/services/SponsorService.class" afterPath="$PROJECT_DIR$/target/classes/services/SponsorService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/sponsor/CreditCardController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/sponsor/CreditCardController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/sponsor/campaignManageController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/sponsor/campaignManageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/credit-card/edit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/credit-card/edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/credit-card/messages.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/credit-card/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/credit-card/messages_es.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/credit-card/messages_es.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/credit-card/tiles.xml" afterPath="$PROJECT_DIR$/src/main/webapp/views/credit-card/tiles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/credit-card/tiles_es.xml" afterPath="$PROJECT_DIR$/src/main/webapp/views/credit-card/tiles_es.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/SponsorService.java" afterPath="$PROJECT_DIR$/src/main/java/services/SponsorService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/messages.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/tiles.xml" afterPath="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/tiles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/tiles_es.xml" afterPath="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/tiles_es.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/i18n-l10n.xml" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/i18n-l10n.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/tiles.xml" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/tiles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages.properties" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages_es.properties" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/monthly-bill/messages.properties" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/monthly-bill/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/monthly-bill/tiles.xml" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/monthly-bill/tiles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/monthly-bill/tiles_es.xml" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/monthly-bill/tiles_es.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/config/i18n-l10n.xml" afterPath="$PROJECT_DIR$/target/classes/spring/config/i18n-l10n.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/config/tiles.xml" afterPath="$PROJECT_DIR$/target/classes/spring/config/tiles.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,34 +49,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/credit-card/edit.jsp">
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/monthly-bill/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="76" column="58" lean-forward="false" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="58" />
+            <state relative-caret-position="420">
+              <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/credit-card/messages.properties">
+      <file leaf-file-name="MonthlyBillController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/sponsor/MonthlyBillController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="375">
+              <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="83" column="57" lean-forward="true" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
+            <state relative-caret-position="330">
+              <caret line="91" column="65" lean-forward="true" selection-start-line="91" selection-start-column="65" selection-end-line="91" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -67,8 +84,8 @@
       <file leaf-file-name="messages.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="20" />
+            <state relative-caret-position="426">
+              <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,66 +97,13 @@
       <file leaf-file-name="messages_es.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+            <state relative-caret-position="396">
+              <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
               <folding />
             </state>
           </provider>
           <provider editor-type-id="ResourceBundle">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages_es.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/credit-card/messages_es.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="campaignManageController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/sponsor/campaignManageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="98" column="28" lean-forward="true" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/campaign/edit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="74" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tiles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/credit-card/tiles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tiles_es.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/credit-card/tiles_es.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -163,9 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/services/SponsorService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml" />
         <option value="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/sponsor/CreditCardController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/credit-card/tiles_es.xml" />
@@ -173,10 +134,19 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/credit-card/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/credit-card/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/credit-card/messages_es.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/sponsor/campaignManageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/SponsorService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/sponsor/monthlyBillController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/sponsor/MonthlyBillController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/tiles.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/tiles_es.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/sponsor/campaignManageController.java" />
       </list>
     </option>
   </component>
@@ -298,6 +268,70 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme-Pad-Thai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ACME" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monthly-bill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme-Pad-Thai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ACME" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monthly-bill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Bundle 'messages'" />
+              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -505,7 +539,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="hea&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/utilities/PopulateDatabase.java&#10;ac&#9;PSI&#9;JAVA://services.ActorServiceTest&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;cred&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/domain/CreditCard.java&#10;cre&#9;PSI&#9;JAVA://domain.CreditCard&#10;sponsorS&#9;PSI&#9;JAVA://services.SponsorService" />
+    <property name="SearchEverywhereHistoryKey" value="head&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;mont&#9;PSI&#9;JAVA://domain.MonthlyBill&#10;i1&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/i18n-l10n.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/tiles.xml&#10;spons&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/services/SponsorService.java&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/utilities/PopulateDatabase.java&#10;ac&#9;PSI&#9;JAVA://services.ActorServiceTest&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;cred&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/domain/CreditCard.java&#10;cre&#9;PSI&#9;JAVA://domain.CreditCard&#10;sponsorS&#9;PSI&#9;JAVA://services.SponsorService" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -513,6 +547,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/views/monthly-bill" />
       <recent name="$PROJECT_DIR$/src/main/webapp/views/credit-card" />
     </key>
   </component>
@@ -997,7 +1032,7 @@
       <option name="presentableId" value="Default" />
       <updated>1481751870405</updated>
       <workItem from="1481751871766" duration="2339000" />
-      <workItem from="1481754222634" duration="1725000" />
+      <workItem from="1481754222634" duration="2848000" />
     </task>
     <task id="LOCAL-00001" summary="archivos random">
       <created>1481752068471</created>
@@ -1055,7 +1090,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481754877769</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=".">
+      <created>1481755972406</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1481755972406</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1067,7 +1109,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4064000" />
+    <option name="totallyTimeSpent" value="5187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="22" width="1920" height="1058" extended-state="6" />
@@ -1192,14 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/SponsorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="176" column="28" lean-forward="false" selection-start-line="176" selection-start-column="28" selection-end-line="176" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/curricula/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1212,30 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1299,28 +1309,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/sponsor/CreditCardController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -1350,18 +1338,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/SponsorService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="83" column="57" lean-forward="true" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
+        <state relative-caret-position="536">
+          <caret line="214" column="19" lean-forward="false" selection-start-line="214" selection-start-column="19" selection-end-line="214" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/campaign/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/sponsor/campaignManageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="98" column="28" lean-forward="true" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
+        <state relative-caret-position="56">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/monthly-bill/tiles_es.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="70" lean-forward="false" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/monthly-bill/tiles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/MonthlyBill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/monthly-bill/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/sponsor/MonthlyBillController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/monthly-bill/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="91" column="65" lean-forward="true" selection-start-line="91" selection-start-column="65" selection-end-line="91" selection-end-column="65" />
           <folding />
         </state>
       </provider>

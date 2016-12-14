@@ -41,7 +41,6 @@ public class campaignManageController extends AbstractController {
         result.addObject("requestURI", "sponsor/campaing/list.do");
         return result;
 
-
     }
 
 

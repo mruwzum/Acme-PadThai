@@ -195,6 +195,27 @@ public class SponsorService {
         return res;
     }
 
+    public Collection<MonthlyBill> getUnpaidMonthlyBills() {
+        Sponsor u = findByPrincipal();
+        Assert.notNull(u, "Usuario no valido");
+        List<MonthlyBill> aux = new ArrayList<>(monthlyBillService.findAll());
+        Assert.notEmpty(aux, "Collecion vacia de montly");
+        Collection<MonthlyBill> myMB = new ArrayList<>();
+        for (MonthlyBill m : aux) {
+            if (m.getSponsor().equals(u)) {
+                myMB.add(m);
+            }
+        }
+        Collection<MonthlyBill> res = new ArrayList<>();
+
+        for (MonthlyBill m : myMB) {
+            if (!m.getPaid()) {
+                res.add(m);
+            }
+        }
+        return res;
+    }
+
     public MonthlyBill setAsPaid(MonthlyBill a) {
         Assert.notNull(a);
         Assert.isTrue(!getMonthlyBills().contains(a));

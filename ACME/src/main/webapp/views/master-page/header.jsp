@@ -88,6 +88,8 @@
             </li>
             <li><a class="fNiv" href="sponsor/creditcard/edit.do"><spring:message
                     code="master.page.sponsor.editCC"/></a></li>
+            <li><a class="fNiv" href="sponsor/mb/unpaid/list.do"><spring:message
+                    code="master.page.monthlybill.list"/></a></li>
         </security:authorize>
 
         <security:authorize access="isAnonymous()">
