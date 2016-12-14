@@ -67,14 +67,14 @@
 
 
     <input type="submit" name="save"
-           value="<spring:message code="curricula.save" />"/>&nbsp;
+           value="<spring:message code="credit-card.save" />"/>&nbsp;
     <jstl:if test="${curricula.id != 0}">
         <input type="submit" name="delete"
-               value="<spring:message code="curricula.delete" />"
-               onclick="return confirm('<spring:message code="curricula.delete"/>')"/>&nbsp;
+               value="<spring:message code="credit-card.delete" />"
+               onclick="return confirm('<spring:message code="credit-card.delete"/>')"/>&nbsp;
     </jstl:if>
     <input type="button" name="cancel"
-           value="<spring:message code="curricula.cancel" />"
+           value="<spring:message code="credit-card.cancel" />"
            onclick="relativeRedir('/curricula/list.do');"/>
     <br/>
 </form:form>

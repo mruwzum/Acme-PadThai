@@ -53,7 +53,7 @@ public class CreditCardController extends AbstractController {
         Integer expirationMonth = spo.getExpirationMonth();
         String CVV = spo.getCVV();
 
-        result = new ModelAndView("security/registrationSponsor");
+        result = new ModelAndView("credit-card/edit");
         result.addObject("creditCard", spo);
         result.addObject("holderName", holderName);
         result.addObject("brandName", brandName);
