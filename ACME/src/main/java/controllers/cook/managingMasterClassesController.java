@@ -46,7 +46,7 @@ public class managingMasterClassesController extends AbstractController {
         Collection<MasterClass> masterClasses;
         User u = userService.findByPrincipal();
         masterClasses = cookService.getMyMasterClasses();
-        result = new ModelAndView("masterClasses/List");
+        result = new ModelAndView("masterClasses/list");
         result.addObject("masterClass", masterClasses);
         result.addObject("requestURI", "cook/masterClasses/list.do");
 

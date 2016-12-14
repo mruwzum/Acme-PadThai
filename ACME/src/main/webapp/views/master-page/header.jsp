@@ -69,7 +69,7 @@
                     <li class="arrow"></li>
                     <li><a href="actor/edit.do"><spring:message
                             code="master.page.actor.edit.do"/></a></li>
-                    <li><a href="mclass/list.do"><spring:message
+                    <li><a href="cook/masterClasses/list.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
