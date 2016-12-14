@@ -28,7 +28,7 @@
                             code="master.page.actor.edit.do"/></a></li>
                     <li><a href="banner/editCost.do"><spring:message
                             code="master.page.banner.editCost.do"/></a></li>
-                    <li><a href="mclass/list.do"><spring:message
+                    <li><a href="cook/masterClass/list.do.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
 
                 </ul>
@@ -44,7 +44,7 @@
                             code="master.page.actor.edit.do"/></a></li>
                     <li><a href="curricula/edit.do"><spring:message
                             code="master.page.curricula.edit.do"/></a></li>
-                    <li><a href="mclass/list.do"><spring:message
+                    <li><a href="cook/masterClass/list.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
@@ -85,7 +85,7 @@
                             code="master.page.campaing.list.do"/></a></li>
                     <li><a href="monthlybill/browse.do"><spring:message
                             code="master.page.monthlybill.browse.do"/></a></li>
-                    <li><a href="mclass/list.do"><spring:message
+                    <li><a href="cook/masterClass/list.do.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
