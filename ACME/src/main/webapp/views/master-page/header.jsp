@@ -79,12 +79,13 @@
             <li><a class="fNiv"><spring:message code="master.page.sponsor"/></a>
                 <ul>
                     <li class="arrow"></li>
-
                     <li><a href="sponsor/campaing/list.do"><spring:message
                             code="master.page.campaing.list.do"/></a></li>
 
                 </ul>
             </li>
+            <li><a class="fNiv" href="sponsor/creditcard/edit.do"><spring:message
+                    code="master.page.sponsor.editCC"/></a></li>
         </security:authorize>
 
         <security:authorize access="isAnonymous()">
