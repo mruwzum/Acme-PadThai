@@ -17,45 +17,53 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<form:form action="curricula/edit.do" modelAttribute="curricula">
+<form:form action="sponsor/creditcard/edit/save.do" modelAttribute="creditCard">
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>
 
-    <form:label path="Education Section">
-        <spring:message code="curricula.education"/>
+    <form:label path="holderName">
+        <spring:message code="credit-card.holderName"/>
     </form:label>
-    <form:input path="educationSection"/>
-    <form:errors cssClass="error" path="Education Section"/>
+    <form:input path="holderName"/>
+    <form:errors cssClass="error" path="holderName"/>
     <br/>
 
-    <form:label path="Experience Section">
-        <spring:message code="curricula.experience"/>
+    <form:label path="brandName">
+        <spring:message code="credit-card.brandName"/>
     </form:label>
-    <form:input path="experienceSection"/>
-    <form:errors cssClass="error" path="Experience Section"/>
+    <form:input path="brandName"/>
+    <form:errors cssClass="error" path="brandName"/>
     <br/>
 
-    <form:label path="Hobbies Section">
-        <spring:message code="curricula.hobbies"/>
+    <form:label path="number">
+        <spring:message code="credit-card.number"/>
     </form:label>
-    <form:input path="hobbiesSection"/>
-    <form:errors cssClass="error" path="Hobbies Section"/>
+    <form:input path="number"/>
+    <form:errors cssClass="error" path="number"/>
     <br/>
 
-    <form:label path="references">
-        <spring:message code="curricula.education"/>
+    <form:label path="expirationYear">
+        <spring:message code="credit-card.expirationYear"/>
     </form:label>
-    <form:input path="references"/>
-    <form:errors cssClass="error" path="References"/>
+    <form:input path="expirationYear"/>
+    <form:errors cssClass="error" path="expirationYear"/>
     <br/>
 
-    <form:label path="Photo">
-        <spring:message code="curricula.photo"/>
+    <form:label path="expirationMonth">
+        <spring:message code="credit-card.expirationMonth"/>
     </form:label>
-    <form:input path="photo"/>
-    <form:errors cssClass="error" path="Photo"/>
+    <form:input path="expirationMonth"/>
+    <form:errors cssClass="error" path="expirationMonth"/>
     <br/>
+
+    <form:label path="CVV">
+        <spring:message code="credit-card.CVV"/>
+    </form:label>
+    <form:input path="CVV"/>
+    <form:errors cssClass="error" path="CVV"/>
+    <br/>
+
 
 
     <input type="submit" name="save"
