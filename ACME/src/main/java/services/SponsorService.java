@@ -173,6 +173,14 @@ public class SponsorService {
         return aux;
     }
 
+    public CreditCard getMyCreditCard() {
+        Sponsor u = findByPrincipal();
+        Assert.notNull(u);
+        CreditCard aux = u.getCreditCard();
+        Assert.notNull(aux);
+        return aux;
+    }
+
     public Collection<MonthlyBill> getMonthlyBills() {
         Sponsor u = findByPrincipal();
         Assert.notNull(u, "Usuario no valido");
