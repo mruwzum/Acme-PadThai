@@ -79,11 +79,10 @@ public class managingRecipesController extends AbstractController {
     // Edition ------------------------------------------------------------------------
 
     @RequestMapping(value = "recipes/edit", method = RequestMethod.GET)
-    public ModelAndView edit(@RequestParam int itemId) {
+    public ModelAndView edit(@RequestParam int id) {
         ModelAndView result;
         Recipe recipe;
-
-        recipe = recipeService.findOne(itemId);
+        recipe = recipeService.findOne(id);
         Assert.notNull(recipe);
         result = createEditModelAndView(recipe);
 

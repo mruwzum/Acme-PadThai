@@ -17,16 +17,18 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<security:authorize access="hasRole('USER')">
-    <display:column>
-        <a href="user/recipes/edit.do?recipe=${row.id}">
+<display:column>
+    <jsp:useBean id="recipe" scope="request" type="domain.Recipe"/>
+
+    <security:authorize access="hasRole('USER')">
+
+
+        <a href="user/recipes/edit.do?recipe=${recipe.id}">
             <spring:message code="recipe.edit"/>
         </a>
-    </display:column>
-</security:authorize>
 
-<form:form action="recipes/user/edit.do" modelAttribute="recipe">
 
+        <form:form action="recipes/user/edit.do" modelAttribute="recipe">
     <form:hidden path="id"/>
     <form:hidden path="version"/>
     <form:hidden path="user"/>
@@ -87,3 +89,5 @@
     <br/>
 
 </form:form>
+    </security:authorize>
+</display:column>
