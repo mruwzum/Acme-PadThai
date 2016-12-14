@@ -16,8 +16,8 @@
 <%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
-    <display:table name="recipe" id="row" requestURI="http://localhost:8080/anonymus/recipes.do" pagesize="5"
-                   class="displaytag">
+<display:table name="recipe" id="row" requestURI="http://localhost:8080/user/recipes/list.do" pagesize="5"
+               class="displaytag">
 
         <spring:message code="recipe.tittle" var="titleheader"/>
         <display:column property="title" title="${titleheader}" sortable="true"/>
@@ -43,7 +43,7 @@
         <br/>
         <security:authorize access="hasRole('USER')">
             <display:column>
-                <a href="/recipes/edit.do?id=${row.id}">
+                <a href="user/recipes/edit.do?id=${row.id}">
                     <spring:message code="recipe.qualify"/>
                 </a>
             </display:column>

@@ -25,22 +25,21 @@ public class UserService {
 
     // Constructors--------------------------------------------------------------------------------------
 
-    public UserService() {
-        super();
-    }
-
-    // Managed repository--------------------------------------------------------------------------------
-
     @Autowired
     private UserRepository userRepository;
 
-
-    // Suporting services --------------------------------------------------------------------------------
-
+    // Managed repository--------------------------------------------------------------------------------
     @Autowired
     private RecipeService recipeService;
+
+
+    // Suporting services --------------------------------------------------------------------------------
     @Autowired
     private ContestService contestService;
+
+    public UserService() {
+        super();
+    }
 
 
     // Simple CRUD method --------------------------------------------------------------------------------
@@ -78,7 +77,7 @@ public class UserService {
     // Other business methods -------------------------------------------------------------------------------
 
 
-    User findByPrincipal() {
+    public User findByPrincipal() {
         User result;
         UserAccount userAccount;
 
@@ -90,7 +89,7 @@ public class UserService {
         return result;
     }
 
-    User findByUserAccount(UserAccount userAccount) {
+    public User findByUserAccount(UserAccount userAccount) {
         Assert.notNull(userAccount);
 
         User result;
@@ -100,9 +99,9 @@ public class UserService {
         return result;
     }
 
-    Recipe createRecipe(String ticker, String title, String summary, Collection<String> pictures,
-                        Collection<String> hints, Collection<Ingredient> ingredients,
-                        Categorie categorie, Collection<StepsToCook> steepsToCook) {
+    public Recipe createRecipe(String ticker, String title, String summary, Collection<String> pictures,
+                               Collection<String> hints, Collection<Ingredient> ingredients,
+                               Categorie categorie, Collection<StepsToCook> steepsToCook) {
         Assert.notNull(ticker);
         Assert.notNull(title);
         Assert.notNull(summary);
@@ -132,7 +131,7 @@ public class UserService {
 
     }
 
-    Collection<Recipe> getAllRecipes() {
+    public Collection<Recipe> getAllRecipes() {
         Collection<Recipe> res;
         User u;
         u = findByPrincipal();
@@ -141,9 +140,9 @@ public class UserService {
         return res;
     }
 
-    Recipe modifyRecipe(Recipe r, String title, String summary, Collection<String> pictures,
-                        Collection<String> hints, Collection<Ingredient> ingredients,
-                        Categorie categorie, Collection<StepsToCook> steepsToCook) {
+    public Recipe modifyRecipe(Recipe r, String title, String summary, Collection<String> pictures,
+                               Collection<String> hints, Collection<Ingredient> ingredients,
+                               Categorie categorie, Collection<StepsToCook> steepsToCook) {
 
         Assert.notNull(title);
         Assert.notNull(summary);
@@ -165,7 +164,7 @@ public class UserService {
         return r;
     }
 
-    void deleteRecipe(Recipe r) {
+    public void deleteRecipe(Recipe r) {
         Assert.notNull(r);
         User u = findByPrincipal();
         Assert.notNull(u, "Recetica nula");
@@ -173,7 +172,7 @@ public class UserService {
         recipeService.delete(r);
     }
 
-    void qualifyRecipe(Recipe r) {
+    public void qualifyRecipe(Recipe r) {
         User u = findByPrincipal();
         Assert.notNull(u);
         Assert.isTrue(u.getRecipes().contains(r));
@@ -182,7 +181,7 @@ public class UserService {
         contest.get(0).getWinners().add(r);
     }
 
-    void rateRecipeWithLike(Recipe r) {
+    public void rateRecipeWithLike(Recipe r) {
         Assert.notNull(r);
         User u = findByPrincipal();
         Assert.notNull(u);
@@ -191,7 +190,7 @@ public class UserService {
         r.getRate().add(like);
     }
 
-    void rateRecipeWithDislike(Recipe r) {
+    public void rateRecipeWithDislike(Recipe r) {
         Assert.notNull(r);
         User u = findByPrincipal();
         Assert.notNull(u);
@@ -200,7 +199,7 @@ public class UserService {
         r.getRate().add(fale);
     }
 
-    Boolean canBeQualified(Recipe r) {
+    public Boolean canBeQualified(Recipe r) {
         Boolean res = false;
         Integer likes = 0;
         Integer dislikes = 0;

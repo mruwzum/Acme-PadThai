@@ -2,6 +2,7 @@ package controllers.user;
 
 import controllers.AbstractController;
 import domain.Recipe;
+import domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import services.ActorService;
 import services.RecipeService;
 import services.UserService;
 
@@ -20,15 +22,20 @@ import java.util.Collection;
  * Created by mruwzum on 14/12/16.
  */
 @Controller
-@RequestMapping("recipes/user")
+@RequestMapping("user")
+
+//TODO añadir recetas a un user y mirar xq peta
 
 public class managingRecipesController extends AbstractController {
     // Services ---------------------------------------------------------------
 
+
+    @Autowired
+    private RecipeService recipeService;
     @Autowired
     private UserService userService;
     @Autowired
-    private RecipeService recipeService;
+    private ActorService actorService;
 
 
     // Constructors -----------------------------------------------------------
@@ -38,19 +45,19 @@ public class managingRecipesController extends AbstractController {
     }
 
     // Listing ----------------------------------------------------------------
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "recipes/list", method = RequestMethod.GET)
     public ModelAndView listRecipes() {
         ModelAndView result;
 
         Collection<Recipe> recipeCollection;
+        User u = userService.findByPrincipal();
+        recipeCollection = actorService.getRecipesofUser(u);
 
-        recipeCollection = recipeService.findAll();
+        //Assert.notEmpty(recipeCollection);
 
-        //Assert.notEmpty(items);
-
-        result = new ModelAndView("recipes/list");
+        result = new ModelAndView("recipe/list");
         result.addObject("recipes", recipeCollection);
-        result.addObject("requestURI", "recipes/user/list.do");
+        result.addObject("requestURI", "user/recipes/list.do");
 
 
         return result;
@@ -58,7 +65,7 @@ public class managingRecipesController extends AbstractController {
 
     //Creation----------------------------------------------------------------
 
-    @RequestMapping(value = "/create", method = RequestMethod.GET)
+    @RequestMapping(value = "recipes/create", method = RequestMethod.GET)
     public ModelAndView create() {
         ModelAndView result;
         Recipe recipe;
@@ -71,7 +78,7 @@ public class managingRecipesController extends AbstractController {
 
     // Edition ------------------------------------------------------------------------
 
-    @RequestMapping(value = "/edit", method = RequestMethod.GET)
+    @RequestMapping(value = "recipes/edit", method = RequestMethod.GET)
     public ModelAndView edit(@RequestParam int itemId) {
         ModelAndView result;
         Recipe recipe;
@@ -86,7 +93,7 @@ public class managingRecipesController extends AbstractController {
 
     //SAVE ----------------------------------
 
-    @RequestMapping(value = "/edit", method = RequestMethod.POST, params = "save")
+    @RequestMapping(value = "recipes/edit", method = RequestMethod.POST, params = "save")
     public ModelAndView save(@Valid Recipe recipe, BindingResult binding) {
         ModelAndView result;
 
@@ -105,7 +112,7 @@ public class managingRecipesController extends AbstractController {
 
     //DELETE ----------------------------------
 
-    @RequestMapping(value = "/edit", method = RequestMethod.POST, params = "delete")
+    @RequestMapping(value = "recipes/edit", method = RequestMethod.POST, params = "delete")
     public ModelAndView delete(Recipe recipe, BindingResult binding) {
         ModelAndView result;
 
