@@ -21,10 +21,7 @@
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>
-    <form:hidden path="cook"/>
-    <form:hidden path="material"/>
-    <form:hidden path="registers"/>
-    <form:hidden path="promoters"/>
+
 
     <%--TODO desplegables--%>
     <form:label path="title">
@@ -40,9 +37,54 @@
     <form:input path="description"/>
     <form:errors cssClass="error" path="description"/>
     <br/>
+    <form:label path="cook">
+        <spring:message code="mclass.cook"/>
+    </form:label>
+    <form:input path="cook"/>
+    <form:errors cssClass="error" path="cook"/>
+    <br/>
 
+    <br>
+    <form:label path="registers">
+        <spring:message code="masterClass.registers"/>
+    </form:label>
+    <form:select path="registers">
+        <jstl:forEach var="registers" items="${actor}">
+            <jstl:out value="-----"/>
+            <form:option value="${masterClass.id}"><jstl:out value="${actor.name}"></jstl:out></form:option>
 
+        </jstl:forEach>
+    </form:select>
+    <form:errors cssClass="error" path="registers"/>
 
+    <br/>
+    <br>
+    <form:label path="promoters">
+        <spring:message code="masterClass.promoters"/>
+    </form:label>
+    <form:select path="promoters">
+        <jstl:forEach var="promoters" items="${admin}">
+            <jstl:out value="-----"/>
+            <form:option value="${masterClass.id}"><jstl:out value="${admin.name}"></jstl:out></form:option>
+
+        </jstl:forEach>
+    </form:select>
+    <br/>
+    <br>
+    <form:label path="material">
+        <spring:message code="masterClass.material"/>
+    </form:label>
+    <form:errors cssClass="error" path="material"/>
+    <form:select path="material">
+        <jstl:forEach var="material" items="${learningMaterial}">
+            <jstl:out value="-----"/>
+            <form:option value="${masterClass.id}"><jstl:out value="${learningMaterial.title}"></jstl:out>
+            </form:option>
+
+        </jstl:forEach>
+    </form:select>
+    <form:errors cssClass="error" path="promoters"/>
+    <br/>
     <input type="submit" name="save"
            value="<spring:message code="mclass.save" />"/>&nbsp;
     <jstl:if test="${id} != 0">

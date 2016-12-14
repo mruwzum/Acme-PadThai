@@ -23,7 +23,6 @@ import java.util.Collection;
 @Controller
 @RequestMapping("user")
 
-//TODO añadir recetas a un user y mirar xq peta
 
 public class managingRecipesController extends AbstractController {
     // Services ---------------------------------------------------------------

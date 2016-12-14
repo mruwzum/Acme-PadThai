@@ -19,7 +19,8 @@
 <display:table name="recipe" id="row" requestURI="http://localhost:8080/user/recipes/list.do" pagesize="5"
                class="displaytag">
 
-        <spring:message code="recipe.tittle" var="titleheader"/>
+
+    <spring:message code="recipe.tittle" var="titleheader"/>
         <display:column property="title" title="${titleheader}" sortable="true"/>
 
         <spring:message code="recipe.summary" var="summ"/>
