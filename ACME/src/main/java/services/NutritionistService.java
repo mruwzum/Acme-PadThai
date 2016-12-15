@@ -95,7 +95,7 @@ public class NutritionistService {
         return result;
     }
 
-    Curricula getCurricula(Nutritionist a) {
+    public Curricula getCurricula(Nutritionist a) {
         Curricula res;
         Nutritionist aux = nutritionistRepository.findOne(a.getId());
         res = aux.getCurricula();
@@ -131,7 +131,7 @@ public class NutritionistService {
         curriculaService.delete(a);
     }
 
-    Collection<Ingredient> getIngredients() {
+    public Collection<Ingredient> getIngredients() {
         Collection<Ingredient> aux = ingredientService.findAll();
         return aux;
     }
@@ -189,7 +189,7 @@ public class NutritionistService {
         return res;
     }
 
-    Collection<Property> getProperties1() {
+    public Collection<Property> getProperties1() {
         Collection<Property> aux;
         aux = propertyService.findAll();
         return aux;

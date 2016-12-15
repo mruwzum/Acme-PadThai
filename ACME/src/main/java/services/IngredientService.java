@@ -27,7 +27,7 @@ public class IngredientService {
     // Managed repository--------------------------------------------------------------------------------
 
     @Autowired
-    private IngredientRepository IngredientRepository;
+    private static IngredientRepository IngredientRepository;
 
 
     // Suporting services --------------------------------------------------------------------------------
@@ -45,19 +45,19 @@ public class IngredientService {
         return res;
     }
 
-    public Ingredient findOne(int Ingredient) {
+    public static Ingredient findOne(int Ingredient) {
         domain.Ingredient res = IngredientRepository.findOne(Ingredient);
         Assert.notNull(res);
         return res;
     }
 
-    public Ingredient save(Ingredient a) {
+    public static Ingredient save(Ingredient a) {
         Assert.notNull(a);
         Ingredient res = IngredientRepository.save(a);
         return res;
     }
 
-    public void delete(Ingredient a) {
+    public static void delete(Ingredient a) {
         Assert.notNull(a);
         Assert.isTrue(a.getId() != 0);
         IngredientRepository.delete(a);
