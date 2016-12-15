@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e80f030-3ee0-4e75-8335-5623348a14b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/user/editDataController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/controllers/user/editDataController.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1.war" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/config/security.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/config/security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/security/registration.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/security/registration.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/security/registrationCook.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/security/registrationCook.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/security/registrationNutri.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/security/registrationNutri.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/security/registrationSponsor.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/security/registrationSponsor.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/security.xml" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/security/registration.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/security/registration.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/config/security.xml" afterPath="$PROJECT_DIR$/target/classes/spring/config/security.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,21 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="registration.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registration.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registration.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="118" column="56" lean-forward="false" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
+            <state relative-caret-position="551">
+              <caret line="108" column="16" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/login.jsp">
+      <file leaf-file-name="registrationNutri.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registrationNutri.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-109">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="506">
+              <caret line="118" column="29" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -51,48 +55,40 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="472">
-              <caret line="126" column="7" lean-forward="false" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="55" />
+              <caret line="97" column="33" lean-forward="false" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/signup.jsp">
+      <file leaf-file-name="registrationSponsor.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registrationSponsor.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="2351">
+              <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/user/list.jsp">
+      <file leaf-file-name="registrationCook.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registrationCook.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1361">
+              <caret line="114" column="56" lean-forward="false" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/user/search.jsp">
+      <file leaf-file-name="EditPersonalDataController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="browse.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/monthly-bill/browse.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="25" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="386">
+              <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,10 +137,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/monthly-bill/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/config/security.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/security/registration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/security/registrationNutri.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/security/registrationSponsor.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/security/registrationCook.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
       </list>
     </option>
   </component>
@@ -656,7 +655,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="heade&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;sec&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/security.xml&#10;securit&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/security.xml&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;head&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;mont&#9;PSI&#9;JAVA://domain.MonthlyBill&#10;i1&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/i18n-l10n.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/tiles.xml&#10;spons&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/services/SponsorService.java&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/utilities/PopulateDatabase.java&#10;ac&#9;PSI&#9;JAVA://services.ActorServiceTest&#10;cred&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/domain/CreditCard.java&#10;cre&#9;PSI&#9;JAVA://domain.CreditCard&#10;sponsorS&#9;PSI&#9;JAVA://services.SponsorService" />
+    <property name="SearchEverywhereHistoryKey" value="head&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;heade&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;sec&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/security.xml&#10;securit&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/security.xml&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;mont&#9;PSI&#9;JAVA://domain.MonthlyBill&#10;i1&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/i18n-l10n.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/resources/spring/config/tiles.xml&#10;spons&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/services/SponsorService.java&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/webapp/views/master-page/header.jsp&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/utilities/PopulateDatabase.java&#10;ac&#9;PSI&#9;JAVA://services.ActorServiceTest&#10;cred&#9;FILE&#9;file:///Users/daviddelatorre/Documents/GITDP/ACME/src/main/java/domain/CreditCard.java&#10;cre&#9;PSI&#9;JAVA://domain.CreditCard&#10;sponsorS&#9;PSI&#9;JAVA://services.SponsorService" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1151,7 +1150,7 @@
       <workItem from="1481751871766" duration="2339000" />
       <workItem from="1481754222634" duration="2886000" />
       <workItem from="1481823074976" duration="133000" />
-      <workItem from="1481823655685" duration="2435000" />
+      <workItem from="1481823655685" duration="5389000" />
     </task>
     <task id="LOCAL-00001" summary="archivos random">
       <created>1481752068471</created>
@@ -1230,7 +1229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481824516728</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Vamos avanzando en el edit personal data">
+      <created>1481826143383</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1481826143383</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1242,7 +1248,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7793000" />
+    <option name="totallyTimeSpent" value="10747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -1313,7 +1319,8 @@
     <MESSAGE value="." />
     <MESSAGE value="Sponsor termiando excepto por un detalle" />
     <MESSAGE value="Eliminado edit data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminado edit data" />
+    <MESSAGE value="Vamos avanzando en el edit personal data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vamos avanzando en el edit personal data" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1647,26 +1654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registrationCook.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/signup.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1715,19 +1702,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registrationNutri.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="126" column="7" lean-forward="false" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="55" />
+        <state relative-caret-position="506">
+          <caret line="118" column="29" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="118" column="56" lean-forward="false" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
+        <state relative-caret-position="551">
+          <caret line="108" column="16" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registrationSponsor.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2351">
+          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="97" column="33" lean-forward="false" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registrationCook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1361">
+          <caret line="114" column="56" lean-forward="false" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

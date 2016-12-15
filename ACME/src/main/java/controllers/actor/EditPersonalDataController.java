@@ -35,6 +35,34 @@ public class EditPersonalDataController extends AbstractController {
         createGenericEditModelAndView(a,result);
         return result;
     }
+    @RequestMapping(value = "/NutritionistPersonalData")
+    public ModelAndView NutriEditPersonalData(){
+        ModelAndView result;
+        Actor a = actorService.findByPrincipal();
+        result = new ModelAndView("security/registrationNutri");
+        result.addObject("nutritionist", a);
+        createGenericEditModelAndView(a,result);
+        return result;
+    }
+    @RequestMapping(value = "/SponsorPersonalData")
+    public ModelAndView SponsorEditPersonalData(){
+        ModelAndView result;
+        Actor a = actorService.findByPrincipal();
+        result = new ModelAndView("security/registrationSponsor");
+        result.addObject("sponsor", a);
+        createGenericEditModelAndView(a,result);
+        return result;
+    }
+    @RequestMapping(value = "/CookPersonalData")
+    public ModelAndView CookEditPersonalData(){
+        ModelAndView result;
+        Actor a = actorService.findByPrincipal();
+        result = new ModelAndView("security/registrationCook");
+        result.addObject("cook", a);
+        createGenericEditModelAndView(a,result);
+        return result;
+    }
+
 
 
     protected void createGenericEditModelAndView(Actor actor, ModelAndView modelAndView) {

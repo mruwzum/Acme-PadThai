@@ -48,18 +48,21 @@
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
+            <li><a href="actor/NutritionistPersonalData.do"><spring:message
+                    code="master.page.actor.edit.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('USER')">
             <li><a class="fNiv"><spring:message code="master.page.user"/></a>
                 <ul>
                     <li class="arrow"></li>
-                    <li><a href="user/editView.do"><spring:message
+                    <li><a href="actor/userPersonalData.do"><spring:message
                             code="master.page.actor.edit.do"/></a></li>
                     <li><a href="user/recipes/list.do"><spring:message
                             code="master.page.recipes.list.do"/></a></li>
                 </ul>
             </li>
+
         </security:authorize>
 
 
@@ -73,6 +76,8 @@
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
+            <li><a href="actor/CookPersonalData.do"><spring:message
+                    code="master.page.actor.edit.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('SPONSOR')">
@@ -90,6 +95,8 @@
                     code="master.page.sponsor.editCC"/></a></li>
             <li><a class="fNiv" href="sponsor/mb/unpaid/list.do"><spring:message
                     code="master.page.monthlybill.list"/></a></li>
+            <li><a href="actor/SponsorPersonalData.do"><spring:message
+                    code="master.page.actor.edit.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="isAnonymous()">
