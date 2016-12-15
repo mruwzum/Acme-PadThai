@@ -17,6 +17,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+
 <form:form action="user/user/registration.do" modelAttribute="user">
     <form:hidden path="id" />
     <form:hidden path="version" />
@@ -75,7 +76,7 @@
     <form:errors cssClass="error" path="socialIdentity.socialNet" />
     <br />
 
-
+    <security:authorize access="isAnonymous()">
     <h1>User Account</h1>
     <form:label path="UserAccount.username">
     <spring:message code="actor.username" />:
@@ -92,19 +93,35 @@
     <br />
 
 
-
     <input type="submit" name="save" value="<spring:message code="actor.save" />" />
     &nbsp;
+
     <jstl:if test="${user.id != 0}">
     <input type="submit" name="delete"
     value="<spring:message code="actor.delete" />"
     onclick="return confirm('<spring:message code="actor.confirm.delete" />')" />&nbsp;
     </jstl:if>
+
     <input type="button" name="cancel"
     value="<spring:message code="actor.cancel" />"
     onclick="window.location.replace('anonymus/users.do')"/>
+
+    </security:authorize>
+
+    <%--TODO poner este botón y todos en condiciones--%>
+    <security:authorize access="isAuthenticated()">
+
+        <input type="button" name="save"
+               value="<spring:message code="actor.save" />"
+               onclick="window.location.replace('anonymus/users.do')"/>
+
+        <input type="button" name="cancel"
+               value="<spring:message code="actor.cancel" />"
+               onclick="window.location.replace('anonymus/users.do')"/>
+
+    </security:authorize>
+
+
+
 </form:form>
-<br>
-<a href="<c:url value="/security/login.do" />">
-    <spring:message code="label.form.loginLink"> </spring:message>
-</a>
+

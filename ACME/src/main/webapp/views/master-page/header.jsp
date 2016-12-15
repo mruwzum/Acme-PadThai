@@ -54,7 +54,7 @@
             <li><a class="fNiv"><spring:message code="master.page.user"/></a>
                 <ul>
                     <li class="arrow"></li>
-                    <li><a href="user/editView.do"><spring:message
+                    <li><a href="actor/userPersonalData.do"><spring:message
                             code="master.page.actor.edit.do"/></a></li>
                     <li><a href="user/recipes/list.do"><spring:message
                             code="master.page.recipes.list.do"/></a></li>
