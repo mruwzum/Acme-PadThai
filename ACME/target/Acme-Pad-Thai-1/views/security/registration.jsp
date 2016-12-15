@@ -113,7 +113,6 @@
 
     </security:authorize>
 
-    <%--TODO poner este botón y todos en condiciones--%>
     <security:authorize access="isAuthenticated()">
 
         <spring:url value="http://localhost:8080/actor/userPersonalData/save.do" var="url">
@@ -126,6 +125,8 @@
             <spring:param name="name" value="${nickname}"/>
             <spring:param name="name" value="${socialNet}"/>
             <spring:param name="name" value="${link}"/>
+            <%--TODO a partir del nikcname peta porque no le puedo meter una variable con un punto--%>
+
 
         </spring:url>
 

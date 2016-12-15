@@ -2,5 +2,14 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/views/folder/list.jsp" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/views/folder/list.jsp" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/views/folder/tiles.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/views/folder/tiles.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/views/folder/tiles_es.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/views/folder/tiles_es.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/views/message/list.jsp" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/views/message/tiles.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/views/message/tiles_es.xml" charset="ISO-8859-1" />
   </component>
 </project>
