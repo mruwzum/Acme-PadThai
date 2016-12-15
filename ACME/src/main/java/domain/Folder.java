@@ -1,6 +1,7 @@
 package domain;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.SortedSet;
 
 @Entity
@@ -9,7 +10,7 @@ public class Folder extends DomainEntity {
 
     private String name;
 
-    private SortedSet<Message> messages;
+    private Collection<Message> messages;
 
     public String getName() {
         return name;
@@ -20,12 +21,11 @@ public class Folder extends DomainEntity {
     }
 
     @OneToMany(targetEntity = Message.class, mappedBy = "folder")
-    @OrderBy("sentDate")
-    public SortedSet<Message> getMessages() {
+    public Collection<Message> getMessages() {
         return messages;
     }
 
-    public void setMessages(SortedSet<Message> messages) {
+    public void setMessages(Collection<Message> messages) {
         this.messages = messages;
     }
 
