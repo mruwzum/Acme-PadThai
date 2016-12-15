@@ -41,7 +41,6 @@ public class campaignManageController extends AbstractController {
         result.addObject("requestURI", "sponsor/campaing/list.do");
         return result;
 
-
     }
 
 
@@ -84,6 +83,15 @@ public class campaignManageController extends AbstractController {
         }
 
         return result;
+    }
+
+    @RequestMapping(value = "/campaing/create")
+    public ModelAndView create() {
+        ModelAndView res;
+        Campaing a = campaingService.create();
+        res = new ModelAndView("campaign/edit");
+        res.addObject("campaign", a);
+        return res;
     }
 
     protected ModelAndView createEditModelAndView(Campaing campaing) {

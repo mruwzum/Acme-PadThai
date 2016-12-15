@@ -76,15 +76,20 @@
         </security:authorize>
 
         <security:authorize access="hasRole('SPONSOR')">
-            <li><a class="fNiv"><spring:message code="master.page.sponsor"/></a>
+            <li><a class="fNiv"><spring:message code="master.page.campaign"/></a>
                 <ul>
                     <li class="arrow"></li>
-
                     <li><a href="sponsor/campaing/list.do"><spring:message
                             code="master.page.campaing.list.do"/></a></li>
+                    <li><a href="sponsor/campaing/create.do"><spring:message
+                            code="master.page.campaing.create"/></a></li>
 
                 </ul>
             </li>
+            <li><a class="fNiv" href="sponsor/creditcard/edit.do"><spring:message
+                    code="master.page.sponsor.editCC"/></a></li>
+            <li><a class="fNiv" href="sponsor/mb/unpaid/list.do"><spring:message
+                    code="master.page.monthlybill.list"/></a></li>
         </security:authorize>
 
         <security:authorize access="isAnonymous()">

@@ -173,6 +173,14 @@ public class SponsorService {
         return aux;
     }
 
+    public CreditCard getMyCreditCard() {
+        Sponsor u = findByPrincipal();
+        Assert.notNull(u);
+        CreditCard aux = u.getCreditCard();
+        Assert.notNull(aux);
+        return aux;
+    }
+
     public Collection<MonthlyBill> getMonthlyBills() {
         Sponsor u = findByPrincipal();
         Assert.notNull(u, "Usuario no valido");
@@ -181,6 +189,27 @@ public class SponsorService {
         Collection<MonthlyBill> res = new ArrayList<>();
         for (MonthlyBill m : aux) {
             if (m.getSponsor().equals(u)) {
+                res.add(m);
+            }
+        }
+        return res;
+    }
+
+    public Collection<MonthlyBill> getUnpaidMonthlyBills() {
+        Sponsor u = findByPrincipal();
+        Assert.notNull(u, "Usuario no valido");
+        List<MonthlyBill> aux = new ArrayList<>(monthlyBillService.findAll());
+        Assert.notEmpty(aux, "Collecion vacia de montly");
+        Collection<MonthlyBill> myMB = new ArrayList<>();
+        for (MonthlyBill m : aux) {
+            if (m.getSponsor().equals(u)) {
+                myMB.add(m);
+            }
+        }
+        Collection<MonthlyBill> res = new ArrayList<>();
+
+        for (MonthlyBill m : myMB) {
+            if (!m.getPaid()) {
                 res.add(m);
             }
         }

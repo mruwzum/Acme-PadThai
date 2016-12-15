@@ -29,6 +29,9 @@
         <value>/views/masterClass/tiles.xml</value>
         <value>/views/actor/tiles.xml</value>
         <value>/views/campaign/tiles.xml</value>
+        <value>/views/credit-card/tiles.xml</value>
+        <value>/views/monthly-bill/tiles.xml</value>
+
     </util:list>
 
 </beans>

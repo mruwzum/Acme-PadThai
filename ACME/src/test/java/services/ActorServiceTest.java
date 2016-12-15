@@ -38,6 +38,8 @@ public class ActorServiceTest extends AbstractTest {
     private MasterClassService masterClassService;
     @Autowired
     private CookService cookService;
+    @Autowired
+    private SponsorService sponsorService;
 
 
     //Tests -------------------------------------------------
@@ -342,14 +344,12 @@ public class ActorServiceTest extends AbstractTest {
 
     @Test
     public void testRandom(){
-        authenticate("Cook1");
         List<User> users = new ArrayList<>(userService.findAll());
         List<Cook> cooks = new ArrayList<>(cookService.findAll());
-        System.out.println(cooks.get(0).getUserAccount().getUsername());
-        System.out.println(cooks.get(0).getUserAccount().getPassword());
-        System.out.println(cooks.get(0).getUserAccount().getAuthorities());
-        System.out.println(cookService.getMyMasterClasses());
-        authenticate(null);
+        List<Sponsor> sponsors = new ArrayList<>(sponsorService.findAll());
+        System.out.println(sponsors.get(1).getUserAccount().getUsername());
+        System.out.println(sponsors.get(1).getUserAccount().getPassword());
+        System.out.println(sponsors.get(1).getUserAccount().getAuthorities());
 
 
 
