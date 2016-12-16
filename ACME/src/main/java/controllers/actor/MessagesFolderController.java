@@ -32,7 +32,7 @@ public class MessagesFolderController extends AbstractController {
     @Autowired
     private FolderService folderService;
 
-    @RequestMapping("/folder/list")
+    @RequestMapping(value = "/folder/list")
     public ModelAndView list(){
         ModelAndView result;
         Collection<Folder> folders = actorService.getFolders();
@@ -41,7 +41,7 @@ public class MessagesFolderController extends AbstractController {
         return result;
     }
 
-    @RequestMapping("/folder/view")
+    @RequestMapping(value = "/folder/view")
     public ModelAndView insideFolder(@RequestParam int folderID) {
         ModelAndView result;
         Folder folder = folderService.findOne(folderID);
@@ -50,4 +50,39 @@ public class MessagesFolderController extends AbstractController {
         result.addObject("messages", messages);
         return result;
     }
+
+    @RequestMapping(value = "/folder/new")
+    public ModelAndView newFolder() {
+        ModelAndView res;
+        Folder folder = folderService.create();
+        res = createGenericEditModelAndView(folder);
+        return res;
+
+
+    }
+
+    @RequestMapping(value = "/folder/new/save")
+    public ModelAndView saveFolder(@RequestParam String name) {
+        ModelAndView res;
+        actorService.createFolder(name);
+        res = list();
+        return res;
+    }
+
+    protected ModelAndView createGenericEditModelAndView(Folder folder) {
+
+        return createGenericEditModelAndView(folder, null);
+
+    }
+
+    protected ModelAndView createGenericEditModelAndView(Folder folder, String message) {
+        String name = folder.getName();
+
+        ModelAndView res = new ModelAndView("folder/edit");
+        res.addObject("folder", folder);
+        res.addObject("name", name);
+
+        return res;
+    }
+
 }

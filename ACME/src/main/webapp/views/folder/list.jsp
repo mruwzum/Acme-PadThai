@@ -33,7 +33,7 @@
 
 <input type="button" name="newmessage"
        value="<spring:message code="folder.new.message" />"
-       onclick="relativeRedir('cook/masterClass/list.do');"/>
+       onclick="relativeRedir('actor/message/new.do');"/>
 <input type="button" name="newfolder"
        value="<spring:message code="folder.new.folder" />"
-       onclick="relativeRedir('cook/masterClass/list.do');"/>
+       onclick="relativeRedir('actor/folder/new.do');"/>
