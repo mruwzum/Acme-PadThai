@@ -86,7 +86,7 @@
     <br/>
 
 
-
+    <security:authorize access="isAnonymous()">
     <h1>User Account</h1>
     <form:label path="UserAccount.username">
         <spring:message code="actor.username" />:
@@ -114,8 +114,18 @@
     <input type="button" name="cancel"
            value="<spring:message code="actor.cancel" />"
            onclick="window.location.replace('anonymus/users.do')"/>
+    </security:authorize>
+
+    <%--TODO poner este botón y todos en condiciones--%>
+    <security:authorize access="isAuthenticated()">
+
+        <input type="button" name="save"
+               value="<spring:message code="actor.save" />"
+               onclick="window.location.replace('anonymus/users.do')"/>
+
+        <input type="button" name="cancel"
+               value="<spring:message code="actor.cancel" />"
+               onclick="window.location.replace('anonymus/users.do')"/>
+
+    </security:authorize>
 </form:form>
-<br>
-<a href="<c:url value="/security/login.do" />">
-    <spring:message code="label.form.loginLink"> </spring:message>
-</a>

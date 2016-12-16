@@ -366,6 +366,32 @@ public class ActorService {
         return u;
     }
 
+    public Actor editPersonalData2(String name, String surname, String emailAddress, String phone, String postalAddress,
+                                  String nickname, String socialNet, String link) {
+        Actor u;
+        u = findByPrincipal();
+        Assert.notNull(u, "El actor no existe");
+        Assert.notNull(name,"name null");
+        Assert.notNull(surname,"surname null");
+        Assert.notNull(emailAddress, "email Address null");
+        Assert.notNull(phone, "phone null");
+        Assert.notNull(postalAddress,"postal Address null");
+        Assert.notNull(nickname,"nikcname null");
+        Assert.notNull(socialNet,"social net null");
+        Assert.notNull(link,"link null");
+
+        u.setName(name);
+        u.setSurname(surname);
+        u.setEmailAddress(emailAddress);
+        u.setPhone(phone);
+        u.setPostalAddress(postalAddress);
+        findByPrincipal().getSocialIdentity().setNickname(nickname);
+        findByPrincipal().getSocialIdentity().setSocialNet(socialNet);
+        findByPrincipal().getSocialIdentity().setLink(link);
+        //Actor res = actorRepository.save(u);
+        return u;
+    }
+
 
     //Manage Folder
 

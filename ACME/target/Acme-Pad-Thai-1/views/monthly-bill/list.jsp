@@ -39,8 +39,8 @@
     <display:column property="paid" title="${paid}"/>
 
     <%--<display:column>--%>
-        <%--<a href="sponsor/campaing/edit.do?recipeID=${row.id}">--%>
-            <%--<spring:message code="campaign.edit"/>--%>
-        <%--</a>--%>
+    <%--<a href="sponsor/campaing/edit.do?recipeID=${row.id}">--%>
+    <%--<spring:message code="campaign.edit"/>--%>
+    <%--</a>--%>
     <%--</display:column>--%>
 </display:table>

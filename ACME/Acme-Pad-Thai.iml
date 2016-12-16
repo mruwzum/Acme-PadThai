@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager" forced_jdk="true">
+    <src_description expected_position="1" />
+  </component>
   <component name="FacetManager">
     <facet type="web" name="Web">
       <configuration>
@@ -41,6 +44,40 @@
           <file>file://$MODULE_DIR$/src/main/resources/spring/config/security.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring/servlet.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring/config/tiles.xml</file>
+        </fileset>
+        <fileset id="fileset2" name="Spring Application Context (2)" removed="false">
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/Acme-Pad-ThaiServlet-servlet.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/Acme-Pad-ThaiServlet-servlet.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/config/cache.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/spring/config/cache.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/cache.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/converters.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/config/converters.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/spring/config/converters.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/data.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/config/data.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/spring/config/data.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/datasource.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/datasource.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/spring/datasource.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/spring/config/i18n-l10n.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/config/i18n-l10n.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/i18n-l10n.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/spring/config/packages.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/config/packages.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/packages.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/PopulateDatabase.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/PopulateDatabase.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/PopulateDatabase.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/security.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/config/security.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/spring/config/security.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/servlet.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/servlet.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/spring/servlet.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/config/tiles.xml</file>
+          <file>file://$MODULE_DIR$/target/classes/spring/config/tiles.xml</file>
+          <file>file://$MODULE_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/tiles.xml</file>
         </fileset>
       </configuration>
     </facet>

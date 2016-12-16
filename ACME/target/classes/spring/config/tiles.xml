@@ -31,6 +31,9 @@
         <value>/views/campaign/tiles.xml</value>
         <value>/views/credit-card/tiles.xml</value>
         <value>/views/monthly-bill/tiles.xml</value>
+        <value>/views/folder/tiles.xml</value>
+        <value>/views/message/tiles.xml</value>
+
 
     </util:list>
 
