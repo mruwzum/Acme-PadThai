@@ -1933,7 +1933,7 @@
             </list>
         </property>
         <property name="user">
-            <ref bean="user1"></ref>
+            <ref bean="user2"></ref>
         </property>
     </bean>
     <!-- Recipe7 -->
@@ -2104,6 +2104,16 @@
             <list>
                 <ref bean="nutritionist1"></ref>
                 <ref bean="user1"></ref>
+            </list>
+        </property>
+        <property name="recipes">
+            <list>
+                <ref bean="recipe2"></ref>
+                <ref bean="recipe3"></ref>
+                <ref bean="recipe4"></ref>
+                <ref bean="recipe5"></ref>
+                <ref bean="recipe6"></ref>
+                <ref bean="recipe7"></ref>
             </list>
         </property>
 

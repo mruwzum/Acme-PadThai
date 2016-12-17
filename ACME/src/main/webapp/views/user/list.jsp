@@ -37,6 +37,11 @@
         <a href="anonymus/userRecipes.do?userID=${row.id}">
             <spring:message code="recipe.list"/>
         </a>
+    </display:column>   <spring:message code="user.profile" var="profileHeader"/>
+    <display:column title="${profileHeader}">
+        <a href="anonymus/userProfile.do?userID=${row.id}">
+            <spring:message code="user.profile"/>
+        </a>
     </display:column>
 
 </display:table>

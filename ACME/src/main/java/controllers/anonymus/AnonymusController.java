@@ -86,6 +86,20 @@ public class AnonymusController extends AbstractController {
         modelAndView.addObject("recipe", recipes);
         return modelAndView;
     }
+    @RequestMapping(value = "/userProfile", method = RequestMethod.GET)
+    public ModelAndView userProfile(@RequestParam int userID) {
+        ModelAndView modelAndView;
+        User user = userService.findOne(userID);
+
+        modelAndView = new ModelAndView("user/view");
+        modelAndView.addObject("name", user.getName());
+        modelAndView.addObject("surname", user.getSurname());
+        modelAndView.addObject("emailAddress", user.getEmailAddress());
+        modelAndView.addObject("phone", user.getPhone());
+        modelAndView.addObject("postalAddress", user.getPostalAddress());
+
+        return modelAndView;
+    }
     @RequestMapping(value = "/contest", method = RequestMethod.GET)
     public ModelAndView contest(){
         ModelAndView result;

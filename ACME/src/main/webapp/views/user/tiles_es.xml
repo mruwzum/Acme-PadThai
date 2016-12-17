@@ -24,5 +24,9 @@
         <put-attribute name="title" value="Buscar usuarios"/>
         <put-attribute name="body" value="/views/user/search.jsp"/>
     </definition>
+    <definition name="user/view" extends="master.page">
+        <put-attribute name="title" value="Ver usuario"/>
+        <put-attribute name="body" value="/views/user/view.jsp"/>
+    </definition>
 
 </tiles-definitions>
