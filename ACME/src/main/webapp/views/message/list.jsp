@@ -17,7 +17,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<display:table name="messages" id="row" requestURI="http://localhost:8080/actor/folder/view.do" pagesize="5"
+<display:table name="message" id="row" requestURI="http://localhost:8080/actor/folder/view.do" pagesize="5"
                class="displaytag">
 
     <spring:message code="m.subject" var="subject"/>

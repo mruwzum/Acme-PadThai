@@ -67,6 +67,7 @@
     </form:label>
     <form:input path="socialIdentity.nickname" var="nickname"/>
     <form:errors cssClass="error" path="socialIdentity.nickname"/>
+    <jstl:set var="nickname" value="${socialIdentity.nickname}"/>
 
     <%--TODO DUDA PARA EL VIERNES--%>
 
@@ -76,6 +77,7 @@
     </form:label>
     <form:input path="socialIdentity.socialNet" var="socialNet"/>
     <form:errors cssClass="error" path="socialIdentity.socialNet"/>
+    <jstl:set var="socialNet" value="${socialIdentity.socialNet}"/>
 
 
     <br/>
@@ -83,7 +85,7 @@
     <form:label path="socialIdentity.link">
         <spring:message code="socialIdentity.link"/>:
     </form:label>
-    <form:input path="socialIdentity.link" var="link"/>
+    <form:input path="socialIdentity.link"/>
     <form:errors cssClass="error" path="socialIdentity.socialNet"/>
     <jstl:set var="link" value="${socialIdentity.link}"/>
 

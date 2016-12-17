@@ -17,7 +17,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<form:form action="actor/message/send.do" modelAttribute="message">
+<form:form action="actor/message/send.do" modelAttribute="message3">
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>

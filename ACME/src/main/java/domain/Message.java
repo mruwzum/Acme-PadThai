@@ -98,10 +98,4 @@ public class Message extends DomainEntity {
         this.folder = folder;
     }
 
-    @Override
-    public String toString() {
-        return "Message{" +
-                "subject='" + subject + '\'' +
-                '}';
-    }
 }

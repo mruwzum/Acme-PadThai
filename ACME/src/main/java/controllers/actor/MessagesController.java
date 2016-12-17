@@ -49,13 +49,13 @@ public class MessagesController extends AbstractController {
 
     }
 
-    protected ModelAndView createGenericEditModelAndView(Message message, String message2) {
+    protected ModelAndView createGenericEditModelAndView(Message message3, String message2) {
         ActorToStringConverter actorToStringConverter = new ActorToStringConverter();
-        String recipient = actorToStringConverter.convert(message.getRecipient());
-        String subject = message.getSubject();
-        String body = message.getBody();
+        String recipient = actorToStringConverter.convert(message3.getRecipient());
+        String subject = message3.getSubject();
+        String body = message3.getBody();
         ModelAndView res = new ModelAndView("message/edit");
-        res.addObject("message", message);
+        res.addObject("message3", message3);
         res.addObject("recipient", recipient);
         res.addObject("subject", subject);
         res.addObject("body", body);
