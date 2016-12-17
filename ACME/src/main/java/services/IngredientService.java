@@ -45,19 +45,19 @@ public class IngredientService {
         return res;
     }
 
-    public static Ingredient findOne(int Ingredient) {
+    public Ingredient findOne(int Ingredient) {
         domain.Ingredient res = IngredientRepository.findOne(Ingredient);
         Assert.notNull(res);
         return res;
     }
 
-    public static Ingredient save(Ingredient a) {
+    public Ingredient save(Ingredient a) {
         Assert.notNull(a);
         Ingredient res = IngredientRepository.save(a);
         return res;
     }
 
-    public static void delete(Ingredient a) {
+    public void delete(Ingredient a) {
         Assert.notNull(a);
         Assert.isTrue(a.getId() != 0);
         IngredientRepository.delete(a);

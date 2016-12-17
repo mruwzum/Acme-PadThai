@@ -388,7 +388,7 @@ public class ActorService {
         Assert.notNull(emailAddress, "email Address null");
         Assert.notNull(phone, "phone null");
         Assert.notNull(postalAddress,"postal Address null");
-        Assert.notNull(nickname,"nikcname null");
+        Assert.notNull(nickname,"nickname null");
         Assert.notNull(socialNet,"social net null");
         Assert.notNull(link,"link null");
 

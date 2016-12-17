@@ -56,31 +56,41 @@
     <form:errors cssClass="error" path="postalAddress"/>
     <br/>
 
+
+
+    <jsp:useBean id="SocialIdentity" scope="request" type="domain.SocialIdentity"/>
     <h1>Social Identity</h1>
+    <jstl:set var="nickname" value="${SocialIdentity.nickname}"/>
     <form:label path="socialIdentity.nickname">
         <spring:message code="socialIdentity.nickName"/>:
     </form:label>
     <form:input path="socialIdentity.nickname"/>
     <form:errors cssClass="error" path="socialIdentity.nickname"/>
     <%--TODO DUDA PARA EL VIERNES--%>
-    <jstl:set var="nickname" value="${nickname}"/>
+
     <br/>
+    <jstl:set var="socialNet" value="${SocialIdentity.socialNet}"/>
     <form:label path="socialIdentity.socialNet">
         <spring:message code="socialIdentity.socialNet"/>:
     </form:label>
     <form:input path="socialIdentity.socialNet"/>
     <form:errors cssClass="error" path="socialIdentity.socialNet"/>
-    <jstl:set var="socialNet" value="${socialIdentity.socialNet}"/>
+
 
     <br/>
+    <jstl:set var="link" value="${SocialIdentity.link}"/>
+    
     <form:label path="socialIdentity.link">
         <spring:message code="socialIdentity.link"/>:
     </form:label>
     <form:input path="socialIdentity.link"/>
     <form:errors cssClass="error" path="socialIdentity.socialNet"/>
-    <jstl:set var="link" value="${socialIdentity.link}"/>
+
 
     <br/>
+
+
+
 
     <security:authorize access="isAnonymous()">
         <h1>User Account</h1>
@@ -123,7 +133,7 @@
             <spring:param name="emailAddress" value="${emailAddress}"/>
             <spring:param name="phone" value="${phone}"/>
             <spring:param name="postalAddress" value="${postalAddress}"/>
-            <spring:param name="name" value="${nickname}"/>
+            <spring:param name="name" value="${socialIdentity.nickname}"/>
             <spring:param name="name" value="${socialNet}"/>
             <spring:param name="name" value="${link}"/>
             <%--TODO a partir del nikcname peta porque no le puedo meter una variable con un punto--%>

@@ -19,7 +19,6 @@ public class StringToMessageConverter implements Converter<String, Message> {
     public Message convert(String text) {
         Message result;
         int id;
-
         try {
             if (StringUtils.isEmpty(text))
                 result = null;
