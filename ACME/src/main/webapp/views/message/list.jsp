@@ -20,16 +20,16 @@
 <display:table name="messages" id="row" requestURI="http://localhost:8080/actor/folder/view.do" pagesize="5"
                class="displaytag">
 
-    <spring:message code="message.subject" var="subject"/>
+    <spring:message code="m.subject" var="subject"/>
     <display:column property="subject" title="${subject}"/>
 
-    <spring:message code="message.sentDate" var="sentDate"/>
+    <spring:message code="m.sentDate" var="sentDate"/>
     <display:column property="sentDate" title="${sentDate}"/>
 
-    <spring:message code="message.recipient" var="recipient"/>
+    <spring:message code="m.recipient" var="recipient"/>
     <display:column property="recipient" title="${recipient}"/>
 
-    <spring:message code="message.priority" var="priority"/>
+    <spring:message code="m.priority" var="priority"/>
     <display:column property="priority" title="${priority}"/>
 
 

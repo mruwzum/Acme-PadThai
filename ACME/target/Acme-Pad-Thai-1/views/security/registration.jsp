@@ -58,33 +58,34 @@
 
 
 
-    <jsp:useBean id="SocialIdentity" scope="request" type="domain.SocialIdentity"/>
+    <jsp:useBean id="SocialIdentity" scope="request" class="domain.SocialIdentity"/>
+
+
     <h1>Social Identity</h1>
-    <jstl:set var="nickname" value="${SocialIdentity.nickname}"/>
     <form:label path="socialIdentity.nickname">
         <spring:message code="socialIdentity.nickName"/>:
     </form:label>
-    <form:input path="socialIdentity.nickname"/>
+    <form:input path="socialIdentity.nickname" var="nickname"/>
     <form:errors cssClass="error" path="socialIdentity.nickname"/>
+
     <%--TODO DUDA PARA EL VIERNES--%>
 
     <br/>
-    <jstl:set var="socialNet" value="${SocialIdentity.socialNet}"/>
     <form:label path="socialIdentity.socialNet">
         <spring:message code="socialIdentity.socialNet"/>:
     </form:label>
-    <form:input path="socialIdentity.socialNet"/>
+    <form:input path="socialIdentity.socialNet" var="socialNet"/>
     <form:errors cssClass="error" path="socialIdentity.socialNet"/>
 
 
     <br/>
-    <jstl:set var="link" value="${SocialIdentity.link}"/>
-    
+
     <form:label path="socialIdentity.link">
         <spring:message code="socialIdentity.link"/>:
     </form:label>
-    <form:input path="socialIdentity.link"/>
+    <form:input path="socialIdentity.link" var="link"/>
     <form:errors cssClass="error" path="socialIdentity.socialNet"/>
+    <jstl:set var="link" value="${socialIdentity.link}"/>
 
 
     <br/>
@@ -133,9 +134,9 @@
             <spring:param name="emailAddress" value="${emailAddress}"/>
             <spring:param name="phone" value="${phone}"/>
             <spring:param name="postalAddress" value="${postalAddress}"/>
-            <spring:param name="name" value="${socialIdentity.nickname}"/>
-            <spring:param name="name" value="${socialNet}"/>
-            <spring:param name="name" value="${link}"/>
+            <spring:param name="nickname" value="${nickname}"/>
+            <spring:param name="socialNet" value="${socialNet}"/>
+            <spring:param name="link" value="${link}"/>
             <%--TODO a partir del nikcname peta porque no le puedo meter una variable con un punto--%>
 
 

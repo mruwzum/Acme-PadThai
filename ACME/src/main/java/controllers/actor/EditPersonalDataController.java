@@ -5,6 +5,7 @@ import domain.Actor;
 import domain.SocialIdentity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -42,7 +43,8 @@ public class EditPersonalDataController extends AbstractController {
                                  String postalAddress, String nickname, String socialNet,
                                  String link) {
         ModelAndView res;
-        actorService.editPersonalData2(name,surname,emailAddress,phone,postalAddress,nickname, socialNet, link);
+        Assert.notNull(link, "link");
+        actorService.editPersonalData2(name,surname,emailAddress,phone,postalAddress,nickname,socialNet,link);
         res = UserEditPersonalData();
         return res;
     }
@@ -91,6 +93,7 @@ public class EditPersonalDataController extends AbstractController {
         String phone = actor.getPhone();
         String postalAddress = actor.getPostalAddress();
         SocialIdentity socialIdentity = actor.getSocialIdentity();
+
 
         modelAndView.addObject("name", name);
         modelAndView.addObject("surname", surname);

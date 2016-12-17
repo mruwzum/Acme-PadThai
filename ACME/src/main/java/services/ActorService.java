@@ -397,9 +397,9 @@ public class ActorService {
         u.setEmailAddress(emailAddress);
         u.setPhone(phone);
         u.setPostalAddress(postalAddress);
-        findByPrincipal().getSocialIdentity().setNickname(nickname);
-        findByPrincipal().getSocialIdentity().setSocialNet(socialNet);
-        findByPrincipal().getSocialIdentity().setLink(link);
+        u.getSocialIdentity().setNickname(nickname);
+        u.getSocialIdentity().setSocialNet(socialNet);
+        u.getSocialIdentity().setLink(link);
         //Actor res = actorRepository.save(u);
         return u;
     }

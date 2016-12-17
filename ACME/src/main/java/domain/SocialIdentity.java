@@ -14,32 +14,29 @@ public class SocialIdentity extends DomainEntity {
     private String link;
     private String picture;
 
-    @NotBlank
+    //@NotBlank
     public String getNickname() {
         return nickname;
     }
 
-    @NotBlank
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
 
-    @NotBlank
+    //@NotBlank
     public String getSocialNet() {
         return socialNet;
     }
 
-    @NotBlank
     public void setSocialNet(String socialNet) {
         this.socialNet = socialNet;
     }
 
-    @NotBlank
+    //@NotBlank
     public String getLink() {
         return link;
     }
 
-    @NotBlank
     public void setLink(String link) {
         this.link = link;
     }
