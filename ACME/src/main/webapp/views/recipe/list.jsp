@@ -19,13 +19,12 @@
 <display:table name="recipe" id="row" requestURI="http://localhost:8080/user/recipes/list.do" pagesize="5"
                class="displaytag">
 
-
+        <%--Parámetros--%>
     <spring:message code="recipe.tittle" var="titleheader"/>
         <display:column property="title" title="${titleheader}" sortable="true"/>
 
         <spring:message code="recipe.summary" var="summ"/>
         <display:column property="summary" title="${summ}"/>
-
 
         <spring:message code="recipe.creationDate" var="creatDat"/>
         <display:column property="creationDate" title="${creatDat}" sortable="true"/>
@@ -33,27 +32,37 @@
         <spring:message code="recipe.updateDate" var="updatDat"/>
         <display:column property="updateDate" title="${updatDat}" sortable="true"/>
 
+        <spring:message code="recipe.categorie" var="categorie"/>
+        <display:column property="categorie" title="${categorie}" sortable="true"/>
+
+    <%--Autor--%>
         <display:column>
             <a href="anonymus/author.do?recipeID=${row.id}">
                 <spring:message code="recipe.users"/>
             </a>
         </display:column>
-        <input type="button" name="qualify"
-               value="<spring:message code="recipe.qualify" />"
-               onclick="relativeRedir('recipes/edit.do');"/>
-        <br/>
+
+<%--TODO hacer esto para que un usuario pueda darle a like a las recetas de otro--%>
+    <%--, calificar y editar solo sus recetas--%>
+    <%--Autorizado como usuario propietario--%>
         <security:authorize access="hasRole('USER')">
+            <%--Qualify for a contest--%>
             <display:column>
-                <a href="user/recipes/edit/qualify.do?id=${row.id}">
+                <a href="http://localhost:8080/user/recipe/qualify.do?id=${row.id}">
                     <spring:message code="recipe.qualify"/>
                 </a>
             </display:column>
+            <%--Edit--%>
             <display:column>
                 <a href="user/recipes/edit.do?id=${row.id}">
                     <spring:message code="recipe.edit"/>
                 </a>
             </display:column>
         </security:authorize>
+
+
+    <%--Autorizado--%>
+
     </display:table>
 
 

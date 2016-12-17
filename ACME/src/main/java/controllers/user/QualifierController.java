@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.RecipeService;
+import services.UserService;
 
 import javax.validation.Valid;
 import java.util.Collection;
@@ -26,6 +27,8 @@ public class QualifierController extends AbstractController {
     @Autowired
     private RecipeService recipeService;
 
+    @Autowired
+    private UserService userService;
     public QualifierController() {
         super();
     }
@@ -34,9 +37,11 @@ public class QualifierController extends AbstractController {
     public ModelAndView qualify(@RequestParam int id) {
         ModelAndView res;
         Recipe recipe = recipeService.findOne(id);
-        Assert.notNull(recipe);
-        res = createQualifyModelAndView(recipe);
+        userService.qualifyRecipe(recipe);
+        res = new ModelAndView("recipe/list");
+        res.addObject("recipe", recipe);
         return res;
+
     }
 
     @RequestMapping(value = "/recipe/qualify/save", method = RequestMethod.POST, params = "save")

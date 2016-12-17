@@ -54,7 +54,17 @@ public class managingRecipesController extends AbstractController {
         result.addObject("recipe", recipeCollection);
         result.addObject("requestURI", "user/recipes/list.do");
 
+        return result;
+    }
 
+    @RequestMapping(value = "recipes/list/my", method = RequestMethod.GET)
+    public ModelAndView listMyRecipes() {
+        ModelAndView result;
+        Collection<Recipe> myrecipes= userService.getAllRecipes();
+       Collection<Recipe> allrecipes = recipeService.findAll();
+       allrecipes.removeAll(myrecipes);
+       result = new ModelAndView("recipe/list");
+       result.addObject("recipe", allrecipes);
         return result;
     }
 

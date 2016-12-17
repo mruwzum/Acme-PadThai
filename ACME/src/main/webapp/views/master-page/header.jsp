@@ -55,10 +55,12 @@
         </security:authorize>
 
         <security:authorize access="hasRole('USER')">
-            <li><a class="fNiv"><spring:message code="master.page.user"/></a>
+            <li><a class="fNiv"><spring:message code="master.page.recipes"/></a>
                 <ul>
                     <li class="arrow"></li>
                     <li><a href="user/recipes/list.do"><spring:message
+                            code="master.page.recipes.my.list.do"/></a></li>
+                    <li><a href="user/recipes/list/my.do"><spring:message
                             code="master.page.recipes.list.do"/></a></li>
                 </ul>
             </li>

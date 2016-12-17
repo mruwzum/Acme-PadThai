@@ -55,4 +55,8 @@ public class Categorie extends DomainEntity {
         this.tag = tag;
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
 }
