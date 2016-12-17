@@ -1,9 +1,6 @@
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -13,7 +10,7 @@ public class User extends Others {
     private Collection<Recipe> recipes;
 
 
-    @OneToMany(targetEntity = Recipe.class)
+    @OneToMany(targetEntity = Recipe.class, cascade = CascadeType.ALL)
     public Collection<Recipe> getRecipes() {
         return recipes;
     }

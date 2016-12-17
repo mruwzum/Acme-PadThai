@@ -347,9 +347,11 @@ public class ActorServiceTest extends AbstractTest {
         List<User> users = new ArrayList<>(userService.findAll());
         List<Cook> cooks = new ArrayList<>(cookService.findAll());
         List<Sponsor> sponsors = new ArrayList<>(sponsorService.findAll());
-        System.out.println(sponsors.get(1).getUserAccount().getUsername());
-        System.out.println(sponsors.get(1).getUserAccount().getPassword());
-        System.out.println(sponsors.get(1).getUserAccount().getAuthorities());
+        System.out.println(users.get(1).getUserAccount().getUsername());
+        System.out.println(users.get(1).getUserAccount().getPassword());
+        System.out.println(users.get(1).getUserAccount().getAuthorities());
+        System.out.println(users.get(1).getRecipes());
+
 
 
 
