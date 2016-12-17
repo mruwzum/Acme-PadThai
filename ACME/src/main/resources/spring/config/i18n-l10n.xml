@@ -34,6 +34,9 @@
         <value>/views/monthly-bill/messages</value>
         <value>/views/folder/messages</value>
         <value>/views/message/messages</value>
+        <value>/views/ingredient/messages</value>
+        <value>/views/property/messages</value>
+
 
 
     </util:list>

@@ -1179,7 +1179,7 @@
     </bean>
     <!-- property3 -->
     <bean id="property3" class="domain.Property">
-        <property name="name" value="pollo"/>
+        <property name="name" value="calcio"/>
         <property name="quantity">
             <ref bean="quantity3"/>
         </property>

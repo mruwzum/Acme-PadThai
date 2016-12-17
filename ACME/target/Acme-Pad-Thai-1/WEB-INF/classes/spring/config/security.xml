@@ -49,6 +49,7 @@
         <security:intercept-url pattern="/sponsor/**" access="permitAll"/>
         <security:intercept-url pattern="/cook/**" access="permitAll"/>
         <security:intercept-url pattern="/actor/**" access="permitAll"/>
+        <security:intercept-url pattern="/nutritionist/**" access="permitAll"/>
         <security:intercept-url pattern="/**" access="hasRole('NONE')"/>
 
         <security:form-login

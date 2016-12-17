@@ -34,4 +34,11 @@ public class Quantity extends DomainEntity {
         this.currencyUnit = currencyUnit;
     }
 
+    @Override
+    public String toString() {
+        return "Quantity{" +
+                "ammount=" + ammount +
+                ", currencyUnit='" + currencyUnit + '\'' +
+                '}';
+    }
 }

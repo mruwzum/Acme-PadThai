@@ -40,6 +40,10 @@ public class ActorServiceTest extends AbstractTest {
     private CookService cookService;
     @Autowired
     private SponsorService sponsorService;
+    @Autowired
+    private PropertyService propertyService;
+    @Autowired
+    private IngredientService ingredientService;
 
 
     //Tests -------------------------------------------------
@@ -344,13 +348,17 @@ public class ActorServiceTest extends AbstractTest {
 
     @Test
     public void testRandom(){
-        List<User> users = new ArrayList<>(userService.findAll());
+        /*List<User> users = new ArrayList<>(userService.findAll());
         List<Cook> cooks = new ArrayList<>(cookService.findAll());
         List<Sponsor> sponsors = new ArrayList<>(sponsorService.findAll());
-        System.out.println(users.get(1).getUserAccount().getUsername());
-        System.out.println(users.get(1).getUserAccount().getPassword());
-        System.out.println(users.get(1).getUserAccount().getAuthorities());
-        System.out.println(users.get(1).getRecipes());
+        System.out.println(sponsors.get(1).getUserAccount().getUsername());
+        System.out.println(sponsors.get(1).getUserAccount().getPassword());
+        System.out.println(sponsors.get(1).getUserAccount().getAuthorities());*/
+        List<Ingredient> ingredients = new ArrayList<>(ingredientService.findAll());
+        System.out.println(ingredients.get(0).getProperty());
+        System.out.println(ingredients.get(1).getProperty());
+        System.out.println(ingredients.get(2).getProperty());
+        System.out.println(ingredients.get(3).getProperty());
 
 
 

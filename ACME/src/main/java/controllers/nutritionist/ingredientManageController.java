@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.IngredientService;
 import services.NutritionistService;
+import services.PropertyService;
 
 import javax.validation.Valid;
 import java.util.Collection;
@@ -27,16 +28,18 @@ import java.util.Collection;
 public class ingredientManageController extends AbstractController {
 
     @Autowired
-    private NutritionistService NutritionistService;
-    @Autowired
     private IngredientService ingredientService;
+    @Autowired
+    private PropertyService propertyService;
+    @Autowired
+    private NutritionistService NutritionistService;
 
     public ingredientManageController() {
         super();
     }
 
     @RequestMapping(value = "/ingredient/list")
-    public ModelAndView list(@RequestParam Nutritionist nutritionist) {
+    public ModelAndView list() {
         ModelAndView result;
         Collection<Ingredient> aux = NutritionistService.getIngredients();
         result = new ModelAndView("ingredient/list");
@@ -57,35 +60,54 @@ public class ingredientManageController extends AbstractController {
         return result;
     }
 
-    @RequestMapping(value = "/ingredient/edit/save", method = RequestMethod.POST, params = "save")
-    public ModelAndView save(@Valid Ingredient ingredient, BindingResult binding, @RequestParam Nutritionist nutritionist) {
+    @RequestMapping(value = "/ingredient/save", method = RequestMethod.POST, params = "save")
+    public ModelAndView save(@Valid Ingredient ingredient, BindingResult binding) {
         ModelAndView result;
+        ingredientService.save(ingredient);
+        result = this.list();
 
+        /*
         if (binding.hasErrors()) {
             result = createEditModelAndView(ingredient);
         } else {
             try {
-                Assert.notNull(ingredient);
             	ingredientService.save(ingredient);
-                result = this.list(nutritionist);
+                result = this.list();
             } catch (Throwable oops) {
-                result = createEditModelAndView(ingredient, "campaing.commit.error");
+                result = createEditModelAndView(ingredient, "ingredient.commit.error");
             }
+        }*/
+
+        return result;
+    }
+
+    @RequestMapping(value = "/ingredient/delete", method = RequestMethod.POST, params = "delete")
+    public ModelAndView delete(Ingredient ingredient, BindingResult binding) {
+        ModelAndView result;
+
+        try {
+            ingredientService.delete(ingredient);
+            result = new ModelAndView("redirect:list.do");
+        } catch (Throwable oops) {
+            result = createEditModelAndView(ingredient, "ingredient.commit.error");
         }
 
         return result;
     }
 
-    @RequestMapping(value = "/ingredient/edit/delete", method = RequestMethod.POST, params = "delete")
-    public ModelAndView delete(Ingredient ingredient, BindingResult binding) {
+    @RequestMapping(value = "/ingredient/deleteProperty", method = RequestMethod.GET)
+    public ModelAndView deleteProperty(@RequestParam int id,int propertyID) {
         ModelAndView result;
-
-        try {
-        	ingredientService.delete(ingredient);
+        Ingredient ing = ingredientService.findOne(id);
+        Property property = propertyService.findOne(propertyID);
+        ingredientService.deleteProperty(ing,property);
+        result = new ModelAndView("redirect:list.do");
+        /*try {
+            ingredientService.delete(ingredient);
             result = new ModelAndView("redirect:list.do");
         } catch (Throwable oops) {
             result = createEditModelAndView(ingredient, "ingredient.commit.error");
-        }
+        }*/
 
         return result;
     }

@@ -48,6 +48,8 @@
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
+            <li><a href="nutritionist/ingredient/list.do"><spring:message
+                    code="master.page.ingredient"/></a></li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
             <li><a href="actor/NutritionistPersonalData.do"><spring:message
