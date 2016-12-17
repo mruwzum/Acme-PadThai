@@ -32,11 +32,18 @@ public interface ActorRepository extends JpaRepository<Actor, Integer> {
     @Query("select u from User u where u.name = ?1")
     User findUserByName(String name);
 
+    @Query("select u from Recipe u where u.title = ?1")
+    Recipe findRecipeByTitle(String name);
+
+    @Query("select u from Recipe u where u.summary = ?1")
+    Recipe findRecipeBySummary(String summary);
+
     @Query("select r.user from Recipe r where r.id = ?1")
     User getUserofRecipe(int rid);
 
     @Query("select u.recipes from User u where u.id = ?1")
     Collection<Recipe> getRecipesofUser(int uid);
+
 
     @Query("select c.winners from Contest c where c.id = ?1")
     Collection<Recipe> getQualifyRecipeforContest(int cid);

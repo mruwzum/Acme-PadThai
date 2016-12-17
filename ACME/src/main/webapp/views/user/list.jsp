@@ -17,7 +17,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<display:table name="user" id="row" requestURI="http://localhost:8080/anonymus/users.do" pagesize="5"
+<display:table name="user" id="row" requestURI="http://localhost:8080/anonymus/users.do" pagesize="10"
                class="displaytag">
 
 

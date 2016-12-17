@@ -52,6 +52,8 @@ public class ActorService {
     private CookService cookService;
     @Autowired
     private CreditCardService creditCardService;
+    @Autowired
+    private RecipeService recipeService;
 
     public ActorService() {
         super();
@@ -340,6 +342,16 @@ public class ActorService {
     public Recipe findRecipeByTicker(String ticker) {
         Assert.notNull(ticker);
         Recipe res = actorRepository.findRecipeByTicker(ticker);
+        return res;
+    }
+    public Recipe findRecipeByTitle(String title){
+        Assert.notNull(title);
+        Recipe res = actorRepository.findRecipeByTitle(title);
+        return res;
+    }
+    public Recipe findRecipeBySummary(String summ){
+        Assert.notNull(summ);
+        Recipe res = actorRepository.findRecipeBySummary(summ);
         return res;
     }
 

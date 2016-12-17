@@ -1933,7 +1933,7 @@
             </list>
         </property>
         <property name="user">
-            <ref bean="user2"></ref>
+            <ref bean="user1"></ref>
         </property>
     </bean>
     <!-- Recipe7 -->

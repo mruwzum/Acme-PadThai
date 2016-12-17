@@ -28,8 +28,34 @@
     <form:errors cssClass="error" path="ticker"/>
     <br/>
 
+        <form:label path="title">
+            <spring:message code="recipe.title"/>
+        </form:label>
+        <form:input path="title"/>
+        <form:errors cssClass="error" path="title"/>
+        <br/>
+        <form:label path="summary">
+            <spring:message code="recipe.summary"/>
+        </form:label>
+        <form:input path="summary"/>
+        <form:errors cssClass="error" path="summary"/>
+        <br/>
+
+
+
+        <spring:url value="http://localhost:8080/actor/userPersonalData/save.do" var="url">
+
+            <spring:param name="name" value="${name}"/>
+            <spring:param name="title" value="${title}"/>
+            <spring:param name="summary" value="${summary}"/>
+
+        </spring:url>
     <input type="button" name="search"
            value="<spring:message code="recipe.search" />"
-           onclick=" relativeRedir('anonymus/findRecipe.do?recipeTicker=${ticker}');"/>
+           onclick=" relativeRedir('anonymus/findRecipe.do?recipeTicker=${url}');"/>
+
+
+
+
 
 </form:form>

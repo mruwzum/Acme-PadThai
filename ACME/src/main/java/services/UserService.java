@@ -140,6 +140,13 @@ public class UserService {
         return res;
     }
 
+    public Collection<Recipe> getMyRecipes(int id) {
+        Collection<Recipe> res;
+
+        res = userRepository.getMyRecipes(id);
+        return res;
+    }
+
     public Recipe modifyRecipe(Recipe r, String title, String summary, Collection<String> pictures,
                                Collection<String> hints, Collection<Ingredient> ingredients,
                                Categorie categorie, Collection<StepsToCook> steepsToCook) {

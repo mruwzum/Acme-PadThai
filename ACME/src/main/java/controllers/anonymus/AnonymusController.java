@@ -14,9 +14,7 @@ import security.Authority;
 import services.*;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 //Estoy probando mi rama en local
 /**
@@ -82,8 +80,8 @@ public class AnonymusController extends AbstractController {
     @RequestMapping(value = "/userRecipes", method = RequestMethod.GET)
     public ModelAndView userRecipes(@RequestParam int userID) {
         ModelAndView modelAndView;
-        User user = userService.findOne(userID);
-        Collection<Recipe> recipes = new ArrayList<>(user.getRecipes());
+        Collection<Recipe> recipes = new ArrayList<>();
+        recipes.addAll(userService.getMyRecipes(userID));
         modelAndView = new ModelAndView("recipe/list");
         modelAndView.addObject("recipe", recipes);
         return modelAndView;
@@ -154,12 +152,13 @@ public class AnonymusController extends AbstractController {
     }
 
     @RequestMapping(value = "/findRecipe", method = RequestMethod.GET)
-    public ModelAndView findRecipe(@RequestParam String recipeTicker) {
+    public ModelAndView findRecipe(@RequestParam String recipeTicker, String title, String summary) {
         ModelAndView res;
         List<Recipe> recipes = new ArrayList<>(recipeService.findAll());
+
         Recipe aux = null;
         for (Recipe u : recipes) {
-            if (!u.getTicker().equals(recipeTicker)) {
+            if (!u.getTicker().equals(recipeTicker) || !u.getTitle().equals(title) ||u.getSummary().equals(summary)) {
                 aux = u;
                 break;
             }

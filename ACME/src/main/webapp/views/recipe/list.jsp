@@ -16,7 +16,7 @@
 <%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
-<display:table name="recipe" id="row" requestURI="http://localhost:8080/user/recipes/list.do" pagesize="5"
+<display:table name="recipe" id="row" requestURI="http://localhost:8080/user/recipes/list.do" pagesize="10"
                class="displaytag">
 
         <%--Parámetros--%>
