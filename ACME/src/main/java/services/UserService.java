@@ -9,10 +9,7 @@ import repositories.UserRepository;
 import security.LoginService;
 import security.UserAccount;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by david on 05/11/2016.
@@ -178,14 +175,24 @@ public class UserService {
         Assert.isTrue(u.getRecipes().contains(r), "La receta no es propia");
         recipeService.delete(r);
     }
-
+    //TODO retorna sql constraint null y que no podemos calificar recetas para un contest
     public void qualifyRecipe(Recipe r) {
         User u = findByPrincipal();
         Assert.notNull(u);
         Assert.isTrue(u.getRecipes().contains(r),"No contiene");
         Assert.isTrue(canBeQualified(r), "La receta no puede ser calificada");
-        List<Contest> contest = new ArrayList<>(contestService.findAll());
-        contest.get(2).getWinners().add(r);
+        List<Contest> contests = new ArrayList<>(contestService.findAll());
+        List<Recipe> recipes = new ArrayList<>(contests.get(0).getWinners());
+        recipes.add(r);
+        contests.get(2).setWinners(recipes);
+
+
+
+        Contest c = contestService.create();
+        Collection<Recipe> aux = new ArrayList<>();
+        aux.add(r);
+        c.setWinners(aux);
+
     }
 
     public void rateRecipeWithLike(Recipe r) {

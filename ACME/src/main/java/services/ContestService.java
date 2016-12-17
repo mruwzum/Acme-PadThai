@@ -1,6 +1,7 @@
 package services;
 
 import domain.Contest;
+import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -8,6 +9,7 @@ import org.springframework.util.Assert;
 import repositories.ContestRepository;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by david on 05/11/2016.
@@ -64,7 +66,6 @@ public class ContestService {
     }
 
     // Other business methods -------------------------------------------------------------------------------
-
 
 }
 

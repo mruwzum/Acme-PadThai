@@ -1484,7 +1484,6 @@
         </property>
         <property name="rate">
             <list>
-                <value type="java.lang.Boolean">false</value>
                 <value type="java.lang.Boolean">true</value>
                 <value type="java.lang.Boolean">true</value>
                 <value type="java.lang.Boolean">true</value>
