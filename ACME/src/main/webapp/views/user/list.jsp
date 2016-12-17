@@ -43,5 +43,10 @@
             <spring:message code="user.profile"/>
         </a>
     </display:column>
+    <input type="button" name="back"
+           value="<spring:message code="actor.back" />"
+           onclick="window.location.replace('anonymus/users.do')"/>
+
+
 
 </display:table>

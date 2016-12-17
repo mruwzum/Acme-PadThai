@@ -37,6 +37,16 @@
         <a href="anonymus/userRecipes.do?userID=${row.id}">
             <spring:message code="recipe.list"/>
         </a>
+    </display:column>   <spring:message code="user.profile" var="profileHeader"/>
+    <display:column title="${profileHeader}">
+        <a href="anonymus/userProfile.do?userID=${row.id}">
+            <spring:message code="user.profile"/>
+        </a>
     </display:column>
+    <input type="button" name="back"
+           value="<spring:message code="actor.back" />"
+           onclick="window.location.replace('anonymus/users.do')"/>
+
+
 
 </display:table>
