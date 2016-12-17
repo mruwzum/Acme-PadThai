@@ -17,8 +17,6 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-
-
 <form:form action="sponsor/campaign/edit/save.do" modelAttribute="campaign">
 
     <form:hidden path="id"/>

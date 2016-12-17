@@ -17,9 +17,6 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-
-
-
 <display:table name="campaign" id="row" requestURI="http://localhost:8080/sponsor/campaing/list.do" pagesize="5"
                class="displaytag">
 

@@ -62,7 +62,7 @@
     </form:label>
     <form:input path="socialIdentity.nickname"/>
     <form:errors cssClass="error" path="socialIdentity.nickname"/>
-   <%--TODO DUDA PARA EL VIERNES--%>
+    <%--TODO DUDA PARA EL VIERNES--%>
     <jstl:set var="nickname" value="${nickname}"/>
     <br/>
     <form:label path="socialIdentity.socialNet">

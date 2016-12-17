@@ -122,6 +122,19 @@ public class AdminService {
         a.getKeywor().add(key);
     }
 
+    public Collection<String> getKeyword() {
+        Admin a = findByPrincipal();
+        Assert.notNull(a, "El actor no existe");
+        //Assert.isTrue(!a.getUserAccount().getAuthorities().contains(Authority.ADMIN));
+        Collection<String> keywor = Collections.EMPTY_SET;
+        keywor.add("sex");
+        keywor.add("viagra");
+        keywor.add("cialis");
+        keywor.add("love");
+        return keywor;
+
+    }
+
     public Categorie createCategorie(String name, String description, String picture, Collection<String> tags) {
 
         Assert.notNull(name);

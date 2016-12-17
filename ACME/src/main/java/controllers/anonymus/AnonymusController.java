@@ -112,8 +112,8 @@ public class AnonymusController extends AbstractController {
     public ModelAndView masterClass(){
         ModelAndView result;
         Collection<MasterClass> aux = masterClassService.findAll();
-        result = new ModelAndView("mclass/list");
-        result.addObject("mclass", aux);
+        result = new ModelAndView("masterClass/list");
+        result.addObject("masterClass", aux);
         result.addObject("requestURI", "anonymus/masterclass.do");
         return result;
     }
