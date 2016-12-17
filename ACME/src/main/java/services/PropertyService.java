@@ -27,7 +27,7 @@ public class PropertyService {
     // Managed repository--------------------------------------------------------------------------------
 
     @Autowired
-    private PropertyRepository PropertyRepository;
+    private  PropertyRepository PropertyRepository;
 
 
     // Suporting services --------------------------------------------------------------------------------
@@ -45,19 +45,19 @@ public class PropertyService {
         return res;
     }
 
-    public Property findOne(int Property) {
+    public  Property findOne(int Property) {
         Property res = PropertyRepository.findOne(Property);
         Assert.notNull(res);
         return res;
     }
 
-    public Property save(Property a) {
+    public  Property save(Property a) {
         Assert.notNull(a);
         Property res = PropertyRepository.save(a);
         return res;
     }
 
-    public void delete(Property a) {
+    public  void delete(Property a) {
         Assert.notNull(a);
         Assert.isTrue(a.getId() != 0);
         PropertyRepository.delete(a);

@@ -27,8 +27,7 @@ import java.util.Collection;
 public class propertyManageController extends AbstractController {
 
     @Autowired
-    private NutritionistService NutritionistService;
-    @Autowired
+    private NutritionistService nutritionistService;
     private PropertyService propertyService;
 
     public propertyManageController() {
@@ -38,7 +37,7 @@ public class propertyManageController extends AbstractController {
     @RequestMapping(value = "/property/list")
     public ModelAndView list(@RequestParam Nutritionist nutritionist) {
         ModelAndView result;
-        Collection<Property> aux = NutritionistService.getProperties1();
+        Collection<Property> aux = nutritionistService.getProperties1();
         result = new ModelAndView("property/list");
         result.addObject("property", aux);
         result.addObject("requestURI", "nutritionist/property/list.do");
@@ -62,7 +61,6 @@ public class propertyManageController extends AbstractController {
         ModelAndView result;
 
         if (binding.hasErrors()) {
-            Assert.notNull(property);
             result = createEditModelAndView(property);
         } else {
             try {
@@ -76,7 +74,7 @@ public class propertyManageController extends AbstractController {
         return result;
     }
 
-    @RequestMapping(value = "/property/edit/delete", method = RequestMethod.POST, params = "delete")
+    @RequestMapping(value = "/property/delete", method = RequestMethod.POST, params = "delete")
     public ModelAndView delete(Property property, BindingResult binding) {
         ModelAndView result;
 
@@ -100,7 +98,7 @@ public class propertyManageController extends AbstractController {
 
     protected ModelAndView createEditModelAndView(Property property, String message) {
         ModelAndView result;
-        String name = property.getName();
+        String name = property.getName().toString();
         Quantity quantity = property.getQuantity();
 
         result = new ModelAndView("property/edit");

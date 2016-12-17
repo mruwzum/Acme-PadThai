@@ -23,14 +23,14 @@ import java.util.Collection;
  */
 @Controller
 @RequestMapping("nutritionist")
-public class curriculumManageController extends AbstractController {
+public class curriculaManageController extends AbstractController {
 
     @Autowired
     private NutritionistService NutritionistService;
     @Autowired
     private CurriculaService curriculaService;
 
-    public curriculumManageController() {
+    public curriculaManageController() {
         super();
     }
 

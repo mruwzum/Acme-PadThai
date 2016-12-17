@@ -1,6 +1,7 @@
 package services;
 
 import domain.Ingredient;
+import domain.Property;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,40 +28,45 @@ public class IngredientService {
     // Managed repository--------------------------------------------------------------------------------
 
     @Autowired
-    private IngredientRepository IngredientRepository;
+    private IngredientRepository ingredientRepository;
 
 
     // Suporting services --------------------------------------------------------------------------------
 
     // Simple CRUD method --------------------------------------------------------------------------------
-
     public Ingredient create() {
         Ingredient res = new Ingredient();
         return res;
     }
 
     public Collection<Ingredient> findAll() {
-        Collection<Ingredient> res = IngredientRepository.findAll();
-        Assert.notNull(res);
+        Collection<Ingredient> res = ingredientRepository.findAll();
+        Assert.notNull(res,"No lo encuentro");
         return res;
     }
 
     public Ingredient findOne(int Ingredient) {
-        domain.Ingredient res = IngredientRepository.findOne(Ingredient);
+        domain.Ingredient res = ingredientRepository.findOne(Ingredient);
         Assert.notNull(res);
         return res;
     }
 
     public Ingredient save(Ingredient a) {
         Assert.notNull(a);
-        Ingredient res = IngredientRepository.save(a);
+        Ingredient res = ingredientRepository.save(a);
         return res;
     }
 
     public void delete(Ingredient a) {
         Assert.notNull(a);
         Assert.isTrue(a.getId() != 0);
-        IngredientRepository.delete(a);
+        ingredientRepository.delete(a);
+    }
+
+    public void deleteProperty(Ingredient a, Property p) {
+        Assert.notNull(a);
+        Assert.notNull(p);
+        a.getProperty().remove(p);
     }
 
     // Other business methods -------------------------------------------------------------------------------

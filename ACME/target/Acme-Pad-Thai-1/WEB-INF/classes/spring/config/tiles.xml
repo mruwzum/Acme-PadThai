@@ -33,6 +33,9 @@
         <value>/views/monthly-bill/tiles.xml</value>
         <value>/views/folder/tiles.xml</value>
         <value>/views/message/tiles.xml</value>
+        <value>/views/ingredient/tiles.xml</value>
+        <value>/views/property/tiles.xml</value>
+
 
 
     </util:list>
