@@ -27,7 +27,7 @@ public class PropertyService {
     // Managed repository--------------------------------------------------------------------------------
 
     @Autowired
-    private static PropertyRepository PropertyRepository;
+    private PropertyRepository PropertyRepository;
 
 
     // Suporting services --------------------------------------------------------------------------------

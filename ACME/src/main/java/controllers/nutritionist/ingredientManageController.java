@@ -28,6 +28,8 @@ public class ingredientManageController extends AbstractController {
 
     @Autowired
     private NutritionistService NutritionistService;
+    @Autowired
+    private IngredientService ingredientService;
 
     public ingredientManageController() {
         super();
@@ -49,7 +51,7 @@ public class ingredientManageController extends AbstractController {
     @RequestMapping(value = "/ingredient/edit", method = RequestMethod.GET)
     public ModelAndView edit(@RequestParam int ingredientID) {
         ModelAndView result;
-        Ingredient ingredient = IngredientService.findOne(ingredientID);
+        Ingredient ingredient = ingredientService.findOne(ingredientID);
         Assert.notNull(ingredient);
         result = createEditModelAndView(ingredient);
         return result;
@@ -63,7 +65,8 @@ public class ingredientManageController extends AbstractController {
             result = createEditModelAndView(ingredient);
         } else {
             try {
-            	IngredientService.save(ingredient);
+                Assert.notNull(ingredient);
+            	ingredientService.save(ingredient);
                 result = this.list(nutritionist);
             } catch (Throwable oops) {
                 result = createEditModelAndView(ingredient, "campaing.commit.error");
@@ -78,7 +81,7 @@ public class ingredientManageController extends AbstractController {
         ModelAndView result;
 
         try {
-        	IngredientService.delete(ingredient);
+        	ingredientService.delete(ingredient);
             result = new ModelAndView("redirect:list.do");
         } catch (Throwable oops) {
             result = createEditModelAndView(ingredient, "ingredient.commit.error");
@@ -97,9 +100,9 @@ public class ingredientManageController extends AbstractController {
 
     protected ModelAndView createEditModelAndView(Ingredient ingredient, String message) {
         ModelAndView result;
-        String name = ingredient.getName().toString();
-        String description = ingredient.getDescription().toString();
-        String picture = ingredient.getPicture().toString();
+        String name = ingredient.getName();
+        String description = ingredient.getDescription();
+        String picture = ingredient.getPicture();
         Collection<Property> property = ingredient.getProperty();
 
         result = new ModelAndView("ingredient/edit");

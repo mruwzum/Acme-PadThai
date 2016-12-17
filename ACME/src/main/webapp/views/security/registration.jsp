@@ -70,7 +70,7 @@
 
     <br/>
     <jstl:set var="socialNet" value="${SocialIdentity.socialNet}"/>
-    <form:label path="socialIdentity.socialNet">
+    <form:label path="socialIdentity.socialNet">p
         <spring:message code="socialIdentity.socialNet"/>:
     </form:label>
     <form:input path="socialIdentity.socialNet"/>

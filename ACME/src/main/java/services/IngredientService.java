@@ -27,7 +27,7 @@ public class IngredientService {
     // Managed repository--------------------------------------------------------------------------------
 
     @Autowired
-    private static IngredientRepository IngredientRepository;
+    private IngredientRepository IngredientRepository;
 
 
     // Suporting services --------------------------------------------------------------------------------

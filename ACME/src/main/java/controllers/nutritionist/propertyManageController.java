@@ -28,6 +28,8 @@ public class propertyManageController extends AbstractController {
 
     @Autowired
     private NutritionistService NutritionistService;
+    @Autowired
+    private PropertyService propertyService;
 
     public propertyManageController() {
         super();
@@ -49,7 +51,7 @@ public class propertyManageController extends AbstractController {
     @RequestMapping(value = "/property/edit", method = RequestMethod.GET)
     public ModelAndView edit(@RequestParam int propertyID) {
         ModelAndView result;
-        Property property = PropertyService.findOne(propertyID);
+        Property property = propertyService.findOne(propertyID);
         Assert.notNull(property);
         result = createEditModelAndView(property);
         return result;
@@ -60,10 +62,11 @@ public class propertyManageController extends AbstractController {
         ModelAndView result;
 
         if (binding.hasErrors()) {
+            Assert.notNull(property);
             result = createEditModelAndView(property);
         } else {
             try {
-            	PropertyService.save(property);
+            	propertyService.save(property);
                 result = this.list(nutritionist);
             } catch (Throwable oops) {
                 result = createEditModelAndView(property, "campaing.commit.error");
@@ -78,7 +81,7 @@ public class propertyManageController extends AbstractController {
         ModelAndView result;
 
         try {
-        	PropertyService.delete(property);
+        	propertyService.delete(property);
             result = new ModelAndView("redirect:list.do");
         } catch (Throwable oops) {
             result = createEditModelAndView(property, "property.commit.error");
@@ -97,7 +100,7 @@ public class propertyManageController extends AbstractController {
 
     protected ModelAndView createEditModelAndView(Property property, String message) {
         ModelAndView result;
-        String name = property.getName().toString();
+        String name = property.getName();
         Quantity quantity = property.getQuantity();
 
         result = new ModelAndView("property/edit");
