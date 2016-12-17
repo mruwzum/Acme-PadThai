@@ -24,11 +24,15 @@
 
 
     <display:column>
-        <a href="actor/folder/view.do?folderID=${row.id}">
-            <spring:message code="folder.open"/>
+    <a href="actor/folder/view.do?folderID=${row.id}">
+        <spring:message code="folder.open"/>
+    </a>
+</display:column>
+    <display:column>
+        <a href="actor/folder/edit.do?folderID=${row.id}">
+            <spring:message code="folder.edit"/>
         </a>
     </display:column>
-
 </display:table>
 
 <input type="button" name="newmessage"

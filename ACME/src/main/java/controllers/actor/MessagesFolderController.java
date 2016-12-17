@@ -1,5 +1,6 @@
 package controllers.actor;
 
+import com.sun.javafx.sg.PGShape;
 import controllers.AbstractController;
 import domain.Actor;
 import domain.Folder;
@@ -59,6 +60,14 @@ public class MessagesFolderController extends AbstractController {
         return res;
 
 
+    }
+    @RequestMapping(value = "/folder/edit")
+    public ModelAndView editFolder(@RequestParam int folderID){
+        ModelAndView res;
+        Folder aux = folderService.findOne(folderID);
+        res =createGenericEditModelAndView(aux);
+
+        return res;
     }
 
     @RequestMapping(value = "/folder/new/save")
