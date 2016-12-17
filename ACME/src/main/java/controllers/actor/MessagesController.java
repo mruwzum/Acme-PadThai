@@ -6,10 +6,14 @@ import domain.Actor;
 import domain.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import services.ActorService;
 import services.MessageService;
+
+import javax.validation.Valid;
 
 /**
  * Created by daviddelatorre on 15/12/16.
@@ -25,6 +29,8 @@ public class MessagesController extends AbstractController {
 
     @Autowired
     private MessageService messageService;
+    @Autowired
+    private ActorService actorService;
 
 //    @RequestMapping(value = "/message/view")
 //    public ModelAndView messageView(@RequestParam int messageID){
@@ -40,6 +46,14 @@ public class MessagesController extends AbstractController {
         ModelAndView res;
         Message m = messageService.create();
         res = createGenericEditModelAndView(m);
+        return res;
+    }
+    @RequestMapping(value = "/message/send")
+    public ModelAndView sendMessage(@Valid Message message, BindingResult bindingResult) {
+        ModelAndView res;
+        actorService.sendMessage(message);
+        MessagesFolderController fold = new MessagesFolderController();
+        res = fold.list();
         return res;
     }
 

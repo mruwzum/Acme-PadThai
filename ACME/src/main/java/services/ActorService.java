@@ -1,5 +1,6 @@
 package services;
 
+import com.sun.deploy.util.SystemUtils;
 import domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
@@ -453,7 +454,27 @@ public class ActorService {
         Assert.isTrue(u.getFolders().contains(f), "El actor no contiene la carpeta ");
         folderService.delete(f);
     }
-
+    public Message sendMessage(Message message){
+        Actor u;
+        u = findByPrincipal();
+        Assert.notNull(u, "El actor no existe");
+        chekBody(message.getBody());
+        message.setSender(u);
+        message.setSentDate(new Date(System.currentTimeMillis() - 100));
+        List<Folder> folders = Collections.EMPTY_LIST;
+        folders.addAll(u.getFolders());
+        folders.get(0).getMessages().add(message);
+        u.setFolders(folders);
+        Actor recipient = message.getRecipient();
+        recieveMessage(message,recipient);
+        return message;
+    }
+    public Message recieveMessage(Message message, Actor a){
+        List<Folder> folders = Collections.EMPTY_LIST;
+        folders.addAll(a.getFolders());
+        folders.get(2).getMessages().add(message);
+        return  message;
+    }
 
     //Manage Message
 
