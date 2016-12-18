@@ -60,6 +60,8 @@
                     code="master.page.actor.edit.do"/></a></li>
             <li><a href="actor/comment/write.do"><spring:message
                     code="master.page.write.comment.do"/></a></li>
+            <li><a href="user/recipes/stream.do"><spring:message
+                    code="master.page.stream.recipe.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('USER')">
@@ -80,6 +82,8 @@
                     code="master.page.actor.edit.do"/></a></li>
             <li><a href="actor/comment/write.do"><spring:message
                     code="master.page.write.comment.do"/></a></li>
+            <li><a href="user/recipes/stream.do"><spring:message
+                    code="master.page.stream.recipe.do"/></a></li>
         </security:authorize>
 
 
