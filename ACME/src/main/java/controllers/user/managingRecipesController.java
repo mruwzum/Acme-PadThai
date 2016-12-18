@@ -70,6 +70,8 @@ public class managingRecipesController extends AbstractController {
         result.addObject("updateDate",res.getUpdateDate().toString());
         result.addObject("categorie",res.getCategorie());
         result.addObject("user",res.getUser().getName());
+        result.addObject("rate",res.getRate());
+        //TODO ver cuantos true y cuantos false hay en el rate
 
         return result;
     }

@@ -47,6 +47,9 @@
 <spring:message code="recipe.view.user" var="userTitle"/>
 <h1><jstl:out value="${userTitle}"/></h1>
 <jstl:out value="${user}"/>
+<spring:message code="recipe.view.rate" var="rateTitle"/>
+<h1><jstl:out value="${rateTitle}"/></h1>
+<jstl:out value="${rate}"/>
 
 
 </body>
