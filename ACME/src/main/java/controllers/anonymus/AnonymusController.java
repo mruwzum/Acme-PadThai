@@ -106,13 +106,17 @@ public class AnonymusController extends AbstractController {
         ModelAndView modelAndView;
         User user = userService.findOne(userID);
         Boolean isFollowing = othersService.getFollowing().contains(user);
+        Boolean isnotFollowing = !othersService.getFollowing().contains(user);
         modelAndView = new ModelAndView("user/view");
+        modelAndView.addObject("id", user.getId());
         modelAndView.addObject("name", user.getName());
         modelAndView.addObject("surname", user.getSurname());
         modelAndView.addObject("emailAddress", user.getEmailAddress());
         modelAndView.addObject("phone", user.getPhone());
         modelAndView.addObject("postalAddress", user.getPostalAddress());
         modelAndView.addObject("isFollowing", isFollowing);
+        modelAndView.addObject("isnotFollowing", isnotFollowing);
+
 
         return modelAndView;
     }
@@ -121,13 +125,20 @@ public class AnonymusController extends AbstractController {
     public ModelAndView nutritionistProfile(@RequestParam int userID) {
         ModelAndView modelAndView;
         Nutritionist user = nutritionistService.findOne(userID);
+        Boolean isFollowing = othersService.getFollowing().contains(user);
+        Boolean isnotFollowing = !othersService.getFollowing().contains(user);
 
         modelAndView = new ModelAndView("user/view");
+        modelAndView.addObject("id", user.getId());
         modelAndView.addObject("name", user.getName());
         modelAndView.addObject("surname", user.getSurname());
         modelAndView.addObject("emailAddress", user.getEmailAddress());
         modelAndView.addObject("phone", user.getPhone());
         modelAndView.addObject("postalAddress", user.getPostalAddress());
+        modelAndView.addObject("isFollowing", isFollowing);
+        modelAndView.addObject("isnotFollowing", isnotFollowing);
+
+
 
         return modelAndView;
     }

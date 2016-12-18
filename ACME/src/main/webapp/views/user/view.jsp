@@ -39,15 +39,16 @@
 <jstl:out value="${postalAddress}"/>
 
 <jstl:if test="${isFollowing}">
-    <a href="user/follow.do?userID=${row.id}">
-        <spring:message code="actor.unfollow"/>
+    <a href="user/follow.do?id=${id}">
+        <spring:message code="actor.follow"/>
     </a>
 </jstl:if>
 
-<a href="user/follow.do?userID=${row.id}">
-    <spring:message code="actor.follow"/>
-</a>
-
+<jstl:if test="${isnotFollowing}">
+    <a href="user/unfollow.do?id=${id}">
+        <spring:message code="actor.unfollow"/>
+    </a>
+</jstl:if>
 
 </body>
 </html>

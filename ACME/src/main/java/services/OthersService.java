@@ -74,7 +74,7 @@ public class OthersService {
 
     // Other business methods -------------------------------------------------------------------------------
 
-    Others findByPrincipal() {
+    public Others findByPrincipal() {
         Others result;
         UserAccount userAccount;
 
@@ -86,7 +86,7 @@ public class OthersService {
         return result;
     }
 
-    Others findByUserAccount(UserAccount userAccount) {
+    public Others findByUserAccount(UserAccount userAccount) {
         Assert.notNull(userAccount);
 
         Others result;
@@ -96,19 +96,21 @@ public class OthersService {
         return result;
     }
 
-    void followOther(Others r) {
+    public void followOther(Others r) {
         Assert.notNull(r);
         Others u = findByPrincipal();
         Assert.notNull(u);
-        r.getFollowers().add(u);
+        Assert.isTrue(u.getFollowers().contains(r),"Lo contiene");
+        u.getFollowers().add(r);
     }
 
-    void unfollowOther(Others r) {
+    public void unfollowOther(Others r) {
         Assert.notNull(r);
         Others u = findByPrincipal();
         Assert.notNull(u);
-        //Lo mismo que arriba
-        r.getFollowers().remove(u);
+        Assert.isTrue(!u.getFollowers().contains(r),"No contiene");
+
+        u.getFollowers().remove(r);
     }
 
     public Collection<Recipe> getRecipesOfFollowers() {
