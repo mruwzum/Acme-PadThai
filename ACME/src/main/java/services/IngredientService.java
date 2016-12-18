@@ -69,6 +69,12 @@ public class IngredientService {
         a.getProperty().remove(p);
     }
 
+    public void addProperty(Ingredient a, Property p) {
+        Assert.notNull(a);
+        Assert.notNull(p);
+        a.getProperty().add(p);
+    }
+
     // Other business methods -------------------------------------------------------------------------------
 
 }

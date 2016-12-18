@@ -2,7 +2,6 @@ package controllers.nutritionist;
 
 import controllers.AbstractController;
 import domain.Ingredient;
-import domain.Nutritionist;
 import domain.Property;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -112,6 +111,23 @@ public class ingredientManageController extends AbstractController {
         return result;
     }
 
+    @RequestMapping(value = "/ingredient/addProperty", method = RequestMethod.GET)
+    public ModelAndView addProperty(@RequestParam int id,int propertyID) {
+        ModelAndView result;
+        Ingredient ing = ingredientService.findOne(id);
+        Property property = propertyService.findOne(propertyID);
+        ingredientService.addProperty(ing,property);
+        result = new ModelAndView("redirect:list.do");
+        /*try {
+            ingredientService.delete(ingredient);
+            result = new ModelAndView("redirect:list.do");
+        } catch (Throwable oops) {
+            result = createEditModelAndView(ingredient, "ingredient.commit.error");
+        }*/
+
+        return result;
+    }
+
     protected ModelAndView createEditModelAndView(Ingredient ingredient) {
         ModelAndView result;
 
@@ -126,6 +142,8 @@ public class ingredientManageController extends AbstractController {
         String description = ingredient.getDescription();
         String picture = ingredient.getPicture();
         Collection<Property> property = ingredient.getProperty();
+        Collection<Property> properties = propertyService.findAll();
+        properties.removeAll(property);
 
         result = new ModelAndView("ingredient/edit");
         result.addObject("ingredient", ingredient);
@@ -133,6 +151,8 @@ public class ingredientManageController extends AbstractController {
         result.addObject("description", description);
         result.addObject("picture", picture);
         result.addObject("property", property);
+        result.addObject("properties", properties);
+        result.addObject("id", ingredient.getId());
 
         return result;
 

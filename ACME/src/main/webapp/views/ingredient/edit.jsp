@@ -19,7 +19,7 @@
 
 <form:form action="nutritionist/ingredient/save.do" modelAttribute="ingredient">
 
-    <%--<form:hidden path="id"/>--%>
+    <form:hidden path="id"/>
     <form:hidden path="version"/>
 
 
@@ -45,7 +45,7 @@
     <br/>
 
 
-    <display:table name="property" id="row" requestURI="http://localhost:8080/nutritionist/property/list.do" pagesize="5"
+    <display:table name="property" id="row" requestURI="http://localhost:8080/nutritionist/property/list.do" pagesize="20"
                    class="displaytag">
 
         <spring:message code="p.name" var="name"/>
@@ -53,10 +53,28 @@
 
         <spring:message code="p.quantity" var="quantity"/>
         <display:column property="quantity" title="${quantity}"/>
-        <jstl:set value="id" var="id"/>
+
         <display:column>
-            <a href="nutritionist/ingredient/deleteProperty.do?id=${id}&propertyID=${row.id}">
+            <a href="nutritionist/ingredient/deleteProperty.do?id=${ingredient.id}&propertyID=${row.id}">
                 <spring:message code="recipe.delete"/>
+            </a>
+        </display:column>
+
+
+    </display:table>
+
+    <display:table name="properties" id="row" requestURI="http://localhost:8080/nutritionist/property/list.do" pagesize="20"
+                   class="displaytag">
+
+        <spring:message code="p.name" var="name"/>
+        <display:column property="name" title="${name}"/>
+
+        <spring:message code="p.quantity" var="quantity"/>
+        <display:column property="quantity" title="${quantity}"/>
+
+        <display:column>
+            <a href="nutritionist/ingredient/addProperty.do?id=${ingredient.id}&propertyID=${row.id}">
+                <spring:message code="recipe.add"/>
             </a>
         </display:column>
 
