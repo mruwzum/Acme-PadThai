@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d45cdad-cd5d-49b5-a719-5857e53aeea3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/repositories/IngredientRepository.class" afterPath="$PROJECT_DIR$/target/classes/repositories/IngredientRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/services/NutritionistServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/services/NutritionistServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Inteligencia2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/services/ActorServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/services/ActorServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/repositories/IngredientRepository.java" afterPath="$PROJECT_DIR$/src/main/java/repositories/IngredientRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/recipe/messages_es.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/recipe/messages_es.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/user/followActorController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/user/followActorController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,34 +22,22 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp">
+      <file leaf-file-name="followActorController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/followActorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="73" column="50" lean-forward="false" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+            <state relative-caret-position="300">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="managingRecipesController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java">
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1053">
-              <caret line="158" column="33" lean-forward="false" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
+            <state relative-caret-position="357">
+              <caret line="72" column="34" lean-forward="false" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActorService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/ActorService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="462" column="70" lean-forward="false" selection-start-line="462" selection-start-column="28" selection-end-line="462" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,7 +71,6 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/anonymus/AnonymusController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/IngredientRepository.java" />
@@ -99,6 +82,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/user/followActorController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
       </list>
     </option>
   </component>
@@ -174,148 +159,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recipe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recipe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'messages'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -414,6 +257,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme-Pad-Thai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ACME" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -424,7 +297,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="actor&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;popu&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;Acto&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;conte&#9;PSI&#9;JAVA://domain.Contest&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml&#10;adminser&#9;PSI&#9;JAVA://services.AdminService" />
+    <property name="SearchEverywhereHistoryKey" value="head&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;actor&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;popu&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;Acto&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;conte&#9;PSI&#9;JAVA://domain.Contest&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml&#10;adminser&#9;PSI&#9;JAVA://services.AdminService" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
@@ -449,114 +322,26 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Acme-Pad-Thai.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/MessagesController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/MessagesFolderController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/anonymus/AnonymusController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/nutritionist/ingredientManageController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/nutritionist/propertyManageController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/converters/StringToMessageConverter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/domain/Message.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/domain/Quantity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/domain/SocialIdentity.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/ActorService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/ContestService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/IngredientService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/PropertyService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/UserService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/config/converters.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/contest/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/contest/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/folder/list.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/folder/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/folder/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/edit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/list.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/security/registration.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/list.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/tiles_es.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1.war</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/PopulateDatabase.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/anonymus/AnonymusController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/cook/managingMasterClassesController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/sponsor/campaignManageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/META-INF/MANIFEST.MF</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/user/managingRecipesController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/MessageToStringConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/SocialIdentityToStringConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/StringToMessageConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/StringToSocialIdentityConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/StringToUserAccountConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/StringToUserConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/UserAccountToStringConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/UsertoStringConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/Message.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/Quantity.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/SocialIdentity.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/User.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/repositories/IngredientRepository.class</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/ActorService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/ContestService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/IngredientService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/NutritionistService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/PropertyService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/UserService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/i18n-l10n.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/converters.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/security.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/utilities/HashPassword.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/utilities/PopulateDatabase.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/utilities/QueryDatabase.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/contest/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/contest/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/security/registration.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/list.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/tiles_es.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/PopulateDatabase.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/anonymus/AnonymusController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/cook/managingMasterClassesController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/sponsor/campaignManageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/recipe/list.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/recipe/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/recipe/messages_es.properties</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/user/managingRecipesController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/MessageToStringConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/SocialIdentityToStringConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/StringToMessageConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/StringToSocialIdentityConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/StringToUserAccountConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/StringToUserConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/UserAccountToStringConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/UsertoStringConverter.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/Message.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/Quantity.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/SocialIdentity.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/User.class</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/ActorService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/ContestService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/IngredientService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/NutritionistService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/PropertyService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/UserService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/converters.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/i18n-l10n.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/security.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/utilities/HashPassword.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/utilities/PopulateDatabase.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/utilities/QueryDatabase.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/test-classes/services/ActorServiceTest.class</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -564,19 +349,15 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/nutritionist/curriculaManageController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/edit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/list.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/tiles_es.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/list.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/tiles_es.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/view.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/MensajesController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/edit.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/list.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/text.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/tiles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/tiles_es.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/view.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -584,7 +365,14 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/nutritionist/curriculumManageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/MessagesController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/edit.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/list.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/tiles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/tiles_es.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/view.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -1161,7 +949,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481975685192</updated>
-      <workItem from="1481975687474" duration="15340000" />
+      <workItem from="1481975687474" duration="17007000" />
     </task>
     <task id="LOCAL-00001" summary="arreglao">
       <created>1481977250040</created>
@@ -1177,7 +965,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481981633298</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <created>1482057351147</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1482057351147</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1213,7 +1008,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15340000" />
+    <option name="totallyTimeSpent" value="17007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="-124" width="1280" height="1024" extended-state="0" />
@@ -1600,14 +1395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
@@ -1638,14 +1425,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="73" column="50" lean-forward="false" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/ActorService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -1656,10 +1435,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Inteligencia">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inteligencia2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/converters.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1053">
           <caret line="158" column="33" lean-forward="false" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="73" column="50" lean-forward="false" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/followActorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="72" column="34" lean-forward="false" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
           <folding />
         </state>
       </provider>

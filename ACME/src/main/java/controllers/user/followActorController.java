@@ -31,10 +31,7 @@ public class followActorController extends AbstractController {
         super();
     }
 
-    @RequestMapping(value = "follow", method = RequestMethod.POST, params = "save")
-    public ModelAndView saveFollowForm(@Valid @ModelAttribute User user, BindingResult bindingResult) {
-        ModelAndView result;
-        return null;
-    }
+
+
 
 }
