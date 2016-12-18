@@ -38,6 +38,8 @@ public class AnonymusController extends AbstractController {
     private SponsorService sponsorService;
     @Autowired
     private ActorService actorService;
+    @Autowired
+    private OthersService   othersService;
 
 
     public AnonymusController(){
@@ -77,6 +79,19 @@ public class AnonymusController extends AbstractController {
         return result;
     }
 
+    @RequestMapping(value = "/others", method = RequestMethod.GET)
+    public ModelAndView others(){
+        ModelAndView result;
+        Collection<User> aux = userService.findAll();
+        Collection<Nutritionist> nutritionists =  nutritionistService.findAll();
+        result = new ModelAndView("actor/list");
+        result.addObject("user", aux);
+        result.addObject("nutritionist", nutritionists);
+        result.addObject("requestURI", "anonymus/users.do");
+        return result;
+    }
+
+
     @RequestMapping(value = "/userRecipes", method = RequestMethod.GET)
     public ModelAndView userRecipes(@RequestParam int userID) {
         ModelAndView modelAndView;
@@ -90,6 +105,22 @@ public class AnonymusController extends AbstractController {
     public ModelAndView userProfile(@RequestParam int userID) {
         ModelAndView modelAndView;
         User user = userService.findOne(userID);
+        Boolean isFollowing = othersService.getFollowing().contains(user);
+        modelAndView = new ModelAndView("user/view");
+        modelAndView.addObject("name", user.getName());
+        modelAndView.addObject("surname", user.getSurname());
+        modelAndView.addObject("emailAddress", user.getEmailAddress());
+        modelAndView.addObject("phone", user.getPhone());
+        modelAndView.addObject("postalAddress", user.getPostalAddress());
+        modelAndView.addObject("isFollowing", isFollowing);
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/nutritionistProfile", method = RequestMethod.GET)
+    public ModelAndView nutritionistProfile(@RequestParam int userID) {
+        ModelAndView modelAndView;
+        Nutritionist user = nutritionistService.findOne(userID);
 
         modelAndView = new ModelAndView("user/view");
         modelAndView.addObject("name", user.getName());

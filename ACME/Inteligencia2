@@ -1,0 +1,4 @@
+JPA TRANSACTION:
+Normalmente es por una violación a la hora de guardar un mensaje, hay que ir a ConstraintViolationImpl y mirar donde
+ha fallado.
+

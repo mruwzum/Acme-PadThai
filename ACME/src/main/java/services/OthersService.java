@@ -124,6 +124,18 @@ public class OthersService {
         return res;
     }
 
+    public Collection<Others> getFollowing(){
+        Collection<Others> all = othersRepository.findAll();
+        List<Others> following =  new ArrayList<>();
+        for(Others o: all){
+            if(o.getFollowers().contains(findByPrincipal())){
+                following.add(o);
+            }
+        }
+
+        return following;
+    }
+
     void likeRecipe(Recipe r) {
         Assert.notNull(r);
         Others u = findByPrincipal();
