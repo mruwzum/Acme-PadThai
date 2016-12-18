@@ -41,6 +41,11 @@
                 <spring:message code="recipe.users"/>
             </a>
         </display:column>
+         <display:column>
+        <a href="http://localhost:8080/user/recipe/view.do?recipeID=${row.id}">
+            <spring:message code="recipe.view"/>
+        </a>
+         </display:column>
 
 
     <%--TODO hacer esto para que un usuario pueda darle a like a las recetas de otro--%>

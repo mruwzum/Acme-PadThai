@@ -1,6 +1,7 @@
 package controllers.user;
 
 import controllers.AbstractController;
+import converters.UsertoStringConverter;
 import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -68,7 +69,7 @@ public class managingRecipesController extends AbstractController {
         result.addObject("creationDate",res.getCreationDate().toString());
         result.addObject("updateDate",res.getUpdateDate().toString());
         result.addObject("categorie",res.getCategorie());
-        result.addObject("user",res.getUser());
+        result.addObject("user",res.getUser().getName());
 
         return result;
     }
