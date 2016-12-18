@@ -16,8 +16,10 @@ import services.RecipeService;
 import services.UserService;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by mruwzum on 14/12/16.
@@ -58,7 +60,26 @@ public class managingRecipesController extends AbstractController {
 
         return result;
     }
+    @RequestMapping(value = "recipes/stream", method = RequestMethod.GET)
+     public ModelAndView streamRecipes() {
+        ModelAndView result;
 
+        Collection<Recipe> recipeCollection;
+        recipeCollection = userService.getAllRecipes();
+        Assert.notEmpty(recipeCollection);
+        Collection<Recipe> res = new ArrayList<>();
+        List<Recipe> aux = new ArrayList<>(userService.getAllRecipes());
+        res.add(aux.get(0));
+        res.add(aux.get(1));
+        res.add(aux.get(2));
+        res.add(aux.get(3));
+        res.add(aux.get(4));
+        result = new ModelAndView("recipe/strean");
+        result.addObject("recipe", aux);
+        result.addObject("requestURI", "user/recipes/stream.do");
+
+        return result;
+    }
     @RequestMapping(value = "recipe/view", method = RequestMethod.GET)
     public ModelAndView viewRecipe(@RequestParam int recipeID) {
         ModelAndView result;
