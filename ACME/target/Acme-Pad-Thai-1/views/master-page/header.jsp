@@ -36,6 +36,7 @@
             </li>
             <li><a href="admin/key/create.do"><spring:message
                     code="master.page.admin.createKey.do"/></a></li>
+
         </security:authorize>
 
 
@@ -57,6 +58,8 @@
                     code="master.page.actor.messages"/></a></li>
             <li><a href="actor/NutritionistPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
+            <li><a href="actor/comment/write.do"><spring:message
+                    code="master.page.write.comment.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('USER')">
@@ -75,7 +78,8 @@
             <li><a href="anonymus/others.do"><spring:message code="master.page.users"/></a></li>
             <li><a href="actor/userPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
-
+            <li><a href="actor/comment/write.do"><spring:message
+                    code="master.page.write.comment.do"/></a></li>
         </security:authorize>
 
 
