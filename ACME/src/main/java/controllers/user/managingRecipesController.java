@@ -74,7 +74,7 @@ public class managingRecipesController extends AbstractController {
         res.add(aux.get(2));
         res.add(aux.get(3));
         res.add(aux.get(4));
-        result = new ModelAndView("recipe/strean");
+        result = new ModelAndView("recipe/stream");
         result.addObject("recipe", aux);
         result.addObject("requestURI", "user/recipes/stream.do");
 

@@ -36,6 +36,9 @@
         <put-attribute name="title" value="Ver receta"/>
         <put-attribute name="body" value="/views/recipe/view.jsp"/>
     </definition>
-
+    <definition name="recipe/stream" extends="master.page">
+        <put-attribute name="title" value="Stream de recetas"/>
+        <put-attribute name="body" value="/views/recipe/stream.jsp"/>
+    </definition>
 
 </tiles-definitions>
