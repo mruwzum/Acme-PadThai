@@ -2170,10 +2170,6 @@
                 <ref bean="Spambox16"></ref>
             </list>
         </property>
-        <property name="followers">
-            <list>
-            </list>
-        </property>
 
     </bean>
     <!-- Nutritionist4 -->

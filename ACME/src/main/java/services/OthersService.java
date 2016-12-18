@@ -130,7 +130,7 @@ public class OthersService {
         Collection<Others> all = othersRepository.findAll();
         List<Others> following =  new ArrayList<>();
         for(Others o: all){
-            if(o.getFollowers().contains(findByPrincipal())){
+            if(!o.getFollowers().contains(findByPrincipal())){
                 following.add(o);
             }
         }
