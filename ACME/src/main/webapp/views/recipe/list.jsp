@@ -42,7 +42,8 @@
             </a>
         </display:column>
 
-<%--TODO hacer esto para que un usuario pueda darle a like a las recetas de otro--%>
+
+    <%--TODO hacer esto para que un usuario pueda darle a like a las recetas de otro--%>
     <%--, calificar y editar solo sus recetas--%>
     <%--Autorizado como usuario propietario--%>
         <security:authorize access="hasRole('USER')">
@@ -58,12 +59,18 @@
                     <spring:message code="recipe.edit"/>
                 </a>
             </display:column>
+
         </security:authorize>
+
 
 
     <%--Autorizado--%>
 
     </display:table>
+<security:authorize access="hasRole('USER')">
 
+<input type="button" name="newRecipe"
+       value="<spring:message code="recipe.new" />"
+       onclick="relativeRedir('user/recipes/create.do');"/>
 
-
+</security:authorize>

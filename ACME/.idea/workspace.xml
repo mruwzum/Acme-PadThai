@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d45cdad-cd5d-49b5-a719-5857e53aeea3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1.war" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/anonymus/AnonymusController.class" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/anonymus/AnonymusController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/user/managingRecipesController.class" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/user/managingRecipesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/Categorie.class" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/Categorie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/anonymus/AnonymusController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/anonymus/AnonymusController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/user/managingRecipesController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/user/managingRecipesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/domain/Categorie.class" afterPath="$PROJECT_DIR$/target/classes/domain/Categorie.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/repositories/IngredientRepository.class" afterPath="$PROJECT_DIR$/target/classes/repositories/IngredientRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/services/NutritionistServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/services/NutritionistServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/Categorie.java" afterPath="$PROJECT_DIR$/src/main/java/domain/Categorie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/repositories/IngredientRepository.java" afterPath="$PROJECT_DIR$/src/main/java/repositories/IngredientRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/recipe/messages_es.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/recipe/messages_es.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages.properties" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages_es.properties" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages_es.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/recipe/list.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/recipe/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/recipe/messages.properties" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/recipe/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/recipe/messages_es.properties" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/recipe/messages_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/META-INF/MANIFEST.MF" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,18 +29,28 @@
       <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            <state relative-caret-position="477">
+              <caret line="73" column="50" lean-forward="false" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QualifierController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java">
+      <file leaf-file-name="managingRecipesController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="1053">
+              <caret line="158" column="33" lean-forward="false" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/services/ActorService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="462" column="70" lean-forward="false" selection-start-line="462" selection-start-column="28" selection-end-line="462" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,37 +58,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Contest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="managingRecipesController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="66" column="46" lean-forward="false" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="193" column="26" lean-forward="true" selection-start-line="193" selection-start-column="26" selection-end-line="193" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>IngredientRepository</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ingredientRepository</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -110,17 +83,22 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/tiles.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/tiles_es.xml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/user/likeRecipeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/messages_es.properties" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Categorie.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/anonymus/AnonymusController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/IngredientRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/IngredientService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/nutritionist/ingredientManageController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/ActorService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/messages_es.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" />
       </list>
     </option>
   </component>
@@ -272,7 +250,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="recipe" />
+              <option name="myItemId" value="security" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -305,10 +283,6 @@
               <option name="myItemId" value="recipe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'messages'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -336,37 +310,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="master-page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master-page" />
+              <option name="myItemId" value="recipe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -470,66 +414,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nutritionist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="anonymus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -540,7 +424,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="conte&#9;PSI&#9;JAVA://domain.Contest&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml&#10;adminser&#9;PSI&#9;JAVA://services.AdminService" />
+    <property name="SearchEverywhereHistoryKey" value="actor&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;popu&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;Acto&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;conte&#9;PSI&#9;JAVA://domain.Contest&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml&#10;adminser&#9;PSI&#9;JAVA://services.AdminService" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
@@ -551,7 +435,304 @@
       <recent name="$PROJECT_DIR$/src/main/java/controllers/user" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Acme-Pad-Thai.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/EditPersonalDataController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/MessagesController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/MessagesFolderController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/anonymus/AnonymusController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/nutritionist/ingredientManageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/nutritionist/propertyManageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/converters/StringToMessageConverter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/domain/Message.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/domain/Quantity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/domain/SocialIdentity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/ActorService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/ContestService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/IngredientService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/PropertyService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/UserService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/contest/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/contest/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/folder/list.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/folder/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/folder/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/edit.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/list.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/message/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/security/registration.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/list.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/tiles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/tiles_es.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1.war</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/PopulateDatabase.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/anonymus/AnonymusController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/cook/managingMasterClassesController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/sponsor/campaignManageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/controllers/user/managingRecipesController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/MessageToStringConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/SocialIdentityToStringConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/StringToMessageConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/StringToSocialIdentityConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/StringToUserAccountConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/StringToUserConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/UserAccountToStringConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/converters/UsertoStringConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/Message.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/Quantity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/SocialIdentity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/domain/User.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/ActorService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/ContestService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/IngredientService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/NutritionistService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/PropertyService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/UserService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/i18n-l10n.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/security.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/spring/config/tiles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/utilities/HashPassword.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/utilities/PopulateDatabase.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/utilities/QueryDatabase.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/contest/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/contest/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/security/registration.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/list.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/tiles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/user/tiles_es.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/PopulateDatabase.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/anonymus/AnonymusController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/cook/managingMasterClassesController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/sponsor/campaignManageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/user/managingRecipesController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/MessageToStringConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/SocialIdentityToStringConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/StringToMessageConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/StringToSocialIdentityConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/StringToUserAccountConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/StringToUserConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/UserAccountToStringConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/converters/UsertoStringConverter.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/Message.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/Quantity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/SocialIdentity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/User.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/ActorService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/ContestService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/IngredientService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/NutritionistService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/PropertyService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/UserService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/i18n-l10n.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/security.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/tiles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/utilities/HashPassword.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/utilities/PopulateDatabase.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/utilities/QueryDatabase.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/test-classes/services/ActorServiceTest.class</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/nutritionist/curriculaManageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/edit.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/list.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/tiles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/ingredient/tiles_es.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/list.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/messages.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/messages_es.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/tiles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/property/tiles_es.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/user/view.jsp</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/nutritionist/curriculumManageController.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration default="false" name="PopulateDatabase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="utilities.PopulateDatabase" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Acme-Pad-Thai" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ActorServiceTest.testRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Acme-Pad-Thai" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.ActorServiceTest" />
+      <option name="METHOD_NAME" value="testRandom" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="QueryDatabase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="utilities.QueryDatabase" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Acme-Pad-Thai" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -953,9 +1134,19 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Application.PopulateDatabase" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ActorServiceTest.testRandom" />
+      <item index="3" class="java.lang.String" itemvalue="Application.QueryDatabase" />
     </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ActorServiceTest.testRandom" />
+        <item index="1" class="java.lang.String" itemvalue="Application.QueryDatabase" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PopulateDatabase" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -970,7 +1161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481975685192</updated>
-      <workItem from="1481975687474" duration="5319000" />
+      <workItem from="1481975687474" duration="15340000" />
     </task>
     <task id="LOCAL-00001" summary="arreglao">
       <created>1481977250040</created>
@@ -979,11 +1170,50 @@
       <option name="project" value="LOCAL" />
       <updated>1481977250040</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".">
+      <created>1481981633297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1481981633298</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 18h 45m 16s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 18h 45m 31s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 18h 47m 14s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 18h 49m 32s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 18h 50m 42s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 18h 56m 55s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 19h 02m 41s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 19h 03m 06s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 19h 07m 04s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 19h 27m 27s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5319000" />
+    <option name="totallyTimeSpent" value="15340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="-124" width="1280" height="1024" extended-state="0" />
@@ -997,8 +1227,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1007,7 +1237,7 @@
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1019,6 +1249,37 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819063" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1030,11 +1291,12 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="arreglao" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglao" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1067,22 +1329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/tiles_es.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/tiles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="33" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1980">
@@ -1099,40 +1345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/messages_es.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/Recipe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/nutritionist/propertyManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="76" column="74" lean-forward="true" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -1150,8 +1366,8 @@
         <state relative-caret-position="205">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#1216#1217#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="false" />
+            <element signature="e#1243#1244#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1178,26 +1394,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="66" column="46" lean-forward="false" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1210,10 +1410,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/tiles_es.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="90">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/PopulateDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="53" column="45" lean-forward="true" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="187" column="77" lean-forward="false" selection-start-line="187" selection-start-column="77" selection-end-line="187" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -1236,10 +1452,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/tiles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="193" column="26" lean-forward="true" selection-start-line="193" selection-start-column="26" selection-end-line="193" selection-end-column="26" />
+        <state relative-caret-position="480">
+          <caret line="32" column="55" lean-forward="false" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="130" column="0" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/nutritionist/propertyManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/message/view.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="98" column="30" lean-forward="false" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+          <folding>
+            <element signature="e#2117#2118#0" expanded="true" />
+            <element signature="e#2147#2148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/ActorRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="366" column="12" lean-forward="false" selection-start-line="366" selection-start-column="12" selection-end-line="366" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/AdminRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/actor/MessagesFolderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="38" column="52" lean-forward="false" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding>
+            <marker date="1482053980000" expanded="false" signature="35:37" ph="..." />
+            <marker date="1482053980000" expanded="true" signature="2201:2317" ph="{...}" />
+            <marker date="1482053980000" expanded="true" signature="2391:2460" ph="{...}" />
+            <marker date="1482053980000" expanded="true" signature="2550:2757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/IngredientRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/IngredientService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="54" column="26" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+          <folding>
+            <marker date="1482054026000" expanded="true" signature="26:45" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/nutritionist/ingredientManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/services/AbstractTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="2122" column="4" lean-forward="false" selection-start-line="2122" selection-start-column="4" selection-end-line="2122" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="361" column="0" lean-forward="false" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+          <folding>
+            <marker date="1482054022000" expanded="true" signature="11675:11686" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/UserAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="82" column="39" lean-forward="true" selection-start-line="80" selection-start-column="2" selection-end-line="82" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/messages_es.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="73" column="50" lean-forward="false" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/ActorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="462" column="70" lean-forward="false" selection-start-line="462" selection-start-column="28" selection-end-line="462" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="158" column="33" lean-forward="false" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
           <folding />
         </state>
       </provider>

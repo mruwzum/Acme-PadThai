@@ -16,6 +16,7 @@ import services.UserService;
 
 import javax.validation.Valid;
 import java.util.Collection;
+import java.util.Date;
 
 /**
  * Created by mruwzum on 14/12/16.
@@ -74,9 +75,16 @@ public class managingRecipesController extends AbstractController {
     public ModelAndView create() {
         ModelAndView result;
         Recipe recipe;
-
+        String creationDate = "hola";
+        String updateDate = "hola";
         recipe = recipeService.create();
         result = createEditModelAndView(recipe);
+        result.addObject("creationDate", creationDate);
+        result.addObject("updateDate", creationDate);
+
+
+
+
 
         return result;
     }
@@ -141,8 +149,18 @@ public class managingRecipesController extends AbstractController {
         ModelAndView result;
         String title = recipe.getTitle();
         String sumary = recipe.getSummary();
-        String creationDate = recipe.getCreationDate().toString();
-        String updateDate = recipe.getUpdateDate().toString();
+        String creationDate;
+        if(recipe.getCreationDate() == null){
+            creationDate = new Date(System.currentTimeMillis() - 100).toString();
+        }else{
+            creationDate = recipe.getCreationDate().toString();
+        }
+        String updateDate;
+        if(recipe.getUpdateDate() == null){
+            updateDate = new Date(System.currentTimeMillis() - 100).toString();
+        }else{
+            updateDate = recipe.getUpdateDate().toString();
+        }
         Collection<String> pictures = recipe.getPictures();
         result = new ModelAndView("recipe/edit");
 
