@@ -37,7 +37,7 @@
         <value>/views/ingredient/messages</value>
         <value>/views/property/messages</value>
 
-
+        <value>/views/admin/messages</value>
 
     </util:list>
 

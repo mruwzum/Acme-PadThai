@@ -38,7 +38,7 @@
         <value>/views/property/messages</value>
         <value>/views/curricula/messages</value>
 
-
+        <value>/views/admin/messages</value>
 
     </util:list>
 
