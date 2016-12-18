@@ -32,7 +32,7 @@
         <form:select path="rate">
             <jstl:forEach var="rate" items="${Boolean}">
                 <jstl:out value="-----"/>
-                <form:option value="${recipe.id}"><jstl:out value="${rate}"></jstl:out></form:option>
+                <form:option value="${id}"><jstl:out value="${rate}"></jstl:out></form:option>
                 <br>
             </jstl:forEach>
         </form:select>

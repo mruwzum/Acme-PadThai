@@ -31,8 +31,11 @@
                     <li><a href="cook/masterClass/list.do.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
 
+
                 </ul>
             </li>
+            <li><a href="admin/key/create.do"><spring:message
+                    code="master.page.admin.createKey.do"/></a></li>
         </security:authorize>
 
 

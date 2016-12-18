@@ -179,12 +179,12 @@ public class UserService {
     public void qualifyRecipe(Recipe r) {
         User u = findByPrincipal();
         Assert.notNull(u);
-        Assert.isTrue(!u.getRecipes().contains(r),"No contiene");
-        Assert.isTrue(!canBeQualified(r), "La receta no puede ser calificada");
+        Assert.isTrue(u.getRecipes().contains(r),"No contiene");
+        Assert.isTrue(canBeQualified(r), "La receta no puede ser calificada");
         List<Contest> contests = new ArrayList<>(contestService.findAll());
         List<Recipe> recipes = new ArrayList<>(contests.get(0).getWinners());
         recipes.add(r);
-        contests.get(2).setWinners(recipes);
+        contests.get(0).setWinners(recipes);
 
 
 

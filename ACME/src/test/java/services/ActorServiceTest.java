@@ -46,7 +46,8 @@ public class ActorServiceTest extends AbstractTest {
     private IngredientService ingredientService;
     @Autowired
     private NutritionistService nutritionistService;
-
+    @Autowired
+    private RecipeService recipeService;
 
     //Tests -------------------------------------------------
 
@@ -350,12 +351,18 @@ public class ActorServiceTest extends AbstractTest {
 
     @Test
     public void testRandom(){
-        System.out.println(nutritionistService.findAll());
+        authenticate("User2");
+        List<Recipe> rec = new ArrayList<>(recipeService.findAll());
+        List<Contest> cont = new ArrayList<>(contestService.findAll());
+        System.out.println(rec);
+        System.out.println(cont);
+        Contest contest = cont.get(0);
+        Recipe recipe = rec.get(6);
+        userService.qualifyRecipe(recipe);
+        System.out.println(cont.get(0).getWinners());
+        System.out.println(rec.get(6));
 
-
-
-
-
+        authenticate(null);
     }
 
 }

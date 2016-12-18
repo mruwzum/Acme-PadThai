@@ -74,6 +74,7 @@ public class QualifierController extends AbstractController {
         res = new ModelAndView("recipe/qualify");
         res.addObject("recipe", recipe);
         res.addObject("rate", rate);
+        res.addObject("id",recipe.getId());
 
         return res;
     }
