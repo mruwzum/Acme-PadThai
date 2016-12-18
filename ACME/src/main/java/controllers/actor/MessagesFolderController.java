@@ -1,8 +1,5 @@
 package controllers.actor;
-
-import com.sun.javafx.sg.PGShape;
 import controllers.AbstractController;
-import domain.Actor;
 import domain.Folder;
 import domain.Message;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.ActorService;
 import services.FolderService;
-
 import java.util.Collection;
-import java.util.SortedSet;
 
 /**
  * Created by daviddelatorre on 15/12/16.

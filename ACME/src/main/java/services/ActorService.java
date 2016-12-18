@@ -1,6 +1,6 @@
 package services;
 
-import com.sun.deploy.util.SystemUtils;
+
 import domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
@@ -12,7 +12,6 @@ import security.Authority;
 import security.LoginService;
 import security.UserAccount;
 import security.UserAccountService;
-
 import java.util.*;
 
 /**
