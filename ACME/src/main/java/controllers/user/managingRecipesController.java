@@ -58,6 +58,20 @@ public class managingRecipesController extends AbstractController {
         return result;
     }
 
+    @RequestMapping(value = "recipe/view", method = RequestMethod.GET)
+    public ModelAndView viewRecipe(@RequestParam int recipeID) {
+        ModelAndView result;
+        Recipe res = recipeService.findOne(recipeID);
+        result = new ModelAndView("recipe/view");
+        result.addObject("title",res.getTitle());
+        result.addObject("summary",res.getSummary());
+        result.addObject("creationDate",res.getCreationDate().toString());
+        result.addObject("updateDate",res.getUpdateDate().toString());
+        result.addObject("categorie",res.getCategorie());
+        result.addObject("user",res.getUser());
+
+        return result;
+    }
     @RequestMapping(value = "recipes/list/my", method = RequestMethod.GET)
     public ModelAndView listMyRecipes() {
         ModelAndView result;

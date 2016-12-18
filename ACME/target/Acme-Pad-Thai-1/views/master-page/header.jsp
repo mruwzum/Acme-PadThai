@@ -69,8 +69,10 @@
 
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
+            <li><a href="anonymus/others.do"><spring:message code="master.page.users"/></a></li>
             <li><a href="actor/userPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
+
         </security:authorize>
 
 
