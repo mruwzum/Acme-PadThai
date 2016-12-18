@@ -462,10 +462,11 @@ public class ActorService {
         message.setSender(u);
         message.setSentDate(new Date(System.currentTimeMillis() - 100));
         List<Folder> folders = new ArrayList<>(u.getFolders());
-        Actor recipient =  actorRepository.findUserByName("user1");
+        Actor recipient =  actorRepository.findUserByName(u.getName());
         folders.get(0).getMessages().add(message);
         u.setFolders(folders);
         recieveMessage(message,recipient);
+
         return message;
     }
     public Message recieveMessage(Message message, Actor a){

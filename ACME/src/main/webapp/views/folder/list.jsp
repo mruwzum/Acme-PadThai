@@ -37,7 +37,7 @@
 
 <input type="button" name="newmessage"
        value="<spring:message code="folder.new.message" />"
-       onclick="relativeRedir('actor/message/new.do');"/>
+       onclick="relativeRedir('actor/mensaje/new.do');"/>
 <input type="button" name="newfolder"
        value="<spring:message code="folder.new.folder" />"
        onclick="relativeRedir('actor/folder/new.do');"/>

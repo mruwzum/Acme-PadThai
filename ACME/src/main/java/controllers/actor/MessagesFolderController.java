@@ -47,7 +47,7 @@ public class MessagesFolderController extends AbstractController {
         ModelAndView result;
         Folder folder = folderService.findOne(folderID);
         Collection<Message> messages = folder.getMessages();
-        result = new ModelAndView("message/list");
+        result = new ModelAndView("mensaje/list");
         result.addObject("messages", messages);
         return result;
     }
