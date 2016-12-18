@@ -59,6 +59,15 @@ public class ingredientManageController extends AbstractController {
         return result;
     }
 
+    @RequestMapping(value = "/ingredient/newIngredient", method = RequestMethod.GET)
+    public ModelAndView newIngredient() {
+        ModelAndView result;
+        result = new ModelAndView("ingredient/edit");
+        Ingredient ingredient = ingredientService.create();
+        result.addObject("ingredient",ingredient);
+        return result;
+    }
+
     @RequestMapping(value = "/ingredient/save", method = RequestMethod.POST, params = "save")
     public ModelAndView save(@Valid Ingredient ingredient, BindingResult binding) {
         ModelAndView result;
@@ -80,16 +89,16 @@ public class ingredientManageController extends AbstractController {
         return result;
     }
 
-    @RequestMapping(value = "/ingredient/delete", method = RequestMethod.POST, params = "delete")
-    public ModelAndView delete(Ingredient ingredient, BindingResult binding) {
+    @RequestMapping(value = "/ingredient/delete", method = RequestMethod.GET)
+    public ModelAndView delete(@RequestParam int ingredientID) {
         ModelAndView result;
-
-        try {
-            ingredientService.delete(ingredient);
-            result = new ModelAndView("redirect:list.do");
+        Ingredient ingredient = ingredientService.findOne(ingredientID);
+        ingredientService.delete(ingredient);
+        result = new ModelAndView("redirect:list.do");
+        /*try {
         } catch (Throwable oops) {
             result = createEditModelAndView(ingredient, "ingredient.commit.error");
-        }
+        }*/
 
         return result;
     }
@@ -158,4 +167,6 @@ public class ingredientManageController extends AbstractController {
 
 
     }
+
+
 }

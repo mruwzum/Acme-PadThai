@@ -35,4 +35,14 @@
         </a>
     </display:column>
 
+    <display:column>
+        <a href="nutritionist/ingredient/delete.do?ingredientID=${row.id}">
+            <spring:message code="recipe.delete"/>
+        </a>
+    </display:column>
+
 </display:table>
+
+<a href="nutritionist/ingredient/newIngredient.do">
+    <spring:message code="i.newIngredient"/>
+</a>

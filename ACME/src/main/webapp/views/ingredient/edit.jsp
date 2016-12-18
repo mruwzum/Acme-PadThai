@@ -44,6 +44,14 @@
     <form:errors cssClass="error" path="picture"/>
     <br/>
 
+    <input type="submit" name="save"
+           value="<spring:message code="i.send" />"/>&nbsp;
+
+
+    <input type="button" name="cancel"
+           value="<spring:message code="i.cancel" />"
+           onclick="relativeRedir('/nutritionist/ingredient/list.do');"/>
+    <br/>
 
     <display:table name="property" id="row" requestURI="http://localhost:8080/nutritionist/property/list.do" pagesize="20"
                    class="displaytag">
@@ -83,12 +91,5 @@
 
 
 
-    <input type="submit" name="save"
-           value="<spring:message code="i.send" />"/>&nbsp;
 
-
-    <input type="button" name="cancel"
-           value="<spring:message code="i.cancel" />"
-           onclick="relativeRedir('/nutritionist/ingredient/list.do');"/>
-    <br/>
 </form:form>

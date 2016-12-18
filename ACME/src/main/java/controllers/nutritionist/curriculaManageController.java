@@ -26,7 +26,7 @@ import java.util.Collection;
 public class curriculaManageController extends AbstractController {
 
     @Autowired
-    private NutritionistService NutritionistService;
+    private NutritionistService nutritionistService;
     @Autowired
     private CurriculaService curriculaService;
 
@@ -35,9 +35,9 @@ public class curriculaManageController extends AbstractController {
     }
 
     @RequestMapping(value = "/curricula/list")
-    public ModelAndView list(@RequestParam Nutritionist nutritionist) {
+    public ModelAndView list() {
         ModelAndView result;
-        Curricula aux = NutritionistService.getCurricula(nutritionist);
+        Curricula aux = nutritionistService.findByPrincipal().getCurricula();
         result = new ModelAndView("curricula/list");
         result.addObject("curricula", aux);
         result.addObject("requestURI", "nutritionist/curricula/list.do");
@@ -48,33 +48,29 @@ public class curriculaManageController extends AbstractController {
 
 
     @RequestMapping(value = "/curricula/edit", method = RequestMethod.GET)
-    public ModelAndView edit(@RequestParam int curriculaID) {
+    public ModelAndView edit() {
         ModelAndView result;
-        Curricula curricula = curriculaService.findOne(curriculaID);
-        Assert.notNull(curricula);
-        result = createEditModelAndView(curricula);
-        return result;
-    }
-
-    @RequestMapping(value = "/curricula/edit/save", method = RequestMethod.POST, params = "save")
-    public ModelAndView save(@Valid Curricula curricula, BindingResult binding, @RequestParam Nutritionist nutritionist) {
-        ModelAndView result;
-
-        if (binding.hasErrors()) {
+        Nutritionist nutritionist = nutritionistService.findByPrincipal();
+        Curricula curricula = nutritionist.getCurricula();
+        if(curricula!=null) {
             result = createEditModelAndView(curricula);
         } else {
-            try {
-            	curriculaService.save(curricula);
-                result = this.list(nutritionist);
-            } catch (Throwable oops) {
-                result = createEditModelAndView(curricula, "campaing.commit.error");
-            }
+            result = createEditModelAndView();
         }
+        return result;
+    }
+
+    @RequestMapping(value = "/curricula/save", method = RequestMethod.POST, params = "save")
+    public ModelAndView save(@Valid Curricula curricula, BindingResult binding) {
+        ModelAndView result;
+        nutritionistService.findByPrincipal().setCurricula(curriculaService.save(curricula));
+        result = this.edit();
+
 
         return result;
     }
 
-    @RequestMapping(value = "/curricula/edit/delete", method = RequestMethod.POST, params = "delete")
+    @RequestMapping(value = "/curricula/delete", method = RequestMethod.POST, params = "delete")
     public ModelAndView delete(Curricula curricula, BindingResult binding) {
         ModelAndView result;
 
@@ -98,10 +94,10 @@ public class curriculaManageController extends AbstractController {
 
     protected ModelAndView createEditModelAndView(Curricula curricula, String message) {
         ModelAndView result;
-        String photo = curricula.getPhoto().toString();
-        String educationSection = curricula.getEducationSection().toString();
-        String experienceSection = curricula.getExperienceSection().toString();
-        String hobbiesSection = curricula.getHobbiesSection().toString();
+        String photo = curricula.getPhoto();
+        String educationSection = curricula.getEducationSection();
+        String experienceSection = curricula.getExperienceSection();
+        String hobbiesSection = curricula.getHobbiesSection();
         Collection<String> referencias = curricula.getReferencias();
 
         result = new ModelAndView("curricula/edit");
@@ -111,6 +107,18 @@ public class curriculaManageController extends AbstractController {
         result.addObject("experienceSection", experienceSection);
         result.addObject("hobbiesSection", hobbiesSection);
         result.addObject("referencias", referencias);
+
+        return result;
+
+
+    }
+
+    protected ModelAndView createEditModelAndView() {
+        ModelAndView result;
+        Curricula curricula = curriculaService.create();
+
+        result = new ModelAndView("curricula/edit");
+        result.addObject("curricula", curricula);
 
         return result;
 

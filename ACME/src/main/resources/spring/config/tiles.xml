@@ -35,6 +35,7 @@
         <value>/views/mensaje/tiles.xml</value>
         <value>/views/ingredient/tiles.xml</value>
         <value>/views/property/tiles.xml</value>
+        <value>/views/curricula/tiles.xml</value>
 
 
 

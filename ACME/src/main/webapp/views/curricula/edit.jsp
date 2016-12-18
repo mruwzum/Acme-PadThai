@@ -17,56 +17,49 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<form:form action="curricula/edit.do" modelAttribute="curricula">
+<form:form action="nutritionist/curricula/save.do" modelAttribute="curricula">
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>
 
-    <form:label path="Education Section">
-        <spring:message code="curricula.education"/>
-    </form:label>
-    <form:input path="educationSection"/>
-    <form:errors cssClass="error" path="Education Section"/>
-    <br/>
-
-    <form:label path="Experience Section">
-        <spring:message code="curricula.experience"/>
-    </form:label>
-    <form:input path="experienceSection"/>
-    <form:errors cssClass="error" path="Experience Section"/>
-    <br/>
-
-    <form:label path="Hobbies Section">
-        <spring:message code="curricula.hobbies"/>
+    <form:label path="hobbiesSection">
+        <spring:message code="curricula.hobbiesSection"/>
     </form:label>
     <form:input path="hobbiesSection"/>
-    <form:errors cssClass="error" path="Hobbies Section"/>
+    <form:errors cssClass="error" path="hobbiesSection"/>
     <br/>
 
-    <form:label path="references">
-        <spring:message code="curricula.education"/>
+    <form:label path="educationSection">
+        <spring:message code="curricula.educationSection"/>
     </form:label>
-    <form:input path="references"/>
-    <form:errors cssClass="error" path="References"/>
+    <form:input path="educationSection"/>
+    <form:errors cssClass="error" path="educationSection"/>
     <br/>
 
-    <form:label path="Photo">
+    <form:label path="experienceSection">
+        <spring:message code="curricula.experienceSection"/>
+    </form:label>
+    <form:input path="experienceSection"/>
+    <form:errors cssClass="error" path="hobbiesSection"/>
+    <br/>
+
+    <form:label path="referencias">
+        <spring:message code="curricula.referencias"/>
+    </form:label>
+    <form:input path="referencias"/>
+    <form:errors cssClass="error" path="referencias"/>
+    <br/>
+
+    <form:label path="photo">
         <spring:message code="curricula.photo"/>
     </form:label>
     <form:input path="photo"/>
-    <form:errors cssClass="error" path="Photo"/>
+    <form:errors cssClass="error" path="photo"/>
     <br/>
-
 
     <input type="submit" name="save"
            value="<spring:message code="curricula.save" />"/>&nbsp;
-    <jstl:if test="${curricula.id != 0}">
-        <input type="submit" name="delete"
-               value="<spring:message code="curricula.delete" />"
-               onclick="return confirm('<spring:message code="curricula.delete"/>')"/>&nbsp;
-    </jstl:if>
-    <input type="button" name="cancel"
-           value="<spring:message code="curricula.cancel" />"
-           onclick="relativeRedir('/curricula/list.do');"/>
+
     <br/>
+
 </form:form>
