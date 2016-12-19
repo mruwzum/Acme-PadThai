@@ -26,5 +26,21 @@
     <spring:message code="p.quantity" var="quantity"/>
     <display:column property="quantity" title="${quantity}"/>
 
+    <display:column>
+        <a href="nutritionist/property/edit.do?propertyID=${row.id}">
+            <spring:message code="property.edit"/>
+        </a>
+    </display:column>
+
+    <display:column>
+        <a href="nutritionist/property/delete.do?propertyID=${row.id}">
+            <spring:message code="property.delete"/>
+        </a>
+    </display:column>
+
 
 </display:table>
+
+<a href="nutritionist/property/newProperty.do">
+    <spring:message code="property.newProperty"/>
+</a>
