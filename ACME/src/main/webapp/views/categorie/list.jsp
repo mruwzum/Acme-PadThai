@@ -34,7 +34,11 @@
             <spring:message code="categorie.edit"/>
         </a>
     </display:column>
-
+    <display:column>
+        <a href="admin/categorie/delete.do?contestID=${row.id}">
+            <spring:message code="categorie.delete"/>
+        </a>
+    </display:column>
 </display:table>
 
 <input type="button" name="create"
