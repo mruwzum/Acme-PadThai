@@ -39,7 +39,7 @@ public class ContestController extends AbstractController {
     }
 
     @RequestMapping(value = "/contest/edit", method = RequestMethod.GET)
-    public ModelAndView editCategorie(@RequestParam int contestID) {
+    public ModelAndView edit(@RequestParam int contestID) {
         ModelAndView result;
         Contest contest = contestService.findOne(contestID);
         Assert.notNull(contest);
@@ -49,34 +49,44 @@ public class ContestController extends AbstractController {
     }
 
     @RequestMapping(value = "/contest/save", method = RequestMethod.POST, params = "save")
-    public ModelAndView saveCategorie(@Valid Contest contest, BindingResult binding) {
+    public ModelAndView saveContest(@Valid Contest contest, BindingResult binding) {
         ModelAndView result;
         contestService.save(contest);
         result = this.list();
         return result;
     }
     @RequestMapping(value = "/contest/create", method = RequestMethod.GET)
-    public ModelAndView createCategorie() {
+    public ModelAndView createContest() {
         ModelAndView r;
         Contest m;
         m = contestService.create();
+     //TODO peta
         r = createEditModelAndView(m);
         return r;
     }
-
-    @RequestMapping(value = "/contest/delete", method = RequestMethod.POST, params = "delete")
-    public ModelAndView delete(Contest contest, BindingResult binding) {
+    @RequestMapping(value = "/contest/delete", method = RequestMethod.GET, params = "delete")
+    public ModelAndView delete(@RequestParam int contestID) {
         ModelAndView result;
-
-        try {
-            contestService.delete(contest);
-            result = new ModelAndView("redirect:list.do");
-        } catch (Throwable oops) {
-            result = createEditModelAndView(contest, "contest.commit.error");
-        }
-
+        Contest contest = contestService.findOne(contestID);
+        contestService.delete(contest);
+        result = new ModelAndView("redirect:list.do");
         return result;
+        //TODO peta
     }
+
+//    @RequestMapping(value = "/contest/delete", method = RequestMethod.GET, params = "delete")
+//    public ModelAndView delete(Contest contest, BindingResult binding) {
+//        ModelAndView result;
+//
+//        try {
+//            contestService.delete(contest);
+//            result = new ModelAndView("redirect:list.do");
+//        } catch (Throwable oops) {
+//            result = createEditModelAndView(contest, "contest.commit.error");
+//        }
+//
+//        return result;
+//    }
 
     protected ModelAndView createEditModelAndView(Contest contest) {
         ModelAndView result;

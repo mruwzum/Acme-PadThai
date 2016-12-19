@@ -44,13 +44,14 @@ public class CategorieController extends AbstractController {
 
     }
 
-    @RequestMapping(value = "/categorie/delete", method = RequestMethod.GET)
+    @RequestMapping(value = "/categorie/delete", method = RequestMethod.GET, params = "delete")
     public ModelAndView deleteProperty(@RequestParam int categorieID) {
         ModelAndView result;
         Categorie categorie = categorieService.findOne(categorieID);
         categorieService.delete(categorie);
         result = new ModelAndView("redirect:list.do");
         return result;
+        //TODO peta
     }
 
     @RequestMapping(value = "/categorie/edit", method = RequestMethod.GET)
@@ -78,19 +79,19 @@ public class CategorieController extends AbstractController {
         return r;
     }
 
-    @RequestMapping(value = "/categorie/delete", method = RequestMethod.POST, params = "delete")
-    public ModelAndView delete(Categorie categorie, BindingResult binding) {
-        ModelAndView result;
-
-        try {
-            categorieService.delete(categorie);
-            result = new ModelAndView("redirect:list.do");
-        } catch (Throwable oops) {
-            result = createEditModelAndView(categorie, "categorie.commit.error");
-        }
-
-        return result;
-    }
+//    @RequestMapping(value = "/categorie/delete", method = RequestMethod.GET, params = "delete")
+//    public ModelAndView delete(Categorie categorie, BindingResult binding) {
+//        ModelAndView result;
+//
+//        try {
+//            categorieService.delete(categorie);
+//            result = new ModelAndView("redirect:list.do");
+//        } catch (Throwable oops) {
+//            result = createEditModelAndView(categorie, "categorie.commit.error");
+//        }
+//
+//        return result;
+//    }
 
     protected ModelAndView createEditModelAndView(Categorie categorie) {
         ModelAndView result;

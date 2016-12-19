@@ -35,7 +35,7 @@
         </a>
     </display:column>
     <display:column>
-        <a href="admin/categorie/delete.do?contestID=${row.id}">
+        <a href="admin/categorie/delete.do?categorieID=${row.id}">
             <spring:message code="categorie.delete"/>
         </a>
     </display:column>

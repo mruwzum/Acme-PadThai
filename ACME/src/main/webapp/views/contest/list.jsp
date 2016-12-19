@@ -41,3 +41,7 @@
 
 
 </display:table>
+<input type="button" name="create"
+       value="<spring:message code="contest.new.contest" />"
+       onclick="relativeRedir('admin/contest/create.do');"/>
+
