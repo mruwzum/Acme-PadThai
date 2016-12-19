@@ -36,21 +36,10 @@ public class ContestController extends AbstractController {
         result.addObject("contest", aux);
         result.addObject("requestURI", "contest/list.do");
         return result;
-
-
     }
-    @RequestMapping(value = "/categorie/delete", method = RequestMethod.GET)
-    public ModelAndView deleteProperty(@RequestParam int contestID) {
-        ModelAndView result;
-        Contest contest = contestService.findOne(contestID);
-        contestService.delete(contest);
-        result = new ModelAndView("redirect:list.do");
-        return result;
-    }
-
 
     @RequestMapping(value = "/contest/edit", method = RequestMethod.GET)
-    public ModelAndView edit(@RequestParam int contestID) {
+    public ModelAndView editCategorie(@RequestParam int contestID) {
         ModelAndView result;
         Contest contest = contestService.findOne(contestID);
         Assert.notNull(contest);
@@ -60,14 +49,14 @@ public class ContestController extends AbstractController {
     }
 
     @RequestMapping(value = "/contest/save", method = RequestMethod.POST, params = "save")
-    public ModelAndView save(@Valid Contest contest, BindingResult binding) {
+    public ModelAndView saveCategorie(@Valid Contest contest, BindingResult binding) {
         ModelAndView result;
         contestService.save(contest);
         result = this.list();
         return result;
     }
     @RequestMapping(value = "/contest/create", method = RequestMethod.GET)
-    public ModelAndView create() {
+    public ModelAndView createCategorie() {
         ModelAndView r;
         Contest m;
         m = contestService.create();
@@ -103,19 +92,6 @@ public class ContestController extends AbstractController {
         result.addObject("title",contest.getTitle());
         result.addObject("oppeningDate",contest.getOppeningDate().toString());
         result.addObject("closingDate",contest.getClosingDate().toString());
-
-
-
         return result;
-
-
     }
-
-
-
-
-
-
-
-
 }
