@@ -47,7 +47,7 @@ public class MonthlyBillController extends AbstractController {
     public ModelAndView pay(@RequestParam int monthID){
         ModelAndView res;
         MonthlyBill monthlyBill = monthlyBillService.findOne(monthID);
-        Assert.notNull(monthlyBill);
+        Assert.notNull(monthlyBill,"CONTROLLER: Monthly nula");
         sponsorService.setAsPaid(monthlyBill);
         res = listUnpaidMB();
         return res;

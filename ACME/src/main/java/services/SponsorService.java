@@ -218,8 +218,8 @@ public class SponsorService {
 
     public MonthlyBill setAsPaid(MonthlyBill a) {
         Assert.notNull(a);
-        Assert.isTrue(!getMonthlyBills().contains(a));
-        Assert.isTrue(a.getPaid());
+        Assert.isTrue(getMonthlyBills().contains(a));
+        Assert.isTrue(!a.getPaid());
         a.setPaid(true);
 
         return a;
