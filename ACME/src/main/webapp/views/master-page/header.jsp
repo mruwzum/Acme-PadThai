@@ -24,10 +24,7 @@
             <li><a class="fNiv"><spring:message code="master.page.administrator"/></a>
                 <ul>
                     <li class="arrow"></li>
-                    <li><a href="actor/edit.do"><spring:message
-                            code="master.page.actor.edit.do"/></a></li>
-                    <li><a href="banner/editCost.do"><spring:message
-                            code="master.page.banner.editCost.do"/></a></li>
+
                     <li><a href="cook/masterClass/list.do.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                     <li><a href="admin/computewinners.do"><spring:message
@@ -45,6 +42,10 @@
                     code="master.page.admin.contestList.do"/></a></li>
             <li><a href="admin/campaing/listAll.do"><spring:message
                     code="master.page.campaign"/></a></li>
+            <li><a href="admin/masterClass/list.do"><spring:message
+                    code="master.page.maclass.list.do"/></a></li>
+            <li><a href="actor/AdminPersonalData.do"><spring:message
+                    code="master.page.actor.edit.do"/></a></li>
         </security:authorize>
 
 
