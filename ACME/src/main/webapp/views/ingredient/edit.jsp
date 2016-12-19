@@ -24,32 +24,32 @@
 
 
     <form:label path="name">
-        <spring:message code="i.name"/>
+        <spring:message code="ingredient.name"/>
     </form:label>
     <form:input path="name"/>
     <form:errors cssClass="error" path="name"/>
     <br/>
 
     <form:label path="description">
-        <spring:message code="i.description"/>
+        <spring:message code="ingredient.description"/>
     </form:label>
     <form:input path="description"/>
     <form:errors cssClass="error" path="description"/>
     <br/>
 
     <form:label path="picture">
-        <spring:message code="i.picture"/>
+        <spring:message code="ingredient.picture"/>
     </form:label>
     <form:input path="picture"/>
     <form:errors cssClass="error" path="picture"/>
     <br/>
 
     <input type="submit" name="save"
-           value="<spring:message code="i.send" />"/>&nbsp;
+           value="<spring:message code="ingredient.send" />"/>&nbsp;
 
 
     <input type="button" name="cancel"
-           value="<spring:message code="i.cancel" />"
+           value="<spring:message code="ingredient.cancel" />"
            onclick="relativeRedir('/nutritionist/ingredient/list.do');"/>
     <br/>
 
@@ -64,7 +64,7 @@
 
         <display:column>
             <a href="nutritionist/ingredient/deleteProperty.do?id=${ingredient.id}&propertyID=${row.id}">
-                <spring:message code="recipe.delete"/>
+                <spring:message code="ingredient.delete"/>
             </a>
         </display:column>
 
@@ -82,7 +82,7 @@
 
         <display:column>
             <a href="nutritionist/ingredient/addProperty.do?id=${ingredient.id}&propertyID=${row.id}">
-                <spring:message code="recipe.add"/>
+                <spring:message code="ingredient.add"/>
             </a>
         </display:column>
 
