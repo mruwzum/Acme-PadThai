@@ -31,18 +31,18 @@
 
     <display:column>
         <a href="nutritionist/ingredient/edit.do?ingredientID=${row.id}">
-            <spring:message code="recipe.edit"/>
+            <spring:message code="ingredient.edit"/>
         </a>
     </display:column>
 
     <display:column>
         <a href="nutritionist/ingredient/delete.do?ingredientID=${row.id}">
-            <spring:message code="recipe.delete"/>
+            <spring:message code="ingredient.delete"/>
         </a>
     </display:column>
 
 </display:table>
 
 <a href="nutritionist/ingredient/newIngredient.do">
-    <spring:message code="i.newIngredient"/>
+    <spring:message code="ingredient.newIngredient"/>
 </a>
