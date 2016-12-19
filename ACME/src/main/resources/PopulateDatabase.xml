@@ -2573,11 +2573,6 @@
         <property name="title" value="Concurso de platos Frios"/>
         <property name="oppeningDate" value="1980/04/23"/>
         <property name="closingDate" value="1981/04/23"/>
-        <property name="winners">
-            <list>
-                <ref bean="recipe2"/>
-            </list>
-        </property>
     </bean>
     <!-- Contest3 -->
     <bean id="contest3" class="domain.Contest">

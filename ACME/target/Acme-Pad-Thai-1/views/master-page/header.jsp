@@ -30,6 +30,9 @@
                             code="master.page.banner.editCost.do"/></a></li>
                     <li><a href="cook/masterClass/list.do.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
+                    <li><a href="admin/computewinners.do"><spring:message
+                            code="master.page.computewinners"/></a></li>
+
 
 
                 </ul>
