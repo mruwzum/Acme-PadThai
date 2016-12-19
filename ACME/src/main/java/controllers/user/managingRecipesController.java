@@ -48,7 +48,7 @@ public class managingRecipesController extends AbstractController {
     }
 
     // Listing ----------------------------------------------------------------
-    @RequestMapping(value = "recipes/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/recipes/list", method = RequestMethod.GET)
     public ModelAndView listRecipes() {
         ModelAndView result;
 

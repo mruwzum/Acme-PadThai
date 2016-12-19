@@ -42,12 +42,12 @@ public class likeRecipeController extends AbstractController {
 
 
     //(LIKE)----------------
-    @RequestMapping(value = "recipe/like", method = RequestMethod.GET)
+    @RequestMapping(value = "/recipe/like", method = RequestMethod.GET)
     public ModelAndView likeRecipe(@RequestParam int recipeID) {
         ModelAndView res;
         Recipe recipe = recipeService.findOne(recipeID);
         othersService.findByPrincipal().getLikes().add(recipe);
-        res = new ModelAndView("redirect:http:://localhost:8080/user/recipes/list.do");
+        res = new ModelAndView("redirect:http://localhost:8080/user/recipes/list/my.do");
         return res;
     }
 
@@ -55,12 +55,12 @@ public class likeRecipeController extends AbstractController {
 
 
     //(DELETE) ---------------
-    @RequestMapping(value = "recipe/dislike", method = RequestMethod.GET)
+    @RequestMapping(value = "/recipe/dislike", method = RequestMethod.GET)
     public ModelAndView dislikeRecipe(@RequestParam int recipeID) {
         ModelAndView res;
         Recipe recipe = recipeService.findOne(recipeID);
         othersService.findByPrincipal().getLikes().remove(recipe);
-        res = new ModelAndView("redirect:http:://localhost:8080/user/recipes/list.do");
+        res = new ModelAndView("redirect:http:://localhost:8080/user/recipes/list/my.do");
         return res;
     }
 
