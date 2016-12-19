@@ -53,7 +53,21 @@
 <spring:message code="recipe.view.rate.dislikes" var="rateTitle"/>
 <h1><jstl:out value="${rateTitle}"/></h1>
 <jstl:out value="${dislikes}"/>
+<br/>
+<security:authorize access="isAuthenticated()">
 
+<jstl:if test="${liked}">
+<input type="button" name="like"
+       value="<spring:message code="recipe.rate.like.button" />"
+       onclick="relativeRedir('actor/recipe/like.do?recipeID=${id}');"/>
+</jstl:if>
+<jstl:if test="${notLiked}">
+<input type="button" name="dislike"
+       value="<spring:message code="recipe.rate.dislike.button" />"
+       onclick="relativeRedir('actor/recipe/dislike.do?recipeID=${id}');"/>
+</jstl:if>
+</security:authorize>
+<br>
 <br/>
 <display:table name="comments" id="row" requestURI="http://localhost:8080/user/recipes/view.do" pagesize="10"
                class="displaytag">
@@ -72,7 +86,8 @@
 
 <spring:message code="recipe.view.write.comment" var="rateTitle"/>
 <h1><jstl:out value="${rateTitle}"/></h1>
-<security:authorize access="hasRole('USER')">
+<security:authorize access="isAuthenticated()">
+
 
     <%--TODO no se como meterle a esra url la receta que se está mostrando--%>
     <form:form action="actor/comment/write.do" modelAttribute="comment">

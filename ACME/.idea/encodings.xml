@@ -2,10 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/controllers/actor/likeRecipeController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/controllers/user/editDataController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/controllers/user/followActorController.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/controllers/user/likeRecipeController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/views/recipe/qualify.jsp" charset="UTF-8" />
   </component>
 </project>

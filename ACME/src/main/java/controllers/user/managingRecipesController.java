@@ -13,10 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import services.ActorService;
-import services.CommentService;
-import services.RecipeService;
-import services.UserService;
+import services.*;
 
 import javax.validation.Valid;
 import java.util.*;
@@ -40,6 +37,8 @@ public class managingRecipesController extends AbstractController {
     private ActorService actorService;
     @Autowired
     private CommentService commentService;
+    @Autowired
+    private OthersService   othersService;
 
 
     // Constructors -----------------------------------------------------------
@@ -96,8 +95,22 @@ public class managingRecipesController extends AbstractController {
         ModelAndView result;
         int likes = 0;
         int dislikes = 0;
+        Boolean liked = true;
+        Boolean notLiked = false;
         Recipe res = recipeService.findOne(recipeID);
         Comment comment = commentService.create();
+        for(Boolean b : res.getRate()){
+            if(b){
+                likes ++;
+            }else{
+                dislikes++;
+            }
+        }
+        //TODO esto funciona solo con usuarios registrados, cuando entras sin registrarte te dice que findbyprincipal tiene que ser true, no llega a comprobar si es nulo
+        if(othersService.findByPrincipal()!=null){
+            liked = othersService.findByPrincipal().getLikes().contains(res);
+            notLiked = !othersService.findByPrincipal().getLikes().contains(res);
+        }
         result = new ModelAndView("recipe/view");
         result.addObject("title",res.getTitle());
         result.addObject("summary",res.getSummary());
@@ -106,17 +119,13 @@ public class managingRecipesController extends AbstractController {
         result.addObject("categorie",res.getCategorie());
         result.addObject("user",res.getUser().getName());
         result.addObject("id", res.getId());
-        for(Boolean b : res.getRate()){
-            if(b){
-                likes ++;
-            }else{
-                dislikes++;
-            }
-        }
         result.addObject("likes", likes);
         result.addObject("dislikes", dislikes);
         result.addObject("comments", res.getComments());
         result.addObject("comment", comment);
+        result.addObject("liked", liked);
+        result.addObject("notLiked", notLiked);
+
 
 
         return result;
@@ -237,6 +246,8 @@ public class managingRecipesController extends AbstractController {
 
         return result;
     }
+
+
 }
 
 
