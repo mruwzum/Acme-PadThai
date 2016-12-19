@@ -38,7 +38,7 @@
         <value>/views/curricula/tiles.xml</value>
         <value>/views/admin/tiles.xml</value>
         <value>/views/comment/tiles.xml</value>
-
+        <value>/views/categorie/tiles.xml</value>
     </util:list>
 
 </beans>
