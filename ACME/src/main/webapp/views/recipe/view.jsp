@@ -47,10 +47,67 @@
 <spring:message code="recipe.view.user" var="userTitle"/>
 <h1><jstl:out value="${userTitle}"/></h1>
 <jstl:out value="${user}"/>
-<spring:message code="recipe.view.rate" var="rateTitle"/>
+<spring:message code="recipe.view.rate.likes" var="rateTitle"/>
 <h1><jstl:out value="${rateTitle}"/></h1>
-<jstl:out value="${rate}"/>
+<jstl:out value="${likes}"/>
+<spring:message code="recipe.view.rate.dislikes" var="rateTitle"/>
+<h1><jstl:out value="${rateTitle}"/></h1>
+<jstl:out value="${dislikes}"/>
 
+<br/>
+<display:table name="comments" id="row" requestURI="http://localhost:8080/user/recipes/view.do" pagesize="10"
+               class="displaytag">
+
+    <%--Parámetros--%>
+    <spring:message code="comment.tittle" var="titleheader"/>
+    <display:column property="title" title="${titleheader}" sortable="true"/>
+
+    <spring:message code="comment.text" var="text"/>
+    <display:column property="text" title="${text}"/>
+
+    <spring:message code="comment.number" var="headnumberOfStars"/>
+    <display:column property="numberOfStars" title="${headnumberOfStars}" sortable="numberOfStars"/> of 5
+
+</display:table>
+
+<spring:message code="recipe.view.write.comment" var="rateTitle"/>
+<h1><jstl:out value="${rateTitle}"/></h1>
+<security:authorize access="hasRole('USER')">
+
+    <%--TODO no se como meterle a esra url la receta que se está mostrando--%>
+    <form:form action="actor/comment/write.do" modelAttribute="comment">
+        <form:hidden path="id"/>
+        <form:hidden path="version"/>
+
+        <form:label path="title">
+            <spring:message code="comment.tittle"/>
+        </form:label>
+        <form:input path="title"/>
+        <form:errors cssClass="error" path="title"/>
+        <br/>
+
+        <form:label path="text">
+            <spring:message code="comment.text"/>
+        </form:label>
+        <form:input path="text"/>
+        <form:errors cssClass="error" path="text"/>
+        <br/>
+
+        <form:label path="numberOfStars">
+            <spring:message code="comment.numberOfStars"/>
+        </form:label>
+        <form:input path="numberOfStars"/>
+        <form:errors cssClass="error" path="numberOfStars"/>
+
+
+        <input type="submit" name="save"
+               value="<spring:message code="comment.send" />"/>&nbsp
+
+
+
+    </form:form>
+
+</security:authorize>
 
 </body>
 </html>

@@ -3,6 +3,7 @@ package controllers.user;
 import com.sun.org.apache.regexp.internal.RE;
 import controllers.AbstractController;
 import converters.UsertoStringConverter;
+import domain.Comment;
 import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.ActorService;
+import services.CommentService;
 import services.RecipeService;
 import services.UserService;
 
@@ -36,6 +38,8 @@ public class managingRecipesController extends AbstractController {
     private UserService userService;
     @Autowired
     private ActorService actorService;
+    @Autowired
+    private CommentService commentService;
 
 
     // Constructors -----------------------------------------------------------
@@ -93,7 +97,10 @@ public class managingRecipesController extends AbstractController {
     @RequestMapping(value = "recipe/view", method = RequestMethod.GET)
     public ModelAndView viewRecipe(@RequestParam int recipeID) {
         ModelAndView result;
+        int likes = 0;
+        int dislikes = 0;
         Recipe res = recipeService.findOne(recipeID);
+        Comment comment = commentService.create();
         result = new ModelAndView("recipe/view");
         result.addObject("title",res.getTitle());
         result.addObject("summary",res.getSummary());
@@ -101,8 +108,19 @@ public class managingRecipesController extends AbstractController {
         result.addObject("updateDate",res.getUpdateDate().toString());
         result.addObject("categorie",res.getCategorie());
         result.addObject("user",res.getUser().getName());
-        result.addObject("rate",res.getRate());
-        //TODO ver cuantos true y cuantos false hay en el rate
+        result.addObject("id", res.getId());
+        for(Boolean b : res.getRate()){
+            if(b){
+                likes ++;
+            }else{
+                dislikes++;
+            }
+        }
+        result.addObject("likes", likes);
+        result.addObject("dislikes", dislikes);
+        result.addObject("comments", res.getComments());
+        result.addObject("comment", comment);
+
 
         return result;
     }
