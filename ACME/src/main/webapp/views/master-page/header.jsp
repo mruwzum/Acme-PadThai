@@ -34,6 +34,7 @@
 
                 </ul>
             </li>
+            <li><a href="cook/signup.do"><spring:message code="master.page.ascook"/></a></li>
             <li><a href="admin/key/create.do"><spring:message
                     code="master.page.admin.createKey.do"/></a></li>
             <li><a href="admin/categorie/list.do"><spring:message
@@ -91,8 +92,6 @@
             <li><a href="anonymus/others.do"><spring:message code="master.page.users"/></a></li>
             <li><a href="actor/userPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
-            <li><a href="actor/comment/write.do"><spring:message
-                    code="master.page.write.comment.do"/></a></li>
             <li><a href="user/recipes/stream.do"><spring:message
                     code="master.page.stream.recipe.do"/></a></li>
         </security:authorize>
@@ -142,23 +141,13 @@
                 <ul>
                     <li class="arrow"></li>
                     <li><a href="user/signup.do"><spring:message code="master.page.asuser"/></a></li>
-                    <li><a href="nutritionist/signup.do"><spring:message
-                            code="master.page.asnutritionist"/></a></li>
+                    <li><a href="nutritionist/signup.do"><spring:message code="master.page.asnutritionist"/></a></li>
                     <li><a href="sponsor/signup.do"><spring:message code="master.page.assponsor"/></a></li>
-                    <li><a href="cook/signup.do"><spring:message code="master.page.ascook"/></a></li>
+
                 </ul>
             </li>
             <li><a class="fNiv" href="anonymus/recipes.do"><spring:message code="master.page.recipes"/></a></li>
             <li><a class="fNiv" href="anonymus/searchRecipe.do"><spring:message code="master.page.seachRecipe"/></a>
-            </li>
-
-            <li><a class="fNiv"><spring:message code="master.page.users"/></a>
-                 <ul>
-                     <li class="arrow"></li>
-                     <li><a class="fNiv" href="anonymus/users.do"><spring:message code="master.page.users"/></a></li>
-                     <li><a class="fNiv" href="anonymus/searchUser.do"><spring:message code="master.page.seachUser"/></a>
-                     </li>
-                 </ul>
             </li>
             <li><a class="fNiv" href="anonymus/users.do"><spring:message code="master.page.users"/></a></li>
             <li><a class="fNiv" href="anonymus/searchUser.do"><spring:message code="master.page.seachUser"/></a></li>
