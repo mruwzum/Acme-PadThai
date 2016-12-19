@@ -31,13 +31,19 @@
 
 
     <!--Solo los usuarios registrados para la clase pueden ver los materiales-->
+    <security:authorize access="isAuthenticated()">
+
     <display:column>
-        <jstl:if test="${registered}">
+        <jstl:if test="${registered==true}">
             <a href="/materials/list.do?masterClass=${row.id}">
                 <spring:message code="materials.list"/>
             </a>
         </jstl:if>
     </display:column>
+
+        <%--TODO Enlace a view--%>
+    </security:authorize>
+
 
     <!--Los cocineros solo pueden editar si se trata de clases propias-->
     <security:authorize access="hasRole('COOK')">

@@ -20,4 +20,8 @@
         <put-attribute name="title" value="Create Keyword"/>
         <put-attribute name="body" value="/views/admin/createKey.jsp"/>
     </definition>
+    <definition name="admin/edit" extends="master.page">
+        <put-attribute name="title" value="Edit Administrator"/>
+        <put-attribute name="body" value="/views/admin/edit.jsp"/>
+    </definition>
 </tiles-definitions>
