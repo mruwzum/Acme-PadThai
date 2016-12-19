@@ -48,7 +48,7 @@ public class managingRecipesController extends AbstractController {
     }
 
     // Listing ----------------------------------------------------------------
-    @RequestMapping(value = "recipes/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/recipes/list", method = RequestMethod.GET)
     public ModelAndView listRecipes() {
         ModelAndView result;
 
@@ -74,7 +74,7 @@ public class managingRecipesController extends AbstractController {
         ModelAndView result;
 
         Collection<Recipe> res = new ArrayList<>();
-        List<Recipe> aux = new ArrayList<>(userService.getAllRecipes());
+        List<Recipe> aux = new ArrayList<>(recipeService.findAll());
         Collections.sort(aux,comp);
         res.add(aux.get(0));
         res.add(aux.get(1));

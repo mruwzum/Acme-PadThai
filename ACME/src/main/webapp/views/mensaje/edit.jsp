@@ -47,13 +47,12 @@
     <form:errors cssClass="error" path="body"/>
     <br/>
 
-    <%--TODO esto como desplegable--%>
     <form:label path="priority">
-        <spring:message code="m.priority"/>
+        <spring:message code="m.priority" />
     </form:label>
-    <form:input path="priority"/>
-    <form:errors cssClass="error" path="priority"/>
-    <br/>
+    <form:select path="priority">
+        <form:options/>
+    </form:select>
 
 
     <input type="submit" name="send"

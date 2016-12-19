@@ -28,10 +28,6 @@
         <put-attribute name="title" value="Editar recetas"/>
         <put-attribute name="body" value="/views/recipe/edit.jsp"/>
     </definition>
-    <definition name="recipe/qualify" extends="master.page">
-        <put-attribute name="title" value="Calificar receta"/>
-        <put-attribute name="body" value="/views/recipe/qualify.jsp"/>
-    </definition>
     <definition name="recipe/view" extends="master.page">
         <put-attribute name="title" value="Ver receta"/>
         <put-attribute name="body" value="/views/recipe/view.jsp"/>

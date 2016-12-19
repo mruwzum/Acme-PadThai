@@ -1,15 +1,14 @@
 package controllers.actor;
 
 import controllers.AbstractController;
-import domain.Actor;
-import domain.SocialIdentity;
+import domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import services.ActorService;
+import services.*;
 
 import java.util.Collection;
 
@@ -27,6 +26,14 @@ public class EditPersonalDataController extends AbstractController {
 
     @Autowired
     private ActorService actorService;
+    @Autowired
+    private SponsorService sponsorService;
+    @Autowired
+    private NutritionistService nutritionistService;
+    @Autowired
+    private CookService cookService;
+    @Autowired
+    private AdminService adminService;
 
     @RequestMapping(value = "/userPersonalData")
     public ModelAndView UserEditPersonalData() {
@@ -52,7 +59,7 @@ public class EditPersonalDataController extends AbstractController {
     @RequestMapping(value = "/NutritionistPersonalData")
     public ModelAndView NutriEditPersonalData() {
         ModelAndView result;
-        Actor a = actorService.findByPrincipal();
+        Nutritionist a = nutritionistService.findByPrincipal();
         result = new ModelAndView("security/registrationNutri");
         result.addObject("nutritionist", a);
         createGenericEditModelAndView(a, result);
@@ -62,7 +69,7 @@ public class EditPersonalDataController extends AbstractController {
     @RequestMapping(value = "/SponsorPersonalData")
     public ModelAndView SponsorEditPersonalData() {
         ModelAndView result;
-        Actor a = actorService.findByPrincipal();
+        Sponsor a = sponsorService.findByPrincipal();
         result = new ModelAndView("security/registrationSponsor");
         result.addObject("sponsor", a);
         createGenericEditModelAndView(a, result);
@@ -72,9 +79,18 @@ public class EditPersonalDataController extends AbstractController {
     @RequestMapping(value = "/CookPersonalData")
     public ModelAndView CookEditPersonalData() {
         ModelAndView result;
-        Actor a = actorService.findByPrincipal();
+        Cook a = cookService.findByPrincipal();
         result = new ModelAndView("security/registrationCook");
         result.addObject("cook", a);
+        createGenericEditModelAndView(a, result);
+        return result;
+    }
+    @RequestMapping(value = "/AdminPersonalData")
+    public ModelAndView AdminEditPersonalData() {
+        ModelAndView result;
+        Admin a = adminService.findByPrincipal();
+        result = new ModelAndView("admin/edit");
+        result.addObject("admin", a);
         createGenericEditModelAndView(a, result);
         return result;
     }

@@ -58,19 +58,21 @@
     <br/>
 
             <%--TODO ponerlo como desplegable--%>
+
             <form:label path="pictures">
-                <spring:message code="recipe.pictures"/>
+                <spring:message code="recipe.pictures" />
             </form:label>
+
             <form:select path="pictures">
+
                 <jstl:forEach var="pictures" items="${pictures}">
                     <jstl:out value="-----"/>
-                    <form:option value="${recipe.id}"><jstl:out value="${pictures}"></jstl:out></form:option>
+                    <form:option value="${recipe.id}"><jstl:out value="${pictures}" ></jstl:out> </form:option>
                     <br>
                 </jstl:forEach>
             </form:select>
-            <form:errors cssClass="error" path="pictures"/>
-
-
+            <form:errors cssClass="error" path="pictures" />
+            <br />
             <input type="submit" name="save"
                    value="<spring:message code="actor.save" />"/>&nbsp;
             <jstl:if test="${id} != 0">
