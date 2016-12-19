@@ -77,14 +77,11 @@ public class managingRecipesController extends AbstractController {
         Collection<Recipe> res = new ArrayList<>();
         List<Recipe> aux = new ArrayList<>(userService.getAllRecipes());
         Collections.sort(aux,comp);
-
         res.add(aux.get(0));
         res.add(aux.get(1));
         res.add(aux.get(2));
         res.add(aux.get(3));
         res.add(aux.get(4));
-
-
         result = new ModelAndView("recipe/stream");
         result.addObject("recipe", res);
         result.addObject("requestURI", "user/recipes/stream.do");
