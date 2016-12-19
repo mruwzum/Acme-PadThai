@@ -47,22 +47,13 @@
     <form:errors cssClass="error" path="body"/>
     <br/>
 
-    <%--TODO esto como desplegable--%>
-
     <form:label path="priority">
         <spring:message code="m.priority" />
     </form:label>
-
     <form:select path="priority">
-
-        <jstl:forEach var="priority" items="${availableOptions}">
-            <jstl:out value="-----"/>
-            <form:option value="${massage3.id}"><jstl:out value="" ></jstl:out> </form:option>
-            <br>
-        </jstl:forEach>
+        <form:options/>
     </form:select>
-    <form:errors cssClass="error" path="priority" />
-    <br />
+
 
     <input type="submit" name="send"
            value="<spring:message code="m.send" />"/>&nbsp;
