@@ -38,7 +38,7 @@
         <value>/views/property/messages</value>
         <value>/views/comment/messages</value>
         <value>/views/admin/messages</value>
-
+        <value>/views/categorie/messages</value>
     </util:list>
 
 </beans>

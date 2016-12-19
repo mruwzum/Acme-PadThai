@@ -39,7 +39,8 @@
             </li>
             <li><a href="admin/key/create.do"><spring:message
                     code="master.page.admin.createKey.do"/></a></li>
-
+            <li><a href="admin/categorie/list.do"><spring:message
+                    code="master.page.admin.categorieList.do"/></a></li>
         </security:authorize>
 
 

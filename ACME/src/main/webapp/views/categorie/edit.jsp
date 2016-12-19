@@ -50,6 +50,6 @@
 
     <input type="button" name="cancel"
            value="<spring:message code="categorie.cancel" />"
-           onclick="relativeRedir('/actor/folder/list.do');"/>
+           onclick="relativeRedir('/admin/categorie/list.do');"/>
     <br/>
 </form:form>
