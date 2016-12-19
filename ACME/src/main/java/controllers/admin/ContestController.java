@@ -14,6 +14,7 @@ import services.ContestService;
 
 import javax.validation.Valid;
 import java.util.Collection;
+import java.util.Date;
 
 /**
  * Created by mruwzum on 19/12/16.
@@ -60,11 +61,14 @@ public class ContestController extends AbstractController {
         ModelAndView r;
         Contest m;
         m = contestService.create();
+        m.setTitle("GENERIC");
+        m.setOppeningDate(new Date(System.currentTimeMillis() -100));
+        m.setClosingDate(new Date(System.currentTimeMillis() -100));
      //TODO peta
         r = createEditModelAndView(m);
         return r;
     }
-    @RequestMapping(value = "/contest/delete", method = RequestMethod.GET, params = "delete")
+    @RequestMapping(value = "/contest/delete", method = RequestMethod.GET)
     public ModelAndView delete(@RequestParam int contestID) {
         ModelAndView result;
         Contest contest = contestService.findOne(contestID);
@@ -97,11 +101,14 @@ public class ContestController extends AbstractController {
     }
     protected ModelAndView createEditModelAndView(Contest contest, String message) {
         ModelAndView result;
+        String oppeningDate = contest.getOppeningDate().toString();
+        String closingDate = contest.getClosingDate().toString();
+        String title = contest.getTitle();
         result = new ModelAndView("contest/edit");
         result.addObject("contest", contest);
-        result.addObject("title",contest.getTitle());
-        result.addObject("oppeningDate",contest.getOppeningDate().toString());
-        result.addObject("closingDate",contest.getClosingDate().toString());
+        result.addObject("title",title);
+        result.addObject("oppeningDate",oppeningDate);
+        result.addObject("closingDate",closingDate);
         return result;
     }
 }

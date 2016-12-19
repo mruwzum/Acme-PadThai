@@ -18,7 +18,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<form:form action="admin/contest/save.do?=${name}" modelAttribute="contest">
+<form:form action="admin/contest/save.do" modelAttribute="contest">
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>

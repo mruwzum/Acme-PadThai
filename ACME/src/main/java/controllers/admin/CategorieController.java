@@ -44,7 +44,7 @@ public class CategorieController extends AbstractController {
 
     }
 
-    @RequestMapping(value = "/categorie/delete", method = RequestMethod.GET, params = "delete")
+    @RequestMapping(value = "/categorie/delete", method = RequestMethod.GET)
     public ModelAndView deleteProperty(@RequestParam int categorieID) {
         ModelAndView result;
         Categorie categorie = categorieService.findOne(categorieID);
