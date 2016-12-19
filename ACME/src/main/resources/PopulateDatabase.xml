@@ -2209,7 +2209,7 @@
             <ref bean="sponsor1"></ref>
         </property>
         <property name="paid">
-            <value type="java.lang.Boolean">true</value>
+            <value type="java.lang.Boolean">false</value>
         </property>
     </bean>
 
@@ -2233,10 +2233,10 @@
         <property name="cost" value="13400"/>
         <property name="description" value="Lorem ipsum dolor sit amet."/>
         <property name="sponsor">
-            <ref bean="sponsor3"></ref>
+            <ref bean="sponsor1"></ref>
         </property>
         <property name="paid">
-            <value type="java.lang.Boolean">true</value>
+            <value type="java.lang.Boolean">false</value>
         </property>
     </bean>
     <!-- MonthlyBill4 -->
@@ -2246,10 +2246,10 @@
         <property name="cost" value="1400"/>
         <property name="description" value="Lorem ipsum dolor sit amet."/>
         <property name="sponsor">
-            <ref bean="sponsor2"></ref>
+            <ref bean="sponsor1"></ref>
         </property>
         <property name="paid">
-            <value type="java.lang.Boolean">true</value>
+            <value type="java.lang.Boolean">false</value>
         </property>
     </bean>
     <!-- MonthlyBill5 -->
@@ -2262,7 +2262,7 @@
             <ref bean="sponsor1"></ref>
         </property>
         <property name="paid">
-            <value type="java.lang.Boolean">true</value>
+            <value type="java.lang.Boolean">false</value>
         </property>
     </bean>
     <!-- MonthlyBill6 -->
@@ -2275,7 +2275,7 @@
             <ref bean="sponsor1"></ref>
         </property>
         <property name="paid">
-            <value type="java.lang.Boolean">true</value>
+            <value type="java.lang.Boolean">false</value>
         </property>
     </bean>
 
@@ -2289,7 +2289,7 @@
             <ref bean="sponsor2"></ref>
         </property>
         <property name="paid">
-            <value type="java.lang.Boolean">true</value>
+            <value type="java.lang.Boolean">false</value>
         </property>
     </bean>
     <!-- MonthlyBill8 -->
@@ -2312,10 +2312,10 @@
         <property name="cost" value="1002"/>
         <property name="description" value="Lorem ipsum dolor sit amet."/>
         <property name="sponsor">
-            <ref bean="sponsor2"></ref>
+            <ref bean="sponsor1"></ref>
         </property>
         <property name="paid">
-            <value type="java.lang.Boolean">true</value>
+            <value type="java.lang.Boolean">false</value>
         </property>
     </bean>
     <!-- MonthlyBill10 -->
@@ -2328,7 +2328,7 @@
             <ref bean="sponsor1"></ref>
         </property>
         <property name="paid">
-            <value type="java.lang.Boolean">true</value>
+            <value type="java.lang.Boolean">false</value>
         </property>
     </bean>
     <!-- LearningMaterial -->

@@ -17,9 +17,9 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<security:authorize access="hasRole('SPONSOR')">
+<security:authorize access="hasRole('SPONSOR')">m
     <display:column>
-        <a href="/monthly-bill/browse.do?Id=${row.id}">
+        <a href="sponsor/monthly-bill/browse.do?Id=${row.id}">
             <spring:message code="monthlybill.browse"/>
         </a>
     </display:column>

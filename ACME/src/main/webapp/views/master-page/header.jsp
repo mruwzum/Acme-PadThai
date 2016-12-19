@@ -124,7 +124,7 @@
             </li>
             <li><a class="fNiv" href="sponsor/creditcard/edit.do"><spring:message
                     code="master.page.sponsor.editCC"/></a></li>
-            <li><a class="fNiv" href="sponsor/mb/unpaid/list.do"><spring:message
+            <li><a class="fNiv" href="sponsor/monthlyBillunpaid/list.do"><spring:message
                     code="master.page.monthlybill.list"/></a></li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>

@@ -17,7 +17,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<display:table name="mb" id="row" requestURI="http://localhost:8080/sponsor/mb/unpaid/list.do" pagesize="5"
+<display:table name="mb" id="row" requestURI="http://localhost:8080/sponsor/monthlyBillunpaid/list.do" pagesize="5"
                class="displaytag">
 
     <spring:message code="mb.createheader" var="createheader"/>
@@ -38,9 +38,9 @@
     <spring:message code="mb.paid" var="paid"/>
     <display:column property="paid" title="${paid}"/>
 
-    <%--<display:column>--%>
-    <%--<a href="sponsor/campaing/edit.do?recipeID=${row.id}">--%>
-    <%--<spring:message code="campaign.edit"/>--%>
-    <%--</a>--%>
-    <%--</display:column>--%>
+    <display:column>
+    <a href="sponsor/monthlyBill/pay.do?monthID=${row.id}">
+    <spring:message code="mb.pay"/>
+    </a>
+    </display:column>
 </display:table>

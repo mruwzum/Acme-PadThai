@@ -209,7 +209,7 @@ public class SponsorService {
         Collection<MonthlyBill> res = new ArrayList<>();
 
         for (MonthlyBill m : myMB) {
-            if (!m.getPaid()) {
+            if (m.getPaid().equals(Boolean.FALSE)) {
                 res.add(m);
             }
         }
