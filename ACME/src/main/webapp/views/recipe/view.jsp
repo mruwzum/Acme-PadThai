@@ -56,12 +56,12 @@
 <br/>
 <security:authorize access="isAuthenticated()">
 
-<jstl:if test="${liked}">
+<jstl:if test="${notLiked}">
 <input type="button" name="like"
        value="<spring:message code="recipe.rate.like.button" />"
        onclick="relativeRedir('actor/recipe/like.do?recipeID=${id}');"/>
 </jstl:if>
-<jstl:if test="${notLiked}">
+<jstl:if test="${liked}">
 <input type="button" name="dislike"
        value="<spring:message code="recipe.rate.dislike.button" />"
        onclick="relativeRedir('actor/recipe/dislike.do?recipeID=${id}');"/>
