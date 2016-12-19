@@ -2,9 +2,7 @@ package controllers.admin;
 
 import controllers.AbstractController;
 import domain.Categorie;
-import domain.Ingredient;
-import domain.MasterClass;
-import domain.Property;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -38,7 +36,7 @@ public class CategorieController extends AbstractController {
     public ModelAndView list() {
         ModelAndView result;
         Collection<Categorie> aux = categorieService.findAll();
-        result = new ModelAndView("ingredient/list");
+        result = new ModelAndView("categorie/list");
         result.addObject("categorie", aux);
         result.addObject("requestURI", "categorie/list.do");
         return result;

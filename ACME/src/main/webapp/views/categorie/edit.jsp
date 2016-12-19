@@ -18,7 +18,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<form:form action="admin/categorie/create/save.do?=${name}" modelAttribute="categorie">
+<form:form action="admin/categorie/save.do?=${name}" modelAttribute="categorie">
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>
