@@ -38,9 +38,19 @@
     <spring:message code="campaign.sponsor" var="sponsorheader"/>
     <display:column property="sponsor" title="${sponsorheader}"/>
 
+    <security:authorize access="hasRole('SPONSOR')">
     <display:column>
         <a href="sponsor/campaing/edit.do?recipeID=${row.id}">
             <spring:message code="campaign.edit"/>
         </a>
     </display:column>
+    </security:authorize>
+    <security:authorize access="hasRole('ADMIN')">
+
+        <display:column>
+            <a href="admin/banner/editCost.do?campID=${row.id}">
+                <spring:message code="campaign.editBannerCost"/>
+            </a>
+        </display:column>
+    </security:authorize>
 </display:table>

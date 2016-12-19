@@ -43,6 +43,8 @@
                     code="master.page.admin.categorieList.do"/></a></li>
             <li><a href="admin/contest/list.do"><spring:message
                     code="master.page.admin.contestList.do"/></a></li>
+            <li><a href="admin/campaing/listAll.do"><spring:message
+                    code="master.page.campaign"/></a></li>
         </security:authorize>
 
 
