@@ -47,6 +47,8 @@
                     code="master.page.maclass.list.do"/></a></li>
             <li><a href="actor/AdminPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
+            <li><a href="admin/dashboard.do"><spring:message
+                    code="master.page.dashboard.do"/></a></li>
         </security:authorize>
 
 

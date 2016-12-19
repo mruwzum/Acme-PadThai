@@ -50,7 +50,8 @@ public class AdminService {
     private MessageService messageService;
     @Autowired
     private CookService cookService;
-
+    @Autowired
+    private UserService userService;
 
     // Simple CRUD method --------------------------------------------------------------------------------
 
@@ -89,6 +90,32 @@ public class AdminService {
         Assert.isTrue(a.getId() != 0);
         adminRepository.delete(a);
     }
+
+
+
+
+    // Dashboard -------------------------------------------------------
+
+    public Double minimumRecipesOfUser(int user){
+       Double res = adminRepository.minumRecipesOfUser(user);
+       return res;
+    }
+
+    public Double averageRecipesOfUser(int user){
+        Double res = adminRepository.averageRecipesOfUser(user);
+        return res;
+    }
+    public Double maximumRecipesOfUser(int user){
+        Double res = adminRepository.maximumRecipesOfUser(user);
+        return res;
+    }
+    public User getUserWhoAuthoredMoreRecipes(){
+        User res = adminRepository.getUserWhoAuthoredMoreRecipes();
+        return res;
+    }
+
+
+
 
     // Other business methods -------------------------------------------------------------------------------
 
