@@ -113,8 +113,46 @@ public class AdminService {
         User res = adminRepository.getUserWhoAuthoredMoreRecipes();
         return res;
     }
-
-
+    public Double minimumNumberOfRecipesQualifiedForAContest(){
+        Double res = adminRepository.minimumNumberOfRecipesQualifiedForAContest();
+        return res;
+    }
+    public Double averageNumberOfRecipesQualifiedForAContest(){
+        Double res = adminRepository.averageNumberOfRecipesQualifiedForAContest();
+        return res;
+    }
+    public Double maximumNumberOfRecipesQualifiedForAContest(){
+        Double res = adminRepository.maximumNumberOfRecipesQualifiedForAContest();
+        return res;
+    }
+    public Contest contestForWhichMoreRecipesHasQualified(){
+        Contest res = adminRepository.contestForWhichMoreRecipesHasQualified();
+        return res;
+    }
+   public  Double averageOfStepsPerRecipe(){
+       Double res = adminRepository.averageOfStepsPerRecipe();
+       return res;
+    }
+    public Double standartDeviationOfNumberOfStepsPerRecipe(){
+       Double res = adminRepository.standartDeviationOfNumberOfStepsPerRecipe();
+       return res;
+    }
+    public Double averageOfIngredientsPerRecipe(){
+        Double res = adminRepository.averageOfIngredientsPerRecipe();
+        return res;
+    }
+    public Double standartDeviationOfNumberOfIngredientsPerRecipe(){
+        Double res = adminRepository.standartDeviationOfNumberOfIngredientsPerRecipe();
+        return res;
+    }
+    public Collection<User> usersInDescendingPopularity(){
+        Collection<User> res = adminRepository.usersInDescendingPopularity();
+        return res;
+    }
+    public  Collection<User> usersInDescendingOrderByAverageOfLikesPerRecipe(){
+        Collection<User> res =  adminRepository.usersInDescendingOrderByAverageOfLikesPerRecipe();
+        return res;
+    }
 
 
     // Other business methods -------------------------------------------------------------------------------
