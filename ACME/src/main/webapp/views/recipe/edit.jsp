@@ -67,7 +67,7 @@
 
                 <jstl:forEach var="pictures" items="${pictures}">
                     <jstl:out value="-----"/>
-                    <form:option value="${recipe.id}"><jstl:out value="${pictures}" ></jstl:out> </form:option>
+                    <form:option value="${recipe.id}"><jstl:out value="${contractor.name }" ></jstl:out> </form:option>
                     <br>
                 </jstl:forEach>
             </form:select>
