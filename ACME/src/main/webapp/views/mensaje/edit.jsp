@@ -47,8 +47,6 @@
     <form:errors cssClass="error" path="body"/>
     <br/>
 
-    <%--TODO esto como desplegable--%>
-
     <form:label path="priority">
         <spring:message code="m.priority" />
     </form:label>
