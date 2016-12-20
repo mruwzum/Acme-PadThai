@@ -83,7 +83,7 @@ public class DashboardController extends AbstractController {
 
         Sponsor q24 = adminService.sponsorHowHasntMangaedAnyCampaingInLastTreemonths();
 
-        String q25 = adminService.nombreCompañiaQueHaGastadoMenosDeLaMediaEnSusCampañas();
+        String q25 = adminService.nombreCompaniaQueHaGastadoMenosDeLaMediaEnSusCampanas();
 
         String q26 = adminService.nameOfCompanymenos90porciento();
 

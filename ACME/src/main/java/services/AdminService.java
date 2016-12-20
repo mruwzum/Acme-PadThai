@@ -198,8 +198,8 @@ public class AdminService {
         return adminRepository.sponsorHowHasntMangaedAnyCampaingInLastTreemonths();
     }
 
-    public  String nombreCompañiaQueHaGastadoMenosDeLaMediaEnSusCampañas(){
-        return adminRepository.nombreCompañiaQueHaGastadoMenosDeLaMediaEnSusCampañas();
+    public  String nombreCompaniaQueHaGastadoMenosDeLaMediaEnSusCampanas(){
+        return adminRepository.nombreCompaniaQueHaGastadoMenosDeLaMediaEnSusCampanas();
     }
 
     public  String nameOfCompanymenos90porciento(){
