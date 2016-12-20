@@ -549,6 +549,22 @@ public class ActorService {
         return m;
     }
 
+    public MasterClass registerToMasterClassNutri(MasterClass m) {
+        Assert.notNull(m);
+        Nutritionist u;
+        u = nutritionistService.findByPrincipal();
+        Assert.notNull(u, "El actor no existe");
+        m.getRegisters().add(u);
+        return m;
+    }
+    public MasterClass registerToMasterClassSpon(MasterClass m) {
+        Assert.notNull(m);
+        Sponsor u;
+        u = sponsorService.findByPrincipal();
+        Assert.notNull(u, "El actor no existe");
+        m.getRegisters().add(u);
+        return m;
+    }
 
 }
 

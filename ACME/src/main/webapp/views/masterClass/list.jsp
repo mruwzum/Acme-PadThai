@@ -44,7 +44,7 @@
 
     <display:column>
         <jstl:if test="${registered==true}">
-            <a href="/materials/list.do?masterClass=${row.id}">
+            <a href="user/materials/list.do?masterClass=${row.id}">
                 <spring:message code="materials.list"/>
             </a>
         </jstl:if>
@@ -57,19 +57,10 @@
     <!--Los cocineros solo pueden editar si se trata de clases propias-->
     <security:authorize access="hasRole('COOK')">
         <display:column>
-            <%--<jstl:choose>--%>
-            <%--<jstl:when test="${cookMasterClass.contains(row)}">--%>
                     <a href="cook/masterClass/edit.do?id=${row.id}"
                        onclick="return confirm(' <spring:message code="mclass.edit"/>')">
                         <spring:message code="mclass.edit"/>
                     </a>
-            <%--</jstl:when>--%>
-            <%--<jstl:otherwise>--%>
-                    <a href="/security/login.do">
-                        <spring:message code="mclass.login"/>
-                    </a>
-            <%--</jstl:otherwise>--%>
-            <%--</jstl:choose>--%>
         </display:column>
     </security:authorize>
 
@@ -77,59 +68,28 @@
 
     <security:authorize access="hasRole('USER')">
         <display:column>
-            <jstl:choose>
-                <jstl:when test="${registered}">
-                    <a href="mclass/user/unregister.do?mclassId=${row.id}"
-                       onclick="return confirm('<spring:message code="mclass.confirm.unregister"/>')">
-                        <spring:message code="mclass.unregister"/>
-                    </a>
-                </jstl:when>
-                <jstl:otherwise>
-                    <a href="mclass/user/register.do?mclassId=${row.id}">
-                        <spring:message code="mclass.register"/>
-                    </a>
-                </jstl:otherwise>
-            </jstl:choose>
+            <a href="admin/masterClass/attend.do?mcID=${row.id}">
+                <spring:message code="masterClass.attend"/>
+            </a>
         </display:column>
-        <spring:message code="mclass.material" var="matheader"/>
     </security:authorize>
 
     <security:authorize access="hasRole('NUTRITIONIST')">
+
         <display:column>
-            <jstl:choose>
-                <jstl:when test="${registered}">
-                    <a href="mclass/nutritionist/unregister.do?mclassId=${row.id}"
-                       onclick="return confirm('<spring:message code="mclass.confirm.unregister"/>')">
-                        <spring:message code="mclass.unregister"/>
-                    </a>
-                </jstl:when>
-                <jstl:otherwise>
-                    <a href="mclass/nutritionist/register.do?mclassId=${row.id}">
-                        <spring:message code="mclass.register"/>
-                    </a>
-                </jstl:otherwise>
-            </jstl:choose>
+            <a href="admin/masterClass/attendNutri.do?mcID=${row.id}">
+                <spring:message code="masterClass.attend"/>
+            </a>
         </display:column>
-        <spring:message code="mclass.material" var="matheader"/>
     </security:authorize>
 
     <security:authorize access="hasRole('SPONSOR')">
         <display:column>
-            <jstl:choose>
-                <jstl:when test="${registered}">
-                    <a href="mclass/sponsor/unregister.do?mclassId=${row.id}"
-                       onclick="return confirm('<spring:message code="mclass.confirm.unregister"/>')">
-                        <spring:message code="mclass.unregister"/>
-                    </a>
-                </jstl:when>
-                <jstl:otherwise>
-                    <a href="mclass/sponsor/register.do?mclassId=${row.id}">
-                        <spring:message code="mclass.register"/>
-                    </a>
-                </jstl:otherwise>
-            </jstl:choose>
+            <a href="admin/masterClass/attendSpon.do?mcID=${row.id}">
+                <spring:message code="masterClass.attend"/>
+            </a>
         </display:column>
-        <spring:message code="mclass.material" var="matheader"/>
+
     </security:authorize>
 
 

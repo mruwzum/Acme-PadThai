@@ -81,7 +81,30 @@ public class UtilitiesController extends AbstractController{
         res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
         return res;
     }
-
+    @RequestMapping(value = "/masterClass/attend")
+    public ModelAndView attendMC(@RequestParam int mcID) {
+        ModelAndView res;
+        MasterClass mc = masterClassService.findOne(mcID);
+        actorService.registerToMasterClass(mc);
+        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        return res;
+    }
+    @RequestMapping(value = "/masterClass/attendNutri")
+    public ModelAndView attendNutriMC(@RequestParam int mcID){
+        ModelAndView res;
+        MasterClass mc = masterClassService.findOne(mcID);
+        actorService.registerToMasterClassNutri(mc);
+        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        return res;
+    }
+    @RequestMapping(value = "/masterClass/attendSpon")
+    public ModelAndView attendSponMC(@RequestParam int mcID){
+        ModelAndView res;
+        MasterClass mc = masterClassService.findOne(mcID);
+        actorService.registerToMasterClassSpon(mc);
+        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        return res;
+    }
     @RequestMapping(value = "/banner/editCost")
     public ModelAndView editBannerCost(@RequestParam int campID){
         ModelAndView res;

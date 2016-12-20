@@ -1,9 +1,12 @@
 package controllers.user;
 
+import com.sun.javafx.sg.PGShape;
 import com.sun.org.apache.regexp.internal.RE;
 import controllers.AbstractController;
 import converters.UsertoStringConverter;
 import domain.Comment;
+import domain.LearningMaterial;
+import domain.MasterClass;
 import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -39,6 +42,8 @@ public class managingRecipesController extends AbstractController {
     private CommentService commentService;
     @Autowired
     private OthersService   othersService;
+    @Autowired
+    private LearningMaterialService learningMaterialService;
 
 
     // Constructors -----------------------------------------------------------
@@ -88,7 +93,17 @@ public class managingRecipesController extends AbstractController {
         return result;
     }
 
+@RequestMapping(value = "materials/list")
+    public ModelAndView listMat(@RequestParam int masterClass){
+    ModelAndView res;
+    Collection<LearningMaterial> lear = learningMaterialService.findAll();
 
+    res = new ModelAndView("materials/list");
+    res.addObject("materials", lear);
+    res.addObject("requestURI", "user/materials/list.do");
+
+    return res;
+}
 
     @RequestMapping(value = "recipe/view", method = RequestMethod.GET)
     public ModelAndView viewRecipe(@RequestParam int recipeID) {
