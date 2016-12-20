@@ -63,7 +63,7 @@ public interface AdminRepository extends JpaRepository<Admin, Integer> {
     @Query("select stddev(r.ingredient.size) from Recipe r")
     Double standartDeviationOfNumberOfIngredientsPerRecipe();
 
-    @Query("select c, c.followers.size from User c order by c.followers.size desc")
+    @Query("select c from User c order by c.followers.size desc")
     Collection<User> usersInDescendingPopularity();
 
     @Query("select a from User a order by coalesce((select avg(b.rate.size) from Recipe b where b.user=a), 0) desc")

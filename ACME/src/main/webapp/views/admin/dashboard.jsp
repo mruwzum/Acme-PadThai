@@ -17,13 +17,102 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 <spring:message code="dashboard.q1" var="q1b"/>
-<h1><jstl:out value="${q1b}"/></h1>
+<h3><jstl:out value="${q1b}"/></h3>
 <jstl:out value="${q1}"/>
 
 <spring:message code="dashboard.q2" var="q2b"/>
-<h1><jstl:out value="${q2b}"/></h1>
+<h3><jstl:out value="${q2b}"/></h3>
 <jstl:out value="${q2}"/>
 
 <spring:message code="dashboard.q3" var="q3b"/>
-<h1><jstl:out value="${q3b}"/></h1>
+<h3><jstl:out value="${q3b}"/></h3>
 <jstl:out value="${q3}"/>
+
+<spring:message code="dashboard.q4" var="q4b"/>
+<h3><jstl:out value="${q4b}"/></h3>
+<jstl:out value="${q4}"/>
+
+<spring:message code="dashboard.q5" var="q5b"/>
+<h3><jstl:out value="${q5b}"/></h3>
+<jstl:out value="${q5}"/>
+
+<spring:message code="dashboard.q6" var="q6b"/>
+<h3><jstl:out value="${q6b}"/></h3>
+<jstl:out value="${q6}"/>
+
+<spring:message code="dashboard.q7" var="q7b"/>
+<h3><jstl:out value="${q7b}"/></h3>
+<jstl:out value="${q7}"/>
+
+<spring:message code="dashboard.q8" var="q8b"/>
+<h3><jstl:out value="${q8b}"/></h3>
+<display:table name="q8" id="row" requestURI="http://localhost:8080/admin/dashboard.do" pagesize="5"
+               class="displaytag">
+
+    <spring:message code="q8.title" var="titleheader"/>
+    <display:column property="title" title="${titleheader}" sortable="true"/>
+
+    <spring:message code="q8.oppenig" var="openheader"/>
+    <display:column property="oppeningDate" title="${openheader}" sortable="true"/>
+
+    <spring:message code="q8.closing" var="closeheader"/>
+    <display:column property="closingDate" title="${closeheader}"/>
+
+</display:table>
+
+<spring:message code="dashboard.q9" var="q9b"/>
+<h3><jstl:out value="${q9b}"/></h3>
+<jstl:out value="${q9}"/>
+
+<spring:message code="dashboard.q10" var="q10b"/>
+<h3><jstl:out value="${q10b}"/></h3>
+<jstl:out value="${q10}"/>
+
+
+<spring:message code="dashboard.q11" var="q11b"/>
+<h3><jstl:out value="${q11b}"/></h3>
+<jstl:out value="${q11}"/>
+
+
+<spring:message code="dashboard.q12" var="q12b"/>
+<h3><jstl:out value="${q12b}"/></h3>
+<jstl:out value="${q12}"/>
+
+<spring:message code="dashboard.q13" var="q13b"/>
+<h3><jstl:out value="${q13b}"/></h3>
+<display:table name="q13" id="row" requestURI="http://localhost:8080/admin/dashboard.do" pagesize="5"
+               class="displaytag">
+
+    <spring:message code="q13.name" var="nameheader"/>
+    <display:column property="name" title="${nameheader}"/>
+
+    <spring:message code="q13.surname" var="surnameheader"/>
+    <display:column property="surname" title="${surnameheader}"/>
+
+    <spring:message code="q13.EmailAddress" var="Emailheader"/>
+    <display:column property="emailAddress" title="${Emailheader}"/>
+
+    <spring:message code="q13.phone" var="phoneheader"/>
+    <display:column property="phone" title="${phoneheader}"/>
+
+</display:table>
+
+
+<spring:message code="dashboard.q14" var="q14b"/>
+<h3><jstl:out value="${q14b}"/></h3>
+<display:table name="q14" id="row" requestURI="http://localhost:8080/admin/dashboard.do" pagesize="5"
+               class="displaytag">
+
+    <spring:message code="q13.name" var="nameheader"/>
+    <display:column property="name" title="${nameheader}" sortable="true"/>
+
+    <spring:message code="q13.surname" var="surnameheader"/>
+    <display:column property="surname" title="${surnameheader}"/>
+
+    <spring:message code="q13.EmailAddress" var="Emailheader"/>
+    <display:column property="emailAddress" title="${Emailheader}"/>
+
+    <spring:message code="q13.phone" var="phoneheader"/>
+    <display:column property="phone" title="${phoneheader}"/>
+
+</display:table>
