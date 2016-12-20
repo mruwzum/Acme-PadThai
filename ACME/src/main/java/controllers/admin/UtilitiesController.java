@@ -123,6 +123,14 @@ public class UtilitiesController {
         result = sponsorList();
         return result;
     }
+    @RequestMapping(value = "/sponsor/bulk", method = RequestMethod.GET)
+    public ModelAndView sendBulk() {
+        ModelAndView result;
+        adminService.sendBulkMessage();
+        result = sponsorList();
+        return result;
+    }
+
 
 
 
