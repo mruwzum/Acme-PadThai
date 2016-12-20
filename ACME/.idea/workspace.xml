@@ -4,7 +4,6 @@
     <list default="true" id="2d45cdad-cd5d-49b5-a719-5857e53aeea3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +32,8 @@
       <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="129" column="21" lean-forward="true" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
+            <state relative-caret-position="260">
+              <caret line="124" column="64" lean-forward="false" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -1433,7 +1432,7 @@
       <workItem from="1482256697195" duration="127000" />
       <workItem from="1482256878742" duration="5203000" />
       <workItem from="1482262765871" duration="367000" />
-      <workItem from="1482265548809" duration="3390000" />
+      <workItem from="1482265548809" duration="3566000" />
     </task>
     <task id="LOCAL-00001" summary="arreglao">
       <created>1481977250040</created>
@@ -1582,7 +1581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482268631808</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="header cook personal data y nutritionist personal data ok">
+      <created>1482268954347</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1482268954347</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1618,7 +1624,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47651000" />
+    <option name="totallyTimeSpent" value="47827000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1642,7 +1648,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753327" sideWeight="0.49676898" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32704404" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32704404" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -2155,8 +2161,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="129" column="21" lean-forward="true" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
+        <state relative-caret-position="260">
+          <caret line="124" column="64" lean-forward="false" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
           <folding />
         </state>
       </provider>
