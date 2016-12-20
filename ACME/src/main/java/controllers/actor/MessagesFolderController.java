@@ -43,7 +43,7 @@ public class MessagesFolderController extends AbstractController {
         Folder folder = folderService.findOne(folderID);
         Collection<Message> messages = folder.getMessages();
         result = new ModelAndView("mensaje/list");
-        result.addObject("messages", messages);
+        result.addObject("mensaje3", messages);
         return result;
     }
 

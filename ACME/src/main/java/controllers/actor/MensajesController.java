@@ -62,45 +62,24 @@ public class MensajesController extends AbstractController {
         String replacebody = body.replaceAll(",","");
         String replacepriority = priority.replaceAll(",","");
 
-
-
-        Message message = messageService.create();
+//TODO esto solo busca para user
         Actor recipient2 = actorService.findUserByName(replacerecipient);
         Priority priority1 = Priority.valueOf(replacepriority);
-
-        message.setRecipient(recipient2);
-        message.setSubject(subject);
-        message.setBody(body);
-        message.setPriority(priority1);
-
-       Message m = actorService.sendMessage(message);
+        Message message = actorService.textMessage(replacesubject,replacebody,recipient2,priority1);
+        //Message m = actorService.recieveMessage(message,recipient2);
 
 
         res = new ModelAndView("mensaje/text");
         res.addObject("texto1",texto1);
-        res.addObject("red", m.getRecipient());
-        res.addObject("bod", m.getSubject());
-        res.addObject("sub", m.getBody());
-        res.addObject("pri", m.getPriority());
-        res.addObject("sen", m.getSender());
-        res.addObject("date", m.getSentDate());
+        res.addObject("red", message.getRecipient());
+        res.addObject("bod", message.getSubject());
+        res.addObject("sub", message.getBody());
+        res.addObject("pri", message.getPriority());
+        res.addObject("sen", message.getSender());
+        res.addObject("date", message.getSentDate());
         return res;
     }
 
-//    @RequestMapping(value = "/mensaje/send2")
-//    public ModelAndView sendMessage2( @RequestParam Actor actor, String Sub, String body, Priority priority) {
-//        ModelAndView res;
-//        String texto1 = "OK";
-//        Message m = messageService.create();
-//        m.setRecipient(actor);
-//        m.setSubject(Sub);
-//        m.setBody(body);
-//        m.setPriority(priority);
-//        actorService.sendMessage(m);
-//        res = new ModelAndView("mensaje/text");
-//        res.addObject("texto1",texto1);
-//        return res;
-//    }
 
     protected ModelAndView createGenericEditModelAndView(Message mensaje3) {
 

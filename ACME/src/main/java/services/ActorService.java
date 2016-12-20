@@ -457,18 +457,12 @@ public class ActorService {
         Actor u;
         u = findByPrincipal();
         Assert.notNull(u, "El actor no existe");
-        chekBody(message.getBody());
-        message.setSender(u);
-        message.setSentDate(new Date(System.currentTimeMillis() - 100));
-        Message saved = messageService.save(message);
-        List<Folder> folders = new ArrayList<>(u.getFolders());
-        Assert.notEmpty(folders,"carpetas vacias");
-        folders.get(0).getMessages().add(saved);
-        u.setFolders(folders);
-        recieveMessage(saved,saved.getRecipient());
-        return saved;
+        recieveMessage(message,message.getRecipient());
+        return message;
     }
     public Message recieveMessage(Message message, Actor a){
+
+
         List<Folder> folders = new ArrayList<>(a.getFolders());
         Assert.notEmpty(folders,"carpetas vacias");
         folders.get(2).getMessages().add(message);
@@ -487,6 +481,7 @@ public class ActorService {
         Assert.notNull(u, "El actor no existe");
         //Comprobaciones
         List<Folder> auxFolder = new ArrayList<>(u.getFolders());
+        List<Folder> auxFolder2 = new ArrayList<>(recipient.getFolders());
         Message aux = messageService.create();
         aux.setSender(u);
         aux.setSubject(subject);
@@ -496,10 +491,26 @@ public class ActorService {
         aux.setSentDate(new Date(System.currentTimeMillis() - 100));
         chekBody(body);
         aux.setBody(body);
-        aux.setFolder(auxFolder.get(1));
-        Message res = messageService.save(aux);
-        recipient.getMessage().add(res);
-        return res;
+        aux.setFolder(auxFolder.get(0));
+        Message copy = aux;
+
+        Message res1 = messageService.save(aux);
+        Message res2 = messageService.save(copy);
+
+
+        //Guardar en carpeta outbox de sender
+        res1.setFolder(auxFolder.get(0));
+        auxFolder.get(0).getMessages().add(res1);
+        u.setFolders(auxFolder);
+        u.getMessage().add(res1);
+
+        //Guardar en carpeta inbox de recipient
+        res2.setFolder(auxFolder2.get(2));
+        auxFolder2.get(2).getMessages().add(res2);
+        recipient.setFolders(auxFolder2);
+        recipient.getMessage().add(res2);
+
+        return res1;
     }
 
     private void chekBody(String text) {
