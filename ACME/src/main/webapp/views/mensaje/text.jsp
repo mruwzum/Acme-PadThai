@@ -23,5 +23,9 @@
 </head>
 <body>
 ${texto1}
+${id}
+${title}
+${text}
+${stars}
 </body>
 </html>

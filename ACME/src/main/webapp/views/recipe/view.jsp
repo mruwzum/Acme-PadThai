@@ -30,8 +30,8 @@
 <body>
 
 <spring:message code="recipe.view.title" var="titleTitle"/>
-<h1><jstl:out value="${titleTitle}"/></h1>
-<jstl:out value="${title}"/>
+<h1><jstl:out value="${titlereTitle}"/></h1>
+<jstl:out value="${titler}"/>
 <spring:message code="recipe.view.summary" var="summaryTitle"/>
 <h1><jstl:out value="${summaryTitle}"/></h1>
 <jstl:out value="${summary}"/>
@@ -94,30 +94,38 @@
         <form:hidden path="id"/>
         <form:hidden path="version"/>
 
-        <form:label path="title">
+        <form:label path="title" >
             <spring:message code="comment.tittle"/>
         </form:label>
-        <form:input path="title"/>
-        <form:errors cssClass="error" path="title"/>
+        <form:input path="title" title="title"/>
+        <form:errors cssClass="error" path="title2"/>
+
         <br/>
 
         <form:label path="text">
             <spring:message code="comment.text"/>
         </form:label>
         <form:input path="text"/>
-        <form:errors cssClass="error" path="text"/>
+        <form:errors cssClass="error" path="text2"/>
         <br/>
 
         <form:label path="numberOfStars">
             <spring:message code="comment.numberOfStars"/>
         </form:label>
         <form:input path="numberOfStars"/>
-        <form:errors cssClass="error" path="numberOfStars"/>
+        <form:errors cssClass="error" path="numberOfStars2"/>
 
 
         <input type="submit" name="save"
                value="<spring:message code="comment.send" />"/>&nbsp
 
+        <input type="button" name="cancel"
+               value="<spring:message code="comment.send" />"
+               onclick="relativeRedir('user/recipes/list.do');"/>
+<%--TODO esto no va--%>
+        <a href="http://localhost:8080/actor/comment/write.do?id=${idr}&title=${title2}&text=${text2}&stars=${numberOfStars2}">
+            <spring:message code="comment.send"/>
+        </a>
 
 
     </form:form>

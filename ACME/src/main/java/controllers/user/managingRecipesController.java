@@ -112,13 +112,13 @@ public class managingRecipesController extends AbstractController {
             notLiked = !othersService.findByPrincipal().getLikes().contains(res);
         }
         result = new ModelAndView("recipe/view");
-        result.addObject("title",res.getTitle());
+        result.addObject("titler",res.getTitle());
         result.addObject("summary",res.getSummary());
         result.addObject("creationDate",res.getCreationDate().toString());
         result.addObject("updateDate",res.getUpdateDate().toString());
         result.addObject("categorie",res.getCategorie());
         result.addObject("user",res.getUser().getName());
-        result.addObject("id", res.getId());
+        result.addObject("idr", res.getId());
         result.addObject("likes", likes);
         result.addObject("dislikes", dislikes);
         result.addObject("comments", res.getComments());

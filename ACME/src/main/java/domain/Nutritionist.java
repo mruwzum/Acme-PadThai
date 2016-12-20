@@ -1,9 +1,6 @@
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @Entity
 @Access(AccessType.PROPERTY)
@@ -13,7 +10,7 @@ public class Nutritionist extends Others {
 
     private IngredientsRepository ingredientsRepository;
 
-    @OneToOne
+    @OneToOne(targetEntity = Curricula.class, cascade = CascadeType.ALL)
     public Curricula getCurricula() {
         return curricula;
     }

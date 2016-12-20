@@ -23,10 +23,10 @@
     <spring:message code="ingredient.name" var="name"/>
     <display:column property="name" title="${name}"/>
 
-    <spring:message code="i.description" var="description"/>
+    <spring:message code="ingredient.description" var="description"/>
     <display:column property="description" title="${description}"/>
 
-    <spring:message code="i.picture" var="picture"/>
+    <spring:message code="ingredient.picture" var="picture"/>
     <display:column property="picture" title="${picture}"/>
 
     <display:column>
