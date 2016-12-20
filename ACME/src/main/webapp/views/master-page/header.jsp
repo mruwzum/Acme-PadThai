@@ -52,7 +52,7 @@
             <li><a class="fNiv"><spring:message code="master.page.nutritionist"/></a>
                 <ul>
                     <li class="arrow"></li>
-                    <li><a href="actor/edit.do"><spring:message
+                    <li><a href="actor/NutritionistPersonalData.do"><spring:message
                             code="master.page.actor.edit.do"/></a></li>
                     <li><a href="curricula/edit.do"><spring:message
                             code="master.page.curricula.edit.do"/></a></li>
@@ -101,7 +101,7 @@
             <li><a class="fNiv"><spring:message code="master.page.cook"/></a>
                 <ul>
                     <li class="arrow"></li>
-                    <li><a href="actor/edit.do"><spring:message
+                    <li><a href="actor/CookPersonalData.do"><spring:message
                             code="master.page.actor.edit.do"/></a></li>
                     <li><a href="cook/masterClass/list.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
