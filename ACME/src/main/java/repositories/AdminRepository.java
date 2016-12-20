@@ -109,5 +109,21 @@ public interface AdminRepository extends JpaRepository<Admin, Integer> {
     @Query("select b.sponsor.nameOfCompany from MonthlyBill b where (select sum(b.cost) from MonthlyBill b) < (select avg(b.cost) from MonthlyBill b)")
     String nameOfCompanymenos90porciento();
     //Dashboard  A  -------------------------
+
+    @Query("select min(u.masterClass.size),avg(u.masterClass.size),max(u.masterClass.size),stddev(u.masterClass.size) from Cook u")
+    Collection<Integer> minumumandmaximumandaverageNumberOfMasterClassesPerCook();
+
+    @Query("select avg(u.material.size) from MasterClass u group by u order by u.material.size ASC")
+    Collection<Integer> averageOfLearningMaterialsPerMasterClass();
+
+    @Query("select sum(u.masterClass.size) from Admin u")
+    Long numberOfPromotedMasterClasses();
+
+    @Query("select c from Cook c group by c order by sum(c.masterClass.size)")
+    Collection<Cook> cookByPromotedMasterClasses();
+
+    @Query("select avg(u.masterClass.size) from Cook u where u.masterClass=u.masterClass")
+    Collection<Integer> averageOfMasterClassesPromotedByAdmin();
 }
+
 

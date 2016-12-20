@@ -205,7 +205,27 @@ public class AdminService {
     public  String nameOfCompanymenos90porciento(){
         return adminRepository.nameOfCompanymenos90porciento();
     }
+    //DASHBOARD A -------------
 
+    public Collection<Integer> minumumandmaximumandaverageNumberOfMasterClassesPerCook(){
+        return adminRepository.minumumandmaximumandaverageNumberOfMasterClassesPerCook();
+    }
+
+    public Collection<Integer> averageOfLearningMaterialsPerMasterClass(){
+        return adminRepository.averageOfLearningMaterialsPerMasterClass();
+    }
+
+    public Long numberOfPromotedMasterClasses(){
+        return adminRepository.numberOfPromotedMasterClasses();
+    }
+
+    public Collection<Cook> cookByPromotedMasterClasses(){
+        return adminRepository.cookByPromotedMasterClasses();
+    }
+
+    public Collection<Integer> averageOfMasterClassesPromotedByAdmin(){
+        return adminRepository.averageOfMasterClassesPromotedByAdmin();
+    }
 
     // Other business methods -------------------------------------------------------------------------------
 
