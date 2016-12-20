@@ -35,20 +35,17 @@ public class DashboardController extends AbstractController {
     @RequestMapping(value = "/dashboard")
     public ModelAndView dashboard(){
         ModelAndView res;
+    Double q1 = adminService.minimumRecipesOfUser();
+    Double q2 = adminService.averageRecipesOfUser();
+    Double q3 = adminService.maximumRecipesOfUser();
 
 
 
-        Collection<Recipe> userRecipes = new ArrayList<>();
-
-        Collection<User> allUsers = new ArrayList<>(userService.findAll());
-
-
-        String nameUserMore = "er";
 
         res = new ModelAndView("admin/dashboard");
-        res.addObject("userRecipes", userRecipes);
-        res.addObject("nameUserMore", nameUserMore);
-
+        res.addObject("q1", q1);
+        res.addObject("q2", q2);
+        res.addObject("q3", q3);
         return res;
     }
 

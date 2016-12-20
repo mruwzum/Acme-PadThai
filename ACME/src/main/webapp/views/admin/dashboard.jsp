@@ -16,25 +16,14 @@
 <%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
+<spring:message code="dashboard.q1" var="q1b"/>
+<h1><jstl:out value="${q1b}"/></h1>
+<jstl:out value="${q1}"/>
 
-<display:table name="userRecipes" id="row" requestURI="http://localhost:8080/admin/dashboard.do" pagesize="5"
-               class="displaytag">
+<spring:message code="dashboard.q2" var="q2b"/>
+<h1><jstl:out value="${q2b}"/></h1>
+<jstl:out value="${q2}"/>
 
-    <spring:message code="user.minumum" var="minumum"/>
-    <display:column property="minumum" title="${minumum}"/>
-
-    <spring:message code="user.average" var="average"/>
-    <display:column property="average" title="${average}"/>
-
-    <spring:message code="user.maximum" var="maximum"/>
-    <display:column property="maximum" title="${maximum}"/>
-
-</display:table>
-<display:table name="userMoreRecipes" id="row" requestURI="http://localhost:8080/admin/dashboard.do" pagesize="5"
-               class="displaytag">
-
-    <spring:message code="user.nameUserMore" var="nameUserMore"/>
-    <display:column property="name" title="${nameUserMore}"/>
-
-
-</display:table>
+<spring:message code="dashboard.q3" var="q3b"/>
+<h1><jstl:out value="${q3b}"/></h1>
+<jstl:out value="${q3}"/>
