@@ -39,7 +39,6 @@ public interface AdminRepository extends JpaRepository<Admin, Integer> {
     @Query("select u from User u where u.recipes.size = (select max(w.recipes.size) from User w)")
     User getUserWhoAuthoredMoreRecipes();
 
-
     @Query("select min(s.rate.size) from Recipe s group by s")
     Double minimumNumberOfRecipesQualifiedForAContest();
 
