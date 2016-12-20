@@ -92,7 +92,7 @@ public class DashboardController extends AbstractController {
         res.addObject("q1", q1);
         res.addObject("q2", q2);
         res.addObject("q3", q3);
-        res.addObject("q4", q4);
+        res.addObject("q4", q4.getName());
         res.addObject("q5", q5);
         res.addObject("q6", q6);
         res.addObject("q7", q7);
