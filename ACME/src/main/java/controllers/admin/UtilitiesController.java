@@ -1,6 +1,7 @@
 package controllers.admin;
 
 import com.sun.javafx.sg.PGShape;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import domain.Campaing;
 import domain.Contest;
 import domain.MasterClass;
@@ -71,6 +72,14 @@ public class UtilitiesController {
         return minDate;
     }
 
+    @RequestMapping(value = "/masterClass/promote")
+    public ModelAndView promoteMC(@RequestParam int mcID){
+        ModelAndView res;
+        MasterClass mc = masterClassService.findOne(mcID);
+        adminService.promoteMasterClas(mc);
+        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        return res;
+    }
 
     @RequestMapping(value = "/banner/editCost")
     public ModelAndView editBannerCost(@RequestParam int campID){

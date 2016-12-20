@@ -62,6 +62,7 @@ public class managingMasterClassesController extends AbstractController {
         return r;
     }
 
+
     //EDITION -----------------------------
 
     @RequestMapping(value = "masterClass/edit", method = RequestMethod.GET)

@@ -30,6 +30,16 @@
     <display:column property="cook" title="${cookheader}"/>
 
 
+    <security:authorize access="hasRole('ADMIN')">
+    <display:column>
+        <a href="admin/masterClass/promote.do?mcID=${row.id}">
+            <spring:message code="masterClass.promote"/>
+        </a>
+    </display:column>
+    </security:authorize>
+
+
+
     <!--Solo los usuarios registrados para la clase pueden ver los materiales-->
     <security:authorize access="isAuthenticated()">
 

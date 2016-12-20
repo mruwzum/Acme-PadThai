@@ -118,17 +118,13 @@
 
                 </ul>
             </li>
-            <li><a class="fNiv"><spring:message code="master.page.sponsor"/></a>
-                <ul>
-                    <li class="arrow"></li>
+
             <li><a href="actor/SponsorPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
             <li><a class="fNiv" href="sponsor/creditcard/edit.do"><spring:message
                     code="master.page.sponsor.editCC"/></a></li>
             <li><a class="fNiv" href="sponsor/monthlyBillunpaid/list.do"><spring:message
-                            code="master.page.monthlybill.list"/></a></li>
-                </ul>
-            </li>
+                    code="master.page.monthlybill.list"/></a></li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
 
