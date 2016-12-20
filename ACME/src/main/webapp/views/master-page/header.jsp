@@ -64,12 +64,8 @@
                     code="master.page.ingredient"/></a></li>
             <li><a href="nutritionist/property/list.do"><spring:message
                     code="master.page.property"/></a></li>
-            <li><a href="nutritionist/curricula/edit.do"><spring:message
-                    code="master.page.curricula.edit.do"/></a></li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
-            <li><a href="actor/NutritionistPersonalData.do"><spring:message
-                    code="master.page.actor.edit.do"/></a></li>
             <li><a href="actor/comment/write.do"><spring:message
                     code="master.page.write.comment.do"/></a></li>
             <li><a href="user/recipes/stream.do"><spring:message
@@ -109,8 +105,6 @@
             </li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
-            <li><a href="actor/CookPersonalData.do"><spring:message
-                    code="master.page.actor.edit.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('SPONSOR')">
@@ -124,14 +118,20 @@
 
                 </ul>
             </li>
+            <li><a class="fNiv"><spring:message code="master.page.sponsor"/></a>
+                <ul>
+                    <li class="arrow"></li>
+            <li><a href="actor/SponsorPersonalData.do"><spring:message
+                    code="master.page.actor.edit.do"/></a></li>
             <li><a class="fNiv" href="sponsor/creditcard/edit.do"><spring:message
                     code="master.page.sponsor.editCC"/></a></li>
             <li><a class="fNiv" href="sponsor/monthlyBillunpaid/list.do"><spring:message
-                    code="master.page.monthlybill.list"/></a></li>
+                            code="master.page.monthlybill.list"/></a></li>
+                </ul>
+            </li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
-            <li><a href="actor/SponsorPersonalData.do"><spring:message
-                    code="master.page.actor.edit.do"/></a></li>
+
         </security:authorize>
 
         <security:authorize access="isAnonymous()">
