@@ -2,6 +2,7 @@ package services;
 
 import domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
@@ -10,6 +11,7 @@ import security.Authority;
 import security.LoginService;
 import security.UserAccount;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.*;
 
 /**
@@ -94,7 +96,7 @@ public class AdminService {
 
 
 
-    // Dashboard -------------------------------------------------------
+    // Dashboard  C -------------------------------------------------------
 
     public Double minimumRecipesOfUser(){
        Double res = adminRepository.minumRecipesOfUser();
@@ -152,6 +154,56 @@ public class AdminService {
     public  Collection<User> usersInDescendingOrderByAverageOfLikesPerRecipe(){
         Collection<User> res =  adminRepository.usersInDescendingOrderByAverageOfLikesPerRecipe();
         return res;
+    }
+
+    //DASHBOARD B  -----------------------------
+
+    public Collection<Integer> minimumNumberOfCampaignsPerSponsor(){
+        return adminRepository.minimumNumberOfCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> averageNumberOfCampaignsPerSponsor(){
+        return adminRepository.averageNumberOfCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> maximumNumberOfCampaignsPerSponsor(){
+        return adminRepository.maximumNumberOfCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> minumumNumberOfActiveCampaignsPerSponsor(){
+        return adminRepository.minumumNumberOfActiveCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> maximumNumberOfActiveCampaignsPerSponsor(){
+        return adminRepository.maximumNumberOfActiveCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> averageNumberOfActiveCampaignsPerSponsor(){
+        return adminRepository.averageNumberOfActiveCampaignsPerSponsor();
+    }
+
+    public  Collection<Integer> maxnumberOfCampaignsPerSponsor(){
+        return adminRepository.maxnumberOfCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> biggestCostesOfMonthlyBills(){
+       return adminRepository.biggestCostesOfMonthlyBills();
+    }
+
+    public Collection<Integer> averageAndStandartDevOfPaidBills(){
+        return adminRepository.averageAndStandartDevOfPaidBills();
+    }
+
+    public Sponsor sponsorHowHasntMangaedAnyCampaingInLastTreemonths(){
+        return adminRepository.sponsorHowHasntMangaedAnyCampaingInLastTreemonths();
+    }
+
+    public  String nombreCompañiaQueHaGastadoMenosDeLaMediaEnSusCampañas(){
+        return adminRepository.nombreCompañiaQueHaGastadoMenosDeLaMediaEnSusCampañas();
+    }
+
+    public  String nameOfCompanymenos90porciento(){
+        return adminRepository.nameOfCompanymenos90porciento();
     }
 
 
