@@ -116,3 +116,48 @@
     <display:column property="phone" title="${phoneheader}"/>
 
 </display:table>
+
+<%--AQUI EMPIEZA A MOSTRARSE EL B--%>
+
+<spring:message code="dashboard.q15" var="q15b"/>
+<h3><jstl:out value="${q15b}"/></h3>
+<jstl:out value="${q15}"/>
+
+<spring:message code="dashboard.q16" var="q16b"/>
+<h3><jstl:out value="${q16b}"/></h3>
+<jstl:out value="${q16}"/>
+
+
+<spring:message code="dashboard.q17" var="q17b"/>
+<h3><jstl:out value="${q17b}"/></h3>
+<jstl:out value="${q17}"/>
+
+
+<spring:message code="dashboard.q18" var="q18b"/>
+<h3><jstl:out value="${q18b}"/></h3>
+<jstl:out value="${q18}"/>
+
+
+<spring:message code="dashboard.q19" var="q19b"/>
+<h3><jstl:out value="${q19b}"/></h3>
+<jstl:out value="${q19}"/>
+
+
+<spring:message code="dashboard.q20" var="q20b"/>
+<h3><jstl:out value="${q20b}"/></h3>
+<jstl:out value="${q20}"/>
+
+
+<spring:message code="dashboard.q21" var="q21b"/>
+<h3><jstl:out value="${q21b}"/></h3>
+<jstl:out value="${q21}"/>
+
+
+<spring:message code="dashboard.q22" var="q22b"/>
+<h3><jstl:out value="${q22b}"/></h3>
+<jstl:out value="${q22}"/>
+
+
+<spring:message code="dashboard.q23" var="q23b"/>
+<h3><jstl:out value="${q23b}"/></h3>
+<jstl:out value="${q23}"/>
