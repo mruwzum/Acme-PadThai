@@ -39,7 +39,6 @@
     </security:authorize>
 
 
-
     <!--Solo los usuarios registrados para la clase pueden ver los materiales-->
     <security:authorize access="isAuthenticated()">
 

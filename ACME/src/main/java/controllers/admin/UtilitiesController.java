@@ -2,6 +2,7 @@ package controllers.admin;
 
 import com.sun.javafx.sg.PGShape;
 import com.sun.org.apache.xpath.internal.operations.Mod;
+import controllers.AbstractController;
 import domain.Campaing;
 import domain.Contest;
 import domain.MasterClass;
@@ -22,7 +23,7 @@ import java.util.*;
  */
 @Controller
 @RequestMapping("admin")
-public class UtilitiesController {
+public class UtilitiesController extends AbstractController{
 
     public UtilitiesController(){
         super();

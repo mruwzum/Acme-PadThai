@@ -2,6 +2,7 @@ package controllers.nutritionist;
 
 import controllers.AbstractController;
 import domain.Ingredient;
+import domain.MasterClass;
 import domain.Property;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import services.IngredientService;
-import services.NutritionistService;
-import services.PropertyService;
+import services.*;
 
 import javax.validation.Valid;
 import java.util.Collection;
@@ -32,6 +31,10 @@ public class ingredientManageController extends AbstractController {
     private PropertyService propertyService;
     @Autowired
     private NutritionistService NutritionistService;
+    @Autowired
+    private CookService cookService;
+    @Autowired
+    private MasterClassService masterClassService;
 
     public ingredientManageController() {
         super();
@@ -102,6 +105,18 @@ public class ingredientManageController extends AbstractController {
 
         return result;
     }
+    @RequestMapping(value = "masterClass/list", method = RequestMethod.GET)
+    public ModelAndView listMasterClasses() {
+        ModelAndView result;
+        Collection<MasterClass> masterClasses;
+        masterClasses = masterClassService.findAll();
+        result = new ModelAndView("masterClass/list");
+        result.addObject("masterClass", masterClasses);
+        result.addObject("requestURI", "nutritionist/masterClass/list.do");
+
+        return result;
+    }
+
 
     @RequestMapping(value = "/ingredient/deleteProperty", method = RequestMethod.GET)
     public ModelAndView deleteProperty(@RequestParam int id,int propertyID) {
