@@ -36,7 +36,7 @@ public class DashboardController extends AbstractController {
     public ModelAndView dashboard(){
         ModelAndView res;
 
-    //Métodos C
+    //DASHBOARD C
     Double q1 = adminService.minimumRecipesOfUser();
     Double q2 = adminService.averageRecipesOfUser();
     Double q3 = adminService.maximumRecipesOfUser();
@@ -58,7 +58,7 @@ public class DashboardController extends AbstractController {
     Collection<User> q13 = adminService.usersInDescendingPopularity();
     Collection<User> q14 = adminService.usersInDescendingOrderByAverageOfLikesPerRecipe();
 
-    //Métodos B
+    //DASHBOARD B
 
         Collection<Integer> q15 =adminService.minimumNumberOfCampaignsPerSponsor();
 
