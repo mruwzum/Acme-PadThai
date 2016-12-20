@@ -63,7 +63,7 @@ public class MensajesController extends AbstractController {
         String replacepriority = priority.replaceAll(",","");
 
 //TODO esto solo busca para user
-        Actor recipient2 = actorService.findUserByName(replacerecipient);
+        Actor recipient2 = actorService.findByName(replacerecipient);
         Priority priority1 = Priority.valueOf(replacepriority);
         Message message = actorService.textMessage(replacesubject,replacebody,recipient2,priority1);
         //Message m = actorService.recieveMessage(message,recipient2);

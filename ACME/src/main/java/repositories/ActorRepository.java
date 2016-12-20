@@ -32,6 +32,9 @@ public interface ActorRepository extends JpaRepository<Actor, Integer> {
     @Query("select u from User u where u.name = ?1")
     User findUserByName(String name);
 
+    @Query("select u from Actor u where u.name = ?1")
+    Actor findByName(String name);
+
     @Query("select u from Recipe u where u.title = ?1")
     Recipe findRecipeByTitle(String name);
 

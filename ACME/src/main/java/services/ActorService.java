@@ -361,6 +361,12 @@ public class ActorService {
         return res;
     }
 
+    public Actor findByName(String name) {
+        Assert.notNull(name);
+        Actor res = actorRepository.findByName(name);
+        return res;
+    }
+
     //Actor who is authenticated
 
     public Actor editPersonalData(String name, String surname, String emailAddress, String phone, String postalAddress,
