@@ -10,7 +10,6 @@ import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.*;
 
@@ -37,6 +36,8 @@ public class UtilitiesController {
     private MasterClassService masterClassService;
     @Autowired
     private ActorService actorService;
+    @Autowired
+    private SponsorService sponsorService;
 
     @RequestMapping(value = "/computewinners")
     public ModelAndView computeWinners(){
@@ -92,7 +93,7 @@ public class UtilitiesController {
     }
 
 
-    @RequestMapping(value = "masterClass/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/masterClass/list", method = RequestMethod.GET)
     public ModelAndView listMasterClasses() {
         ModelAndView result;
         Collection<MasterClass> masterClasses;
@@ -103,6 +104,27 @@ public class UtilitiesController {
 
         return result;
     }
+
+    @RequestMapping(value = "/sponsor/list", method = RequestMethod.GET)
+    public ModelAndView sponsorList() {
+        ModelAndView result;
+        Collection<Sponsor> sponsors = sponsorService.findAll();
+        result = new ModelAndView("sponsor/list");
+        result.addObject("sponsor", sponsors);
+        return result;
+    }
+
+    @RequestMapping(value = "/sponsor/monthly", method = RequestMethod.GET)
+    public ModelAndView computeMB(@RequestParam int id) {
+        ModelAndView result;
+
+        Sponsor sponsor = sponsorService.findOne(id);
+        adminService.computeMonthlyBills(sponsor);
+        result = sponsorList();
+        return result;
+    }
+
+
 
     @RequestMapping(value = "/edit/save")
     public ModelAndView UserSave(@RequestParam String name, String surname, String emailAddress, String phone,

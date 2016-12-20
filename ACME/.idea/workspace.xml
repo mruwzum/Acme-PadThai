@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d45cdad-cd5d-49b5-a719-5857e53aeea3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/views/sponsor/list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/views/sponsor/messages.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/views/sponsor/messages_es.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles_es.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controllers/user/managingRecipesController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/user/managingRecipesController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/domain/Nutritionist.class" afterPath="$PROJECT_DIR$/target/classes/domain/Nutritionist.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/actor/CommentController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/actor/CommentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/Nutritionist.java" afterPath="$PROJECT_DIR$/src/main/java/domain/Nutritionist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml" afterPath="$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/ingredient/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/ingredient/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/mensaje/text.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/mensaje/text.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/recipe/edit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/recipe/edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/recipe/view.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/recipe/view.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/PopulateDatabase.xml" afterPath="$PROJECT_DIR$/target/classes/PopulateDatabase.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,102 +40,72 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
+    <leaf>
+      <file leaf-file-name="UtilitiesController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="70" column="63" lean-forward="false" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
+            <state relative-caret-position="477">
+              <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/actor/CommentController.java">
+      <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/services/AdminService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+            <state relative-caret-position="79">
+              <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/mensaje/text.jsp">
+      <file leaf-file-name="ActorServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            <state relative-caret-position="546">
+              <caret line="358" column="76" lean-forward="false" selection-start-line="358" selection-start-column="76" selection-end-line="358" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OthersService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/OthersService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="155" column="34" lean-forward="true" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/edit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/view.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="119" column="39" lean-forward="false" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnonymusController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/anonymus/AnonymusController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1128">
-              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QualifierController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="managingRecipesController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java">
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sponsor/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="114" column="32" lean-forward="false" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="32" />
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="write.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/comment/write.jsp">
+      <file leaf-file-name="i18n-l10n.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="561">
+              <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tiles.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tiles_es.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles_es.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -172,13 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/tiles_es.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/user/likeRecipeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/Categorie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/repositories/IngredientRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/IngredientService.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/nutritionist/ingredientManageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/actor/tiles.xml" />
@@ -196,8 +166,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/actor/likeRecipeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Campaing.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/config/converters.xml" />
         <option value="$PROJECT_DIR$/Inteligencia2" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/mensaje/edit.jsp" />
@@ -210,19 +178,28 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/actor/MessagesFolderController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/mensaje/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/actor/MensajesController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Recipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/AdminService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Nutritionist.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/ingredient/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/mensaje/text.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/actor/CommentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/view.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles_es.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/sponsor/messages.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/sponsor/messages_es.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/sponsor/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" />
       </list>
     </option>
   </component>
@@ -372,7 +349,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="recipe" />
+              <option name="myItemId" value="sponsor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,37 +379,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mensaje" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mensaje" />
+              <option name="myItemId" value="sponsor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -466,7 +413,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ingredient" />
+              <option name="myItemId" value="master-page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -496,72 +443,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ingredient" />
+              <option name="myItemId" value="master-page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resource Bundle 'messages'" />
               <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="folder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme-Pad-Thai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ACME" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1064,22 +951,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Other&#9;PSI&#9;JAVA://services.OthersService&#10;head&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;nut&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Nutritionist.java&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;reci&#9;PSI&#9;JAVA://domain.Recipe&#10;actor&#9;PSI&#9;JAVA://services.ActorServiceTest&#10;other&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Others.java&#10;message&#9;PSI&#9;JAVA://domain.Message&#10;user&#9;PSI&#9;JAVA://domain.User&#10;nutri&#9;PSI&#9;JAVA://domain.Nutritionist&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;actors&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;folder&#9;PSI&#9;JAVA://domain.Folder&#10;popula&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;edit&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/mensaje/edit.jsp&#10;ad&#9;PSI&#9;JAVA://services.AdminService&#10;admin&#9;PSI&#9;JAVA://repositories.AdminRepository&#10;actorre&#9;PSI&#9;JAVA://repositories.ActorRepository&#10;userre&#9;PSI&#9;JAVA://repositories.UserRepository&#10;registr&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/security/registration.jsp&#10;strin&#9;PSI&#9;JAVA://converters.StringToActorConverter&#10;popu&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;adminser&#9;PSI&#9;JAVA://services.AdminService&#10;recipe&#9;PSI&#9;JAVA://domain.Recipe&#10;comme&#9;PSI&#9;JAVA://domain.Comment&#10;vie&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;view&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;otherser&#9;PSI&#9;JAVA://services.OthersService&#10;othe&#9;PSI&#9;JAVA://domain.Others&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;Acto&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;conte&#9;PSI&#9;JAVA://domain.Contest&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml" />
+    <property name="SearchEverywhereHistoryKey" value="act&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/test/java/services/ActorServiceTest.java&#10;i18&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/i18n-l10n.xml&#10;he&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;i1&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/i18n-l10n.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;actor&#9;PSI&#9;JAVA://domain.Actor&#10;spo&#9;PSI&#9;JAVA://domain.Sponsor&#10;adminser&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/AdminService.java&#10;Other&#9;PSI&#9;JAVA://services.OthersService&#10;head&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;nut&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Nutritionist.java&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;reci&#9;PSI&#9;JAVA://domain.Recipe&#10;other&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Others.java&#10;message&#9;PSI&#9;JAVA://domain.Message&#10;user&#9;PSI&#9;JAVA://domain.User&#10;nutri&#9;PSI&#9;JAVA://domain.Nutritionist&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;actors&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;folder&#9;PSI&#9;JAVA://domain.Folder&#10;popula&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;edit&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/mensaje/edit.jsp&#10;ad&#9;PSI&#9;JAVA://services.AdminService&#10;admin&#9;PSI&#9;JAVA://repositories.AdminRepository&#10;actorre&#9;PSI&#9;JAVA://repositories.ActorRepository&#10;userre&#9;PSI&#9;JAVA://repositories.UserRepository&#10;registr&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/security/registration.jsp&#10;strin&#9;PSI&#9;JAVA://converters.StringToActorConverter&#10;popu&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;recipe&#9;PSI&#9;JAVA://domain.Recipe&#10;comme&#9;PSI&#9;JAVA://domain.Comment&#10;vie&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;view&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;otherser&#9;PSI&#9;JAVA://services.OthersService&#10;othe&#9;PSI&#9;JAVA://domain.Others&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;Acto&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;conte&#9;PSI&#9;JAVA://domain.Contest&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/views/actor" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/views/recipe" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/controllers/user" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/views/sponsor" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/views/actor" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/views/recipe" />
+    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
+  <component name="RunManager" selected="JUnit.ActorServiceTest.testRandom">
     <configuration default="false" name="PopulateDatabase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1562,8 +1450,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.PopulateDatabase" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ActorServiceTest.testRandom" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ActorServiceTest.testRandom" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PopulateDatabase" />
         <item index="2" class="java.lang.String" itemvalue="Application.QueryDatabase" />
       </list>
     </recent_temporary>
@@ -1590,7 +1478,7 @@
       <workItem from="1482225423754" duration="8452000" />
       <workItem from="1482242926208" duration="2102000" />
       <workItem from="1482247879342" duration="27000" />
-      <workItem from="1482259329184" duration="9710000" />
+      <workItem from="1482259329184" duration="13053000" />
     </task>
     <task id="LOCAL-00001" summary="arreglao">
       <created>1481977250040</created>
@@ -1690,13 +1578,17 @@
       <option name="project" value="LOCAL" />
       <updated>1482264094702</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="comment medio que">
+      <created>1482270356841</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1482270356841</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 19h 02m 41s.xml">
-      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ActorServiceTest_testRandom - 2016.12.17 at 19h 03m 06s.xml">
       <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
     </history-entry>
@@ -1724,9 +1616,12 @@
     <history-entry file="ActorServiceTest_testRandom - 2016.12.20 at 20h 44m 43s.xml">
       <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ActorServiceTest_testRandom - 2016.12.20 at 23h 32m 26s.xml">
+      <configuration name="ActorServiceTest.testRandom" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66085000" />
+    <option name="totallyTimeSpent" value="69428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -1832,7 +1727,8 @@
     <MESSAGE value="mensajes funcionando" />
     <MESSAGE value="2" />
     <MESSAGE value="nutritionist funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="nutritionist funcionando" />
+    <MESSAGE value="comment medio que" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment medio que" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1848,100 +1744,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/SocialIdentityRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/RecipeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/PropertyRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/QuantityRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/OthersRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/NutritionistRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MonthlyBillRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/cook/cookRegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/cook/managingMasterClassesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-615">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/nutritionist/curriculaManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-705">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/nutritionist/ingredientManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="86" column="11" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="86" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/mensaje/tiles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/converters/ActorToStringConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/mensaje/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -1962,13 +1764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-585">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -2101,30 +1896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="272" column="10" lean-forward="false" selection-start-line="272" selection-start-column="10" selection-end-line="272" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="338" column="0" lean-forward="true" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/Curricula.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2176,58 +1947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="70" column="63" lean-forward="false" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/comment/write.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/mensaje/text.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/actor/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/OthersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="155" column="34" lean-forward="true" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -2250,8 +1973,204 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/view.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="119" column="39" lean-forward="false" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="39" />
+        <state relative-caret-position="234">
+          <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/OthersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="155" column="34" lean-forward="true" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/mensaje/text.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/actor/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/tiles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Sponsor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/property/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/nutritionist/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="60" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sponsor/messages.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sponsor/messages_es.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles_es.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sponsor/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="358" column="76" lean-forward="false" selection-start-line="358" selection-start-column="76" selection-end-line="358" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding />
         </state>
       </provider>

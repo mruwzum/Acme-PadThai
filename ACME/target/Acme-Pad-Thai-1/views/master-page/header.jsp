@@ -46,6 +46,8 @@
                     code="master.page.maclass.list.do"/></a></li>
             <li><a href="actor/AdminPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
+            <li><a href="admin/sponsor/list.do"><spring:message
+                    code="master.page.admin.sponsors"/></a></li>
         </security:authorize>
 
 
@@ -69,10 +71,10 @@
                     code="master.page.actor.messages"/></a></li>
             <li><a href="actor/NutritionistPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
-            <li><a href="actor/comment/write.do"><spring:message
-                    code="master.page.write.comment.do"/></a></li>
             <li><a href="user/recipes/stream.do"><spring:message
                     code="master.page.stream.recipe.do"/></a></li>
+            <li><a href="user/recipes/list/my.do"><spring:message
+                    code="master.page.recipes.list.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('USER')">
@@ -91,7 +93,7 @@
             <li><a href="anonymus/others.do"><spring:message code="master.page.users"/></a></li>
             <li><a href="actor/userPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
-            <li><a href="actor/comment/write.do"><spring:message
+            <li><a href="actor/comment/new.do"><spring:message
                     code="master.page.write.comment.do"/></a></li>
             <li><a href="user/recipes/stream.do"><spring:message
                     code="master.page.stream.recipe.do"/></a></li>

@@ -46,6 +46,8 @@
                     code="master.page.maclass.list.do"/></a></li>
             <li><a href="actor/AdminPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
+            <li><a href="admin/sponsor/list.do"><spring:message
+                    code="master.page.admin.sponsors"/></a></li>
             <li><a href="admin/campaing/listAll.do"><spring:message
                     code="master.page.campaign"/></a></li>
         </security:authorize>

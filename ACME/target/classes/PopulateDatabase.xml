@@ -2122,6 +2122,9 @@
                 <ref bean="Spambox3"></ref>
             </list>
         </property>
+        <property name="curricula">
+            <ref bean="curricula"/>
+        </property>
 
     </bean>
     <!-- Nutritionist2 -->
@@ -2148,6 +2151,9 @@
                 <ref bean="user2"></ref>
             </list>
         </property>
+        <property name="curricula">
+            <ref bean="curricula2"/>
+        </property>
 
 
     </bean>
@@ -2169,6 +2175,9 @@
                 <ref bean="Inbox16"></ref>
                 <ref bean="Spambox16"></ref>
             </list>
+        </property>
+        <property name="curricula">
+            <ref bean="curricula3"/>
         </property>
 
     </bean>
@@ -2195,6 +2204,9 @@
             <list>
                 <ref bean="nutritionist3"></ref>
             </list>
+        </property>
+        <property name="curricula">
+            <ref bean="curricula4"/>
         </property>
 
     </bean>
