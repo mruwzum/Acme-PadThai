@@ -106,7 +106,7 @@ public interface AdminRepository extends JpaRepository<Admin, Integer> {
     @Query("select b.sponsor.nameOfCompany from MonthlyBill b where b.cost >=(select max(b.cost)*0.9 from MonthlyBill b)")
     String nombreCompaniaQueHaGastadoMenosDeLaMediaEnSusCampanas();
 
-    @Query("select b.sponsor from MonthlyBill b where (select sum(b.cost) from MonthlyBill b) < (select avg(b.cost) from MonthlyBill b)")
+    @Query("select b.sponsor.nameOfCompany from MonthlyBill b where (select sum(b.cost) from MonthlyBill b) < (select avg(b.cost) from MonthlyBill b)")
     String nameOfCompanymenos90porciento();
     //Dashboard  A  -------------------------
 }
