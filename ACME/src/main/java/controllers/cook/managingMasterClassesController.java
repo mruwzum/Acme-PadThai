@@ -130,6 +130,9 @@ public class managingMasterClassesController extends AbstractController {
         result.addObject("title", title);
         result.addObject("description", description);
         result.addObject("message", message);
+        result.addObject("registers", masterClass.getRegisters());
+        result.addObject("material", masterClass.getMaterial());
+        result.addObject("promoters", masterClass.getPromoters());
 
         return result;
     }

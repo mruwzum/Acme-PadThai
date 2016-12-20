@@ -51,7 +51,7 @@
         <spring:message code="masterClass.registers" />
     </form:label>
     <form:select path="registers">
-        <form:options/>
+        <form:options items="${registers}" itemValue="id" />
     </form:select>
     <form:errors cssClass="error" path="registers"/>
 
@@ -61,19 +61,20 @@
         <spring:message code="masterClass.promoters" />
     </form:label>
     <form:select path="promoters">
-        <form:options/>
+        <form:options items="${promoters}" itemValue="id" />
     </form:select>
     <form:errors cssClass="error" path="promoters"/>
     <br/>
     <br>
 
     <form:label path="material">
-        <spring:message code="masterClass.material" />
+        <spring:message code="masterClass.material"/>
     </form:label>
     <form:select path="material">
-        <form:options/>
+        <form:options items="${material}" itemValue="id" />
     </form:select>
     <form:errors cssClass="error" path="material"/>
+
     <br/>
     <br>
     <br/>
