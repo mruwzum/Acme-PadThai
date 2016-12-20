@@ -21,9 +21,9 @@
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>
-    <form:hidden path="sender"/>
-    <form:hidden path="sentDate"/>
-    <form:hidden path="folder"/>
+    <%--<form:hidden path="sender"/>--%>
+    <%--<form:hidden path="sentDate"/>--%>
+    <%--<form:hidden path="folder"/>--%>
 
 
     <form:label path="recipient">
@@ -56,11 +56,26 @@
 
 
     <input type="submit" name="send"
-           value="<spring:message code="m.send" />"/>&nbsp;
+           value="<spring:message code="m.send" />"/>
 
 
     <input type="button" name="cancel"
            value="<spring:message code="m.cancel" />"
            onclick="relativeRedir('/actor/folder/list.do');"/>
     <br/>
+
+    <%--<spring:url value="actor/mensaje/send2.do" var="url">--%>
+
+        <%--<spring:param name="recipient" value="${recipient}"/>--%>
+        <%--<spring:param name="subject" value="${subject}"/>--%>
+        <%--<spring:param name="body" value="${body}"/>--%>
+        <%--<spring:param name="priority" value="${priority}"/>--%>
+
+
+    <%--</spring:url>--%>
+
+    <%--<input type="button" name="cancel"--%>
+           <%--value="<spring:message code="m.send" />"--%>
+           <%--onclick="relativeRedir('<jstl:out value="${url}"/>');"/>--%>
+    <%--<br/>--%>
 </form:form>

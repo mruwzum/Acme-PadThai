@@ -2,3 +2,16 @@ JPA TRANSACTION:
 Normalmente es por una violación a la hora de guardar un mensaje, hay que ir a ConstraintViolationImpl y mirar donde
 ha fallado.
 
+org.springframework.validation.BeanPropertyBindingResult: 2 errors Field error in object 'message' on field 'recipient': rejected value [user2];
+ codes [typeMismatch.message.recipient,typeMismatch.recipient,typeMismatch.domain.Actor,typeMismatch];
+  arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [message.recipient,recipient];
+   arguments [];
+    default message [recipient]];
+     default message [Failed to convert property value of type 'java.lang.String' to required type 'domain.Actor' for property 'recipient';
+      nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type java.lang.String to type @javax.validation.constraints.NotNull @javax.persistence.OneToOne domain.Actor for value 'user2';
+       nested exception is java.lang.IllegalArgumentException: java.lang.NumberFormatException: For input string: "user2"] Field error in object 'message' on field 'sender': rejected value [null];
+        codes [NotNull.message.sender,NotNull.sender,NotNull.domain.Actor,NotNull];
+         arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [message.sender,sender];
+          arguments [];
+           default message [sender]];
+            default message [Cannot be null]

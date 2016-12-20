@@ -2,17 +2,16 @@ package controllers.actor;
 
 import controllers.AbstractController;
 import converters.ActorToStringConverter;
-import domain.Actor;
-import domain.Folder;
-import domain.Message;
-import domain.Priority;
+import domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.ActorService;
 import services.MessageService;
+import services.UserService;
 
 import javax.validation.Valid;
 import java.util.ArrayList;
@@ -23,7 +22,7 @@ import java.util.List;
  * Created by daviddelatorre on 15/12/16.
  */
 @Controller
-@RequestMapping("/actor")
+@RequestMapping("actor")
 public class MensajesController extends AbstractController {
 
 
@@ -35,6 +34,8 @@ public class MensajesController extends AbstractController {
     private MessageService messageService;
     @Autowired
     private ActorService actorService;
+    @Autowired
+    private UserService userService;
 
 //    @RequestMapping(value = "/message/view")
 //    public ModelAndView messageView(@RequestParam int messageID){
@@ -49,30 +50,34 @@ public class MensajesController extends AbstractController {
     public ModelAndView newMessage() {
         ModelAndView res;
         Message m = messageService.create();
+        User recipient = userService.create();
+        m.setRecipient(recipient);
         res = createGenericEditModelAndView(m);
         return res;
     }
     @RequestMapping(value = "/mensaje/send")
-    public ModelAndView sendMessage(@Valid Message mensaje3, BindingResult bindingResult) {
+    public ModelAndView sendMessage(@Valid Message mensaje3) {
         ModelAndView res;
         String texto1 = "OK";
-        Actor recipient = actorService.findUserByName("user2");
-        mensaje3.setRecipient(recipient);
-        Actor sender = actorService.findByPrincipal();
-        mensaje3.setSender(sender);
-        mensaje3.setBody("GENERIC");
-        mensaje3.setSentDate(new Date(System.currentTimeMillis() - 100));
-        mensaje3.setPriority(Priority.HIGH);
-        mensaje3.setSubject("GENERIC");
-        List<Folder> folders = new ArrayList<>(sender.getFolders());
-
-        mensaje3.setFolder(folders.get(0));
-        messageService.save(mensaje3);
-        actorService.sendMessage(mensaje3);;
         res = new ModelAndView("mensaje/text");
         res.addObject("texto1",texto1);
         return res;
     }
+
+//    @RequestMapping(value = "/mensaje/send2")
+//    public ModelAndView sendMessage2( @RequestParam Actor actor, String Sub, String body, Priority priority) {
+//        ModelAndView res;
+//        String texto1 = "OK";
+//        Message m = messageService.create();
+//        m.setRecipient(actor);
+//        m.setSubject(Sub);
+//        m.setBody(body);
+//        m.setPriority(priority);
+//        actorService.sendMessage(m);
+//        res = new ModelAndView("mensaje/text");
+//        res.addObject("texto1",texto1);
+//        return res;
+//    }
 
     protected ModelAndView createGenericEditModelAndView(Message mensaje3) {
 

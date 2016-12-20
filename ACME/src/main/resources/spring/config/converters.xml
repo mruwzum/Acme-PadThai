@@ -26,6 +26,16 @@
         <bean class="converters.StringToActorConverter"/>
         <bean class="converters.StringToMessageConverter"/>
         <bean class="converters.MessageToStringConverter"/>
+        <bean class="converters.SocialIdentityToStringConverter"/>
+        <bean class="converters.SponsorToStringConverter"/>
+        <bean class="converters.StringToSocialIdentityConverter"/>
+        <bean class="converters.StringToSponsorConverter"/>
+        <bean class="converters.StringToUserAccountConverter"/>
+        <bean class="converters.StringToUserConverter"/>
+        <bean class="converters.UserAccountToStringConverter"/>
+        <bean class="converters.UsertoStringConverter"/>
+
+
     </util:list>
 
 </beans>

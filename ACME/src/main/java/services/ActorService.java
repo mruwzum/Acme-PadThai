@@ -461,17 +461,16 @@ public class ActorService {
         message.setSender(u);
         message.setSentDate(new Date(System.currentTimeMillis() - 100));
         List<Folder> folders = new ArrayList<>(u.getFolders());
-        Actor recipient =  actorRepository.findUserByName(u.getName());
         folders.get(0).getMessages().add(message);
         u.setFolders(folders);
-        recieveMessage(message,recipient);
-
+        recieveMessage(message,message.getRecipient());
         return message;
     }
     public Message recieveMessage(Message message, Actor a){
         List<Folder> folders = new ArrayList<>(a.getFolders());
         Assert.notEmpty(folders,"carpetas vacias");
         folders.get(2).getMessages().add(message);
+        a.setFolders(folders);
         return  message;
     }
 
