@@ -60,6 +60,8 @@
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
+            <li><a href="user/recipes/list/my.do"><spring:message
+                    code="master.page.recipes.list.do"/></a></li>
             <li><a href="nutritionist/ingredient/list.do"><spring:message
                     code="master.page.ingredient"/></a></li>
             <li><a href="nutritionist/property/list.do"><spring:message

@@ -138,7 +138,7 @@ public class OthersService {
         return following;
     }
 
-    void likeRecipe(Recipe r) {
+    public void likeRecipe(Recipe r) {
         Assert.notNull(r);
         Others u = findByPrincipal();
         Assert.notNull(u);
@@ -153,7 +153,7 @@ public class OthersService {
         }
     }
 
-    void dislikeRecipe(Recipe r) {
+    public void dislikeRecipe(Recipe r) {
         Assert.notNull(r);
         Others u = findByPrincipal();
         Assert.notNull(u);

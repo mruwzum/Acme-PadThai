@@ -1,12 +1,7 @@
-package controllers.user;
+package controllers.others;
 
-import com.sun.javafx.sg.PGShape;
-import com.sun.org.apache.regexp.internal.RE;
 import controllers.AbstractController;
-import converters.UsertoStringConverter;
 import domain.Comment;
-import domain.LearningMaterial;
-import domain.MasterClass;
 import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -42,8 +37,6 @@ public class managingRecipesController extends AbstractController {
     private CommentService commentService;
     @Autowired
     private OthersService   othersService;
-    @Autowired
-    private LearningMaterialService learningMaterialService;
 
 
     // Constructors -----------------------------------------------------------
@@ -93,17 +86,7 @@ public class managingRecipesController extends AbstractController {
         return result;
     }
 
-@RequestMapping(value = "materials/list")
-    public ModelAndView listMat(@RequestParam int masterClass){
-    ModelAndView res;
-    Collection<LearningMaterial> lear = learningMaterialService.findAll();
 
-    res = new ModelAndView("materials/list");
-    res.addObject("materials", lear);
-    res.addObject("requestURI", "user/materials/list.do");
-
-    return res;
-}
 
     @RequestMapping(value = "recipe/view", method = RequestMethod.GET)
     public ModelAndView viewRecipe(@RequestParam int recipeID) {
@@ -148,9 +131,13 @@ public class managingRecipesController extends AbstractController {
     @RequestMapping(value = "recipes/list/my", method = RequestMethod.GET)
     public ModelAndView listMyRecipes() {
         ModelAndView result;
-        Collection<Recipe> myrecipes= userService.getAllRecipes();
-       Collection<Recipe> allrecipes = recipeService.findAll();
-       allrecipes.removeAll(myrecipes);
+        Collection<Recipe> allrecipes = recipeService.findAll();
+        try {
+            Collection<Recipe> myrecipes= userService.getAllRecipes();
+            allrecipes.removeAll(myrecipes);
+        } catch (Throwable oops) {
+
+        }
        result = new ModelAndView("recipe/list");
        result.addObject("recipe", allrecipes);
         return result;

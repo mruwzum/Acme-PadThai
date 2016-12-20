@@ -132,7 +132,6 @@ public class UserService {
         Collection<Recipe> res;
         User u;
         u = findByPrincipal();
-        Assert.notNull(u);
         res = userRepository.getMyRecipes(u.getId());
         return res;
     }
@@ -197,18 +196,18 @@ public class UserService {
 
     public void rateRecipeWithLike(Recipe r) {
         Assert.notNull(r);
-        User u = findByPrincipal();
+        Others u = findByPrincipal();
         Assert.notNull(u);
-        Assert.isTrue(u.getRecipes().contains(r), "Un usuario no puede puntuar su propia receta");
+        //Assert.isTrue(u.getRecipes().contains(r), "Un usuario no puede puntuar su propia receta");
         Boolean like = new Boolean(true);
         r.getRate().add(like);
     }
 
     public void rateRecipeWithDislike(Recipe r) {
         Assert.notNull(r);
-        User u = findByPrincipal();
+        Others u = findByPrincipal();
         Assert.notNull(u);
-        Assert.isTrue(u.getRecipes().contains(r), "Un usuario no puede puntuar su propia receta");
+        //Assert.isTrue(u.getRecipes().contains(r), "Un usuario no puede puntuar su propia receta");
         Boolean fale = new Boolean(false);
         r.getRate().add(fale);
     }
