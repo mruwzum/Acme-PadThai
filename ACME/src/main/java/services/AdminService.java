@@ -96,37 +96,37 @@ public class AdminService {
 
     // Dashboard -------------------------------------------------------
 
-    public Double minimumRecipesOfUser(int user){
-       Double res = adminRepository.minumRecipesOfUser(user);
+    public Double minimumRecipesOfUser(){
+       Double res = adminRepository.minumRecipesOfUser();
        return res;
     }
 
-    public Double averageRecipesOfUser(int user){
-        Double res = adminRepository.averageRecipesOfUser(user);
+    public Double averageRecipesOfUser(){
+        Double res = adminRepository.averageRecipesOfUser();
         return res;
     }
-    public Double maximumRecipesOfUser(int user){
-        Double res = adminRepository.maximumRecipesOfUser(user);
+    public Double maximumRecipesOfUser(){
+        Double res = adminRepository.maximumRecipesOfUser();
         return res;
     }
     public User getUserWhoAuthoredMoreRecipes(){
         User res = adminRepository.getUserWhoAuthoredMoreRecipes();
         return res;
     }
-    public Double minimumNumberOfRecipesQualifiedForAContest(){
-        Double res = adminRepository.minimumNumberOfRecipesQualifiedForAContest();
+    public  Collection<Integer> minimumNumberOfRecipesQualifiedForAContest(){
+        Collection<Integer> res = adminRepository.minimumNumberOfRecipesQualifiedForAContest();
         return res;
     }
-    public Double averageNumberOfRecipesQualifiedForAContest(){
-        Double res = adminRepository.averageNumberOfRecipesQualifiedForAContest();
+    public  Collection<Integer> averageNumberOfRecipesQualifiedForAContest(){
+        Collection<Integer> res = adminRepository.averageNumberOfRecipesQualifiedForAContest();
         return res;
     }
-    public Double maximumNumberOfRecipesQualifiedForAContest(){
-        Double res = adminRepository.maximumNumberOfRecipesQualifiedForAContest();
+    public  Collection<Integer> maximumNumberOfRecipesQualifiedForAContest(){
+        Collection<Integer> res = adminRepository.maximumNumberOfRecipesQualifiedForAContest();
         return res;
     }
-    public Contest contestForWhichMoreRecipesHasQualified(){
-        Contest res = adminRepository.contestForWhichMoreRecipesHasQualified();
+    public Collection<Contest> contestForWhichMoreRecipesHasQualified(){
+        Collection<Contest> res = adminRepository.contestForWhichMoreRecipesHasQualified();
         return res;
     }
    public  Double averageOfStepsPerRecipe(){

@@ -27,29 +27,29 @@ public interface AdminRepository extends JpaRepository<Admin, Integer> {
     //Dashboard    -------------------------
 
 
-    @Query("select min(u.recipes.size) from User u where u.id = ?1")
-    Double minumRecipesOfUser(int userID);
+    @Query("select min(u.recipes.size) from User u")
+    Double minumRecipesOfUser();
 
-    @Query("select avg (u.recipes.size) from User u where u.id = ?1")
-    Double averageRecipesOfUser(int userID);
+    @Query("select avg (u.recipes.size) from User u")
+    Double averageRecipesOfUser();
 
-    @Query("select max(u.recipes.size) from User u where u.id = ?1")
-    Double maximumRecipesOfUser(int userID);
+    @Query("select max(u.recipes.size) from User u")
+    Double maximumRecipesOfUser();
 
     @Query("select u from User u where u.recipes.size = (select max(w.recipes.size) from User w)")
     User getUserWhoAuthoredMoreRecipes();
 
     @Query("select min(s.rate.size) from Recipe s group by s")
-    Double minimumNumberOfRecipesQualifiedForAContest();
+    Collection<Integer> minimumNumberOfRecipesQualifiedForAContest();
 
     @Query("select avg(s.rate.size) from Recipe s group by s")
-    Double averageNumberOfRecipesQualifiedForAContest();
+    Collection<Integer> averageNumberOfRecipesQualifiedForAContest();
 
     @Query("select max(s.rate.size) from Recipe s group by s")
-    Double maximumNumberOfRecipesQualifiedForAContest();
+    Collection<Integer> maximumNumberOfRecipesQualifiedForAContest();
 
     @Query("select a from Contest a where a.winners.size = (select max(aa.winners.size) from Contest aa)")
-    Contest contestForWhichMoreRecipesHasQualified();
+    Collection<Contest> contestForWhichMoreRecipesHasQualified();
 
     @Query("select avg(r.stepsToCook.size) from Recipe r")
     Double averageOfStepsPerRecipe();

@@ -8,6 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
+import org.springframework.util.SystemPropertyUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -228,5 +229,49 @@ public class AdminServiceTest extends AbstractTest {
         adminService.promoteMasterClas(masterClasses.get(1));
         adminService.demoteMasterClass(masterClasses.get(1));
         authenticate(null);
+    }
+    @Test
+    public void testRandom(){
+
+        System.out.println("-----------------------------------------------------");
+
+        Double minRecOf = adminService.minimumRecipesOfUser();
+        Double avgRecOf = adminService.averageRecipesOfUser();
+        Double maxRecOf = adminService.maximumRecipesOfUser();
+        System.out.println(minRecOf); System.out.println(avgRecOf); System.out.println(maxRecOf);
+
+        System.out.println("-----------------------------------------------------");
+
+        User more = adminService.getUserWhoAuthoredMoreRecipes();
+        System.out.println(more.getName());
+
+        System.out.println("-----------------------------------------------------");
+
+        Collection<Integer> minRecOf2 = adminService.minimumNumberOfRecipesQualifiedForAContest();
+        Collection<Integer> avgRecOf2 = adminService.averageNumberOfRecipesQualifiedForAContest();
+        Collection<Integer> maxRecOf2 = adminService.maximumNumberOfRecipesQualifiedForAContest();
+        System.out.println(minRecOf2); System.out.println(avgRecOf2); System.out.println(maxRecOf2);
+
+        System.out.println("-----------------------------------------------------");
+
+       Collection<Contest> cont = adminService.contestForWhichMoreRecipesHasQualified();
+        System.out.println(cont);
+
+        System.out.println("-----------------------------------------------------");
+
+        Double avgStepsPerRecipe = adminService.averageOfStepsPerRecipe();
+        Double stdevStepsPerRecipe = adminService.standartDeviationOfNumberOfStepsPerRecipe();
+        Double avgOfIngrPerRecipe = adminService.averageOfIngredientsPerRecipe();
+        Double stddevOfIngredientsPerRecipe = adminService.standartDeviationOfNumberOfIngredientsPerRecipe();
+        System.out.println(avgStepsPerRecipe); System.out.println(stdevStepsPerRecipe);
+        System.out.println(avgOfIngrPerRecipe);System.out.println(stddevOfIngredientsPerRecipe);
+
+        System.out.println("-----------------------------------------------------");
+
+        Collection<User> usersInDescendingByAverageOfLikes = new ArrayList<>(adminService.usersInDescendingOrderByAverageOfLikesPerRecipe());
+        System.out.println(usersInDescendingByAverageOfLikes);
+
+        Collection<User>  usersInDescendingOrderByPopularity = new ArrayList<>(adminService.usersInDescendingPopularity());
+        System.out.println(usersInDescendingOrderByPopularity);
     }
 }
