@@ -460,11 +460,13 @@ public class ActorService {
         chekBody(message.getBody());
         message.setSender(u);
         message.setSentDate(new Date(System.currentTimeMillis() - 100));
+        Message saved = messageService.save(message);
         List<Folder> folders = new ArrayList<>(u.getFolders());
-        folders.get(0).getMessages().add(message);
+        Assert.notEmpty(folders,"carpetas vacias");
+        folders.get(0).getMessages().add(saved);
         u.setFolders(folders);
-        recieveMessage(message,message.getRecipient());
-        return message;
+        recieveMessage(saved,saved.getRecipient());
+        return saved;
     }
     public Message recieveMessage(Message message, Actor a){
         List<Folder> folders = new ArrayList<>(a.getFolders());

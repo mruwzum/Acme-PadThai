@@ -19,9 +19,22 @@
 
 <html>
 <head>
-    <title>${texto1}</title>
+    <title></title>
 </head>
 <body>
-
+${texto1}
+<br/>
+${red}
+<br/>
+${bod}
+<br/>
+${sub}
+<br/>
+${pri}
+<br/>
+${sen}
+<br/>
+${date}
+<br/>
 </body>
 </html>

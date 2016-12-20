@@ -17,7 +17,8 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<form:form action="actor/mensaje/send.do" modelAttribute="mensaje3">
+<form:form action="actor/mensaje/send.do?recipient=${recipient}&subject=${subject}
+&body=${body}&priority=${priority}" modelAttribute="mensaje3">
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>
@@ -64,18 +65,4 @@
            onclick="relativeRedir('/actor/folder/list.do');"/>
     <br/>
 
-    <%--<spring:url value="actor/mensaje/send2.do" var="url">--%>
-
-        <%--<spring:param name="recipient" value="${recipient}"/>--%>
-        <%--<spring:param name="subject" value="${subject}"/>--%>
-        <%--<spring:param name="body" value="${body}"/>--%>
-        <%--<spring:param name="priority" value="${priority}"/>--%>
-
-
-    <%--</spring:url>--%>
-
-    <%--<input type="button" name="cancel"--%>
-           <%--value="<spring:message code="m.send" />"--%>
-           <%--onclick="relativeRedir('<jstl:out value="${url}"/>');"/>--%>
-    <%--<br/>--%>
 </form:form>

@@ -50,17 +50,40 @@ public class MensajesController extends AbstractController {
     public ModelAndView newMessage() {
         ModelAndView res;
         Message m = messageService.create();
-        User recipient = userService.create();
-        m.setRecipient(recipient);
         res = createGenericEditModelAndView(m);
         return res;
     }
     @RequestMapping(value = "/mensaje/send")
-    public ModelAndView sendMessage(@Valid Message mensaje3) {
+    public ModelAndView sendMessage(@RequestParam String recipient, String subject, String body, String priority) {
         ModelAndView res;
         String texto1 = "OK";
+        String replacerecipient = recipient.replaceAll(",","");
+        String replacesubject = subject.replaceAll(",","");
+        String replacebody = body.replaceAll(",","");
+        String replacepriority = priority.replaceAll(",","");
+
+
+
+        Message message = messageService.create();
+        Actor recipient2 = actorService.findUserByName(replacerecipient);
+        Priority priority1 = Priority.valueOf(replacepriority);
+
+        message.setRecipient(recipient2);
+        message.setSubject(subject);
+        message.setBody(body);
+        message.setPriority(priority1);
+
+       Message m = actorService.sendMessage(message);
+
+
         res = new ModelAndView("mensaje/text");
         res.addObject("texto1",texto1);
+        res.addObject("red", m.getRecipient());
+        res.addObject("bod", m.getSubject());
+        res.addObject("sub", m.getBody());
+        res.addObject("pri", m.getPriority());
+        res.addObject("sen", m.getSender());
+        res.addObject("date", m.getSentDate());
         return res;
     }
 
