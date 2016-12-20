@@ -3,6 +3,7 @@ package controllers.admin;
 import controllers.AbstractController;
 import domain.Contest;
 import domain.Recipe;
+import domain.Sponsor;
 import domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -37,6 +38,8 @@ public class DashboardController extends AbstractController {
     @RequestMapping(value = "/dashboard")
     public ModelAndView dashboard(){
         ModelAndView res;
+
+    //Métodos C
     Double q1 = adminService.minimumRecipesOfUser();
     Double q2 = adminService.averageRecipesOfUser();
     Double q3 = adminService.maximumRecipesOfUser();
@@ -57,7 +60,35 @@ public class DashboardController extends AbstractController {
 
     Collection<User> q13 = adminService.usersInDescendingPopularity();
     Collection<User> q14 = adminService.usersInDescendingOrderByAverageOfLikesPerRecipe();
-        res = new ModelAndView("admin/dashboard");
+
+    //Métodos B
+
+        Collection<Integer> q15 =adminService.minimumNumberOfCampaignsPerSponsor();
+
+        Collection<Integer> q16 = adminService.averageNumberOfCampaignsPerSponsor();
+
+        Collection<Integer> q17 = adminService.maximumNumberOfCampaignsPerSponsor();
+
+        Collection<Integer> q18 = adminService.minumumNumberOfActiveCampaignsPerSponsor();
+
+        Collection<Integer> q19 = adminService.maximumNumberOfActiveCampaignsPerSponsor();
+
+        Collection<Integer> q20 = adminService.averageNumberOfActiveCampaignsPerSponsor();
+
+        Collection<Integer> q21 = adminService.maxnumberOfCampaignsPerSponsor();
+
+        Collection<Integer> q22 = adminService.biggestCostesOfMonthlyBills();
+
+        Collection<Integer> q23= adminService.averageAndStandartDevOfPaidBills();
+
+        Sponsor q24 = adminService.sponsorHowHasntMangaedAnyCampaingInLastTreemonths();
+
+        String q25 = adminService.nombreCompañiaQueHaGastadoMenosDeLaMediaEnSusCampañas();
+
+        String q26 = adminService.nameOfCompanymenos90porciento();
+
+    res = new ModelAndView("admin/dashboard");
+        //C
         res.addObject("q1", q1);
         res.addObject("q2", q2);
         res.addObject("q3", q3);
@@ -72,6 +103,21 @@ public class DashboardController extends AbstractController {
         res.addObject("q12", q12);
         res.addObject("q13", q13);
         res.addObject("q14", q14);
+        //B
+        res.addObject("q15", q15);
+        res.addObject("q16", q16);
+        res.addObject("q17", q17);
+        res.addObject("q18", q18);
+        res.addObject("q19", q19);
+        res.addObject("q20", q20);
+        res.addObject("q21", q21);
+        res.addObject("q22", q22);
+        res.addObject("q23", q23);
+        res.addObject("q24", q24);
+        res.addObject("q25", q25);
+        res.addObject("q26", q26);
+
+
         return res;
     }
 
