@@ -41,9 +41,11 @@ public class MessagesFolderController extends AbstractController {
     public ModelAndView insideFolder(@RequestParam int folderID) {
         ModelAndView result;
         Folder folder = folderService.findOne(folderID);
+        Boolean isTrashBox = folder.getName().equals("Trashbox");
         Collection<Message> messages = folder.getMessages();
         result = new ModelAndView("mensaje/list");
         result.addObject("mensaje3", messages);
+        result.addObject("isTrashBox", isTrashBox);
         return result;
     }
 

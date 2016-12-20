@@ -32,5 +32,21 @@
     <spring:message code="m.priority" var="priority"/>
     <display:column property="priority" title="${priority}"/>
 
+    <display:column>
+        <a href="http://localhost:8080/actor/mensaje/delete.do?id=${row.id}">
+            <spring:message code="m.delete"/>
+        </a>
+
+        <jstl:if test="${isTrashBox}">
+            <a href="http://localhost:8080/actor/mensaje/delete/perm.do?id=${row.id}">
+                <spring:message code="m.deleteperm"/>
+            </a>
+
+        </jstl:if>
+
+    </display:column>
+
+
+
 
 </display:table>

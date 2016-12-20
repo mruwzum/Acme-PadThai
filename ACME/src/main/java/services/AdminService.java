@@ -263,12 +263,15 @@ public class AdminService {
         Assert.notNull(orderRecipes.get(0));
         Assert.notNull(orderRecipes.get(1));
         Assert.notNull(orderRecipes.get(2));
-        Collection<Recipe> winners = new ArrayList<Recipe>();
+
+
+        Collection<Recipe> winners = new ArrayList<>();
         winners.add(orderRecipes.get(0));
         winners.add(orderRecipes.get(1));
         winners.add(orderRecipes.get(2));
-        System.out.println(orderRecipes);
         c.setWinners(winners);
+        //System.out.println(c.getWinners());
+
 
     }
 

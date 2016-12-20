@@ -186,4 +186,11 @@ public class Recipe extends DomainEntity {
         this.likesNumber = likesNumber;
     }
 
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "ticker='" + ticker + '\'' +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }

@@ -530,11 +530,10 @@ public class ActorService {
 
     public void deleteMessage(Message m) {
         Assert.notNull(m);
-        Actor u;
-        u = findByPrincipal();
-        Assert.notNull(u, "El actor no existe");
-        Assert.isTrue(m.getSender().equals(u));
-        messageService.delete(m);
+        List<Folder> auxFolder = new ArrayList<>(findByPrincipal().getFolders());
+        m.setFolder(auxFolder.get(1));
+        auxFolder.get(1).getMessages().add(m);
+        findByPrincipal().setFolders(auxFolder);
     }
 
 

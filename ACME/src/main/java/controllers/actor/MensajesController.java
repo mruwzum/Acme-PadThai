@@ -37,14 +37,6 @@ public class MensajesController extends AbstractController {
     @Autowired
     private UserService userService;
 
-//    @RequestMapping(value = "/message/view")
-//    public ModelAndView messageView(@RequestParam int messageID){
-//        ModelAndView result;
-//
-//
-//        return  result;
-//
-//    }
 
     @RequestMapping(value = "/mensaje/new")
     public ModelAndView newMessage() {
@@ -62,22 +54,40 @@ public class MensajesController extends AbstractController {
         String replacebody = body.replaceAll(",","");
         String replacepriority = priority.replaceAll(",","");
 
-//TODO esto solo busca para user
         Actor recipient2 = actorService.findByName(replacerecipient);
         Priority priority1 = Priority.valueOf(replacepriority);
         Message message = actorService.textMessage(replacesubject,replacebody,recipient2,priority1);
-        //Message m = actorService.recieveMessage(message,recipient2);
 
 
         res = new ModelAndView("mensaje/text");
         res.addObject("texto1",texto1);
-        res.addObject("red", message.getRecipient());
-        res.addObject("bod", message.getSubject());
-        res.addObject("sub", message.getBody());
-        res.addObject("pri", message.getPriority());
-        res.addObject("sen", message.getSender());
-        res.addObject("date", message.getSentDate());
         return res;
+    }
+
+
+    @RequestMapping(value = "/mensaje/delete")
+    public ModelAndView deleteMessage(@RequestParam int id) {
+        ModelAndView res;
+        String text1 = "Message Delete";
+        Message message = messageService.findOne(id);
+
+        res = new ModelAndView("mensaje/text");
+        res.addObject("text1", text1);
+        return res;
+
+
+    }
+    @RequestMapping(value = "/mensaje/delete/perm")
+    public ModelAndView deleteMessagePerm(@RequestParam int id) {
+        ModelAndView res;
+        String text1 = "Message Delete Permanently";
+        Message message = messageService.findOne(id);
+        messageService.delete(message);
+        res = new ModelAndView("mensaje/text");
+        res.addObject("text1", text1);
+        return res;
+
+
     }
 
 

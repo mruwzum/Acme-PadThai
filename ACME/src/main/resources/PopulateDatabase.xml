@@ -2579,22 +2579,12 @@
         <property name="title" value="Concurso de platos Veganos"/>
         <property name="oppeningDate" value="2016/04/23"/>
         <property name="closingDate" value="2016/04/23"/>
-        <property name="winners">
-            <list>
-                <ref bean="recipe6"/>
-            </list>
-        </property>
     </bean>
     <!-- Contest4 -->
     <bean id="contest4" class="domain.Contest">
         <property name="title" value="Concurso de platos Frios"/>
         <property name="oppeningDate" value="2016/09/23"/>
         <property name="closingDate" value="2016/10/23"/>
-        <property name="winners">
-            <list>
-                <ref bean="recipe5"/>
-            </list>
-        </property>
     </bean>
 
     <!-- Admin -->

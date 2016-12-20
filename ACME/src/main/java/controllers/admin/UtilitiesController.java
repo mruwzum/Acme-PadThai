@@ -51,8 +51,8 @@ public class UtilitiesController {
         Contest c = map.get(nearestDate);
         adminService.computeWinners(c);
         Collection<Recipe> winners = c.getWinners();
-        res = new ModelAndView("contest/list");
-        res.addObject("contest", winners);
+        res = new ModelAndView("recipe/list");
+        res.addObject("recipe", winners);
         return res ;
     }
 
