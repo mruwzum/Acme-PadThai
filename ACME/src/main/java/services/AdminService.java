@@ -223,9 +223,9 @@ public class AdminService {
         return adminRepository.cookByPromotedMasterClasses();
     }
 
-    public Collection<Integer> averageOfMasterClassesPromotedByAdmin(){
-        return adminRepository.averageOfMasterClassesPromotedByAdmin();
-    }
+//    public Collection<Integer> averageOfMasterClassesPromotedByAdmin(){
+//        return adminRepository.averageOfMasterClassesPromotedByAdmin();
+//    }
 
     // Other business methods -------------------------------------------------------------------------------
 

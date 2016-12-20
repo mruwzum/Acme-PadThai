@@ -182,3 +182,69 @@
 <spring:message code="dashboard.q23" var="q23b"/>
 <jstl:out value="${q23b}"/>:
 <jstl:out value="${q23}"/>
+<br>
+<br/>
+
+<spring:message code="dashboard.q24" var="q24b"/>
+<jstl:out value="${q24b}"/>:
+<jstl:out value="${q24}"/>
+<br>
+<br/>
+
+<spring:message code="dashboard.q25" var="q25b"/>
+<jstl:out value="${q25b}"/>:
+<jstl:out value="${q25}"/>
+<br>
+<br/>
+
+<spring:message code="dashboard.q26" var="q26b"/>
+<jstl:out value="${q26b}"/>:
+<jstl:out value="${q26}"/>
+<br>
+<br/>
+
+
+
+<spring:message code="dashboard.q27" var="q27b"/>
+<jstl:out value="${q27b}"/>:
+<jstl:out value="${q27}"/>
+<br>
+<br/>
+<spring:message code="dashboard.q28" var="q28b"/>
+<jstl:out value="${q28b}"/>:
+<jstl:out value="${q28}"/>
+<br>
+<br/>
+<spring:message code="dashboard.q29" var="q29b"/>
+<jstl:out value="${q29b}"/>:
+<jstl:out value="${q29}"/>
+<br>
+<br/>
+
+
+
+<spring:message code="dashboard.q30" var="q30b"/>
+<h3><jstl:out value="${q30b}"/></h3>
+<display:table name="q30" id="row" requestURI="http://localhost:8080/admin/dashboard.do" pagesize="5"
+               class="displaytag">
+
+    <spring:message code="q13.name" var="nameheader"/>
+    <display:column property="name" title="${nameheader}" sortable="true"/>
+
+    <spring:message code="q13.surname" var="surnameheader"/>
+    <display:column property="surname" title="${surnameheader}"/>
+
+    <spring:message code="q13.EmailAddress" var="Emailheader"/>
+    <display:column property="emailAddress" title="${Emailheader}"/>
+
+    <spring:message code="q13.phone" var="phoneheader"/>
+    <display:column property="phone" title="${phoneheader}"/>
+
+</display:table>
+<br>
+<br/>
+<spring:message code="dashboard.q31" var="q31b"/>
+<jstl:out value="${q31b}"/>:
+<jstl:out value="${q31}"/>
+<br>
+<br/>

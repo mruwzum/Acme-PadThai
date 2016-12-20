@@ -1,10 +1,7 @@
 package controllers.admin;
 
 import controllers.AbstractController;
-import domain.Contest;
-import domain.Recipe;
-import domain.Sponsor;
-import domain.User;
+import domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -87,6 +84,18 @@ public class DashboardController extends AbstractController {
 
         String q26 = adminService.nameOfCompanymenos90porciento();
 
+        //DASHBOARD A -----------------------------------------------------------------------------------------------
+
+         Collection<Integer> q27 = adminService.minumumandmaximumandaverageNumberOfMasterClassesPerCook();
+
+         Collection<Integer> q28 = adminService.averageOfLearningMaterialsPerMasterClass();
+
+         Long q29 = adminService.numberOfPromotedMasterClasses();
+
+         Collection<Cook> q30 = adminService.cookByPromotedMasterClasses();
+
+//         Collection<Integer> q31 = adminService.averageOfMasterClassesPromotedByAdmin();
+
     res = new ModelAndView("admin/dashboard");
         //C
         res.addObject("q1", q1);
@@ -113,10 +122,15 @@ public class DashboardController extends AbstractController {
         res.addObject("q21", q21);
         res.addObject("q22", q22);
         res.addObject("q23", q23);
-        res.addObject("q24", q24);
+        res.addObject("q24", q24.getName());
         res.addObject("q25", q25);
         res.addObject("q26", q26);
-
+        //A
+        res.addObject("q27", q27);
+        res.addObject("q28", q28);
+        res.addObject("q29", q29);
+        res.addObject("q30", q30);
+//        res.addObject("q31", q31);
 
         return res;
     }

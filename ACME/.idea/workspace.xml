@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2d45cdad-cd5d-49b5-a719-5857e53aeea3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/admin/DashboardController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/DashboardController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/repositories/AdminRepository.java" afterPath="$PROJECT_DIR$/src/main/java/repositories/AdminRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/AdminService.java" afterPath="$PROJECT_DIR$/src/main/java/services/AdminService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/dashboard.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/dashboard.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/messages.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/messages_es.properties" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/messages_es.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,38 +24,67 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/AdminService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="227" selection-end-column="5" />
-              <folding>
-                <element signature="e#6560#6561#0" expanded="true" />
-                <element signature="e#6630#6631#0" expanded="true" />
-                <element signature="e#7056#7057#0" expanded="true" />
-                <element signature="e#7126#7127#0" expanded="true" />
-                <element signature="e#7186#7187#0" expanded="true" />
-                <element signature="e#7254#7255#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DashboardController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/admin/DashboardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="87" column="65" lean-forward="false" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="65" />
+            <state relative-caret-position="640">
+              <caret line="124" column="42" lean-forward="false" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/dashboard.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="146" column="28" lean-forward="true" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
+            <state relative-caret-position="440">
+              <caret line="244" column="5" lean-forward="true" selection-start-line="244" selection-start-column="5" selection-end-line="244" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/messages.properties">
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages_es.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/messages_es.properties">
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registrationCook.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registrationCook.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="107" lean-forward="true" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -128,12 +161,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/dashboard.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/admin/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/admin/messages_es.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/admin/DashboardController.java" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/AdminRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/admin/DashboardController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/dashboard.jsp" />
       </list>
     </option>
   </component>
@@ -555,6 +588,36 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme-Pad-Thai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ACME" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -853,7 +916,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="dash&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/webapp/views/admin/dashboard.jsp&#10;das&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/controllers/admin/DashboardController.java&#10;admin&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/services/AdminService.java&#10;adminSe&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/services/AdminService.java&#10;adminse&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/services/AdminService.java&#10;heade&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;popu&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;head&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;adminser&#9;PSI&#9;JAVA://services.AdminService&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;other&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Others.java&#10;recipe&#9;PSI&#9;JAVA://domain.Recipe&#10;comme&#9;PSI&#9;JAVA://domain.Comment&#10;vie&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;view&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;otherser&#9;PSI&#9;JAVA://services.OthersService&#10;othe&#9;PSI&#9;JAVA://domain.Others&#10;user&#9;PSI&#9;JAVA://domain.User&#10;actor&#9;PSI&#9;JAVA://services.ActorServiceTest&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;Acto&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;conte&#9;PSI&#9;JAVA://domain.Contest&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml" />
+    <property name="SearchEverywhereHistoryKey" value="admi&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/repositories/AdminRepository.java&#10;adm&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/services/AdminService.java&#10;cook&#9;PSI&#9;JAVA://domain.Cook&#10;dash&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/webapp/views/admin/dashboard.jsp&#10;das&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/controllers/admin/DashboardController.java&#10;admin&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/services/AdminService.java&#10;adminSe&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/services/AdminService.java&#10;adminse&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/java/services/AdminService.java&#10;heade&#9;FILE&#9;file:///Applications/Temporary/GIT/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;popu&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;head&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;adminser&#9;PSI&#9;JAVA://services.AdminService&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;other&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Others.java&#10;recipe&#9;PSI&#9;JAVA://domain.Recipe&#10;comme&#9;PSI&#9;JAVA://domain.Comment&#10;vie&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;view&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;otherser&#9;PSI&#9;JAVA://services.OthersService&#10;othe&#9;PSI&#9;JAVA://domain.Others&#10;user&#9;PSI&#9;JAVA://domain.User&#10;actor&#9;PSI&#9;JAVA://services.ActorServiceTest&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;Acto&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;conte&#9;PSI&#9;JAVA://domain.Contest&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
@@ -1378,7 +1441,7 @@
       <workItem from="1482256697195" duration="127000" />
       <workItem from="1482256878742" duration="5203000" />
       <workItem from="1482262765871" duration="367000" />
-      <workItem from="1482265548809" duration="675000" />
+      <workItem from="1482265548809" duration="2428000" />
     </task>
     <task id="LOCAL-00001" summary="arreglao">
       <created>1481977250040</created>
@@ -1492,7 +1555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482261458778</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="dashboard a servicio y repo">
+      <created>1482266241826</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1482266241826</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1528,7 +1598,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44936000" />
+    <option name="totallyTimeSpent" value="46689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="1024" extended-state="0" />
@@ -1536,13 +1606,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.503231" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753327" sideWeight="0.49676898" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753327" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32753327" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1560,7 +1631,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1633,7 +1703,8 @@
     <MESSAGE value="admin service y admin repo para dashboard B" />
     <MESSAGE value="modificado el dashboard para los métodos del b:" />
     <MESSAGE value="dashboard B ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard B ok" />
+    <MESSAGE value="dashboard a servicio y repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard a servicio y repo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1646,27 +1717,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/nutritionist/ingredientManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/security/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/services/AbstractTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/security/UserAccount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1810,13 +1860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1986,13 +2029,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/messages_es.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="61" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+        <state relative-caret-position="270">
+          <caret line="18" column="107" lean-forward="true" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Cook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/security/registrationCook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2001,47 +2066,52 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/admin/DashboardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="87" column="65" lean-forward="false" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="65" />
+        <state relative-caret-position="390">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="146" column="28" lean-forward="true" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/messages_es.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/AdminRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="125" column="64" lean-forward="true" selection-start-line="112" selection-start-column="3" selection-end-line="125" selection-end-column="64" />
+        <state relative-caret-position="345">
+          <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="227" selection-end-column="5" />
-          <folding>
-            <element signature="e#6560#6561#0" expanded="true" />
-            <element signature="e#6630#6631#0" expanded="true" />
-            <element signature="e#7056#7057#0" expanded="true" />
-            <element signature="e#7126#7127#0" expanded="true" />
-            <element signature="e#7186#7187#0" expanded="true" />
-            <element signature="e#7254#7255#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="226">
+          <caret line="228" column="0" lean-forward="true" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/AdminRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/admin/DashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="124" column="42" lean-forward="false" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/dashboard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="244" column="5" lean-forward="true" selection-start-line="244" selection-start-column="5" selection-end-line="244" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -122,8 +122,8 @@ public interface AdminRepository extends JpaRepository<Admin, Integer> {
     @Query("select c from Cook c group by c order by sum(c.masterClass.size)")
     Collection<Cook> cookByPromotedMasterClasses();
 
-    @Query("select avg(u.masterClass.size) from Cook u where u.masterClass=u.masterClass")
-    Collection<Integer> averageOfMasterClassesPromotedByAdmin();
+//    @Query("select avg(u.masterClass.size) from Cook u where u.masterClass=u.masterClass")
+//    Collection<Integer> averageOfMasterClassesPromotedByAdmin();
 }
 
 
