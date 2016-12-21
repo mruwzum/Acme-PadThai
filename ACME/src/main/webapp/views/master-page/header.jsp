@@ -75,10 +75,6 @@
                     code="master.page.property"/></a></li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
-            <li><a href="actor/NutritionistPersonalData.do"><spring:message
-                    code="master.page.actor.edit.do"/></a></li>
-            <li><a href="actor/comment/write.do"><spring:message
-                    code="master.page.write.comment.do"/></a></li>
             <li><a href="user/recipes/stream.do"><spring:message
                     code="master.page.stream.recipe.do"/></a></li>
         </security:authorize>
@@ -111,6 +107,8 @@
                     <%----%>
                 <%--</ul>--%>
             <%--</li>--%>
+            <li><a href="user/recipes/list/my.do"><spring:message
+                    code="master.page.recipes.list.do"/></a></li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
             <li><a href="cook/masterClass/list.do"><spring:message
