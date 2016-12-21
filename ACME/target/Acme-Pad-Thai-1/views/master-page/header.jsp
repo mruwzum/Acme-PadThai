@@ -25,7 +25,7 @@
                 <ul>
                     <li class="arrow"></li>
 
-                    <li><a href="cook/masterClass/list.do.do"><spring:message
+                    <li><a href="cook/masterClass/list.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                     <li><a href="admin/computewinners.do"><spring:message
                             code="master.page.computewinners"/></a></li>
@@ -34,7 +34,7 @@
 
                 </ul>
             </li>
-            
+
 
             <li><a href="admin/key/create.do"><spring:message
                     code="master.page.admin.createKey.do"/></a></li>
@@ -50,8 +50,6 @@
                     code="master.page.actor.edit.do"/></a></li>
             <li><a href="admin/sponsor/list.do"><spring:message
                     code="master.page.admin.sponsors"/></a></li>
-            <li><a href="admin/masterClass/list.do"><spring:message
-                    code="master.page.maclass.list.do"/></a></li>
             <li><a href="admin/dashboard.do"><spring:message
                     code="master.page.dashboard.do"/></a></li>
         </security:authorize>
@@ -101,25 +99,24 @@
             <li><a href="anonymus/others.do"><spring:message code="master.page.users"/></a></li>
             <li><a href="actor/userPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
-            <li><a href="actor/comment/new.do"><spring:message
-                    code="master.page.write.comment.do"/></a></li>
             <li><a href="user/recipes/stream.do"><spring:message
                     code="master.page.stream.recipe.do"/></a></li>
         </security:authorize>
 
 
         <security:authorize access="hasRole('COOK')">
-            <li><a class="fNiv"><spring:message code="master.page.cook"/></a>
-                <ul>
-                    <li class="arrow"></li>
-                    <li><a href="actor/CookPersonalData.do"><spring:message
-                            code="master.page.actor.edit.do"/></a></li>
-                    <li><a href="cook/masterClass/list.do"><spring:message
-                            code="master.page.maclass.list.do"/></a></li>
-                </ul>
-            </li>
+            <%--<li><a class="fNiv"><spring:message code="master.page.cook"/></a>--%>
+                <%--<ul>--%>
+                    <%--<li class="arrow"></li>--%>
+                    <%----%>
+                <%--</ul>--%>
+            <%--</li>--%>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
+            <li><a href="cook/masterClass/list.do"><spring:message
+                    code="master.page.maclass.list.do"/></a></li>
+            <li><a href="actor/CookPersonalData.do"><spring:message
+                    code="master.page.actor.edit.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('SPONSOR')">
