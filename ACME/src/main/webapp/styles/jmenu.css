@@ -18,7 +18,7 @@
 
 .jMenu li {
     display: table-cell;
-    background-color: #322f32;
+    background-color: #680512;
     margin: 0px;
 }
 
@@ -29,7 +29,7 @@
     color: white;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -44,14 +44,14 @@
 }
 
 .jMenu li ul li {
-    background-color: #322f32;
+    background-color: #700513;
     display: block;
-    border-bottom: 1px solid #484548;
+    border-bottom: 1px solid #8e0618;
     padding: 0;
 }
 
 .jMenu li ul li.arrow {
-    background-color: #322f32;
+    background-color: #700513;
     background-image: url('../images/arrow_down.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -72,7 +72,7 @@
 }
 
 .jMenu li ul li a.isParent {
-    background-color: #3a3a3a;
+    background-color: #700513;
     background-image: url('../images/arrow_right.png');
     background-repeat: no-repeat;
     background-position: right center;
@@ -80,8 +80,8 @@
 }
 
 .jMenu li ul li a:hover {
-    background-color: #514c52;
-    border-top: 1px solid #322f32;
-    border-bottom: 1px solid #322f32;
+    background-color: #8e0618;
+    border-top: 1px solid #700513;
+    border-bottom: 1px solid #680512;
     text-decoration: none;
 }

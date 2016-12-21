@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d45cdad-cd5d-49b5-a719-5857e53aeea3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/controllers/user/managingRecipesController.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/logo.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/ActorService.class" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/ActorService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/services/ActorService.class" afterPath="$PROJECT_DIR$/target/classes/services/ActorService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/styles/displaytag.css" afterPath="$PROJECT_DIR$/src/main/webapp/styles/displaytag.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/styles/jmenu.css" afterPath="$PROJECT_DIR$/src/main/webapp/styles/jmenu.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,8 +37,8 @@
       <file leaf-file-name="jmenu.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/jmenu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -60,21 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="displaytag.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="displaytag.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/displaytag.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-910">
-              <caret line="69" column="29" lean-forward="false" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="185">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -124,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controllers/user/likeRecipeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Categorie.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/user/QualifierController.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
@@ -172,9 +155,10 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/masterClass/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/user/managingRecipesController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/styles/displaytag.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/jmenu.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/displaytag.css" />
       </list>
     </option>
   </component>
@@ -635,54 +619,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Inteligencia2</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/CommentController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/MensajesController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/actor/MessagesFolderController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/others/managingRecipesController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/domain/Nutritionist.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/domain/Recipe.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/repositories/ActorRepository.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/ActorService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/services/AdminService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/config/converters.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/config/i18n-l10n.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/master-page/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/edit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/list.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/mensaje/text.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/recipe/edit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/recipe/view.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/services/AdminServiceTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/META-INF/MANIFEST.MF</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/ActorService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/WEB-INF/classes/services/OthersService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/PopulateDatabase.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/cook/managingMasterClassesController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/Nutritionist.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/domain/Recipe.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/repositories/ActorRepository.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/ActorService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/AdminService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/OthersService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/RecipeService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/services/UserService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/converters.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/i18n-l10n.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/security.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/config/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/test-classes/services/ActorServiceTest.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/test-classes/services/AdminServiceTest.class</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -690,11 +627,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/sponsor/list.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/sponsor/messages.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/sponsor/messages_es.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/sponsor/tiles_es.xml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -702,7 +634,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/controllers/user/managingRecipesController.class</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -1188,6 +1119,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.72" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Acme-Pad-Thai:war">
@@ -1298,7 +1230,7 @@
       <workItem from="1482270817726" duration="2331000" />
       <workItem from="1482274831047" duration="123000" />
       <workItem from="1482274992489" duration="197000" />
-      <workItem from="1482317599856" duration="1609000" />
+      <workItem from="1482317599856" duration="2434000" />
     </task>
     <task id="LOCAL-00001" summary="arreglao">
       <created>1481977250040</created>
@@ -1489,7 +1421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482318774327</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="poniendo cosas bien">
+      <created>1482319836113</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1482319836113</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1525,7 +1464,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53743000" />
+    <option name="totallyTimeSpent" value="54568000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1549,7 +1488,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32704404" sideWeight="0.49676898" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32704404" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32704404" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1646,7 +1585,8 @@
     <MESSAGE value="nutritionist masterClass OK" />
     <MESSAGE value="attend to masterCLass ok&#10;" />
     <MESSAGE value="tood ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="tood ok" />
+    <MESSAGE value="poniendo cosas bien" />
+    <option name="LAST_COMMIT_MESSAGE" value="poniendo cosas bien" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1979,14 +1919,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/jmenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2005,22 +1937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/displaytag.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-910">
-          <caret line="69" column="29" lean-forward="false" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/jmenu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/cook/managingMasterClassesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -2031,8 +1947,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="210">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/jmenu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/displaytag.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding />
         </state>
       </provider>
