@@ -22,10 +22,12 @@
     <security:authorize access="hasRole('USER')">
 
 
-        <form:form action="recipes/user/edit/save.do" modelAttribute="recipe">
+        <form:form action="user/recipes/edit/save.do" modelAttribute="recipe">
     <form:hidden path="id"/>
     <form:hidden path="version"/>
     <form:hidden path="user"/>
+            <form:hidden path="creationDate"/>
+            <form:hidden path="updateDate"/>
 
 
 
@@ -43,19 +45,7 @@
     <form:errors cssClass="error" path="summary"/>
     <br/>
 
-    <form:label path="creationDate">
-        <spring:message code="recipe.creationDate"/>
-    </form:label>
-    <form:input path="creationDate"/>
-    <form:errors cssClass="error" path="creationDate"/>
-    <br/>
 
-    <form:label path="updateDate">
-        <spring:message code="recipe.updateDate"/>
-    </form:label>
-    <form:input path="updateDate"/>
-    <form:errors cssClass="error" path="updateDate"/>
-    <br/>
 
             <%--TODO ponerlo como desplegable--%>
 
@@ -73,6 +63,38 @@
             </form:select>
             <form:errors cssClass="error" path="pictures" />
             <br />
+
+            <form:label path="categorie">
+                <spring:message code="recipe.view.categorie" />
+            </form:label>
+
+            <form:select path="categorie">
+
+                <jstl:forEach var="categories" items="${categories}">
+                    <jstl:out value="-----"/>
+                    <form:option value="${categorie.name}"><jstl:out value="${categories}" ></jstl:out> </form:option>
+                    <br>
+                </jstl:forEach>
+            </form:select>
+            <form:errors cssClass="error" path="categorie" />
+            <br />
+
+            <form:label path="ingredient">
+                <spring:message code="recipe.view.categorie" />
+            </form:label>
+
+            <form:select path="ingredient">
+
+                <jstl:forEach var="ingredients" items="${ingredients}">
+                    <jstl:out value="-----"/>
+                    <form:option value="${ingredient.name}"><jstl:out value="${ingredients}" ></jstl:out> </form:option>
+                    <br>
+                </jstl:forEach>
+            </form:select>
+            <form:errors cssClass="error" path="ingredient" />
+            <br />
+
+
             <input type="submit" name="save"
                    value="<spring:message code="actor.save" />"/>&nbsp;
             <jstl:if test="${id} != 0">

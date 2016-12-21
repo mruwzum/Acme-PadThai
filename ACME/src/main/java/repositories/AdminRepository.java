@@ -20,9 +20,9 @@ public interface AdminRepository extends JpaRepository<Admin, Integer> {
 
     @Query("select u.contest from Admin u")
     Collection<Contest> getConstests();
-
-    @Query("select u from Recipe u order by u.likesNumber")
-    Collection<Recipe> getRecipesOrderByRate();
+//
+//    @Query("select u from Recipe u order by u.likesNumber")
+//    Collection<Recipe> getRecipesOrderByRate();
 
 
     //Dashboard  C  -------------------------

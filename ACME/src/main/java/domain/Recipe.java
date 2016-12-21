@@ -24,7 +24,7 @@ public class Recipe extends DomainEntity {
     private Date updateDate;
 
 
-    private Integer likesNumber;
+//   private Integer likesNumber;
 
     private Collection<String> pictures;
 
@@ -118,7 +118,7 @@ public class Recipe extends DomainEntity {
         this.comments = comments;
     }
 
-    @NotEmpty
+
     @OneToMany(targetEntity = Ingredient.class)
     public Collection<Ingredient> getIngredient() {
         return ingredient;
@@ -148,7 +148,7 @@ public class Recipe extends DomainEntity {
         this.user = user;
     }
 
-    @NotEmpty
+
     @OneToMany(targetEntity = StepsToCook.class, cascade = CascadeType.ALL)
     public Collection<StepsToCook> getStepsToCook() {
         return stepsToCook;
@@ -158,7 +158,7 @@ public class Recipe extends DomainEntity {
         this.stepsToCook = stepsToCook;
     }
 
-    @NotEmpty
+
     @ElementCollection(targetClass = Boolean.class)
     public Collection<Boolean> getRate() {
         return rate;
@@ -169,22 +169,22 @@ public class Recipe extends DomainEntity {
     }
 
 
-    public Integer getLikesNumber() {
-        Integer res = 0;
-        for (Boolean i : this.getRate()) {
-            if (i) {
-                res++;
-            }
-
-        }
-
-        return res;
-    }
-
-    public void setLikesNumber(Integer likesNumber) {
-
-        this.likesNumber = likesNumber;
-    }
+//    public Integer getLikesNumber() {
+//        Integer res = 0;
+//        for (Boolean i : this.getRate()) {
+//            if (i) {
+//                res++;
+//            }
+//
+//        }
+//
+//        return res;
+//    }
+//
+//    public void setLikesNumber(Integer likesNumber) {
+//
+//        this.likesNumber = likesNumber;
+//    }
 
     @Override
     public String toString() {

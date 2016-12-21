@@ -1,7 +1,9 @@
 package controllers.others;
 
 import controllers.AbstractController;
+import domain.Categorie;
 import domain.Comment;
+import domain.Ingredient;
 import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.*;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.validation.Valid;
 import java.util.*;
 
@@ -37,6 +40,10 @@ public class managingRecipesController extends AbstractController {
     private CommentService commentService;
     @Autowired
     private OthersService   othersService;
+    @Autowired
+    private CategorieService categorieService;
+    @Autowired
+    private IngredientService ingredientService;
 
 
     // Constructors -----------------------------------------------------------
@@ -151,10 +158,16 @@ public class managingRecipesController extends AbstractController {
         Recipe recipe;
         String creationDate = "hola";
         String updateDate = "hola";
+        Collection<Categorie> categories =  categorieService.findAll();
+        Collection<Ingredient> ingredients = ingredientService.findAll();
+
         recipe = recipeService.create();
         result = createEditModelAndView(recipe);
         result.addObject("creationDate", creationDate);
         result.addObject("updateDate", creationDate);
+        result.addObject("categories", categories);
+        result.addObject("ingredients", ingredients);
+
 
 
 
@@ -181,17 +194,28 @@ public class managingRecipesController extends AbstractController {
     @RequestMapping(value = "recipes/edit/save", method = RequestMethod.POST, params = "save")
     public ModelAndView save(@Valid Recipe recipe, BindingResult binding) {
         ModelAndView result;
+        Collection<Boolean> rate = new ArrayList<>();
+        List<Categorie> categories= new ArrayList<>(categorieService.findAll());
+        recipe.setCreationDate(new Date(System.currentTimeMillis()-100));
+        recipe.setUpdateDate(new Date(System.currentTimeMillis()-100));
+        recipe.setUser(userService.findByPrincipal());
 
-        if (binding.hasErrors()) {
-            result = createEditModelAndView(recipe);
-        } else {
-            try {
-                recipeService.save(recipe);
-                result = new ModelAndView("redirect:list.do");
-            } catch (Throwable oops) {
-                result = createEditModelAndView(recipe, "item.commit.error");
-            }
-        }
+        recipe.setRate(rate);
+        recipe.setCategorie(categories.get(0));
+        String tickr = "951005-davi";
+        recipe.setTicker(tickr);
+        Recipe saved = recipeService.save(recipe);
+        userService.findByPrincipal().getRecipes().add(recipe);
+        result = viewRecipe(saved.getId());
+//        if (binding.hasErrors()) {
+//            result = createEditModelAndView(recipe);
+//        } else {
+//            try {
+//
+//            } catch (Throwable oops) {
+//                result = createEditModelAndView(recipe, "item.commit.error");
+//            }
+//        }
         return result;
     }
 

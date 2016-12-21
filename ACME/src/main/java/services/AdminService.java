@@ -396,7 +396,7 @@ public class AdminService {
         u = findByPrincipal();
         Assert.notNull(u, "El actor no existe");
         Assert.isTrue(!u.getUserAccount().getAuthorities().contains(Authority.ADMIN));
-        List<Recipe> orderRecipes = new ArrayList<>(adminRepository.getRecipesOrderByRate());
+        List<Recipe> orderRecipes = new ArrayList<>(recipeService.findAll());
         Assert.notNull(orderRecipes.get(0));
         Assert.notNull(orderRecipes.get(1));
         Assert.notNull(orderRecipes.get(2));

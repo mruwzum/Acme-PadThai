@@ -122,7 +122,7 @@ public class UserService {
         aux.setStepsToCook(steepsToCook);
         aux.setCreationDate(new Date(System.currentTimeMillis() - 100));
         aux.setUpdateDate(new Date(System.currentTimeMillis() - 150));
-        aux.setLikesNumber(aux.getLikesNumber());
+       // aux.setLikesNumber(aux.getLikesNumber());
         u.getRecipes().add(aux);
         return aux;
 

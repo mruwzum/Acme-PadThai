@@ -10,10 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.SystemPropertyUtils;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by daviddelatorre on 12/11/16.
@@ -228,6 +225,15 @@ public class AdminServiceTest extends AbstractTest {
         adminService.promoteMasterClas(masterClasses.get(1));
         adminService.demoteMasterClass(masterClasses.get(1));
         authenticate(null);
+    }
+
+    @Test
+    public void testR2(){
+        Random rnd = new Random();
+        Integer n = 100000 + rnd.nextInt(900000);
+        String tickr = n.toString() + "-aaaa";
+        System.out.println(tickr);
+
     }
     @Test
     public void testRandom(){
