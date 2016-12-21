@@ -171,6 +171,7 @@ public class managingRecipesController extends AbstractController {
         Recipe recipe;
         recipe = recipeService.findOne(id);
         Assert.notNull(recipe);
+        recipe.setUpdateDate(new Date(System.currentTimeMillis() - 10000));
         result = createEditModelAndView(recipe);
         return result;
     }
@@ -187,7 +188,7 @@ public class managingRecipesController extends AbstractController {
         } else {
             try {
                 recipeService.save(recipe);
-                result = new ModelAndView("redirect:list.do");
+                result = new ModelAndView("redirect:http://localhost:8080/user/recipes/list.do");
             } catch (Throwable oops) {
                 result = createEditModelAndView(recipe, "item.commit.error");
             }

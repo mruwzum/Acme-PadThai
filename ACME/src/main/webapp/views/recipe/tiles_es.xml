@@ -37,4 +37,5 @@
         <put-attribute name="body" value="/views/recipe/stream.jsp"/>
     </definition>
 
+
 </tiles-definitions>
