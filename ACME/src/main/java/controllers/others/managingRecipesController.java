@@ -1,8 +1,6 @@
-package controllers.user;
+package controllers.others;
 
-import com.sun.org.apache.regexp.internal.RE;
 import controllers.AbstractController;
-import converters.UsertoStringConverter;
 import domain.Comment;
 import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -133,9 +131,13 @@ public class managingRecipesController extends AbstractController {
     @RequestMapping(value = "recipes/list/my", method = RequestMethod.GET)
     public ModelAndView listMyRecipes() {
         ModelAndView result;
-        Collection<Recipe> myrecipes= userService.getAllRecipes();
-       Collection<Recipe> allrecipes = recipeService.findAll();
-       allrecipes.removeAll(myrecipes);
+        Collection<Recipe> allrecipes = recipeService.findAll();
+        try {
+            Collection<Recipe> myrecipes= userService.getAllRecipes();
+            allrecipes.removeAll(myrecipes);
+        } catch (Throwable oops) {
+
+        }
        result = new ModelAndView("recipe/list");
        result.addObject("recipe", allrecipes);
         return result;

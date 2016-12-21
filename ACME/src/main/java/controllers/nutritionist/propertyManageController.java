@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.PropertyService;
 import services.NutritionistService;
+import services.QuantityService;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.Collection;
 
 /**
@@ -28,14 +30,17 @@ public class propertyManageController extends AbstractController {
 
     @Autowired
     private NutritionistService nutritionistService;
+    @Autowired
     private PropertyService propertyService;
+    @Autowired
+    private QuantityService quantityService;
 
     public propertyManageController() {
         super();
     }
 
     @RequestMapping(value = "/property/list")
-    public ModelAndView list(@RequestParam Nutritionist nutritionist) {
+    public ModelAndView list() {
         ModelAndView result;
         Collection<Property> aux = nutritionistService.getProperties1();
         result = new ModelAndView("property/list");
@@ -46,6 +51,16 @@ public class propertyManageController extends AbstractController {
 
     }
 
+    @RequestMapping(value = "/property/newProperty", method = RequestMethod.GET)
+    public ModelAndView newProperty() {
+        ModelAndView result;
+        result = new ModelAndView("property/edit");
+        Property property = propertyService.create();
+        result.addObject("property",property);
+        Collection<Quantity> quantities = quantityService.findAll();
+        result.addObject("quantity", quantities);
+        return result;
+    }
 
     @RequestMapping(value = "/property/edit", method = RequestMethod.GET)
     public ModelAndView edit(@RequestParam int propertyID) {
@@ -56,34 +71,21 @@ public class propertyManageController extends AbstractController {
         return result;
     }
 
-    @RequestMapping(value = "/property/edit/save", method = RequestMethod.POST, params = "save")
-    public ModelAndView save(@Valid Property property, BindingResult binding, @RequestParam Nutritionist nutritionist) {
+    @RequestMapping(value = "/property/save", method = RequestMethod.POST, params = "save")
+    public ModelAndView save(@Valid Property property) {
         ModelAndView result;
-
-        if (binding.hasErrors()) {
-            result = createEditModelAndView(property);
-        } else {
-            try {
-            	propertyService.save(property);
-                result = this.list(nutritionist);
-            } catch (Throwable oops) {
-                result = createEditModelAndView(property, "campaing.commit.error");
-            }
-        }
+        propertyService.save(property);
+        result = this.list();
 
         return result;
     }
 
-    @RequestMapping(value = "/property/delete", method = RequestMethod.POST, params = "delete")
-    public ModelAndView delete(Property property, BindingResult binding) {
+    @RequestMapping(value = "/property/delete", method = RequestMethod.GET)
+    public ModelAndView delete(@RequestParam int propertyID) {
         ModelAndView result;
-
-        try {
-        	propertyService.delete(property);
-            result = new ModelAndView("redirect:list.do");
-        } catch (Throwable oops) {
-            result = createEditModelAndView(property, "property.commit.error");
-        }
+        Property property = propertyService.findOne(propertyID);
+        propertyService.delete(property);
+        result = new ModelAndView("redirect:list.do");
 
         return result;
     }
@@ -98,13 +100,16 @@ public class propertyManageController extends AbstractController {
 
     protected ModelAndView createEditModelAndView(Property property, String message) {
         ModelAndView result;
-        String name = property.getName().toString();
+        String name = property.getName();
         Quantity quantity = property.getQuantity();
 
         result = new ModelAndView("property/edit");
         result.addObject("property", property);
         result.addObject("name", name);
-        result.addObject("quantity", quantity);
+
+        Collection<Quantity> quantities = new ArrayList<Quantity>();
+        quantities.add(quantity);
+        result.addObject("quantity", quantities);
 
         return result;
 

@@ -2,6 +2,7 @@ package services;
 
 import domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
@@ -10,6 +11,7 @@ import security.Authority;
 import security.LoginService;
 import security.UserAccount;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.*;
 
 /**
@@ -50,7 +52,8 @@ public class AdminService {
     private MessageService messageService;
     @Autowired
     private CookService cookService;
-
+    @Autowired
+    private UserService userService;
 
     // Simple CRUD method --------------------------------------------------------------------------------
 
@@ -89,6 +92,140 @@ public class AdminService {
         Assert.isTrue(a.getId() != 0);
         adminRepository.delete(a);
     }
+
+
+
+
+    // Dashboard  C -------------------------------------------------------
+
+    public Double minimumRecipesOfUser(){
+       Double res = adminRepository.minumRecipesOfUser();
+       return res;
+    }
+
+    public Double averageRecipesOfUser(){
+        Double res = adminRepository.averageRecipesOfUser();
+        return res;
+    }
+    public Double maximumRecipesOfUser(){
+        Double res = adminRepository.maximumRecipesOfUser();
+        return res;
+    }
+    public User getUserWhoAuthoredMoreRecipes(){
+        User res = adminRepository.getUserWhoAuthoredMoreRecipes();
+        return res;
+    }
+    public  Collection<Integer> minimumNumberOfRecipesQualifiedForAContest(){
+        Collection<Integer> res = adminRepository.minimumNumberOfRecipesQualifiedForAContest();
+        return res;
+    }
+    public  Collection<Integer> averageNumberOfRecipesQualifiedForAContest(){
+        Collection<Integer> res = adminRepository.averageNumberOfRecipesQualifiedForAContest();
+        return res;
+    }
+    public  Collection<Integer> maximumNumberOfRecipesQualifiedForAContest(){
+        Collection<Integer> res = adminRepository.maximumNumberOfRecipesQualifiedForAContest();
+        return res;
+    }
+    public Collection<Contest> contestForWhichMoreRecipesHasQualified(){
+        Collection<Contest> res = adminRepository.contestForWhichMoreRecipesHasQualified();
+        return res;
+    }
+   public  Double averageOfStepsPerRecipe(){
+       Double res = adminRepository.averageOfStepsPerRecipe();
+       return res;
+    }
+    public Double standartDeviationOfNumberOfStepsPerRecipe(){
+       Double res = adminRepository.standartDeviationOfNumberOfStepsPerRecipe();
+       return res;
+    }
+    public Double averageOfIngredientsPerRecipe(){
+        Double res = adminRepository.averageOfIngredientsPerRecipe();
+        return res;
+    }
+    public Double standartDeviationOfNumberOfIngredientsPerRecipe(){
+        Double res = adminRepository.standartDeviationOfNumberOfIngredientsPerRecipe();
+        return res;
+    }
+    public Collection<User> usersInDescendingPopularity(){
+        Collection<User> res = adminRepository.usersInDescendingPopularity();
+        return res;
+    }
+    public  Collection<User> usersInDescendingOrderByAverageOfLikesPerRecipe(){
+        Collection<User> res =  adminRepository.usersInDescendingOrderByAverageOfLikesPerRecipe();
+        return res;
+    }
+
+    //DASHBOARD B  -----------------------------
+
+    public Collection<Integer> minimumNumberOfCampaignsPerSponsor(){
+        return adminRepository.minimumNumberOfCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> averageNumberOfCampaignsPerSponsor(){
+        return adminRepository.averageNumberOfCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> maximumNumberOfCampaignsPerSponsor(){
+        return adminRepository.maximumNumberOfCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> minumumNumberOfActiveCampaignsPerSponsor(){
+        return adminRepository.minumumNumberOfActiveCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> maximumNumberOfActiveCampaignsPerSponsor(){
+        return adminRepository.maximumNumberOfActiveCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> averageNumberOfActiveCampaignsPerSponsor(){
+        return adminRepository.averageNumberOfActiveCampaignsPerSponsor();
+    }
+
+    public  Collection<Integer> maxnumberOfCampaignsPerSponsor(){
+        return adminRepository.maxnumberOfCampaignsPerSponsor();
+    }
+
+    public Collection<Integer> biggestCostesOfMonthlyBills(){
+       return adminRepository.biggestCostesOfMonthlyBills();
+    }
+
+    public Collection<Integer> averageAndStandartDevOfPaidBills(){
+        return adminRepository.averageAndStandartDevOfPaidBills();
+    }
+
+    public Sponsor sponsorHowHasntMangaedAnyCampaingInLastTreemonths(){
+        return adminRepository.sponsorHowHasntMangaedAnyCampaingInLastTreemonths();
+    }
+
+    public  String nombreCompaniaQueHaGastadoMenosDeLaMediaEnSusCampanas(){
+        return adminRepository.nombreCompaniaQueHaGastadoMenosDeLaMediaEnSusCampanas();
+    }
+
+    public  String nameOfCompanymenos90porciento(){
+        return adminRepository.nameOfCompanymenos90porciento();
+    }
+    //DASHBOARD A -------------
+
+    public Collection<Integer> minumumandmaximumandaverageNumberOfMasterClassesPerCook(){
+        return adminRepository.minumumandmaximumandaverageNumberOfMasterClassesPerCook();
+    }
+
+    public Collection<Integer> averageOfLearningMaterialsPerMasterClass(){
+        return adminRepository.averageOfLearningMaterialsPerMasterClass();
+    }
+
+    public Long numberOfPromotedMasterClasses(){
+        return adminRepository.numberOfPromotedMasterClasses();
+    }
+
+    public Collection<Cook> cookByPromotedMasterClasses(){
+        return adminRepository.cookByPromotedMasterClasses();
+    }
+
+//    public Collection<Integer> averageOfMasterClassesPromotedByAdmin(){
+//        return adminRepository.averageOfMasterClassesPromotedByAdmin();
+//    }
 
     // Other business methods -------------------------------------------------------------------------------
 

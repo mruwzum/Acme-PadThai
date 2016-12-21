@@ -1,5 +1,8 @@
 package controllers.admin;
 
+import com.sun.javafx.sg.PGShape;
+import com.sun.org.apache.xpath.internal.operations.Mod;
+import controllers.AbstractController;
 import domain.Campaing;
 import domain.Contest;
 import domain.MasterClass;
@@ -20,7 +23,7 @@ import java.util.*;
  */
 @Controller
 @RequestMapping("admin")
-public class UtilitiesController {
+public class UtilitiesController extends AbstractController{
 
     public UtilitiesController(){
         super();
@@ -72,7 +75,38 @@ public class UtilitiesController {
         return minDate;
     }
 
-
+    @RequestMapping(value = "/masterClass/promote")
+    public ModelAndView promoteMC(@RequestParam int mcID){
+        ModelAndView res;
+        MasterClass mc = masterClassService.findOne(mcID);
+        adminService.promoteMasterClas(mc);
+        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        return res;
+    }
+    @RequestMapping(value = "/masterClass/attend")
+    public ModelAndView attendMC(@RequestParam int mcID) {
+        ModelAndView res;
+        MasterClass mc = masterClassService.findOne(mcID);
+        actorService.registerToMasterClass(mc);
+        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        return res;
+    }
+    @RequestMapping(value = "/masterClass/attendNutri")
+    public ModelAndView attendNutriMC(@RequestParam int mcID){
+        ModelAndView res;
+        MasterClass mc = masterClassService.findOne(mcID);
+        actorService.registerToMasterClassNutri(mc);
+        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        return res;
+    }
+    @RequestMapping(value = "/masterClass/attendSpon")
+    public ModelAndView attendSponMC(@RequestParam int mcID){
+        ModelAndView res;
+        MasterClass mc = masterClassService.findOne(mcID);
+        actorService.registerToMasterClassSpon(mc);
+        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        return res;
+    }
     @RequestMapping(value = "/banner/editCost")
     public ModelAndView editBannerCost(@RequestParam int campID){
         ModelAndView res;
@@ -93,7 +127,7 @@ public class UtilitiesController {
     }
 
 
-    @RequestMapping(value = "/masterClass/list", method = RequestMethod.GET)
+    @RequestMapping(value = "masterClass/list", method = RequestMethod.GET)
     public ModelAndView listMasterClasses() {
         ModelAndView result;
         Collection<MasterClass> masterClasses;
@@ -104,6 +138,16 @@ public class UtilitiesController {
 
         return result;
     }
+
+    @RequestMapping(value = "/edit/save")
+    public ModelAndView UserSave(@RequestParam String name, String surname, String emailAddress, String phone,
+                                 String postalAddress) {
+        ModelAndView res;
+        actorService.editPersonalData(name,surname,emailAddress,phone,postalAddress, null);
+        res = new ModelAndView("redirect:http://localhost:8080");
+        return res;
+    }
+
 
     @RequestMapping(value = "/sponsor/list", method = RequestMethod.GET)
     public ModelAndView sponsorList() {
@@ -132,37 +176,6 @@ public class UtilitiesController {
     }
 
 
-
-
-    @RequestMapping(value = "/edit/save")
-    public ModelAndView UserSave(@RequestParam String name, String surname, String emailAddress, String phone,
-                                 String postalAddress) {
-        ModelAndView res;
-        actorService.editPersonalData(name,surname,emailAddress,phone,postalAddress, null);
-        res = new ModelAndView("redirect:http://localhost:8080");
-        return res;
-    }
-
-
-
-    @RequestMapping(value = "/banner/editCost")
-    public ModelAndView editBannerCost(@RequestParam int campID){
-        ModelAndView res;
-        Campaing aux = campaingService.findOne(campID);
-        adminService.setBannerCost(aux,0.25);
-        res = new ModelAndView("redirect:http://localhost:8080");
-        return res;
-    }
-    @RequestMapping(value = "/campaing/listAll")
-    public ModelAndView list() {
-        ModelAndView result;
-        Collection<Campaing> aux = campaingService.findAll();
-        result = new ModelAndView("campaign/list");
-        result.addObject("campaign", aux);
-        result.addObject("requestURI", "admin/campaing/listAll.do");
-        return result;
-
-    }
 
 }
 

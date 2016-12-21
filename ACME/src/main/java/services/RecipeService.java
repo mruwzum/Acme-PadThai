@@ -27,7 +27,7 @@ public class RecipeService {
     // Managed repository--------------------------------------------------------------------------------
 
     @Autowired
-    private RecipeRepository RecipeRepository;
+    private RecipeRepository recipeRepository;
 
 
     // Suporting services --------------------------------------------------------------------------------
@@ -40,31 +40,30 @@ public class RecipeService {
     }
 
     public Collection<Recipe> findAll() {
-        Collection<Recipe> res = RecipeRepository.findAll();
+        Collection<Recipe> res = recipeRepository.findAll();
         Assert.notNull(res);
         return res;
     }
 
     public Recipe findOne(int Recipe) {
-        Recipe res = RecipeRepository.findOne(Recipe);
+        Recipe res = recipeRepository.findOne(Recipe);
         Assert.notNull(res);
         return res;
     }
 
     public Recipe save(Recipe a) {
         Assert.notNull(a);
-        Recipe res = RecipeRepository.save(a);
+        Recipe res = recipeRepository.save(a);
         return res;
     }
 
     public void delete(Recipe a) {
         Assert.notNull(a);
         Assert.isTrue(a.getId() != 0);
-        RecipeRepository.delete(a);
+        recipeRepository.delete(a);
     }
 
     // Other business methods -------------------------------------------------------------------------------
-
 
 }
 

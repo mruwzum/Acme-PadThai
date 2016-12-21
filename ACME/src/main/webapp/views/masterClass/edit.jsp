@@ -45,45 +45,38 @@
     <br/>
 
     <br>
+
+
     <form:label path="registers">
-        <spring:message code="masterClass.registers"/>
+        <spring:message code="masterClass.registers" />
     </form:label>
     <form:select path="registers">
-        <jstl:forEach var="registers" items="${actor}">
-            <jstl:out value="-----"/>
-            <form:option value="${masterClass.id}"><jstl:out value="${actor.name}"></jstl:out></form:option>
-
-        </jstl:forEach>
+        <form:options items="${registers}" itemValue="id" />
     </form:select>
     <form:errors cssClass="error" path="registers"/>
 
     <br/>
     <br>
     <form:label path="promoters">
-        <spring:message code="masterClass.promoters"/>
+        <spring:message code="masterClass.promoters" />
     </form:label>
     <form:select path="promoters">
-        <jstl:forEach var="promoters" items="${admin}">
-            <jstl:out value="-----"/>
-            <form:option value="${masterClass.id}"><jstl:out value="${admin.name}"></jstl:out></form:option>
-
-        </jstl:forEach>
+        <form:options items="${promoters}" itemValue="id" />
     </form:select>
+    <form:errors cssClass="error" path="promoters"/>
     <br/>
     <br>
+
     <form:label path="material">
         <spring:message code="masterClass.material"/>
     </form:label>
-    <form:errors cssClass="error" path="material"/>
     <form:select path="material">
-        <jstl:forEach var="material" items="${learningMaterial}">
-            <jstl:out value="-----"/>
-            <form:option value="${masterClass.id}"><jstl:out value="${learningMaterial.title}"></jstl:out>
-            </form:option>
-
-        </jstl:forEach>
+        <form:options items="${material}" itemValue="id" />
     </form:select>
-    <form:errors cssClass="error" path="promoters"/>
+    <form:errors cssClass="error" path="material"/>
+
+    <br/>
+    <br>
     <br/>
     <input type="submit" name="save"
            value="<spring:message code="mclass.save" />"/>&nbsp;

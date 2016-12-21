@@ -38,6 +38,14 @@
             </li>
             <li><a href="admin/key/create.do"><spring:message
                     code="master.page.admin.createKey.do"/></a></li>
+                    <li><a href="cook/signup.do"><spring:message code="master.page.createascook"/></a></li>
+                    <li><a href="admin/key/create.do"><spring:message
+                            code="master.page.admin.createKey.do"/></a></li>
+                    <li><a href="actor/AdminPersonalData.do"><spring:message
+                            code="master.page.actor.edit.do"/></a></li>
+                </ul>
+            </li>
+
             <li><a href="admin/categorie/list.do"><spring:message
                     code="master.page.admin.categorieList.do"/></a></li>
             <li><a href="admin/contest/list.do"><spring:message
@@ -50,8 +58,11 @@
                     code="master.page.actor.edit.do"/></a></li>
             <li><a href="admin/sponsor/list.do"><spring:message
                     code="master.page.admin.sponsors"/></a></li>
-            <li><a href="admin/campaing/listAll.do"><spring:message
-                    code="master.page.campaign"/></a></li>
+            <li><a href="admin/masterClass/list.do"><spring:message
+                    code="master.page.maclass.list.do"/></a></li>
+
+            <li><a href="admin/dashboard.do"><spring:message
+                    code="master.page.dashboard.do"/></a></li>
         </security:authorize>
 
 
@@ -59,26 +70,28 @@
             <li><a class="fNiv"><spring:message code="master.page.nutritionist"/></a>
                 <ul>
                     <li class="arrow"></li>
-                    <li><a href="actor/edit.do"><spring:message
+                    <li><a href="actor/NutritionistPersonalData.do"><spring:message
                             code="master.page.actor.edit.do"/></a></li>
-                    <li><a href="curricula/edit.do"><spring:message
+                    <li><a href="nutritionist/curricula/edit.do"><spring:message
                             code="master.page.curricula.edit.do"/></a></li>
-                    <li><a href="cook/masterClass/list.do"><spring:message
+                    <li><a href="nutritionist/masterClass/list.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
+            <li><a href="user/recipes/list/my.do"><spring:message
+                    code="master.page.recipes.list.do"/></a></li>
             <li><a href="nutritionist/ingredient/list.do"><spring:message
                     code="master.page.ingredient"/></a></li>
-            <li><a href="nutritionist/curricula/edit.do"><spring:message
-                    code="master.page.curricula.edit.do"/></a></li>
+            <li><a href="nutritionist/property/list.do"><spring:message
+                    code="master.page.property"/></a></li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
             <li><a href="actor/NutritionistPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
+            <li><a href="actor/comment/write.do"><spring:message
+                    code="master.page.write.comment.do"/></a></li>
             <li><a href="user/recipes/stream.do"><spring:message
                     code="master.page.stream.recipe.do"/></a></li>
-            <li><a href="user/recipes/list/my.do"><spring:message
-                    code="master.page.recipes.list.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('USER')">
@@ -108,7 +121,7 @@
             <li><a class="fNiv"><spring:message code="master.page.cook"/></a>
                 <ul>
                     <li class="arrow"></li>
-                    <li><a href="actor/edit.do"><spring:message
+                    <li><a href="actor/CookPersonalData.do"><spring:message
                             code="master.page.actor.edit.do"/></a></li>
                     <li><a href="cook/masterClass/list.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
@@ -116,8 +129,6 @@
             </li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
-            <li><a href="actor/CookPersonalData.do"><spring:message
-                    code="master.page.actor.edit.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('SPONSOR')">
@@ -131,14 +142,16 @@
 
                 </ul>
             </li>
+
+            <li><a href="actor/SponsorPersonalData.do"><spring:message
+                    code="master.page.actor.edit.do"/></a></li>
             <li><a class="fNiv" href="sponsor/creditcard/edit.do"><spring:message
                     code="master.page.sponsor.editCC"/></a></li>
             <li><a class="fNiv" href="sponsor/monthlyBillunpaid/list.do"><spring:message
                     code="master.page.monthlybill.list"/></a></li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
-            <li><a href="actor/SponsorPersonalData.do"><spring:message
-                    code="master.page.actor.edit.do"/></a></li>
+
         </security:authorize>
 
         <security:authorize access="isAnonymous()">
@@ -151,20 +164,11 @@
                     <li><a href="nutritionist/signup.do"><spring:message
                             code="master.page.asnutritionist"/></a></li>
                     <li><a href="sponsor/signup.do"><spring:message code="master.page.assponsor"/></a></li>
-                    <li><a href="cook/signup.do"><spring:message code="master.page.ascook"/></a></li>
+
                 </ul>
             </li>
             <li><a class="fNiv" href="anonymus/recipes.do"><spring:message code="master.page.recipes"/></a></li>
             <li><a class="fNiv" href="anonymus/searchRecipe.do"><spring:message code="master.page.seachRecipe"/></a>
-            </li>
-
-            <li><a class="fNiv"><spring:message code="master.page.users"/></a>
-                 <ul>
-                     <li class="arrow"></li>
-                     <li><a class="fNiv" href="anonymus/users.do"><spring:message code="master.page.users"/></a></li>
-                     <li><a class="fNiv" href="anonymus/searchUser.do"><spring:message code="master.page.seachUser"/></a>
-                     </li>
-                 </ul>
             </li>
             <li><a class="fNiv" href="anonymus/users.do"><spring:message code="master.page.users"/></a></li>
             <li><a class="fNiv" href="anonymus/searchUser.do"><spring:message code="master.page.seachUser"/></a></li>
