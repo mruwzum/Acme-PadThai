@@ -109,7 +109,7 @@ public class UtilitiesController extends AbstractController{
         ModelAndView res;
         Campaing aux = campaingService.findOne(campID);
         adminService.setBannerCost(aux,0.25);
-        res = new ModelAndView("redirect:http://localhost:8080");
+        res = new ModelAndView("redirect:http://localhost:8080/admin/campaing/listAll.do");
         return res;
     }
     @RequestMapping(value = "/campaing/listAll")

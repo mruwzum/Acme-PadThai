@@ -12,12 +12,14 @@ table {
     border: 1px solid #666;
     width: 80%;
     margin: 15px 0 15px 0 !important;
+    font-family: "Andale Mono";
 }
 
 th, td {
     padding: 2px 4px 2px 4px !important;
-    text-align: left;
+    text-align: center;
     vertical-align: top;
+    font-family: "Andale Mono";
 }
 
 thead tr {
@@ -33,8 +35,9 @@ th a, th a:visited {
 }
 
 th a:hover {
+    font-family: "Andale Mono";
     text-decoration: underline;
-    color: darkred;
+    color: #f7b7af;
 }
 
 th.sorted a, th.sortable a {
@@ -63,11 +66,13 @@ th.order2 a {
 }
 
 tr.odd {
-    background-color: #fff
+    background-color: #ff7968;
+    font-family: "Andale Mono";
 }
 
 tr.tableRowEven, tr.even {
-    background-color: #fffaaa
+    font-family: "Andale Mono";
+    background-color: #ee888b;
 }
 
 div.exportlinks {
@@ -113,6 +118,7 @@ span.pagebanner {
     margin-top: 10px;
     display: block;
     border-bottom: none;
+    font-family: "Andale Mono";
 }
 
 span.pagelinks {
@@ -123,42 +129,51 @@ span.pagelinks {
     display: block;
     border-top: none;
     margin-bottom: -5px;
+    font-family: "Andale Mono";
 }
 
 .group-1 {
     font-weight: bold;
     padding-bottom: 10px;
     border-top: 1px solid black;
+    font-family: "Andale Mono";
 }
 
 .group-2 {
     font-style: italic;
     border-top: 1px solid black;
+    font-family: "Andale Mono";
 }
 
 .subtotal-sum, .grandtotal-sum {
     font-weight: bold;
-    text-align: right;
+    text-align: center;
+    font-family: "Andale Mono";
 }
 
 .subtotal-header {
+    font-family: "Andale Mono";
     padding-bottom: 0px;
     border-top: 1px solid white;
 }
 
 .subtotal-label, .grandtotal-label {
+    font-family: "Andale Mono";
     border-top: 1px solid white;
     font-weight: bold;
 }
 
 .grouped-table tr.even {
+    font-family: "Andale Mono";
     background-color: #ccf3ff;
 }
 
 .grouped-table tr.odd {
+    font-family: "Andale Mono";
     background-color: #fff;
 }
 
 .grandtotal-row {
+    font-family: "Andale Mono";
     border-top: 2px solid black;
 }
