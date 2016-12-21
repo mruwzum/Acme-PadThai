@@ -1,6 +1,7 @@
 package controllers.others;
 
 import controllers.AbstractController;
+import domain.Categorie;
 import domain.Comment;
 import domain.Ingredient;
 import domain.Recipe;
