@@ -190,7 +190,6 @@ public class AdminServiceTest extends AbstractTest {
     public void testComputeMonthlyBills() {
 
         authenticate("Admin1");
-        Sponsor u = sponsorService.findOne(119);
         List<Sponsor> spon = new ArrayList<>(sponsorService.findAll());
         // Assert.notNull(u,"El usuario es nulo");
         MonthlyBill res = adminService.computeMonthlyBills(spon.get(0));
@@ -198,12 +197,12 @@ public class AdminServiceTest extends AbstractTest {
         authenticate(null);
     }
 
-    @Test
-    public void testSendBulkMessage() {
-        authenticate("Admin3");
-        adminService.sendBulkMessage();
-        authenticate(null);
-    }
+//    @Test
+//    public void testSendBulkMessage() {
+//        authenticate("Admin2");
+//        adminService.sendBulkMessage();
+//        authenticate(null);
+//    }
 
     @Test
     public void testRegisterAsACook() {
