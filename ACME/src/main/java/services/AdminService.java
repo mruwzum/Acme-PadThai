@@ -295,7 +295,9 @@ public class AdminService {
         Double sum = 0.0;
         Assert.notNull(sponsor, "El sponsor es nulo");
         List<Campaing> a = new ArrayList<>(sponsor.getCampaign());
+        Assert.notEmpty(a, "No tiene camapañas");
         for (Campaing i : a) {
+
             sum = sum + i.getNumberOfBanners() * i.getBannerCost();
 
             map.put(i, sum);
@@ -303,6 +305,7 @@ public class AdminService {
         Date create = new Date(System.currentTimeMillis() - 1000);
         MonthlyBill aux = monthlyBillService.create();
         aux.setCost(sum);
+        aux.setPaid(Boolean.FALSE);
         aux.setCreateDate(create);
         aux.setDescription(map.toString());
         aux.setSponsor(sponsor);

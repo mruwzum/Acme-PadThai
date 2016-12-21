@@ -29,6 +29,8 @@
                             code="master.page.maclass.list.do"/></a></li>
                     <li><a href="admin/computewinners.do"><spring:message
                             code="master.page.computewinners"/></a></li>
+                    <li><a href="admin/sponsor/bulk.do"><spring:message
+                            code="master.page.bulk"/></a></li>
 
 
 

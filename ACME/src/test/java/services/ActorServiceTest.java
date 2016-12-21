@@ -355,7 +355,7 @@ public class ActorServiceTest extends AbstractTest {
     public void testRandom(){
         authenticate("admin1");
         List<Sponsor> sponsors = new ArrayList<>(sponsorService.findAll());
-
+        System.out.println(sponsors.get(0).getCampaign());
         System.out.println(adminService.computeMonthlyBills(sponsors.get(0)));
 
         authenticate(null);

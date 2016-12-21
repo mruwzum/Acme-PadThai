@@ -913,6 +913,7 @@
         <property name="endDate" value="1971/02/10"/>
         <property name="numberOfBanners" value="3"/>
         <property name="maximumDisplayed" value="1"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor1"></ref>
         </property>
@@ -924,6 +925,7 @@
         <property name="endDate" value="1999/02/10"/>
         <property name="numberOfBanners" value="14"/>
         <property name="maximumDisplayed" value="5"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor2"></ref>
         </property>
@@ -935,6 +937,7 @@
         <property name="endDate" value="2016/09/10"/>
         <property name="numberOfBanners" value="124"/>
         <property name="maximumDisplayed" value="6"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor3"></ref>
         </property>
@@ -946,6 +949,7 @@
         <property name="endDate" value="2016/09/12"/>
         <property name="numberOfBanners" value="1224"/>
         <property name="maximumDisplayed" value="123"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor4"></ref>
         </property>
@@ -956,6 +960,7 @@
         <property name="endDate" value="2016/12/12"/>
         <property name="numberOfBanners" value="1224"/>
         <property name="maximumDisplayed" value="123"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor4"></ref>
         </property>
@@ -966,6 +971,7 @@
         <property name="endDate" value="2017/12/12"/>
         <property name="numberOfBanners" value="124"/>
         <property name="maximumDisplayed" value="1"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor1"></ref>
         </property>
@@ -977,6 +983,7 @@
         <property name="endDate" value="2016/01/01"/>
         <property name="numberOfBanners" value="4"/>
         <property name="maximumDisplayed" value="3"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor4"></ref>
         </property>
@@ -987,6 +994,7 @@
         <property name="endDate" value="2016/12/12"/>
         <property name="numberOfBanners" value="124"/>
         <property name="maximumDisplayed" value="12"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor4"></ref>
         </property>
@@ -998,6 +1006,7 @@
         <property name="endDate" value="2013/12/12"/>
         <property name="numberOfBanners" value="124"/>
         <property name="maximumDisplayed" value="12"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor1"></ref>
         </property>
@@ -1009,6 +1018,7 @@
         <property name="endDate" value="2016/12/01"/>
         <property name="numberOfBanners" value="234"/>
         <property name="maximumDisplayed" value="112"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor2"></ref>
         </property>
@@ -1020,6 +1030,7 @@
         <property name="endDate" value="2016/07/23"/>
         <property name="numberOfBanners" value="144424"/>
         <property name="maximumDisplayed" value="1243"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor3"></ref>
         </property>
@@ -1031,6 +1042,7 @@
         <property name="endDate" value="2015/11/12"/>
         <property name="numberOfBanners" value="1024"/>
         <property name="maximumDisplayed" value="120"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor4"></ref>
         </property>
@@ -1042,6 +1054,7 @@
         <property name="endDate" value="2016/10/23"/>
         <property name="numberOfBanners" value="1234"/>
         <property name="maximumDisplayed" value="123"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor1"></ref>
         </property>
@@ -1053,6 +1066,7 @@
         <property name="endDate" value="2016/08/31"/>
         <property name="numberOfBanners" value="1224"/>
         <property name="maximumDisplayed" value="142"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor2"></ref>
         </property>
@@ -1064,6 +1078,7 @@
         <property name="endDate" value="2016/02/19"/>
         <property name="numberOfBanners" value="1234"/>
         <property name="maximumDisplayed" value="12"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor3"></ref>
         </property>
@@ -1075,6 +1090,7 @@
         <property name="endDate" value="2016/07/12"/>
         <property name="numberOfBanners" value="24"/>
         <property name="maximumDisplayed" value="2"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor4"></ref>
         </property>
@@ -1086,6 +1102,7 @@
         <property name="endDate" value="2015/12/22"/>
         <property name="numberOfBanners" value="1224"/>
         <property name="maximumDisplayed" value="122"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor1"></ref>
         </property>
@@ -1097,6 +1114,7 @@
         <property name="endDate" value="2016/08/26"/>
         <property name="numberOfBanners" value="4444"/>
         <property name="maximumDisplayed" value="44"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor2"></ref>
         </property>
@@ -1108,6 +1126,7 @@
         <property name="endDate" value="2016/09/14"/>
         <property name="numberOfBanners" value="1234"/>
         <property name="maximumDisplayed" value="125"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor3"></ref>
         </property>
@@ -1119,6 +1138,7 @@
         <property name="endDate" value="2016/12/12"/>
         <property name="numberOfBanners" value="1674"/>
         <property name="maximumDisplayed" value="62"/>
+        <property name="bannerCost" value="0.25"/>
         <property name="sponsor">
             <ref bean="sponsor4"></ref>
         </property>
