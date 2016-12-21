@@ -563,26 +563,37 @@ public class ActorService {
         Actor u;
         u = findByPrincipal();
         Assert.notNull(u, "El actor no existe");
+        Assert.notNull(m.getRegisters().contains(u), "Ya te has apuntado a esta clase");
         m.getRegisters().add(u);
         return m;
     }
 
-    public MasterClass registerToMasterClassNutri(MasterClass m) {
+    public MasterClass unregisterToMasterClass(MasterClass m) {
         Assert.notNull(m);
-        Nutritionist u;
-        u = nutritionistService.findByPrincipal();
+        Actor u;
+        u = findByPrincipal();
         Assert.notNull(u, "El actor no existe");
-        m.getRegisters().add(u);
+        Assert.notNull(!m.getRegisters().contains(u), "No estas apuntado en esta clase");
+        m.getRegisters().remove(u);
         return m;
     }
-    public MasterClass registerToMasterClassSpon(MasterClass m) {
-        Assert.notNull(m);
-        Sponsor u;
-        u = sponsorService.findByPrincipal();
-        Assert.notNull(u, "El actor no existe");
-        m.getRegisters().add(u);
-        return m;
-    }
+
+//    public MasterClass registerToMasterClassNutri(MasterClass m) {
+//        Assert.notNull(m);
+//        Nutritionist u;
+//        u = nutritionistService.findByPrincipal();
+//        Assert.notNull(u, "El actor no existe");
+//        m.getRegisters().add(u);
+//        return m;
+//    }
+//    public MasterClass registerToMasterClassSpon(MasterClass m) {
+//        Assert.notNull(m);
+//        Sponsor u;
+//        u = sponsorService.findByPrincipal();
+//        Assert.notNull(u, "El actor no existe");
+//        m.getRegisters().add(u);
+//        return m;
+//    }
 
 }
 

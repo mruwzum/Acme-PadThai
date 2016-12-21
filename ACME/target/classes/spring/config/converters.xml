@@ -34,6 +34,8 @@
         <bean class="converters.StringToUserConverter"/>
         <bean class="converters.UserAccountToStringConverter"/>
         <bean class="converters.UsertoStringConverter"/>
+        <bean class="converters.QuantityToStringConverter"/>
+        <bean class="converters.StringToQuantityConverter"/>
 
 
     </util:list>

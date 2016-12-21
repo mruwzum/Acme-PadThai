@@ -5,6 +5,7 @@ import com.sun.org.apache.xpath.internal.operations.Mod;
 import controllers.AbstractController;
 import domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -100,46 +101,67 @@ public class UtilitiesController extends AbstractController{
     }
     @RequestMapping(value = "/masterClass/attend")
     public ModelAndView attendMC(@RequestParam int mcID) {
-        ModelAndView res;
+        ModelAndView res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
         MasterClass mc = masterClassService.findOne(mcID);
-        actorService.registerToMasterClass(mc);
-        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
-        return res;
-    }
-    @RequestMapping(value = "/masterClass/attendNutri")
-    public ModelAndView attendNutriMC(@RequestParam int mcID){
-        ModelAndView res;
-        MasterClass mc = masterClassService.findOne(mcID);
-        actorService.registerToMasterClassNutri(mc);
-        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
-        return res;
-    }
-    @RequestMapping(value = "/masterClass/attendSpon")
-    public ModelAndView attendSponMC(@RequestParam int mcID){
-        ModelAndView res;
-        MasterClass mc = masterClassService.findOne(mcID);
-        actorService.registerToMasterClassSpon(mc);
-        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
-        return res;
-    }
-    @RequestMapping(value = "/banner/editCost")
-    public ModelAndView editBannerCost(@RequestParam int campID){
-        ModelAndView res;
-        Campaing aux = campaingService.findOne(campID);
-        adminService.setBannerCost(aux,0.25);
-        res = new ModelAndView("redirect:http://localhost:8080/admin/campaing/listAll.do");
-        return res;
-    }
-    @RequestMapping(value = "/campaing/listAll")
-    public ModelAndView list() {
-        ModelAndView result;
-        Collection<Campaing> aux = campaingService.findAll();
-        result = new ModelAndView("campaign/list");
-        result.addObject("campaign", aux);
-        result.addObject("requestURI", "admin/campaing/listAll.do");
-        return result;
+        try {
+            actorService.registerToMasterClass(mc);
+        }catch (DataIntegrityViolationException e){
+            res = new ModelAndView("sponsor/text");
+            String texto1 = "Ya te has registrado en esta clase";
+            res.addObject("texto1", texto1);
+        }
 
+        return res;
     }
+
+    @RequestMapping(value = "/masterClass/unattend")
+    public ModelAndView desattendMC(@RequestParam int mcID) {
+        ModelAndView res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        MasterClass mc = masterClassService.findOne(mcID);
+        try {
+            actorService.unregisterToMasterClass(mc);
+        }catch (IllegalArgumentException e){
+            res = new ModelAndView("sponsor/text");
+            String texto1 = "Ya te has borrado tu registro en esta clase";
+            res.addObject("texto1", texto1);
+        }
+
+        return res;
+    }
+//    @RequestMapping(value = "/masterClass/attendNutri")
+//    public ModelAndView attendNutriMC(@RequestParam int mcID){
+//        ModelAndView res;
+//        MasterClass mc = masterClassService.findOne(mcID);
+//        actorService.registerToMasterClassNutri(mc);
+//        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+//        return res;
+//    }
+//    @RequestMapping(value = "/masterClass/attendSpon")
+//    public ModelAndView attendSponMC(@RequestParam int mcID){
+//        ModelAndView res;
+//        MasterClass mc = masterClassService.findOne(mcID);
+//        actorService.registerToMasterClassSpon(mc);
+//        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+//        return res;
+//    }
+//    @RequestMapping(value = "/banner/editCost")
+//    public ModelAndView editBannerCost(@RequestParam int campID){
+//        ModelAndView res;
+//        Campaing aux = campaingService.findOne(campID);
+//        adminService.setBannerCost(aux,0.25);
+//        res = new ModelAndView("redirect:http://localhost:8080/admin/campaing/listAll.do");
+//        return res;
+//    }
+//    @RequestMapping(value = "/campaing/listAll")
+//    public ModelAndView list() {
+//        ModelAndView result;
+//        Collection<Campaing> aux = campaingService.findAll();
+//        result = new ModelAndView("campaign/list");
+//        result.addObject("campaign", aux);
+//        result.addObject("requestURI", "admin/campaing/listAll.do");
+//        return result;
+//
+//    }
 
 
     @RequestMapping(value = "masterClass/list", method = RequestMethod.GET)

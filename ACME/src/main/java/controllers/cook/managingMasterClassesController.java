@@ -39,6 +39,18 @@ public class managingMasterClassesController extends AbstractController {
 
     //LISTING  -----------------------------------------------
 
+    @RequestMapping(value = "masterClass/listAll", method = RequestMethod.GET)
+    public ModelAndView listMasterClassesALL() {
+        ModelAndView result;
+        Collection<MasterClass> masterClasses;
+        masterClasses = masterClassService.findAll();
+        result = new ModelAndView("masterClass/list");
+        result.addObject("masterClass", masterClasses);
+        result.addObject("requestURI", "cook/masterClass/listAll.do");
+
+        return result;
+    }
+
     @RequestMapping(value = "masterClass/list", method = RequestMethod.GET)
     public ModelAndView listMasterClasses() {
         ModelAndView result;

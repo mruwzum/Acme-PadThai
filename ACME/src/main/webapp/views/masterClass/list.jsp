@@ -74,31 +74,37 @@
 
     <!--Registros a las clases-->
 
-    <security:authorize access="hasRole('USER')">
+    <security:authorize access="isAuthenticated()">
         <display:column>
             <a href="admin/masterClass/attend.do?mcID=${row.id}">
                 <spring:message code="masterClass.attend"/>
             </a>
         </display:column>
-    </security:authorize>
-
-    <security:authorize access="hasRole('NUTRITIONIST')">
 
         <display:column>
-            <a href="admin/masterClass/attendNutri.do?mcID=${row.id}">
-                <spring:message code="masterClass.attend"/>
+            <a href="admin/masterClass/unattend.do?mcID=${row.id}">
+                <spring:message code="masterClass.unattend"/>
             </a>
         </display:column>
     </security:authorize>
 
-    <security:authorize access="hasRole('SPONSOR')">
-        <display:column>
-            <a href="admin/masterClass/attendSpon.do?mcID=${row.id}">
-                <spring:message code="masterClass.attend"/>
-            </a>
-        </display:column>
+    <%--<security:authorize access="hasRole('NUTRITIONIST')">--%>
 
-    </security:authorize>
+        <%--<display:column>--%>
+            <%--<a href="admin/masterClass/attend.do?mcID=${row.id}">--%>
+                <%--<spring:message code="masterClass.attend"/>--%>
+            <%--</a>--%>
+        <%--</display:column>--%>
+    <%--</security:authorize>--%>
+
+    <%--<security:authorize access="hasRole('SPONSOR')">--%>
+        <%--<display:column>--%>
+            <%--<a href="admin/masterClass/attendSpon.do?mcID=${row.id}">--%>
+                <%--<spring:message code="masterClass.attend"/>--%>
+            <%--</a>--%>
+        <%--</display:column>--%>
+
+    <%--</security:authorize>--%>
 
 
 </display:table>
