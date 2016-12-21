@@ -157,18 +157,28 @@ public class UtilitiesController extends AbstractController{
 
     @RequestMapping(value = "/sponsor/monthly", method = RequestMethod.GET)
     public ModelAndView computeMB(@RequestParam int id) {
-        ModelAndView result;
-
+        ModelAndView result = sponsorList();
         Sponsor sponsor = sponsorService.findOne(id);
-        adminService.computeMonthlyBills(sponsor);
-        result = sponsorList();
+
+        try {
+            adminService.computeMonthlyBills(sponsor);
+        }catch (IllegalArgumentException e){
+            result = new ModelAndView("sponsor/text");
+            result.addObject("texto1", e.getMessage());
+        }
+
         return result;
     }
     @RequestMapping(value = "/sponsor/bulk", method = RequestMethod.GET)
     public ModelAndView sendBulk() {
-        ModelAndView result;
-        adminService.sendBulkMessage();
-        result = sponsorList();
+        ModelAndView result = sponsorList();
+        try {
+            adminService.sendBulkMessage();
+        }catch (IllegalArgumentException e){
+            result = new ModelAndView("sponsor/text");
+            result.addObject("texto1", e.getMessage());
+        }
+
         return result;
     }
 

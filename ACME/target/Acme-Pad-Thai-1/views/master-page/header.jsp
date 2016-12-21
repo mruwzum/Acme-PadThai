@@ -25,7 +25,7 @@
                 <ul>
                     <li class="arrow"></li>
 
-                    <li><a href="cook/masterClass/list.do"><spring:message
+                    <li><a href="admin/masterClass/list.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                     <li><a href="admin/computewinners.do"><spring:message
                             code="master.page.computewinners"/></a></li>
