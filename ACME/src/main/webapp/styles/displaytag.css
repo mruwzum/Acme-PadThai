@@ -11,7 +11,7 @@
 table {
     border: 1px solid #666;
     width: 80%;
-    margin: 20px 0 20px 0 !important;
+    margin: 15px 0 15px 0 !important;
 }
 
 th, td {
@@ -21,11 +21,11 @@ th, td {
 }
 
 thead tr {
-    background-color: #fc0;
+    background-color: #fffaaa;
 }
 
 th.sorted {
-    background-color: orange;
+    background-color: yellowgreen;
 }
 
 th a, th a:visited {
@@ -34,7 +34,7 @@ th a, th a:visited {
 
 th a:hover {
     text-decoration: underline;
-    color: black;
+    color: darkred;
 }
 
 th.sorted a, th.sortable a {
@@ -67,7 +67,7 @@ tr.odd {
 }
 
 tr.tableRowEven, tr.even {
-    background-color: #fea
+    background-color: #fffaaa
 }
 
 div.exportlinks {
@@ -152,7 +152,7 @@ span.pagelinks {
 }
 
 .grouped-table tr.even {
-    background-color: #fff;
+    background-color: #ccf3ff;
 }
 
 .grouped-table tr.odd {
