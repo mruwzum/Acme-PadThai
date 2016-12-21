@@ -380,6 +380,7 @@ public class ActorService {
         u.setPhone(phone);
         u.setPostalAddress(postalAddress);
         u.setSocialIdentity(social);
+
         //Actor res = actorRepository.save(u);
         return u;
     }

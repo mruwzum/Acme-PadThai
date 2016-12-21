@@ -24,7 +24,8 @@
             <li><a class="fNiv"><spring:message code="master.page.administrator"/></a>
                 <ul>
                     <li class="arrow"></li>
-
+                    <li><a href="actor/AdminPersonalData.do"><spring:message
+                            code="master.page.actor.edit.do"/></a></li>
                     <li><a href="admin/masterClass/list.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                     <li><a href="admin/computewinners.do"><spring:message
