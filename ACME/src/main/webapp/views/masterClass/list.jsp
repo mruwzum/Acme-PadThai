@@ -31,11 +31,19 @@
 
 
     <security:authorize access="hasRole('ADMIN')">
+
     <display:column>
         <a href="admin/masterClass/promote.do?mcID=${row.id}">
             <spring:message code="masterClass.promote"/>
         </a>
     </display:column>
+
+        <display:column>
+            <a href="admin/masterClass/demote.do?mcID=${row.id}">
+                <spring:message code="masterClass.demote"/>
+            </a>
+        </display:column>
+
     </security:authorize>
 
 

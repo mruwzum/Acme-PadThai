@@ -490,7 +490,7 @@ public class AdminService {
         Admin u = findByPrincipal();
         Assert.notNull(u, "El actor no existe");
         Assert.isTrue(!u.getUserAccount().getAuthorities().contains(Authority.ADMIN));
-        Assert.isTrue(!m.getPromoters().contains(u), "El administrador ya ha promocionado esta clase");
+        Assert.isTrue(!m.getPromoters().contains(u), "Ya has promocionado esta clase");
         m.getPromoters().add(u);
     }
 
@@ -498,7 +498,7 @@ public class AdminService {
         Admin u = findByPrincipal();
         Assert.notNull(u, "El actor no existe");
         Assert.isTrue(!u.getUserAccount().getAuthorities().contains(Authority.ADMIN));
-        Assert.isTrue(m.getPromoters().contains(u), "El administrador ya ha promocionado esta clase");
+        Assert.isTrue(m.getPromoters().contains(u), "Ya has dejado de promocionar esta clase");
         m.getPromoters().remove(u);
     }
 

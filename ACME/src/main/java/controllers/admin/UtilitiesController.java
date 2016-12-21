@@ -74,10 +74,28 @@ public class UtilitiesController extends AbstractController{
 
     @RequestMapping(value = "/masterClass/promote")
     public ModelAndView promoteMC(@RequestParam int mcID){
-        ModelAndView res;
+        ModelAndView res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
         MasterClass mc = masterClassService.findOne(mcID);
-        adminService.promoteMasterClas(mc);
-        res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        try {
+            adminService.promoteMasterClas(mc);
+        }catch (IllegalArgumentException e){
+            res = new ModelAndView("sponsor/text");
+            res.addObject("texto1", e.getMessage());
+        }
+
+        return res;
+    }
+
+    @RequestMapping(value = "/masterClass/demote")
+    public ModelAndView demoteMC(@RequestParam int mcID){
+        ModelAndView res = new ModelAndView("redirect:http://localhost:8080/admin/masterClass/list.do");
+        MasterClass mc = masterClassService.findOne(mcID);
+        try {
+            adminService.demoteMasterClass(mc);
+        }catch (IllegalArgumentException e){
+            res = new ModelAndView("sponsor/text");
+            res.addObject("texto1", e.getMessage());
+        }
         return res;
     }
     @RequestMapping(value = "/masterClass/attend")
