@@ -14,7 +14,7 @@ import java.util.Collection;
 @Repository
 public interface ActorRepository extends JpaRepository<Actor, Integer> {
     @Query("select c from Actor c where c.userAccount.id = ?1")
-    User findByUserAccountId(int userAccountId);
+    Actor findByUserAccountId(int userAccountId);
 
     //Actor who isn't authenticated
     @Query("select r from Recipe r group by r.categorie")
