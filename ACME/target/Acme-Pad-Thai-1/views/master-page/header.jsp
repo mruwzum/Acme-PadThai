@@ -32,20 +32,12 @@
                     <li><a href="admin/sponsor/bulk.do"><spring:message
                             code="master.page.bulk"/></a></li>
 
-
-
                 </ul>
             </li>
+            
+
             <li><a href="admin/key/create.do"><spring:message
                     code="master.page.admin.createKey.do"/></a></li>
-                    <li><a href="cook/signup.do"><spring:message code="master.page.createascook"/></a></li>
-                    <li><a href="admin/key/create.do"><spring:message
-                            code="master.page.admin.createKey.do"/></a></li>
-                    <li><a href="actor/AdminPersonalData.do"><spring:message
-                            code="master.page.actor.edit.do"/></a></li>
-                </ul>
-            </li>
-
             <li><a href="admin/categorie/list.do"><spring:message
                     code="master.page.admin.categorieList.do"/></a></li>
             <li><a href="admin/contest/list.do"><spring:message
@@ -58,11 +50,8 @@
                     code="master.page.actor.edit.do"/></a></li>
             <li><a href="admin/sponsor/list.do"><spring:message
                     code="master.page.admin.sponsors"/></a></li>
-            <li><a href="admin/campaing/listAll.do"><spring:message
-                    code="master.page.campaign"/></a></li>
             <li><a href="admin/masterClass/list.do"><spring:message
                     code="master.page.maclass.list.do"/></a></li>
-
             <li><a href="admin/dashboard.do"><spring:message
                     code="master.page.dashboard.do"/></a></li>
         </security:authorize>
@@ -80,12 +69,12 @@
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
+            <li><a href="user/recipes/list/my.do"><spring:message
+                    code="master.page.recipes.list.do"/></a></li>
             <li><a href="nutritionist/ingredient/list.do"><spring:message
                     code="master.page.ingredient"/></a></li>
             <li><a href="nutritionist/property/list.do"><spring:message
                     code="master.page.property"/></a></li>
-            <li><a href="nutritionist/curricula/edit.do"><spring:message
-                    code="master.page.curricula.edit.do"/></a></li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
             <li><a href="actor/NutritionistPersonalData.do"><spring:message
@@ -94,8 +83,6 @@
                     code="master.page.write.comment.do"/></a></li>
             <li><a href="user/recipes/stream.do"><spring:message
                     code="master.page.stream.recipe.do"/></a></li>
-            <li><a href="user/recipes/list/my.do"><spring:message
-                    code="master.page.recipes.list.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('USER')">
@@ -133,8 +120,6 @@
             </li>
             <li><a href="actor/folder/list.do"><spring:message
                     code="master.page.actor.messages"/></a></li>
-            <li><a href="actor/CookPersonalData.do"><spring:message
-                    code="master.page.actor.edit.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('SPONSOR')">
