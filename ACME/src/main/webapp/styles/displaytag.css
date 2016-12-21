@@ -21,11 +21,11 @@ th, td {
 }
 
 thead tr {
-    background-color: #fffaaa;
+    background-color: #eeabb6;
 }
 
 th.sorted {
-    background-color: yellowgreen;
+    background-color: #bf071f;
 }
 
 th a, th a:visited {
