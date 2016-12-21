@@ -40,7 +40,6 @@ public class WelcomeController extends AbstractController {
         moment = formatter.format(new Date());
 
         result = new ModelAndView("welcome/index");
-        result.addObject("name", name);
         result.addObject("moment", moment);
 
         return result;

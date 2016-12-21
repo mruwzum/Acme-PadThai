@@ -7,12 +7,20 @@
  * http://www.tdg-seville.info/License.html
  * 
  */
-
+body{
+    font-family: "Andale Mono";
+    font-size: 14px;
+}
+h1{
+    font-family: "Andale Mono";
+    font-size: 17px;
+}
 table {
     border: 1px solid #666;
     width: 80%;
     margin: 15px 0 15px 0 !important;
     font-family: "Andale Mono";
+    font-size: 13px;
 }
 
 th, td {
@@ -24,14 +32,17 @@ th, td {
 
 thead tr {
     background-color: #eeabb6;
+    font-family: "Andale Mono";
 }
 
 th.sorted {
-    background-color: #bf071f;
+    background-color: #bf4e50;
+    font-family: "Andale Mono";
 }
 
 th a, th a:visited {
     color: black;
+    font-family: "Andale Mono";
 }
 
 th a:hover {
@@ -44,6 +55,7 @@ th.sorted a, th.sortable a {
     background-position: right;
     display: block;
     width: 100%;
+    font-family: "Andale Mono";
 }
 
 th.sortable a {
@@ -66,7 +78,7 @@ th.order2 a {
 }
 
 tr.odd {
-    background-color: #ffb9a7;
+    background-color: #fff3dd;
     font-family: "Andale Mono";
 }
 
@@ -76,14 +88,17 @@ tr.tableRowEven, tr.even {
 }
 
 div.exportlinks {
+    font-family: "Andale Mono";
     background-color: #eee;
     border: 1px dotted #999;
     padding: 2px 4px 2px 4px;
     margin: 2px 0 10px 0;
     width: 79%;
+    font-size: 13px;
 }
 
 span.export {
+    font-family: "Andale Mono";
     padding: 0 4px 1px 20px;
     display: inline;
     display: inline-block;
@@ -119,6 +134,7 @@ span.pagebanner {
     display: block;
     border-bottom: none;
     font-family: "Andale Mono";
+    font-size: 13px;
 }
 
 span.pagelinks {
@@ -130,6 +146,7 @@ span.pagelinks {
     border-top: none;
     margin-bottom: -5px;
     font-family: "Andale Mono";
+    font-size: 13px;
 }
 
 .group-1 {
