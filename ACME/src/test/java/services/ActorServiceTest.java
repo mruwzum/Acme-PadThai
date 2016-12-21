@@ -353,10 +353,29 @@ public class ActorServiceTest extends AbstractTest {
 
     @Test
     public void testRandom(){
-        authenticate("admin1");
-        List<Sponsor> sponsors = new ArrayList<>(sponsorService.findAll());
-        System.out.println(sponsors.get(0).getCampaign());
-        System.out.println(adminService.computeMonthlyBills(sponsors.get(0)));
+        authenticate("user1");
+        User a = userService.findByPrincipal();
+        System.out.println(a.getName());
+        a.setName("PRUEBA");
+        a.setSurname("PRUEBA");
+        a.setEmailAddress("dasd@asdasd.com");
+        a.setPhone("648208840");
+        a.setPostalAddress("PRUEBA");
+        a.getSocialIdentity().setNickname("PRUEBA");
+        a.getSocialIdentity().setSocialNet("PRUEBA");
+        a.getSocialIdentity().setLink("PRUEBA.com");
+        actorService.editPersonalData2(a.getName(),a.getSurname(),a.getEmailAddress(),a.getPhone(), a.getPostalAddress(),
+                a.getSocialIdentity().getNickname(),a.getSocialIdentity().getSocialNet(),a.getSocialIdentity().getLink());
+        System.out.println(a.getName());
+        System.out.println(a.getSurname());
+        System.out.println(a.getEmailAddress());
+        System.out.println(a.getPhone());
+        System.out.println(a.getPostalAddress());
+        System.out.println(a.getSocialIdentity().getNickname());
+        System.out.println(a.getSocialIdentity().getSocialNet());
+        System.out.println(a.getSocialIdentity().getLink());
+
+
 
         authenticate(null);
     }

@@ -50,9 +50,17 @@ public class EditPersonalDataController extends AbstractController {
                                  String postalAddress, String nickname, String socialNet,
                                  String link) {
         ModelAndView res;
-        Assert.notNull(link, "link");
         actorService.editPersonalData2(name,surname,emailAddress,phone,postalAddress,nickname,socialNet,link);
-        res = UserEditPersonalData();
+        res = new ModelAndView("security/testView");
+        res.addObject("name", name);
+        res.addObject("surname", surname);
+        res.addObject("email", emailAddress);
+        res.addObject("phone", phone);
+        res.addObject("postal", postalAddress);
+        res.addObject("nick", nickname);
+        res.addObject("social", socialNet);
+        res.addObject("link", link);
+
         return res;
     }
 
