@@ -6,6 +6,7 @@ import domain.MasterClass;
 import domain.Property;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
 import org.springframework.validation.BindingResult;
@@ -94,14 +95,17 @@ public class ingredientManageController extends AbstractController {
 
     @RequestMapping(value = "/ingredient/delete", method = RequestMethod.GET)
     public ModelAndView delete(@RequestParam int ingredientID) {
-        ModelAndView result;
+        ModelAndView result= new ModelAndView("redirect:list.do");
         Ingredient ingredient = ingredientService.findOne(ingredientID);
-        ingredientService.delete(ingredient);
-        result = new ModelAndView("redirect:list.do");
-        /*try {
-        } catch (Throwable oops) {
-            result = createEditModelAndView(ingredient, "ingredient.commit.error");
-        }*/
+
+        try {
+            ingredientService.delete(ingredient);
+        }catch (DataIntegrityViolationException e){
+            String texto1 =  "No puede borrar un ingrediente que esté asociado a recetas";
+            result = new ModelAndView("sponsor/text");
+            result.addObject("texto1", texto1);
+        }
+
 
         return result;
     }
@@ -120,17 +124,18 @@ public class ingredientManageController extends AbstractController {
 
     @RequestMapping(value = "/ingredient/deleteProperty", method = RequestMethod.GET)
     public ModelAndView deleteProperty(@RequestParam int id,int propertyID) {
-        ModelAndView result;
+        ModelAndView result = new ModelAndView("redirect:list.do");
         Ingredient ing = ingredientService.findOne(id);
         Property property = propertyService.findOne(propertyID);
-        ingredientService.deleteProperty(ing,property);
-        result = new ModelAndView("redirect:list.do");
-        /*try {
-            ingredientService.delete(ingredient);
-            result = new ModelAndView("redirect:list.do");
-        } catch (Throwable oops) {
-            result = createEditModelAndView(ingredient, "ingredient.commit.error");
-        }*/
+
+        try {
+            ingredientService.deleteProperty(ing,property);
+        }catch (DataIntegrityViolationException e){
+            String texto1 =  "No puede borrar propiedades asociadas a ingredientes";
+            result = new ModelAndView("sponsor/text");
+            result.addObject("texto1", texto1);
+        }
+
 
         return result;
     }

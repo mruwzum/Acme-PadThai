@@ -2,10 +2,7 @@ package domain;
 
 import org.hibernate.validator.constraints.NotBlank;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -46,7 +43,7 @@ public class Ingredient extends DomainEntity {
         this.picture = picture;
     }
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     public Collection<Property> getProperty() {
         return property;
     }

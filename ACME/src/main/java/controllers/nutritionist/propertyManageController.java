@@ -6,6 +6,7 @@ import domain.Nutritionist;
 import domain.Quantity;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
 import org.springframework.validation.BindingResult;
@@ -82,11 +83,15 @@ public class propertyManageController extends AbstractController {
 
     @RequestMapping(value = "/property/delete", method = RequestMethod.GET)
     public ModelAndView delete(@RequestParam int propertyID) {
-        ModelAndView result;
+        ModelAndView result = new ModelAndView("redirect:list.do");
         Property property = propertyService.findOne(propertyID);
-        propertyService.delete(property);
-        result = new ModelAndView("redirect:list.do");
-
+        try {
+            propertyService.delete(property);
+        }catch (DataIntegrityViolationException e){
+            String texto1 =  "No puede borrar propiedades asociadas a ingredientes";
+            result = new ModelAndView("sponsor/text");
+            result.addObject("texto1", texto1);
+        }
         return result;
     }
 

@@ -119,7 +119,7 @@ public class Recipe extends DomainEntity {
     }
 
 
-    @OneToMany(targetEntity = Ingredient.class)
+    @OneToMany(targetEntity = Ingredient.class, cascade = CascadeType.ALL)
     public Collection<Ingredient> getIngredient() {
         return ingredient;
     }
