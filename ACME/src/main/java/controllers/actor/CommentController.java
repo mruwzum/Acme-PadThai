@@ -44,10 +44,11 @@ public class CommentController extends AbstractController {
 
 
     @RequestMapping(value = "/comment/write")
-    public ModelAndView write(@RequestParam String title, String text, String stars){
+    public ModelAndView write(@RequestParam int id, String title, String text, String stars){
         ModelAndView res;
 
-        res = new ModelAndView("comment/write");
+        res = new ModelAndView("mensaje/text");
+        res.addObject("id", id);
         res.addObject("title", title);
         res.addObject("text", text);
         res.addObject("stars", stars);
