@@ -200,7 +200,7 @@ public class AdminServiceTest extends AbstractTest {
     @Test
     public void testSendBulkMessage() {
         authenticate("Admin3");
-        Assert.notNull(adminService.sendBulkMessage(), "El mensaje mandado es nulo");
+        adminService.sendBulkMessage();
         authenticate(null);
     }
 

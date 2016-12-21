@@ -314,21 +314,21 @@ public class AdminService {
     }
 
 
-    public Message sendBulkMessage() {
+    public void sendBulkMessage() {
 
         Admin u = findByPrincipal();
         Assert.notNull(u, "El actor no existe");
         Assert.isTrue(!u.getUserAccount().getAuthorities().contains(Authority.ADMIN));
         List<MonthlyBill> morosos = new ArrayList<>(monthlyBillService.findAll());
-        Message res = messageService.create();
         for (MonthlyBill s : morosos) {
-            if (s.getPaid() == false && s.getCreateDate().getTime() - new Date(System.currentTimeMillis()).getTime() >= 259200000) {
+            Assert.isTrue(s.getCreateDate().getTime() - new Date(System.currentTimeMillis()).getTime() >= 259200000,"No hay camapañas dentro del rango");
+            if (!s.getPaid() && s.getCreateDate().getTime() - new Date(System.currentTimeMillis()).getTime() >= 259200000) {
                 Sponsor p = s.getSponsor();
-                res = actorService.textMessage("PAY ME", "YOU HAVE TONES OF UNPAID BILLS", p, Priority.HIGH);
-                return res;
+                actorService.textMessage("PAY ME", "YOU HAVE TONES OF UNPAID BILLS", p, Priority.HIGH);
+
             }
         }
-        return res;
+
     }
 
     //A-Level

@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d45cdad-cd5d-49b5-a719-5857e53aeea3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/services/AdminService.class" afterPath="$PROJECT_DIR$/target/classes/services/AdminService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/services/ActorServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/services/ActorServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/AdminService.java" afterPath="$PROJECT_DIR$/src/main/java/services/AdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml" afterPath="$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" afterPath="$PROJECT_DIR$/target/Acme-Pad-Thai-1/views/master-page/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/services/AdminServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/services/AdminServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/PopulateDatabase.xml" afterPath="$PROJECT_DIR$/target/classes/PopulateDatabase.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,31 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/AdminService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="307" column="33" lean-forward="false" selection-start-line="307" selection-start-column="33" selection-end-line="307" selection-end-column="33" />
+            <state relative-caret-position="19">
+              <caret line="303" column="9" lean-forward="true" selection-start-line="303" selection-start-column="9" selection-end-line="303" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SponsorService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/SponsorService.java">
+      <file leaf-file-name="AdminServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/services/AdminServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Campaing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Campaing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="88">
+              <caret line="179" column="72" lean-forward="true" selection-start-line="179" selection-start-column="72" selection-end-line="179" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -62,28 +53,8 @@
       <file leaf-file-name="UtilitiesController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="119" column="28" lean-forward="true" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PopulateDatabase.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="1140" column="50" lean-forward="false" selection-start-line="1140" selection-start-column="50" selection-end-line="1140" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActorServiceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="358" column="52" lean-forward="false" selection-start-line="358" selection-start-column="52" selection-end-line="358" selection-end-column="52" />
+            <state relative-caret-position="462">
+              <caret line="126" column="31" lean-forward="false" selection-start-line="126" selection-start-column="31" selection-end-line="126" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -127,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controllers/nutritionist/ingredientManageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/recipe/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/actor/tiles.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/actor/tiles_es.xml" />
@@ -177,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/messages_es.properties" />
         <option value="$PROJECT_DIR$/src/test/java/services/ActorServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/PopulateDatabase.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/services/AdminServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/AdminService.java" />
       </list>
     </option>
@@ -929,7 +900,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="sponsor&#9;PSI&#9;JAVA://services.SponsorService&#10;popu&#9;RUN_CONFIGURATION&#9;PopulateDatabase&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;actorse&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/test/java/services/ActorServiceTest.java&#10;admi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/AdminService.java&#10;head&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;act&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/test/java/services/ActorServiceTest.java&#10;i18&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/i18n-l10n.xml&#10;he&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;i1&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/i18n-l10n.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;actor&#9;PSI&#9;JAVA://domain.Actor&#10;spo&#9;PSI&#9;JAVA://domain.Sponsor&#10;adminser&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/AdminService.java&#10;Other&#9;PSI&#9;JAVA://services.OthersService&#10;nut&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Nutritionist.java&#10;reci&#9;PSI&#9;JAVA://domain.Recipe&#10;other&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Others.java&#10;message&#9;PSI&#9;JAVA://domain.Message&#10;user&#9;PSI&#9;JAVA://domain.User&#10;nutri&#9;PSI&#9;JAVA://domain.Nutritionist&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;actors&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;folder&#9;PSI&#9;JAVA://domain.Folder&#10;popula&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;edit&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/mensaje/edit.jsp&#10;ad&#9;PSI&#9;JAVA://services.AdminService&#10;admin&#9;PSI&#9;JAVA://repositories.AdminRepository&#10;actorre&#9;PSI&#9;JAVA://repositories.ActorRepository&#10;userre&#9;PSI&#9;JAVA://repositories.UserRepository&#10;registr&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/security/registration.jsp&#10;strin&#9;PSI&#9;JAVA://converters.StringToActorConverter&#10;recipe&#9;PSI&#9;JAVA://domain.Recipe&#10;comme&#9;PSI&#9;JAVA://domain.Comment&#10;vie&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;view&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;otherser&#9;PSI&#9;JAVA://services.OthersService&#10;othe&#9;PSI&#9;JAVA://domain.Others&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;Acto&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;conte&#9;PSI&#9;JAVA://domain.Contest&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml" />
+    <property name="SearchEverywhereHistoryKey" value="actor&#9;PSI&#9;JAVA://domain.Actor&#10;sponsor&#9;PSI&#9;JAVA://services.SponsorService&#10;popu&#9;RUN_CONFIGURATION&#9;PopulateDatabase&#10;pop&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;actorse&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/test/java/services/ActorServiceTest.java&#10;admi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/AdminService.java&#10;head&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;act&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/test/java/services/ActorServiceTest.java&#10;i18&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/i18n-l10n.xml&#10;he&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;i1&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/i18n-l10n.xml&#10;tiles&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/tiles.xml&#10;spo&#9;PSI&#9;JAVA://domain.Sponsor&#10;adminser&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/AdminService.java&#10;Other&#9;PSI&#9;JAVA://services.OthersService&#10;nut&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Nutritionist.java&#10;reci&#9;PSI&#9;JAVA://domain.Recipe&#10;other&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/domain/Others.java&#10;message&#9;PSI&#9;JAVA://domain.Message&#10;user&#9;PSI&#9;JAVA://domain.User&#10;nutri&#9;PSI&#9;JAVA://domain.Nutritionist&#10;header&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;actors&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;folder&#9;PSI&#9;JAVA://domain.Folder&#10;popula&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/PopulateDatabase.xml&#10;edit&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/mensaje/edit.jsp&#10;ad&#9;PSI&#9;JAVA://services.AdminService&#10;admin&#9;PSI&#9;JAVA://repositories.AdminRepository&#10;actorre&#9;PSI&#9;JAVA://repositories.ActorRepository&#10;userre&#9;PSI&#9;JAVA://repositories.UserRepository&#10;registr&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/security/registration.jsp&#10;strin&#9;PSI&#9;JAVA://converters.StringToActorConverter&#10;recipe&#9;PSI&#9;JAVA://domain.Recipe&#10;comme&#9;PSI&#9;JAVA://domain.Comment&#10;vie&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;view&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/user/view.jsp&#10;otherser&#9;PSI&#9;JAVA://services.OthersService&#10;othe&#9;PSI&#9;JAVA://domain.Others&#10;hea&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/webapp/views/master-page/header.jsp&#10;Acto&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/java/services/ActorService.java&#10;conte&#9;PSI&#9;JAVA://domain.Contest&#10;cate&#9;PSI&#9;JAVA://domain.Categorie&#10;rec&#9;PSI&#9;JAVA://domain.Recipe&#10;servle&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/servlet.xml&#10;securi&#9;FILE&#9;file:///Users/daviddelatorre/dp/ACME/src/main/resources/spring/config/security.xml" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
@@ -945,7 +916,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/views/recipe" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PopulateDatabase">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="false" name="PopulateDatabase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1457,7 +1428,7 @@
       <workItem from="1482242926208" duration="2102000" />
       <workItem from="1482247879342" duration="27000" />
       <workItem from="1482259329184" duration="13928000" />
-      <workItem from="1482313125163" duration="1221000" />
+      <workItem from="1482313125163" duration="1752000" />
     </task>
     <task id="LOCAL-00001" summary="arreglao">
       <created>1481977250040</created>
@@ -1578,7 +1549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482274668484</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Compute MB funcionando">
+      <created>1482314364353</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1482314364353</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1614,7 +1592,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71524000" />
+    <option name="totallyTimeSpent" value="72055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -1723,7 +1701,8 @@
     <MESSAGE value="comment medio que" />
     <MESSAGE value="compute casi casi" />
     <MESSAGE value="bulk funciona...pero no" />
-    <option name="LAST_COMMIT_MESSAGE" value="bulk funciona...pero no" />
+    <MESSAGE value="Compute MB funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compute MB funcionando" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1739,13 +1718,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repositories/ActorRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1820,6 +1792,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#626#627#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1834,6 +1810,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1964,13 +1941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/tiles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -1991,6 +1961,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2116,26 +2087,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/SponsorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="119" column="28" lean-forward="true" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
+        <state relative-caret-position="462">
+          <caret line="126" column="31" lean-forward="false" selection-start-line="126" selection-start-column="31" selection-end-line="126" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/services/AdminServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="179" column="72" lean-forward="true" selection-start-line="179" selection-start-column="72" selection-end-line="179" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="307" column="33" lean-forward="false" selection-start-line="307" selection-start-column="33" selection-end-line="307" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/SponsorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+        <state relative-caret-position="19">
+          <caret line="303" column="9" lean-forward="true" selection-start-line="303" selection-start-column="9" selection-end-line="303" selection-end-column="9" />
           <folding />
         </state>
       </provider>
