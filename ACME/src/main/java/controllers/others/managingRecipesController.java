@@ -1,7 +1,6 @@
 package controllers.others;
 
 import controllers.AbstractController;
-import domain.Categorie;
 import domain.Comment;
 import domain.Ingredient;
 import domain.Recipe;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.*;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import javax.validation.Valid;
 import java.util.*;
 
@@ -184,6 +182,7 @@ public class managingRecipesController extends AbstractController {
         Recipe recipe;
         recipe = recipeService.findOne(id);
         Assert.notNull(recipe);
+        recipe.setUpdateDate(new Date(System.currentTimeMillis() - 10000));
         result = createEditModelAndView(recipe);
         return result;
     }

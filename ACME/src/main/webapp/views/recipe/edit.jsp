@@ -19,7 +19,6 @@
 
 <%--<jsp:useBean id="recipe" scope="request" type="domain.Recipe"/>--%>
 
-    <security:authorize access="hasRole('USER')">
 
 
         <form:form action="user/recipes/edit/save.do" modelAttribute="recipe">
@@ -55,7 +54,7 @@
 
             <form:select path="pictures">
 
-                <jstl:forEach var="pictures" items="${pictures}">
+                <jstl:forEach var="pictures" items="${String}">
                     <jstl:out value="-----"/>
                     <form:option value="${recipe.id}"><jstl:out value="${pictures}" ></jstl:out> </form:option>
                     <br>
@@ -108,4 +107,4 @@
     <br/>
 
 </form:form>
-    </security:authorize>
+

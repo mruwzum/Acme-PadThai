@@ -42,7 +42,7 @@
         </a>
     </display:column>
     <display:column>
-        <a href="http://localhost:8080/user/recipe/view.do?recipeID=${row.id}">
+        <a href="user/recipe/view.do?recipeID=${row.id}">
             <spring:message code="recipe.view"/>
         </a>
     </display:column>
