@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d45cdad-cd5d-49b5-a719-5857e53aeea3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/styles/common.css" afterPath="$PROJECT_DIR$/src/main/webapp/styles/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/styles/displaytag.css" afterPath="$PROJECT_DIR$/src/main/webapp/styles/displaytag.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/styles/jmenu.css" afterPath="$PROJECT_DIR$/src/main/webapp/styles/jmenu.css" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UtilitiesController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UtilitiesController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
@@ -55,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="displaytag.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="displaytag.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/displaytag.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="144" column="1" lean-forward="true" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="31" />
+            <state relative-caret-position="1490">
+              <caret line="144" column="1" lean-forward="false" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -157,9 +154,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/master-page/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/styles/jmenu.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/styles/displaytag.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/styles/common.css" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/admin/UtilitiesController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/displaytag.css" />
       </list>
     </option>
   </component>
@@ -1261,7 +1258,7 @@
       <workItem from="1482270817726" duration="2331000" />
       <workItem from="1482274831047" duration="123000" />
       <workItem from="1482274992489" duration="197000" />
-      <workItem from="1482317599856" duration="3198000" />
+      <workItem from="1482317599856" duration="3217000" />
     </task>
     <task id="LOCAL-00001" summary="arreglao">
       <created>1481977250040</created>
@@ -1466,7 +1463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482320671112</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="css">
+      <created>1482321424593</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1482321424593</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1502,7 +1506,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55332000" />
+    <option name="totallyTimeSpent" value="55351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1984,14 +1988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/displaytag.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="144" column="1" lean-forward="true" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/jmenu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -2012,6 +2008,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="111" column="88" lean-forward="false" selection-start-line="111" selection-start-column="88" selection-end-line="111" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/displaytag.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1490">
+          <caret line="144" column="1" lean-forward="false" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="31" />
           <folding />
         </state>
       </provider>
