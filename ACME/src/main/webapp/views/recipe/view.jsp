@@ -86,49 +86,53 @@
 
 <spring:message code="recipe.view.write.comment" var="rateTitle"/>
 <h1><jstl:out value="${rateTitle}"/></h1>
+<a href="http://localhost:8080/actor/comment/new.do?id=${idr}">
+    <spring:message code="recipe.view.write.comment"/>
+</a>
 <security:authorize access="isAuthenticated()">
 
 
+
     <%--TODO no se como meterle a esra url la receta que se está mostrando--%>
-    <form:form action="actor/comment/write.do" modelAttribute="comment">
-        <form:hidden path="id"/>
-        <form:hidden path="version"/>
+    <%--<form:form action="actor/comment/write.do" modelAttribute="comment">--%>
+        <%--<form:hidden path="id"/>--%>
+        <%--<form:hidden path="version"/>--%>
 
-        <form:label path="title" >
-            <spring:message code="comment.tittle"/>
-        </form:label>
-        <form:input path="title" title="title"/>
-        <form:errors cssClass="error" path="title2"/>
+        <%--<form:label path="title" >--%>
+            <%--<spring:message code="comment.tittle"/>--%>
+        <%--</form:label>--%>
+        <%--<form:input path="title" title="title"/>--%>
+        <%--<form:errors cssClass="error" path="title2"/>--%>
 
-        <br/>
+        <%--<br/>--%>
 
-        <form:label path="text">
-            <spring:message code="comment.text"/>
-        </form:label>
-        <form:input path="text"/>
-        <form:errors cssClass="error" path="text2"/>
-        <br/>
+        <%--<form:label path="text">--%>
+            <%--<spring:message code="comment.text"/>--%>
+        <%--</form:label>--%>
+        <%--<form:input path="text"/>--%>
+        <%--<form:errors cssClass="error" path="text2"/>--%>
+        <%--<br/>--%>
 
-        <form:label path="numberOfStars">
-            <spring:message code="comment.numberOfStars"/>
-        </form:label>
-        <form:input path="numberOfStars"/>
-        <form:errors cssClass="error" path="numberOfStars2"/>
-
-
-        <input type="submit" name="save"
-               value="<spring:message code="comment.send" />"/>&nbsp
-
-        <input type="button" name="cancel"
-               value="<spring:message code="comment.send" />"
-               onclick="relativeRedir('user/recipes/list.do');"/>
-<%--TODO esto no va--%>
-        <a href="http://localhost:8080/actor/comment/write.do?id=${idr}&title=${title2}&text=${text2}&stars=${numberOfStars2}">
-            <spring:message code="comment.send"/>
-        </a>
+        <%--<form:label path="numberOfStars">--%>
+            <%--<spring:message code="comment.numberOfStars"/>--%>
+        <%--</form:label>--%>
+        <%--<form:input path="numberOfStars"/>--%>
+        <%--<form:errors cssClass="error" path="numberOfStars2"/>--%>
 
 
-    </form:form>
+        <%--<input type="submit" name="save"--%>
+               <%--value="<spring:message code="comment.send" />"/>&nbsp--%>
+
+        <%--<input type="button" name="cancel"--%>
+               <%--value="<spring:message code="comment.send" />"--%>
+               <%--onclick="relativeRedir('user/recipes/list.do');"/>--%>
+<%--&lt;%&ndash;TODO esto no va&ndash;%&gt;--%>
+        <%--<a href="http://localhost:8080/actor/comment/write.do?id=${idr}&title=${title2}&text=${text2}&stars=${numberOfStars2}">--%>
+            <%--<spring:message code="comment.send"/>--%>
+        <%--</a>--%>
+
+
+    <%--</form:form>--%>
 
 </security:authorize>
 

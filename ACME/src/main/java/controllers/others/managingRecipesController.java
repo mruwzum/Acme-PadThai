@@ -110,11 +110,12 @@ public class managingRecipesController extends AbstractController {
                 dislikes++;
             }
         }
+
         //TODO esto funciona solo con usuarios registrados, cuando entras sin registrarte te dice que findbyprincipal tiene que ser true, no llega a comprobar si es nulo
-        if(othersService.findByPrincipal()!=null){
-            liked = othersService.findByPrincipal().getLikes().contains(res);
-            notLiked = !othersService.findByPrincipal().getLikes().contains(res);
-        }
+//        if(othersService.findByPrincipal()!=null){
+//            liked = othersService.findByPrincipal().getLikes().contains(res);
+//            notLiked = !othersService.findByPrincipal().getLikes().contains(res);
+//        }
         result = new ModelAndView("recipe/view");
         result.addObject("titler",res.getTitle());
         result.addObject("summary",res.getSummary());

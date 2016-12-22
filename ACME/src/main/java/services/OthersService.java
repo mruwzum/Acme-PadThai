@@ -167,7 +167,7 @@ public class OthersService {
         }
     }
 
-    Comment writeCommentToRecipe(Recipe r, String title, String text, Integer numberOfstarts) {
+    public Comment writeCommentToRecipe(Recipe r, String title, String text, Integer numberOfstarts) {
         Assert.notNull(r);
         Assert.notNull(title);
         Assert.notNull(text);

@@ -7,12 +7,17 @@ import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.ActorService;
 import services.CommentService;
 import services.OthersService;
 import services.RecipeService;
+
+import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by mruwzum on 18/12/16.
@@ -34,24 +39,28 @@ public class CommentController extends AbstractController {
 
 
     @RequestMapping(value = "/comment/new")
-    public ModelAndView newComment(){
+    public ModelAndView newComment(@RequestParam int id){
         ModelAndView res;
-        Comment saved = commentService.create();
+        Recipe recipe = recipeService.findOne(id);
+        Comment c = commentService.create();
+        c.setTitle("GENERIC");
+        c.setText("GENERIC");
+        c.setNumberOfStars(3);
+        Comment saved = commentService.save(c);
+        List<Comment> comments = new ArrayList<>(recipe.getComments());
+        comments.add(saved);
+        recipe.setComments(comments);
         res = new ModelAndView("comment/write");
         res.addObject("comment", saved);
         return res;
     }
 
 
-    @RequestMapping(value = "/comment/write")
-    public ModelAndView write(@RequestParam int id, String title, String text, String stars){
+    @RequestMapping(value = "/comment/write", method = RequestMethod.POST, params = "save")
+    public ModelAndView write(@Valid Comment comment){
         ModelAndView res;
-
-        res = new ModelAndView("mensaje/text");
-        res.addObject("id", id);
-        res.addObject("title", title);
-        res.addObject("text", text);
-        res.addObject("stars", stars);
+        commentService.save(comment);
+        res =  new ModelAndView("redirect:comment/new.do");
         return res;
     }
 
