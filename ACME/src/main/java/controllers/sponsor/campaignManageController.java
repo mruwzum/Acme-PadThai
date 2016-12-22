@@ -53,20 +53,29 @@ public class campaignManageController extends AbstractController {
         return result;
     }
 
-    @RequestMapping(value = "/campaing/edit/save", method = RequestMethod.POST, params = "save")
-    public ModelAndView save(@Valid Campaing campaing, BindingResult binding) {
+    @RequestMapping(value = "/campaign/edit/save", method = RequestMethod.POST, params = "save")
+    public ModelAndView save(@Valid Campaing campaing) {
         ModelAndView result;
 
-        if (binding.hasErrors()) {
-            result = createEditModelAndView(campaing);
-        } else {
-            try {
-                campaingService.save(campaing);
-                result = this.list();
-            } catch (Throwable oops) {
-                result = createEditModelAndView(campaing, "campaing.commit.error");
-            }
-        }
+        result = new ModelAndView("security/testView");
+        result.addObject("start",campaing.getStartDate());
+        result.addObject("end",campaing.getEndDate());
+        result.addObject("maximum",campaing.getMaximumDisplayed());
+        result.addObject("number",campaing.getNumberOfBanners());
+
+
+//        campaingService.save(campaing);
+//        result = this.list();
+//        if (binding.hasErrors()) {
+//            result = createEditModelAndView(campaing);
+//        } else {
+//            try {
+//                campaingService.save(campaing);
+//                result = this.list();
+//            } catch (Throwable oops) {
+//                result = createEditModelAndView(campaing, "campaing.commit.error");
+//            }
+//        }
 
         return result;
     }

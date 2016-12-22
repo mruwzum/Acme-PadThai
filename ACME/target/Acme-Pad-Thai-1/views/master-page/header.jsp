@@ -53,6 +53,8 @@
                     code="master.page.admin.sponsors"/></a></li>
             <li><a href="admin/dashboard.do"><spring:message
                     code="master.page.dashboard.do"/></a></li>
+            <li><a href="cook/masterClass/listAll.do"><spring:message
+                    code="master.page.maclass.list.do"/></a></li>
         </security:authorize>
 
 
@@ -64,7 +66,7 @@
                             code="master.page.actor.edit.do"/></a></li>
                     <li><a href="nutritionist/curricula/edit.do"><spring:message
                             code="master.page.curricula.edit.do"/></a></li>
-                    <li><a href="nutritionist/masterClass/list.do"><spring:message
+                    <li><a href="cook/masterClass/listAll.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                 </ul>
             </li>
@@ -98,6 +100,8 @@
                     code="master.page.actor.edit.do"/></a></li>
             <li><a href="user/recipes/stream.do"><spring:message
                     code="master.page.stream.recipe.do"/></a></li>
+            <li><a href="cook/masterClass/listAll.do"><spring:message
+                    code="master.page.maclass.list.do"/></a></li>
         </security:authorize>
 
 
@@ -116,6 +120,8 @@
                     code="master.page.maclass.list.do"/></a></li>
             <li><a href="actor/CookPersonalData.do"><spring:message
                     code="master.page.actor.edit.do"/></a></li>
+            <li><a href="cook/masterClass/listAll.do"><spring:message
+                    code="master.page.maclass.list.do"/></a></li>
         </security:authorize>
 
         <security:authorize access="hasRole('SPONSOR')">

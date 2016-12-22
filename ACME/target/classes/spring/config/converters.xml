@@ -36,6 +36,9 @@
         <bean class="converters.UsertoStringConverter"/>
         <bean class="converters.QuantityToStringConverter"/>
         <bean class="converters.StringToQuantityConverter"/>
+        <bean class="converters.StringToDateConverter"/>
+        <bean class="converters.DateToStringConverter"/>
+
 
 
     </util:list>
