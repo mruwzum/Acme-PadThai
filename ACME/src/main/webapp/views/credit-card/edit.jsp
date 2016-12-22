@@ -68,9 +68,5 @@
 
     <input type="submit" name="save"
            value="<spring:message code="credit-card.save" />"/>&nbsp;
-    <jstl:if test="${curricula.id != 0}">
-        <a href="/sponsor/creditcard/delete.do?creditcardID=${creditCard.id}">
-            <spring:message code="credit-card.delete"/>
-        </a>
-    </jstl:if>
+
 </form:form>
