@@ -56,13 +56,13 @@ public class campaignManageController extends AbstractController {
     @RequestMapping(value = "/campaign/edit/save", method = RequestMethod.POST, params = "save")
     public ModelAndView save(@Valid Campaing campaing) {
         ModelAndView result;
-
-        result = new ModelAndView("security/testView");
-        result.addObject("start",campaing.getStartDate());
-        result.addObject("end",campaing.getEndDate());
-        result.addObject("maximum",campaing.getMaximumDisplayed());
-        result.addObject("number",campaing.getNumberOfBanners());
-
+    campaing.setSponsor(sponsorService.findByPrincipal());
+        campaingService.save(campaing);
+//        result.addObject("start",campaing.getStartDate());
+//        result.addObject("end",campaing.getEndDate());
+//        result.addObject("maximum",campaing.getMaximumDisplayed());
+//        result.addObject("number",campaing.getNumberOfBanners());
+        result = this.list();
 
 //        campaingService.save(campaing);
 //        result = this.list();
@@ -100,12 +100,13 @@ public class campaignManageController extends AbstractController {
         Campaing a = campaingService.create();
         res = new ModelAndView("campaign/edit");
         res.addObject("campaign", a);
+
         return res;
     }
 
     protected ModelAndView createEditModelAndView(Campaing campaing) {
         ModelAndView result;
-
+        campaingService.save(campaing);
         result = createEditModelAndView(campaing, null);
 
         return result;

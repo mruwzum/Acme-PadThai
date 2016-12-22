@@ -58,6 +58,6 @@
     </jstl:if>
     <input type="button" name="cancel"
            value="<spring:message code="campaign.cancel" />"
-           onclick="relativeRedir('/sponsor/campaign/list.do');"/>
+           onclick="relativeRedir('sponsor/campaing/list.do');"/>
     <br/>
 </form:form>
