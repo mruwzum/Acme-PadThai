@@ -4,6 +4,7 @@ import controllers.AbstractController;
 import domain.Categorie;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
 import org.springframework.validation.BindingResult;
@@ -46,12 +47,17 @@ public class CategorieController extends AbstractController {
 
     @RequestMapping(value = "/categorie/delete", method = RequestMethod.GET)
     public ModelAndView deleteProperty(@RequestParam int categorieID) {
-        ModelAndView result;
-        Categorie categorie = categorieService.findOne(categorieID);
-        categorieService.delete(categorie);
-        result = new ModelAndView("redirect:list.do");
+        ModelAndView result = new ModelAndView("redirect:list.do");
+        Categorie categorie  = categorieService.findOne(categorieID);
+        try {
+            categorieService.delete(categorie);
+        }catch (DataIntegrityViolationException e){
+            result = new ModelAndView("sponsor/text");
+
+            String texto1 =  "No puede borrar una categoría que tengas recetas asociadas";
+            result.addObject("texto1", texto1);
+        }
         return result;
-        //TODO peta
     }
 
     @RequestMapping(value = "/categorie/edit", method = RequestMethod.GET)
