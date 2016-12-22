@@ -108,7 +108,7 @@ public class UtilitiesController extends AbstractController{
             actorService.registerToMasterClass(mc);
         }catch (DataIntegrityViolationException e){
             res = new ModelAndView("sponsor/text");
-            String texto1 = "Ya te has registrado en esta clase";
+            String texto1 = "You've been already registered on this class / Ya te has registrado en esta clase";
             res.addObject("texto1", texto1);
         }
 
@@ -123,7 +123,7 @@ public class UtilitiesController extends AbstractController{
             actorService.unregisterToMasterClass(mc);
         }catch (IllegalArgumentException e){
             res = new ModelAndView("sponsor/text");
-            String texto1 = "Ya te has borrado tu registro en esta clase";
+            String texto1 = "You've been already unregistered from this class / Ya has borrado tu registro en esta clase";
             res.addObject("texto1", texto1);
         }
 

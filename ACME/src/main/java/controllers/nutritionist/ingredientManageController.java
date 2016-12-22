@@ -101,7 +101,7 @@ public class ingredientManageController extends AbstractController {
         try {
             ingredientService.delete(ingredient);
         }catch (DataIntegrityViolationException e){
-            String texto1 =  "No puede borrar un ingrediente que esté asociado a recetas";
+            String texto1 =  "You can't delete an ingredient associated to a recipe / No puede borrar un ingrediente que esté asociado a recetas";
             result = new ModelAndView("sponsor/text");
             result.addObject("texto1", texto1);
         }
@@ -131,7 +131,7 @@ public class ingredientManageController extends AbstractController {
         try {
             ingredientService.deleteProperty(ing,property);
         }catch (DataIntegrityViolationException e){
-            String texto1 =  "No puede borrar propiedades asociadas a ingredientes";
+            String texto1 =  "You can't delete any property associated to an ingredient / No puede borrar propiedades asociadas a ingredientes";
             result = new ModelAndView("sponsor/text");
             result.addObject("texto1", texto1);
         }

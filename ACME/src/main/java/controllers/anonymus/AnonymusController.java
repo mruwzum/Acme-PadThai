@@ -201,7 +201,7 @@ public class AnonymusController extends AbstractController {
                 break;
             }
         }
-        Assert.notNull(aux, "No se ha encontrado el usuario");
+        Assert.notNull(aux, "User not found / No se ha encontrado el usuario");
         res = new ModelAndView("user/list");
         res.addObject("user", aux);
         return res;
@@ -219,7 +219,7 @@ public class AnonymusController extends AbstractController {
                 break;
             }
         }
-        Assert.notNull(aux, "No se ha encontrado la receta");
+        Assert.notNull(aux, "Recipe not found / No se ha encontrado la receta");
         res = new ModelAndView("recipe/list");
         res.addObject("recipe", aux);
         return res;

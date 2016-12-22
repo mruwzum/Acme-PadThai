@@ -88,7 +88,7 @@ public class propertyManageController extends AbstractController {
         try {
             propertyService.delete(property);
         }catch (DataIntegrityViolationException e){
-            String texto1 =  "No puede borrar propiedades asociadas a ingredientes";
+            String texto1 =  "You can't delete any property associated to an ingredient / No puede borrar propiedades asociadas a ingredientes";
             result = new ModelAndView("sponsor/text");
             result.addObject("texto1", texto1);
         }

@@ -54,7 +54,7 @@ public class CategorieController extends AbstractController {
         }catch (DataIntegrityViolationException e){
             result = new ModelAndView("sponsor/text");
 
-            String texto1 =  "No puede borrar una categoría que tengas recetas asociadas";
+            String texto1 =  "You can't delete a category that contains any recipe / No puede borrar una categoría que tenga recetas asociadas";
             result.addObject("texto1", texto1);
         }
         return result;
