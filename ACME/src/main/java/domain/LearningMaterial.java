@@ -59,4 +59,11 @@ public class LearningMaterial extends DomainEntity {
         this.type = type;
     }
 
+    @Override
+    public String toString() {
+        return "LearningMaterial{" +
+                "title='" + title + '\'' +
+                ", attachment=" + attachment +
+                '}';
+    }
 }

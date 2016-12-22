@@ -57,7 +57,10 @@
             </a>
         </jstl:if>
     </display:column>
-
+        <display:column>
+                <a href="actor/masterClass/view.do?id=${row.id}">
+                    <spring:message code="mclass.view"/>
+        </display:column>
         <%--TODO Enlace a view--%>
     </security:authorize>
 

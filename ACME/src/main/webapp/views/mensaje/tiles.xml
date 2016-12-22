@@ -25,10 +25,6 @@
         <put-attribute name="title" value="Edit Message"/>
         <put-attribute name="body" value="/views/mensaje/edit.jsp"/>
     </definition>
-    <definition name="mensaje/view" extends="master.page">
-        <put-attribute name="title" value="View Message"/>
-        <put-attribute name="body" value="/views/mensaje/view.jsp"/>
-    </definition>
     <definition name="mensaje/text" extends="master.page">
         <put-attribute name="title" value="Texted Message"/>
         <put-attribute name="body" value="/views/mensaje/text.jsp"/>

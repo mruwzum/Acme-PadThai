@@ -1,6 +1,9 @@
 package controllers.actor;
 
 import controllers.AbstractController;
+import domain.Actor;
+import domain.LearningMaterial;
+import domain.MasterClass;
 import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import services.MasterClassService;
 import services.OthersService;
 import services.RecipeService;
 import services.UserService;
@@ -31,14 +35,44 @@ public class likeRecipeController extends AbstractController {
     private RecipeService recipeService;
     @Autowired
     private OthersService othersService;
+    @Autowired
+    private MasterClassService masterClassService;
 
-    //LIST ----------
+
 
 
     public likeRecipeController() {
         super();
     }
 
+
+
+
+
+
+    @RequestMapping(value = "/masterClass/view")
+    public ModelAndView view(@RequestParam int id){
+        ModelAndView res;
+        MasterClass mc = masterClassService.findOne(id);
+        String title = mc.getTitle();
+        String des = mc.getDescription();
+        String cook = mc.getCook().getName();
+        Collection<LearningMaterial> learningMaterials = mc.getMaterial();
+        Collection<Actor> registers = mc.getRegisters();
+
+        res = new ModelAndView("masterClass/view");
+        res.addObject("masterClass", mc);
+        res.addObject("title", title);
+        res.addObject("description", des);
+        res.addObject("cook", cook);
+        res.addObject("materials",learningMaterials.toString());
+        res.addObject("registers", registers);  
+
+
+
+
+        return res;
+    }
 
 
     //(LIKE)----------------

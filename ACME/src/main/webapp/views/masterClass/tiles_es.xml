@@ -25,5 +25,8 @@
         <put-attribute name="title" value="Lista de clases maestras"/>
         <put-attribute name="body" value="/views/masterClass/list.jsp"/>
     </definition>
-
+    <definition name="masterClass/view" extends="master.page">
+        <put-attribute name="title" value="Ver clase"/>
+        <put-attribute name="body" value="/views/masterClass/view.jsp"/>
+    </definition>
 </tiles-definitions>

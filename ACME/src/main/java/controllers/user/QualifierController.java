@@ -1,5 +1,6 @@
 package controllers.user;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import controllers.AbstractController;
 import domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,9 @@ public class QualifierController extends AbstractController {
     public QualifierController() {
         super();
     }
+
+
+
 
     @RequestMapping(value = "/recipe/qualify", method = RequestMethod.GET)
     public ModelAndView qualify(@RequestParam int id) {
