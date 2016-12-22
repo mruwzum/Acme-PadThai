@@ -176,6 +176,18 @@ public class UtilitiesController extends AbstractController{
         return result;
     }
 
+
+    @RequestMapping(value = "campaign/list", method = RequestMethod.GET)
+    public ModelAndView listCampaign() {
+        ModelAndView result;
+        Collection<Campaing> campaings;
+        campaings = campaingService.findAll();
+        result = new ModelAndView("campaign/list");
+        result.addObject("campaign", campaings);
+        result.addObject("requestURI", "admin/campaing/list.do");
+        return result;
+    }
+
     @RequestMapping(value = "/edit/save")
     public ModelAndView UserSave(@RequestParam String name, String surname, String emailAddress, String phone,
                                  String postalAddress) {
