@@ -26,7 +26,7 @@
                     <li class="arrow"></li>
                     <li><a href="actor/AdminPersonalData.do"><spring:message
                             code="master.page.actor.edit.do"/></a></li>
-                    <li><a href="admin/masterClass/list.do"><spring:message
+                    <li><a href="cook/masterClass/listAll.do"><spring:message
                             code="master.page.maclass.list.do"/></a></li>
                     <li><a href="admin/computewinners.do"><spring:message
                             code="master.page.computewinners"/></a></li>
@@ -43,18 +43,15 @@
                     code="master.page.admin.categorieList.do"/></a></li>
             <li><a href="admin/contest/list.do"><spring:message
                     code="master.page.admin.contestList.do"/></a></li>
-            <li><a href="admin/campaing/listAll.do"><spring:message
+            <li><a href="sponsor/campaing/list.do"><spring:message
                     code="master.page.campaign"/></a></li>
             <li><a href="admin/masterClass/list.do"><spring:message
                     code="master.page.maclass.list.do"/></a></li>
-            <li><a href="actor/AdminPersonalData.do"><spring:message
-                    code="master.page.actor.edit.do"/></a></li>
             <li><a href="admin/sponsor/list.do"><spring:message
                     code="master.page.admin.sponsors"/></a></li>
             <li><a href="admin/dashboard.do"><spring:message
                     code="master.page.dashboard.do"/></a></li>
-            <li><a href="cook/masterClass/listAll.do"><spring:message
-                    code="master.page.maclass.list.do"/></a></li>
+
         </security:authorize>
 
 
