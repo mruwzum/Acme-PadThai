@@ -60,7 +60,7 @@ public class CommentController extends AbstractController {
     public ModelAndView write(@Valid Comment comment){
         ModelAndView res;
         commentService.save(comment);
-        res =  new ModelAndView("redirect:comment/new.do");
+        res =  new ModelAndView("redirect:http://localhost:8080/");
         return res;
     }
 
