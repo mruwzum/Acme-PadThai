@@ -31,7 +31,7 @@
     <br/>
 
     <input type="submit" name="save"
-           value="<spring:message code="folder.save" />"/>&nbsp;
+           value="<spring:message code="folder.save" />"/>
 
     <input type="button" name="cancel"
            value="<spring:message code="m.cancel" />"

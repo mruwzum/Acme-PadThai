@@ -70,7 +70,8 @@ public class MessagesFolderController extends AbstractController {
     @RequestMapping(value = "/folder/new/save")
     public ModelAndView saveFolder(@RequestParam String name) {
         ModelAndView res;
-        actorService.createFolder(name);
+        String name2 = name.replaceAll(",","");
+        actorService.createFolder(name2);
         res = list();
         return res;
     }
