@@ -3,6 +3,7 @@ package controllers.admin;
 import controllers.AbstractController;
 import domain.Contest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
 import org.springframework.validation.BindingResult;
@@ -22,9 +23,10 @@ import java.util.Date;
 @Controller
 @RequestMapping("admin")
 public class ContestController extends AbstractController {
-    public ContestController(){
+    public ContestController() {
         super();
     }
+
     @Autowired
     private ContestService contestService;
 
@@ -56,27 +58,38 @@ public class ContestController extends AbstractController {
         result = this.list();
         return result;
     }
+
     @RequestMapping(value = "/contest/create", method = RequestMethod.GET)
     public ModelAndView createContest() {
         ModelAndView r;
         Contest m;
         m = contestService.create();
         m.setTitle("GENERIC");
-        m.setOppeningDate(new Date(System.currentTimeMillis() -100));
-        m.setClosingDate(new Date(System.currentTimeMillis() -100));
-     //TODO peta
+        m.setOppeningDate(new Date(System.currentTimeMillis() - 100));
+        m.setClosingDate(new Date(System.currentTimeMillis() - 100));
+        //TODO peta
         r = createEditModelAndView(m);
         return r;
     }
+
     @RequestMapping(value = "/contest/delete", method = RequestMethod.GET)
     public ModelAndView delete(@RequestParam int contestID) {
-        ModelAndView result;
+        ModelAndView result = new ModelAndView("redirect:list.do");
         Contest contest = contestService.findOne(contestID);
-        contestService.delete(contest);
-        result = new ModelAndView("redirect:list.do");
+        try {
+            contestService.delete(contest);
+        } catch (DataIntegrityViolationException e) {
+            String texto1 = "You can't delete a contest that contains any recipe / No puedes borrar un concurso que contenga recetas";
+            result = new ModelAndView("sponsor/text");
+            result.addObject("texto1",texto1);
+        }
+
+
+
         return result;
-        //TODO peta
     }
+
+
 
 //    @RequestMapping(value = "/contest/delete", method = RequestMethod.GET, params = "delete")
 //    public ModelAndView delete(Contest contest, BindingResult binding) {
