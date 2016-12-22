@@ -43,7 +43,7 @@
                     code="master.page.admin.categorieList.do"/></a></li>
             <li><a href="admin/contest/list.do"><spring:message
                     code="master.page.admin.contestList.do"/></a></li>
-            <li><a href="sponsor/campaing/list.do"><spring:message
+            <li><a href="admin/campaign/list.do"><spring:message
                     code="master.page.campaign"/></a></li>
             <li><a href="admin/masterClass/list.do"><spring:message
                     code="master.page.maclass.list.do"/></a></li>
