@@ -46,4 +46,10 @@ public class Sponsor extends Actor {
         this.campaign = campaign;
     }
 
+    @Override
+    public String toString() {
+        return super.getName() +
+                "  {nameOfCompany='" + nameOfCompany +
+                '}';
+    }
 }

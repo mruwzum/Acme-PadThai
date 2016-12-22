@@ -40,6 +40,7 @@
         <value>/views/comment/tiles.xml</value>
         <value>/views/categorie/tiles.xml</value>
         <value>/views/sponsor/tiles.xml</value>
+        <value>/views/banner/tiles.xml</value>
 
     </util:list>
 

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import services.*;
 
+import javax.validation.Valid;
 import java.util.*;
 
 /**
@@ -233,7 +234,30 @@ public class UtilitiesController extends AbstractController{
 
         return result;
     }
+    @RequestMapping(value = "/banner/editCost")
+    public ModelAndView editBannerCost(@RequestParam int campID){
+        ModelAndView res;
+        Campaing campaing2 = campaingService.findOne(campID);
+        res = new ModelAndView("banner/editCost");
+        res.addObject("id2",campID);
+        res.addObject("campaing", campaing2);
 
+
+        return res;
+
+    }
+
+    @RequestMapping(value = "/banner/editCost/save", method = RequestMethod.POST, params = "save")
+    public ModelAndView editBannerCostSave(@Valid Campaing campaing2){
+        ModelAndView res;
+
+        adminService.setBannerCost(campaing2,0.25);
+        res = listCampaign();
+
+
+        return res;
+
+    }
 
 
 }

@@ -41,6 +41,8 @@
         <value>/views/admin/messages</value>
         <value>/views/categorie/messages</value>
         <value>/views/sponsor/messages</value>
+        <value>/views/banner/messages</value>
+
 
     </util:list>
 

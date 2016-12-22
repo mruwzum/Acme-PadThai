@@ -17,36 +17,34 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<security:authorize access="hasRole('ADMIN')">
-    <display:column>
-        <a href="banner/editCost.do?bannerID=${row.id}">
-            <spring:message code="mclass.edit"/>
-        </a>
-    </display:column>
-</security:authorize>
 
-
-<form:form action="banner/editCost.do" modelAttribute="banner">
+<form:form action="admin/banner/editCost/save.do" modelAttribute="campaing">
     <form:hidden path="id"/>
     <form:hidden path="version"/>
+    <form:hidden path="startDate"/>
+    <form:hidden path="endDate"/>
+    <form:hidden path="numberOfBanners"/>
+    <form:hidden path="maximumDisplayed"/>
+    <form:hidden path="sponsor"/>
 
-    <form:label path="Banner Cost">
+
+    <form:label path="bannerCost">
         <spring:message code="banner.bannerCost"/>
     </form:label>
     <form:input path="bannerCost"/>
-    <form:errors cssClass="error" path="Banner Cost"/>
+    <form:errors cssClass="error" path="bannerCost"/>
     <br/>
 
     <input type="submit" name="save"
            value="<spring:message code="banner.save" />"/>&nbsp;
-    <jstl:if test="${banner.id != 0}">
-        <input type="submit" name="delete"
-               value="<spring:message code="banner.delete" />"
-               onclick="return confirm('<spring:message code="banner.confirm.delete"/>')"/>&nbsp;
-    </jstl:if>
+
     <input type="button" name="cancel"
            value="<spring:message code="banner.cancel" />"
-           onclick="relativeRedir('banner/editCost.do');"/>
+           onclick="relativeRedir('admin/banner/editCost/save.do?cost=${bannerCost}&id2=${id2}');"/>
+    <br/>
+    <input type="button" name="cancel"
+           value="<spring:message code="banner.cancel" />"
+           onclick="relativeRedir('admin/campaign/list.do');"/>
     <br/>
 
 </form:form>
