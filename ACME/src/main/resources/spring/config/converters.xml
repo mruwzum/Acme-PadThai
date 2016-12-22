@@ -38,7 +38,8 @@
         <bean class="converters.StringToQuantityConverter"/>
         <bean class="converters.StringToDateConverter"/>
         <bean class="converters.DateToStringConverter"/>
-
+        <bean class="converters.StringToLearningMaterialConverter"/>
+        <bean class="converters.LearningMaterialToStringConverter"/>
 
 
     </util:list>

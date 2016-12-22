@@ -21,7 +21,9 @@
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>
-
+    <form:hidden path="cook"/>
+    <form:hidden path="promoters"/>
+    <form:hidden path="registers"/>
 
     <%--TODO desplegables--%>
     <form:label path="title">
@@ -37,35 +39,8 @@
     <form:input path="description"/>
     <form:errors cssClass="error" path="description"/>
     <br/>
-    <form:label path="cook">
-        <spring:message code="mclass.cook"/>
-    </form:label>
-    <form:input path="cook"/>
-    <form:errors cssClass="error" path="cook"/>
-    <br/>
-
-    <br>
 
 
-    <form:label path="registers">
-        <spring:message code="masterClass.registers" />
-    </form:label>
-    <form:select path="registers">
-        <form:options items="${registers}" itemValue="id" />
-    </form:select>
-    <form:errors cssClass="error" path="registers"/>
-
-    <br/>
-    <br>
-    <form:label path="promoters">
-        <spring:message code="masterClass.promoters" />
-    </form:label>
-    <form:select path="promoters">
-        <form:options items="${promoters}" itemValue="id" />
-    </form:select>
-    <form:errors cssClass="error" path="promoters"/>
-    <br/>
-    <br>
 
     <form:label path="material">
         <spring:message code="masterClass.material"/>
