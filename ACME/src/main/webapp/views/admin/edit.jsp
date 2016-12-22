@@ -71,7 +71,7 @@
 
         <input type="button" name="save"
                value="<spring:message code="actor.save" />"
-               onclick="window.location.replace('<jstl:out value="${url}"/>')"/>
+               onclick="window.location.replace('<jstl:out value="http://localhost:8080/"/>')"/>
 
         <input type="button" name="cancel"
                value="<spring:message code="actor.cancel" />"
