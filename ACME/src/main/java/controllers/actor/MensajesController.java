@@ -48,7 +48,7 @@ public class MensajesController extends AbstractController {
     @RequestMapping(value = "/mensaje/send")
     public ModelAndView sendMessage(@RequestParam String recipient, String subject, String body, String priority) {
         ModelAndView res;
-        String texto1 = "OK";
+        String texto1 = "Sended! / ¡Enviado!";
         String replacerecipient = recipient.replaceAll(",","");
         String replacesubject = subject.replaceAll(",","");
         String replacebody = body.replaceAll(",","");
@@ -68,7 +68,7 @@ public class MensajesController extends AbstractController {
     @RequestMapping(value = "/mensaje/delete")
     public ModelAndView deleteMessage(@RequestParam int id) {
         ModelAndView res;
-        String text1 = "Message Delete";
+        String text1 = "Message deleted / Mensaje borrado";
         Message message = messageService.findOne(id);
 
         res = new ModelAndView("mensaje/text");
@@ -80,7 +80,7 @@ public class MensajesController extends AbstractController {
     @RequestMapping(value = "/mensaje/delete/perm")
     public ModelAndView deleteMessagePerm(@RequestParam int id) {
         ModelAndView res;
-        String text1 = "Message Delete Permanently";
+        String text1 = "Message Deleted permanently / Mensaje borrado de forma permanente";
         Message message = messageService.findOne(id);
         messageService.delete(message);
         res = new ModelAndView("mensaje/text");
