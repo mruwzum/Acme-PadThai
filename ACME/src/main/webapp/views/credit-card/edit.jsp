@@ -17,7 +17,7 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net" %>
 
 
-<form:form action="sponsor/creditcard/edit/save.do" modelAttribute="creditCard">
+<form:form action="sponsor/creditcard/save.do" modelAttribute="creditCard">
 
     <form:hidden path="id"/>
     <form:hidden path="version"/>
@@ -69,12 +69,8 @@
     <input type="submit" name="save"
            value="<spring:message code="credit-card.save" />"/>&nbsp;
     <jstl:if test="${curricula.id != 0}">
-        <input type="submit" name="delete"
-               value="<spring:message code="credit-card.delete" />"
-               onclick="return confirm('<spring:message code="credit-card.delete"/>')"/>&nbsp;
+        <a href="/sponsor/creditcard/delete.do?creditcardID=${creditCard.id}">
+            <spring:message code="credit-card.delete"/>
+        </a>
     </jstl:if>
-    <input type="button" name="cancel"
-           value="<spring:message code="credit-card.cancel" />"
-           onclick="relativeRedir('/curricula/list.do');"/>
-    <br/>
 </form:form>
