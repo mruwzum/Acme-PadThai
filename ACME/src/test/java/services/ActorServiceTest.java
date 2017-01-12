@@ -8,6 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -49,7 +50,9 @@ public class ActorServiceTest extends AbstractTest {
     @Autowired
     private RecipeService recipeService;
     @Autowired
-    private AdminService adminService;
+    private CommentService commentService;
+    @Autowired
+    private OthersService othersService;
 
     //Tests -------------------------------------------------
 
@@ -353,31 +356,12 @@ public class ActorServiceTest extends AbstractTest {
 
     @Test
     public void testRandom(){
-        authenticate("user1");
-        User a = userService.findByPrincipal();
-        System.out.println(a.getName());
-        a.setName("PRUEBA");
-        a.setSurname("PRUEBA");
-        a.setEmailAddress("dasd@asdasd.com");
-        a.setPhone("648208840");
-        a.setPostalAddress("PRUEBA");
-        a.getSocialIdentity().setNickname("PRUEBA");
-        a.getSocialIdentity().setSocialNet("PRUEBA");
-        a.getSocialIdentity().setLink("PRUEBA.com");
-        actorService.editPersonalData2(a.getName(),a.getSurname(),a.getEmailAddress(),a.getPhone(), a.getPostalAddress(),
-                a.getSocialIdentity().getNickname(),a.getSocialIdentity().getSocialNet(),a.getSocialIdentity().getLink());
-        System.out.println(a.getName());
-        System.out.println(a.getSurname());
-        System.out.println(a.getEmailAddress());
-        System.out.println(a.getPhone());
-        System.out.println(a.getPostalAddress());
-        System.out.println(a.getSocialIdentity().getNickname());
-        System.out.println(a.getSocialIdentity().getSocialNet());
-        System.out.println(a.getSocialIdentity().getLink());
+        //authenticate("user2");
 
+        Others other = othersService.findByPrincipal();
+        System.out.println(other);
 
-
-        authenticate(null);
+        //authenticate(null);
     }
 
 }

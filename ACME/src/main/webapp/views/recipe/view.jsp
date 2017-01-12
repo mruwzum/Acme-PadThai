@@ -56,12 +56,10 @@
 <br/>
 <security:authorize access="isAuthenticated()">
 
-<jstl:if test="${notLiked}">
+<jstl:if test="${!liked}">
 <input type="button" name="like"
        value="<spring:message code="recipe.rate.like.button" />"
        onclick="relativeRedir('actor/recipe/like.do?recipeID=${id}');"/>
-</jstl:if>
-<jstl:if test="${liked}">
 <input type="button" name="dislike"
        value="<spring:message code="recipe.rate.dislike.button" />"
        onclick="relativeRedir('actor/recipe/dislike.do?recipeID=${id}');"/>
@@ -85,13 +83,45 @@
 </display:table>
 
 <spring:message code="recipe.view.write.comment" var="rateTitle"/>
-<h1><jstl:out value="${rateTitle}"/></h1>
-<a href="http://localhost:8080/actor/comment/new.do?id=${idr}">
-    <spring:message code="recipe.view.write.comment"/>
-</a>
+
 <security:authorize access="isAuthenticated()">
 
+    <form:form action="actor/comment/write.do" modelAttribute="comment">
 
+        <form:hidden path="id"/>
+        <form:hidden path="version"/>
+
+        <form:label path="title">
+            <spring:message code="comment.title"/>
+        </form:label>
+        <form:input path="title"/>
+        <form:errors cssClass="error" path="title"/>
+        <br/>
+
+        <form:label path="text">
+            <spring:message code="comment.text"/>
+        </form:label>
+        <form:input path="text"/>
+        <form:errors cssClass="error" path="text"/>
+        <br/>
+
+        <form:label path="numberOfStars">
+            <spring:message code="comment.number"/>
+        </form:label>
+        <form:input path="numberOfStars"/>
+        <form:errors cssClass="error" path="numberOfStars"/>
+        <br/>
+
+        <input type="button" name="save"
+               value="<spring:message code="comment.save" />"
+               onclick="relativeRedir('actor/comment/write.do?title=${title}&text=${text}$numberOfStars=${numberOfStars}&recipeID=${id}')"/>
+
+        <!--<input type="submit" name="save"
+               value="<spring:message code="comment.save" />"/>&nbsp;-->
+
+        <br/>
+
+    </form:form>
 
     <%--TODO no se como meterle a esra url la receta que se está mostrando--%>
     <%--<form:form action="actor/comment/write.do" modelAttribute="comment">--%>

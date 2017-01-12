@@ -100,17 +100,18 @@ public class OthersService {
         Assert.notNull(r);
         Others u = findByPrincipal();
         Assert.notNull(u);
-        Assert.isTrue(u.getFollowers().contains(r),"Lo contiene");
-        u.getFollowers().add(r);
+        Assert.isTrue(!r.equals(u),"Es el mismo usuario");
+        Assert.isTrue(!r.getFollowers().contains(u),"Lo contiene");
+        r.getFollowers().add(u);
     }
 
     public void unfollowOther(Others r) {
         Assert.notNull(r);
         Others u = findByPrincipal();
         Assert.notNull(u);
-        Assert.isTrue(!u.getFollowers().contains(r),"No contiene");
+        Assert.isTrue(r.getFollowers().contains(u),"No contiene");
 
-        u.getFollowers().remove(r);
+        r.getFollowers().remove(u);
     }
 
     public Collection<Recipe> getRecipesOfFollowers() {

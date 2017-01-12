@@ -17,6 +17,7 @@ import services.RecipeService;
 
 import javax.validation.Valid;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -56,10 +57,18 @@ public class CommentController extends AbstractController {
     }
 
 
-    @RequestMapping(value = "/comment/write", method = RequestMethod.POST, params = "save")
-    public ModelAndView write(@Valid Comment comment){
+    @RequestMapping(value = "/comment/write", method = RequestMethod.GET)
+    public ModelAndView write(@RequestParam String title, String text, Integer numberOfStars, int recipeID){
         ModelAndView res;
-        commentService.save(comment);
+        Recipe recipe = recipeService.findOne(recipeID);
+        Collection<Comment> comments = recipe.getComments();
+        Comment comment = commentService.create();
+        comment.setTitle(title);
+        comment.setText(text);
+        comment.setNumberOfStars(numberOfStars);
+        Comment saved = commentService.save(comment);
+        comments.add(saved);
+        recipe.setComments(comments);
         res =  new ModelAndView("redirect:http://localhost:8080/");
         return res;
     }

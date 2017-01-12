@@ -99,8 +99,7 @@ public class managingRecipesController extends AbstractController {
         ModelAndView result;
         int likes = 0;
         int dislikes = 0;
-        Boolean liked = true;
-        Boolean notLiked = false;
+        Boolean liked = false;
         Recipe res = recipeService.findOne(recipeID);
         Comment comment = commentService.create();
         for(Boolean b : res.getRate()){
@@ -110,13 +109,17 @@ public class managingRecipesController extends AbstractController {
                 dislikes++;
             }
         }
+        try {
 
-        //TODO esto funciona solo con usuarios registrados, cuando entras sin registrarte te dice que findbyprincipal tiene que ser true, no llega a comprobar si es nulo
-//        if(othersService.findByPrincipal()!=null){
-//            liked = othersService.findByPrincipal().getLikes().contains(res);
-//            notLiked = !othersService.findByPrincipal().getLikes().contains(res);
-//        }
+            if(othersService.findByPrincipal().getLikes().contains(res) || othersService.findByPrincipal().getDislikes().contains(res)){
+                liked = true;
+            }
+        } catch(Exception e) {
+            liked = false;
+        }
+
         result = new ModelAndView("recipe/view");
+        result.addObject("id",res.getId());
         result.addObject("titler",res.getTitle());
         result.addObject("summary",res.getSummary());
         result.addObject("creationDate",res.getCreationDate().toString());
@@ -129,7 +132,6 @@ public class managingRecipesController extends AbstractController {
         result.addObject("comments", res.getComments());
         result.addObject("comment", comment);
         result.addObject("liked", liked);
-        result.addObject("notLiked", notLiked);
 
 
 

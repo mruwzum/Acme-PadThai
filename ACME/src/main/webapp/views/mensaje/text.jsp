@@ -22,7 +22,6 @@
     <title></title>
 </head>
 <body>
-${texto1}
 ${id}
 ${title}
 ${text}
